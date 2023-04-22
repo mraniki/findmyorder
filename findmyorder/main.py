@@ -1,12 +1,12 @@
 import os, asyncio, logging, re
 import pyparsing as pp
 
-from translate import Translator
+# from translate import Translator
 
 from config import settings
 from findmyorder import __version__
 
-translator = Translator(to_lang="en")
+# translator = Translator(to_lang="en")
 
 
 class findmyorder:
@@ -19,10 +19,9 @@ class findmyorder:
         
        # translation = translator.translate("ACHETER")
         
-    def search(self
-               message_to_parse: str = None
+    def search(self,
+               message_to_parse: str = None,
                ):
-
       try:
         myDict = settings.DIRECTION
 
@@ -36,12 +35,12 @@ class findmyorder:
         self.logger.debug(f"error identify {e}")
         return False
 
-    def identify(self
-               message_to_parse: str = None
+    def identify(self,
+               order_string: str = None,
                ):
       try:
-        if (self.search(message_to_parse))
-          order = message_to_parse.split()
+        if (self.search(order_string)):
+            order = order_string.split()
           # self.logger.info(msg=f"Order parsing: {order}")
           # direction = wordlist[0].upper()
           # stoploss = 100
@@ -61,7 +60,7 @@ class findmyorder:
           #     quantity = wordlist[4][2:-1]
           # symbol = wordlist[1]
           # order=[direction,symbol,stoploss,takeprofit,quantity]
-          return order
+            return order
 
       except Exception as e:
           self.logger.debug(f"error identify {e}")
