@@ -1,35 +1,32 @@
 
 
 import sys, os, asyncio, requests, logging
-
-from web3 import Web3
-
 from fastapi import FastAPI
 import uvicorn
-
+from config import settings
 
 from findmyorder import findmyorder
-#DEBUG LEVEL for DXSP package
-logging.basicConfig(level=logging.DEBUG)
-logging.getLogger('findmyorder.__main__').setLevel(logging.DEBUG)
-
 
 async def main():
 	while True:
 
-  fmo = findmyorder()
-  
-  msg_test = "this is a test"
-  
-  order = fmo.search(msg_test)
-  print(order)
-  
-  msg_order = "buy btc"
-  order = fmo.search(msg_order)
-  print(order)
+      fmo = findmyorder()
+      
+      msg_test = "this is a test"
+      
+      order = fmo.search(msg_test)
+      print(order)
+      order = fmo.identify(msg_test)
+      print(order)
 
-		await asyncio.sleep(3600)
+      msg_order = "buy btc"
 
+      order = fmo.search(msg_order)
+      print(order)
+      order = fmo.search(msg_order)
+      print(order)
+
+      await asyncio.sleep(3600)
 
 app = FastAPI()
 
@@ -39,7 +36,7 @@ async def start():
 
 @app.get("/")
 def read_root():
-    return {"FMY is online"}
+    return {"FMO is online"}
 
 @app.get("/health")
 def health_check():
