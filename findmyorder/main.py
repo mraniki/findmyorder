@@ -20,7 +20,8 @@ class findmyorder:
        # translation = translator.translate("ACHETER")
         
     def search(self
-               message_to_parse: str = None)
+               message_to_parse: str = None
+               ):
 
       try:
         myDict = settings.DIRECTION
@@ -36,7 +37,8 @@ class findmyorder:
         return False
 
     def identify(self
-               message_to_parse: str = None)
+               message_to_parse: str = None
+               ):
       try:
         if (self.search(message_to_parse))
           order = message_to_parse.split()

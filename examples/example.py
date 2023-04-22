@@ -8,25 +8,24 @@ from config import settings
 from findmyorder import findmyorder
 
 async def main():
-	while True:
+    while True:
+        fmo = findmyorder()
 
-      fmo = findmyorder()
-      
-      msg_test = "this is a test"
-      
-      order = fmo.search(msg_test)
-      print(order)
-      order = fmo.identify(msg_test)
-      print(order)
+        msg_test = "this is a test"
 
-      msg_order = "buy btc"
+        order = fmo.search(msg_test)
+        print(order)
+        order = fmo.identify(msg_test)
+        print(order)
 
-      order = fmo.search(msg_order)
-      print(order)
-      order = fmo.search(msg_order)
-      print(order)
+        msg_order = "buy btc"
 
-      await asyncio.sleep(3600)
+        order = fmo.search(msg_order)
+        print(order)
+        order = fmo.search(msg_order)
+        print(order)
+
+        await asyncio.sleep(3600)
 
 app = FastAPI()
 
