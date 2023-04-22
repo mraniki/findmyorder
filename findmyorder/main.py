@@ -14,17 +14,17 @@ class order:
         self.quantity
         self.stoploss
         self.takeprofit
-        self.takeprofit1
-        self.command
+        self.comment
         self.exchange
         
     def search(self)
-        order = self.pp.Word(pp.alphas) 
-        for greeting_str in [
-            "Hello, World!",
-            "Bonjour, Monde!",
-            "Hola, Mundo!",
-            "Hallo, Welt!",
-        ]:
-        greeting = greet.parse_string(greeting_str)
-        print(greeting)
+        return      
+        # order = self.pp.Word(pp.alphas) 
+        # for greeting_str in [
+        #     "Hello, World!",
+        #     "Bonjour, Monde!",
+        #     "Hola, Mundo!",
+        #     "Hallo, Welt!",
+        # ]:
+        # greeting = greet.parse_string(greeting_str)
+        # print(greeting)
