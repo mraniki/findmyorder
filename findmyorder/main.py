@@ -40,25 +40,25 @@ class findmyorder:
       try:
         if (self.search(message_to_parse))
           order = message_to_parse.split()
-          self.logger.info(msg=f"Order parsing: {order}")
-          direction = wordlist[0].upper()
-          stoploss = 100
-          takeprofit = 100
-          quantity = 10
-          # self.direction
-          # self.symbol
-          # self.amount
-          # self.quantity
-          # self.stoploss
-          # self.takeprofit
-          # self.comment
-          # self.exchange
-          if wordlistsize > 2:
-              stoploss = wordlist[2][3:]
-              takeprofit = wordlist[3][3:]
-              quantity = wordlist[4][2:-1]
-          symbol = wordlist[1]
-          order=[direction,symbol,stoploss,takeprofit,quantity]
+          # self.logger.info(msg=f"Order parsing: {order}")
+          # direction = wordlist[0].upper()
+          # stoploss = 100
+          # takeprofit = 100
+          # quantity = 10
+          # # self.direction
+          # # self.symbol
+          # # self.amount
+          # # self.quantity
+          # # self.stoploss
+          # # self.takeprofit
+          # # self.comment
+          # # self.exchange
+          # if wordlistsize > 2:
+          #     stoploss = wordlist[2][3:]
+          #     takeprofit = wordlist[3][3:]
+          #     quantity = wordlist[4][2:-1]
+          # symbol = wordlist[1]
+          # order=[direction,symbol,stoploss,takeprofit,quantity]
           return order
 
       except Exception as e:
