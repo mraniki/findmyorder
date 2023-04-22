@@ -6,10 +6,17 @@ class order:
 
     def __init__(self,
                  ):
-
         self.logger =  logging.getLogger(__name__)
-        self.logger.debug(f"trade_parser Logger:  {self.logger} on {__name__} version: {__version__}")
-        
+        self.logger.debug(f"find my order Logger:  {self.logger} on {__name__} version: {__version__}")
+        self.direction
+        self.symbol
+        self.amount
+        self.quantity
+        self.stoploss
+        self.takeprofit
+        self.takeprofit1
+        self.command
+        self.exchange
         
     def search(self)
         order = self.pp.Word(pp.alphas) 
