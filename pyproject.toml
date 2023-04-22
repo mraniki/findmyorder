@@ -16,6 +16,7 @@ readme = "README.md"
 python = ">=3.9,<3.11"
 asyncio = "*"
 pyparsing = "*"
+translate = "*"
 
 [tool.poetry.dev-dependencies]
 python-semantic-release = "*"
