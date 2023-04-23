@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.9 (2023-04-23)
+### Fix
+* Settings adjustment ([`cc97857`](https://github.com/mraniki/findmyorder/commit/cc978575322395ecdd57fe8ee6be3906ac24071f))
+
 ## v0.0.8 (2023-04-23)
 ### Fix
 * Settings typo ([`c907539`](https://github.com/mraniki/findmyorder/commit/c907539a32ad31af8a0a3252b69361b18eb56475))
