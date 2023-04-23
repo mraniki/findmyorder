@@ -58,7 +58,7 @@ class findmyorder:
         self.logger.debug(f"identify_order_element for {order_string}")
         if (self.search(mystring)):
             order_raw = mystring.split()
-            self.logger.info(msg=f"Order identified: {order raw}")
+            self.logger.info(msg=f"Order identified: {order_raw}")
             order = {}
             order['direction'] = 'BUY'
             order['symbol'] = 'EURUSD'
