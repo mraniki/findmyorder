@@ -37,13 +37,25 @@ class findmyorder:
         return False
 
     def identify(self,
-               order_string: str = None,
+               mystring: str = None,
                ):
       try:
         self.logger.debug(f"identify order for {order_string}")
-        if (self.search(order_string)):
-            order = order_string.split()
-          # self.logger.info(msg=f"Order parsing: {order}")
+        if (self.search(mystring)):
+            order_raw = mystring.split()
+            self.logger.info(msg=f"Order identified: {order raw}")
+            order = {}
+            order['direction'] = 'tbd'
+            order['symbol'] = 'tbd'
+            order['quantity'] = 'tbd'
+            order['amount'] = 'tbd'
+            order['stoploss'] = 'tbd'
+            order['comments'] = 'tbd'
+            order['market'] = 'tbd'
+            order['exchange'] = 'tbd'
+            order['timestamp'] = 'tbd'
+            order['leverage'] = 1
+            order['takeprofit'] = {'tp1':'tbd', 'tp2':'tbd'}
           # direction = wordlist[0].upper()
           # stoploss = 100
           # takeprofit = 100
@@ -67,3 +79,10 @@ class findmyorder:
       except Exception as e:
           self.logger.debug(f"error identify {e}")
           return
+          
+# class order:
+
+#      def __init__(self,
+#                  ):
+#           self.direction = 'buy'
+#           self.symbol = 'EURUSD'
