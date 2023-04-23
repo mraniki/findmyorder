@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 from findmyorder import __version__
-from findmyorder.config import settings
+from config import settings
 
 # import pyparsing as pp
 
@@ -24,8 +24,8 @@ class findmyorder:
                message_to_parse: str = None,
                ):
       try:
-        print(settings.fmo_identifier)
-        myDict = settings.fmo_identifier
+        print(settings.FMO_IDENTIFIER)
+        myDict = settings.FMO_IDENTIFIER
 
         for word in myDict:
             self.logger.debug(f"Loop check {word}")
@@ -35,7 +35,7 @@ class findmyorder:
         self.logger.debug(f"no word identified in {message_to_parse}")
         return False
       except Exception as e:
-        self.logger.debug(f"error identify {e}")
+        self.logger.debug(f"error search {e}")
         return False
 
     # def identify(self,
