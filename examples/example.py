@@ -1,9 +1,12 @@
 
+import asyncio, logging
 
-import sys, os, asyncio, requests, logging
 from fastapi import FastAPI
 import uvicorn
-from config import settings
+
+logging.basicConfig(level=logging.DEBUG)
+logging.getLogger('findmyorder.__main__').setLevel(logging.DEBUG)
+
 
 from findmyorder import findmyorder
 
