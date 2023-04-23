@@ -1,6 +1,7 @@
 [default]
-FMO_IDENTIFIER = ["BUY", "SELL", "buy", "sell","Buy","Sell"]
-DIRECTION_1 = ["BUY", "buy", "Buy","long","LONG","Long"]
+# FMO_IDENTIFIER = "buy"
+fmo_identifier = ["BUY", "SELL", "buy", "sell","Buy","Sell"]
+# DIRECTION_1 = ["BUY", "buy", "Buy","long","LONG","Long"]
 
 
 [testing]
