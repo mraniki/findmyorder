@@ -1,4 +1,6 @@
 import asyncio, logging, re
+from datetime import datetime
+
 
 from findmyorder.config import settings
 from findmyorder import __version__
@@ -23,7 +25,7 @@ class findmyorder:
                message_to_parse: str = None,
                ):
       try:
-        myDict = settings.DIRECTION
+        myDict = settings.IDENTIFIER
 
         for word in myDict:
             self.logger.debug(f"Loop check {word}")
@@ -36,50 +38,51 @@ class findmyorder:
         self.logger.debug(f"error identify {e}")
         return False
 
+    # def identify(self,
+    #            mystring: str = None,
+    #            ):
+    #     order_format = self.identify_order_format(mystring)
+    #     order_data = self.identify_order_element(mystring)
+
+    # def identify_order_format(self,
+    #            mystring: str = None,
+    #            ):
+    #   return
+
+
+
     def identify(self,
                mystring: str = None,
                ):
       try:
-        self.logger.debug(f"identify order for {order_string}")
+        self.logger.debug(f"identify_order_element for {order_string}")
         if (self.search(mystring)):
             order_raw = mystring.split()
             self.logger.info(msg=f"Order identified: {order raw}")
             order = {}
-            order['direction'] = 'tbd'
-            order['symbol'] = 'tbd'
-            order['quantity'] = 'tbd'
-            order['amount'] = 'tbd'
-            order['stoploss'] = 'tbd'
-            order['comments'] = 'tbd'
-            order['market'] = 'tbd'
-            order['exchange'] = 'tbd'
-            order['timestamp'] = 'tbd'
+            order['direction'] = 'BUY'
+            order['symbol'] = 'EURUSD'
+            order['quantity'] = 10
+            order['amount'] = 100
+            order['stoploss'] = 1000
+            order['comments'] = 'default comment'
+            order['market'] = 'Any'
+            order['exchange'] = 'Any'
+            order['timestamp'] = datetime.utcnow()
             order['leverage'] = 1
-            order['takeprofit'] = {'tp1':'tbd', 'tp2':'tbd'}
-          # direction = wordlist[0].upper()
-          # stoploss = 100
-          # takeprofit = 100
-          # quantity = 10
-          # # self.direction
-          # # self.symbol
-          # # self.amount
-          # # self.quantity
-          # # self.stoploss
-          # # self.takeprofit
-          # # self.comment
-          # # self.exchange
-          # if wordlistsize > 2:
-          #     stoploss = wordlist[2][3:]
-          #     takeprofit = wordlist[3][3:]
-          #     quantity = wordlist[4][2:-1]
-          # symbol = wordlist[1]
-          # order=[direction,symbol,stoploss,takeprofit,quantity]
+            order['takeprofit'] = {'tp1':1, 'tp2':10, 'tp3':100, 'tp4':1000, 'tp5':1000}
+
+            # if order_raw
+            #   order['direction'] = 'BUY'
             return order
 
       except Exception as e:
-          self.logger.debug(f"error identify {e}")
+          self.logger.debug(f"error identify_order_element {e}")
           return
-          
+
+
+
+
 # class order:
 
 #      def __init__(self,

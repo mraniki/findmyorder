@@ -4,9 +4,8 @@ import asyncio, logging
 from fastapi import FastAPI
 import uvicorn
 
-logging.basicConfig(level=logging.DEBUG)
-logging.getLogger('findmyorder.__main__').setLevel(logging.DEBUG)
-
+logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level='DEBUG')
+logger = logging.getLogger(__name__)
 
 from findmyorder import findmyorder
 
@@ -17,16 +16,16 @@ async def main():
         msg_test = "this is a test"
 
         order = fmo.search(msg_test)
-        print(order)
+        logger.info(msg=f"Order identified: {order}")
         order = fmo.identify(msg_test)
-        print(order)
+        logger.info(msg=f"Order identified: {order}")
 
         msg_order = "buy btc"
 
         order = fmo.search(msg_order)
-        print(order)
-        order = fmo.search(msg_order)
-        print(order)
+        logger.info(msg=f"Order identified: {order}")
+        order = fmo.identify(msg_order)
+        logger.info(msg=f"Order identified: {order}")
 
         await asyncio.sleep(3600)
 
@@ -45,5 +44,5 @@ def health_check():
     return {"FMO is online"}
 
 if __name__ == "__main__":
-    uvicorn.run(app, host='0.0.0.0', port=8080)
+    uvicorn.run(app, host='0.0.0.0')
 
