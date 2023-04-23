@@ -1,9 +1,9 @@
 # Find my order. 
 
 
-|  | A python package to identify and parse order. |
+| <img width="200" alt="Logo" src="https://user-images.githubusercontent.com/8766259/233823991-cceaa05a-ff15-4796-a6bb-bcb3ee0d8859.jpg"> | A python package to identify and parse order. |
 | ------------- | ------------- |
-|[![Pypi](https://badgen.net/badge/icon/findmyorder?icon=pypi&label)](https://pypi.org/project/findmyorder/) ![Version](https://img.shields.io/pypi/v/findmyorder)<br>  ![Pypi](https://img.shields.io/pypi/dm/findmyorder) [![🐍Build](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%90%8Dbuild.yml/badge.svg)](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%90%8Dbuild.yml)[![pyparsing](https://badgen.net/badge/icon/pyparsing/black?icon=libraries&label)](https://pyparsing-docs.readthedocs.io) |tbd<br>tbd
+|[![Pypi](https://badgen.net/badge/icon/findmyorder?icon=pypi&label)](https://pypi.org/project/findmyorder/) ![Version](https://img.shields.io/pypi/v/findmyorder)<br>  ![Pypi](https://img.shields.io/pypi/dm/findmyorder) [![🐍Build](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%90%8Dbuild.yml/badge.svg)](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%90%8Dbuild.yml) | Find order <br> Parse order |
 
 
 
