@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.4 (2023-04-23)
+### Fix
+* Missing config for env ([`7c4baa1`](https://github.com/mraniki/findmyorder/commit/7c4baa1545c4321bb82d5a25fee1ea6f9e30e4ca))
+
 ## v0.0.3 (2023-04-23)
 ### Fix
 * Build workflow and lint action ([`3e434a2`](https://github.com/mraniki/findmyorder/commit/3e434a27321aca9c0755d6e58746012a4d49b53d))
