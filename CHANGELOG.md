@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.10 (2023-04-23)
+### Fix
+* Add port 8080 to uvicorn.run in example.py. ([`dab019c`](https://github.com/mraniki/findmyorder/commit/dab019c066dcaaeb469886a9a9108af825491364))
+
 ## v0.0.9 (2023-04-23)
 ### Fix
 * Settings adjustment ([`cc97857`](https://github.com/mraniki/findmyorder/commit/cc978575322395ecdd57fe8ee6be3906ac24071f))
