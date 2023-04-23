@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.5 (2023-04-23)
+### Fix
+* Typo ([`d194760`](https://github.com/mraniki/findmyorder/commit/d1947607dda80bbc4eb64b0841e01f3f9d02821c))
+
 ## v0.0.4 (2023-04-23)
 ### Fix
 * Missing config for env ([`7c4baa1`](https://github.com/mraniki/findmyorder/commit/7c4baa1545c4321bb82d5a25fee1ea6f9e30e4ca))
