@@ -1,0 +1,7 @@
+[default]
+FMO_IDENTIFIER = ["BUY", "SELL", "buy", "sell","Buy","Sell"]
+DIRECTION_1 = ["BUY", "buy", "Buy","long","LONG","Long"]
+
+
+[testing]
+# DIRECTION_1 = ["SELL", "sell", "Sell","short","SHORT","Short"]

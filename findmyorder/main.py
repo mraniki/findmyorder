@@ -1,8 +1,7 @@
 import asyncio, logging, re
 from datetime import datetime
+from config import settings
 
-
-from findmyorder.config import settings
 from findmyorder import __version__
 
 # import pyparsing as pp
@@ -17,15 +16,14 @@ class findmyorder:
                  ):
         self.logger =  logging.getLogger(__name__)
         #self.logger.debug(f"find my order Logger:  {self.logger} on {__name__} version: {__version__}")
-        self.settings = settings
-        
        # translation = translator.translate("ACHETER")
         
     def search(self,
                message_to_parse: str = None,
                ):
       try:
-        myDict = settings.IDENTIFIER
+        print(settings.FMO_IDENTIFIER)
+        myDict = settings.FMO_IDENTIFIER
 
         for word in myDict:
             self.logger.debug(f"Loop check {word}")
@@ -49,13 +47,11 @@ class findmyorder:
     #            ):
     #   return
 
-
-
     def identify(self,
                mystring: str = None,
                ):
       try:
-        self.logger.debug(f"identify_order_element for {order_string}")
+        self.logger.debug(f"identify_order_element for {mystring}")
         if (self.search(mystring)):
             order_raw = mystring.split()
             self.logger.info(msg=f"Order identified: {order_raw}")
