@@ -1,8 +1,0 @@
-IDENTIFIER = ["BUY", "SELL", "buy", "sell","Buy","Sell"]
-
-[default]
-DIRECTION_1 = ["BUY", "buy", "Buy","long","LONG","Long"]
-# DIRECTION_2 = ["SELL", "sell", "Sell","short","SHORT","Short"]
-
-
-# [testing]
