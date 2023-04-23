@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.7 (2023-04-23)
+### Fix
+* Import ([`3e4643c`](https://github.com/mraniki/findmyorder/commit/3e4643cc204224e60aab46e6a290e9cccad34408))
+
 ## v0.0.6 (2023-04-23)
 ### Fix
 * Settings ([`909dbf7`](https://github.com/mraniki/findmyorder/commit/909dbf7d2d1ab81cfb73ceb0df6960cdfd995eb1))
