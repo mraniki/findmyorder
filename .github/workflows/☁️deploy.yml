@@ -54,7 +54,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: mraniki/dxsp
+          images: mraniki/findmyorder
           tags: latest
       
       - name: Build and push Docker image
