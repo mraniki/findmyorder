@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.3 (2023-04-23)
+### Fix
+* Build workflow and lint action ([`3e434a2`](https://github.com/mraniki/findmyorder/commit/3e434a27321aca9c0755d6e58746012a4d49b53d))
+* Import ([`5703a95`](https://github.com/mraniki/findmyorder/commit/5703a956de562c7468d52e90d84878d3b16db710))
+
 ## v0.0.2 (2023-04-23)
 ### Fix
 * Dependency ([`3cac1ee`](https://github.com/mraniki/findmyorder/commit/3cac1ee699739ae2902af691835c24af2364dbcf))
