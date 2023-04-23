@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.6 (2023-04-23)
+### Fix
+* Settings ([`909dbf7`](https://github.com/mraniki/findmyorder/commit/909dbf7d2d1ab81cfb73ceb0df6960cdfd995eb1))
+* Settings issue ([`43cc509`](https://github.com/mraniki/findmyorder/commit/43cc5090edcc4aa3e40c143e7744757228161788))
+
 ## v0.0.5 (2023-04-23)
 ### Fix
 * Typo ([`d194760`](https://github.com/mraniki/findmyorder/commit/d1947607dda80bbc4eb64b0841e01f3f9d02821c))
