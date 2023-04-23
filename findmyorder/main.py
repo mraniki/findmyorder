@@ -1,9 +1,10 @@
 import asyncio, logging, re
 
-from config import settings
+from findmyorder.config import settings
 from findmyorder import __version__
 
 # import pyparsing as pp
+
 # from translate import Translator
 # translator = Translator(to_lang="en")
 
