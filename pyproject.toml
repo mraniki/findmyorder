@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "findmyorder"
-version = "0.0.1"
+version = "0.0.2"
 description = "A python package to identify order and parse data"
 authors = ["mraniki <8766259+mraniki@users.noreply.github.com>"]
 license = "MIT License"
@@ -15,7 +15,6 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = ">=3.9,<3.11"
 asyncio = "*"
-re = "*"
 pyparsing = "*"
 translate = "*"
 

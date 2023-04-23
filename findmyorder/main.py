@@ -1,11 +1,10 @@
-import os, asyncio, logging, re
-import pyparsing as pp
-
-# from translate import Translator
+import asyncio, logging, re
 
 from config import settings
 from findmyorder import __version__
 
+# import pyparsing as pp
+# from translate import Translator
 # translator = Translator(to_lang="en")
 
 
@@ -14,8 +13,8 @@ class findmyorder:
     def __init__(self,
                  ):
         self.logger =  logging.getLogger(__name__)
-        self.logger.debug(f"find my order Logger:  {self.logger} on {__name__} version: {__version__}")
-
+        #self.logger.debug(f"find my order Logger:  {self.logger} on {__name__} version: {__version__}")
+        self.settings = settings
         
        # translation = translator.translate("ACHETER")
         
@@ -26,10 +25,11 @@ class findmyorder:
         myDict = settings.DIRECTION
 
         for word in myDict:
+            self.logger.debug(f"Loop check {word}")
             if re.search(word, message_to_parse):
               self.logger.debug(f"found {word} in {message_to_parse}")
               return True
-        self.logger.debug(f"not word identified in {message_to_parse}")
+        self.logger.debug(f"no word identified in {message_to_parse}")
         return False
       except Exception as e:
         self.logger.debug(f"error identify {e}")
@@ -39,6 +39,7 @@ class findmyorder:
                order_string: str = None,
                ):
       try:
+        self.logger.debug(f"identify order for {order_string}")
         if (self.search(order_string)):
             order = order_string.split()
           # self.logger.info(msg=f"Order parsing: {order}")
