@@ -39,7 +39,7 @@ class findmyorder:
                order_string: str = None,
                ):
       try:
-        print(order_string)
+        self.logger.debug(f"identify order for {order_string}")
         if (self.search(order_string)):
             order = order_string.split()
           # self.logger.info(msg=f"Order parsing: {order}")
