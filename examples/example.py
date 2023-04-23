@@ -12,7 +12,8 @@ from findmyorder import findmyorder
 async def main():
     while True:
         fmo = findmyorder()
-
+        print(fmo)
+        
         msg_test = "this is a test"
 
         order = fmo.search(msg_test)
