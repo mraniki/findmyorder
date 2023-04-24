@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.18 (2023-04-24)
+### Fix
+* Fmo ([`97d4b61`](https://github.com/mraniki/findmyorder/commit/97d4b6121f710a6ae106cfb8bd2765b718153a84))
+
+## v0.0.17 (2023-04-24)
+### Fix
+* Example import ([`f210c48`](https://github.com/mraniki/findmyorder/commit/f210c48e91a5a739c755d14572b8f9841c0f49f1))
+
 ## v0.0.16 (2023-04-24)
 ### Fix
 * Example plus ([`bc45b27`](https://github.com/mraniki/findmyorder/commit/bc45b27398e6252e438250c7564b90aa11e8b463))
