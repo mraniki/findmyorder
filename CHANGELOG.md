@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.15 (2023-04-24)
+### Fix
+* Example ([`6b699ed`](https://github.com/mraniki/findmyorder/commit/6b699edec7dba745b4bef11472770c52af489a6b))
+
 ## v0.0.14 (2023-04-24)
 ### Fix
 * Dynaconf typo ([`693c59f`](https://github.com/mraniki/findmyorder/commit/693c59f878437bbf643fd6241be5f708c249824f))
