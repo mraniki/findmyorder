@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.12 (2023-04-24)
+### Fix
+* Missing dependency ([`de71c18`](https://github.com/mraniki/findmyorder/commit/de71c1850423e4ceb300f36f87490f1ec069cfae))
+
 ## v0.0.11 (2023-04-24)
 ### Fix
 * Refactor import statement in main.py file. ([`04b191c`](https://github.com/mraniki/findmyorder/commit/04b191c2808fe0aa9b66630171e0c942ab2a8163))
