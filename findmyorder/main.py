@@ -2,7 +2,7 @@ import asyncio, logging, re
 from datetime import datetime
 
 from findmyorder import __version__
-from findmyorder.config import settings
+from findmyorder.config import fmosettings
 
 # import pyparsing as pp
 
