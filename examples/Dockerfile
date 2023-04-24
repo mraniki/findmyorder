@@ -6,9 +6,10 @@ FROM python:3.10
 WORKDIR /app
 
 # install dependencies
-RUN pip install findmyorder
+RUN pip install dynaconf
 RUN pip install fastapi
 RUN pip install uvicorn
+RUN pip install findmyorder
 
 # copy the content of the local src directory to the working directory
 COPY ./examples .
