@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 from findmyorder import __version__
-from findmyorder.config import settings
+from config import settings
 
 # import pyparsing as pp
 
