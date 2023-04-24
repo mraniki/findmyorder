@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.11 (2023-04-24)
+### Fix
+* Refactor import statement in main.py file. ([`04b191c`](https://github.com/mraniki/findmyorder/commit/04b191c2808fe0aa9b66630171e0c942ab2a8163))
+
 ## v0.0.10 (2023-04-23)
 ### Fix
 * Add port 8080 to uvicorn.run in example.py. ([`dab019c`](https://github.com/mraniki/findmyorder/commit/dab019c066dcaaeb469886a9a9108af825491364))
