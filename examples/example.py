@@ -9,8 +9,7 @@ logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = logging.getLogger(__name__)
 logger.info(msg=f"log from settings: {settings.loglevel}")
 
-from findmyorder import findmyorder
-from findmyorder.config import fmosettings
+from findmyorder import findmyorder, fmosettings
 
 async def main():
     while True:
