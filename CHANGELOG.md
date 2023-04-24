@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.20 (2023-04-24)
+### Fix
+* Order dict ([`06c9b4d`](https://github.com/mraniki/findmyorder/commit/06c9b4d78d7be392ff7dc3ef34daa767eee266ca))
+* Settings fix at module level ([`0028b1a`](https://github.com/mraniki/findmyorder/commit/0028b1a5d18eed3e98d2be5dc782758e49f24163))
+
 ## v0.0.19 (2023-04-24)
 ### Fix
 * Example login ([`637b252`](https://github.com/mraniki/findmyorder/commit/637b252e50ae1001f9222c5d3ec11a5172685ecf))
