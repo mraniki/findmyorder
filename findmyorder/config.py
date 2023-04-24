@@ -1,7 +1,7 @@
 
 from dynaconf import Dynaconf
 
-fmosettings = Dynaconf(
+settings = Dynaconf(
     envvar_prefix="FMO",
     settings_files=['findmyorder/settings.toml', '.secrets.toml'],
     load_dotenv=True,
