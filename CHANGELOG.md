@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.14 (2023-04-24)
+### Fix
+* Dynaconf typo ([`693c59f`](https://github.com/mraniki/findmyorder/commit/693c59f878437bbf643fd6241be5f708c249824f))
+
 ## v0.0.13 (2023-04-24)
 ### Fix
 * Dockerfile and example req ([`d3be0e4`](https://github.com/mraniki/findmyorder/commit/d3be0e49170e64fae228e388409adb7d3dd076ba))
