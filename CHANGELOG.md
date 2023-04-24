@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.21 (2023-04-24)
+### Fix
+* Update example.py and settings.toml files ([`e9fdd7a`](https://github.com/mraniki/findmyorder/commit/e9fdd7a757929bb19029af87426b813dd737f761))
+
 ## v0.0.20 (2023-04-24)
 ### Fix
 * Order dict ([`06c9b4d`](https://github.com/mraniki/findmyorder/commit/06c9b4d78d7be392ff7dc3ef34daa767eee266ca))
