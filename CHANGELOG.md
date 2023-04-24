@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.13 (2023-04-24)
+### Fix
+* Dockerfile and example req ([`d3be0e4`](https://github.com/mraniki/findmyorder/commit/d3be0e49170e64fae228e388409adb7d3dd076ba))
+
 ## v0.0.12 (2023-04-24)
 ### Fix
 * Missing dependency ([`de71c18`](https://github.com/mraniki/findmyorder/commit/de71c1850423e4ceb300f36f87490f1ec069cfae))
