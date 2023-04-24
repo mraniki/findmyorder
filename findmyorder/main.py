@@ -1,8 +1,6 @@
 import asyncio, logging, re
 from datetime import datetime
 
-
-
 from findmyorder import __version__
 from config import settings
 
