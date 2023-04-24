@@ -6,6 +6,8 @@ import uvicorn
 
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level='DEBUG')
 logger = logging.getLogger(__name__)
+from config import settings
+print(settings.loglevel)
 
 from findmyorder import findmyorder
 
