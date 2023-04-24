@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 logger.info(msg=f"log from settings: {settings.loglevel}")
 
 from findmyorder import findmyorder
-from findmyorder.config import settings
+from findmyorder.config import fmosettings
 
 async def main():
     while True:
