@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.16 (2023-04-24)
+### Fix
+* Example plus ([`bc45b27`](https://github.com/mraniki/findmyorder/commit/bc45b27398e6252e438250c7564b90aa11e8b463))
+
 ## v0.0.15 (2023-04-24)
 ### Fix
 * Example ([`6b699ed`](https://github.com/mraniki/findmyorder/commit/6b699edec7dba745b4bef11472770c52af489a6b))
