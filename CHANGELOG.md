@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.19 (2023-04-24)
+### Fix
+* Example login ([`637b252`](https://github.com/mraniki/findmyorder/commit/637b252e50ae1001f9222c5d3ec11a5172685ecf))
+
 ## v0.0.18 (2023-04-24)
 ### Fix
 * Fmo ([`97d4b61`](https://github.com/mraniki/findmyorder/commit/97d4b6121f710a6ae106cfb8bd2765b718153a84))
