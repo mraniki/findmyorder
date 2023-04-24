@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.22 (2023-04-24)
+### Fix
+* Refactor config settings import ([`3beaf95`](https://github.com/mraniki/findmyorder/commit/3beaf95b52a1bbdbc0e25e7de89df768c6db0cbd))
+* Refactor imports for findmyorder and fmosettings modules ([`7f83b01`](https://github.com/mraniki/findmyorder/commit/7f83b015b47fa68c9a0386e9d67ed935d26993e9))
+
 ## v0.0.21 (2023-04-24)
 ### Fix
 * Update example.py and settings.toml files ([`e9fdd7a`](https://github.com/mraniki/findmyorder/commit/e9fdd7a757929bb19029af87426b813dd737f761))
