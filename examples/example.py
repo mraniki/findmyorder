@@ -16,11 +16,11 @@ async def main():
         fmo = findmyorder()
         print(fmo)
         
-        msg_test = "this is a test"
+        msg_order = "this is a test"
 
-        order = fmo.search(msg_test)
+        order = fmo.search(msg_order)
         logger.info(msg=f"Order identified: {order}")
-        order = fmo.identify(msg_test)
+        order = fmo.identify(msg_order)
         logger.info(msg=f"Order identified: {order}")
 
         msg_order = "buy btc"
@@ -30,7 +30,14 @@ async def main():
         order = fmo.identify(msg_order)
         logger.info(msg=f"Order identified: {order}")
 
-        await asyncio.sleep(3600)
+        msg_order = "SELL BTC 1%"
+
+        order = fmo.search(msg_order)
+        logger.info(msg=f"Order identified: {order}")
+        order = fmo.identify(msg_order)
+        logger.info(msg=f"Order identified: {order}")
+
+        await asyncio.sleep(10000)
 
 app = FastAPI()
 
