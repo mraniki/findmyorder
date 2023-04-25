@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.26 (2023-04-25)
+### Fix
+* Refactor findmyorder class to use fully qualified settings path ([`2bef3cf`](https://github.com/mraniki/findmyorder/commit/2bef3cf36c74308dbe8804f20d1b525a2b4e9239))
+
 ## v0.0.25 (2023-04-25)
 ### Fix
 * Default settings ([`e636298`](https://github.com/mraniki/findmyorder/commit/e6362983c849c191fb2514e15695eaf46ff87d7d))
