@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.25 (2023-04-25)
+### Fix
+* Default settings ([`e636298`](https://github.com/mraniki/findmyorder/commit/e6362983c849c191fb2514e15695eaf46ff87d7d))
+
 ## v0.0.24 (2023-04-25)
 ### Fix
 * Remove unnecessary validators from config.py file. ([`a199e77`](https://github.com/mraniki/findmyorder/commit/a199e77ad4e3f1506702f4a36f77a8a001f7ea4d))
