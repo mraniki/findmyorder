@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.23 (2023-04-25)
+### Fix
+* Reorg settings ([`7d96fdc`](https://github.com/mraniki/findmyorder/commit/7d96fdcc9a5f0d59fa526b1e249df01976e1b597))
+* Multiple config layer ([`1ca0841`](https://github.com/mraniki/findmyorder/commit/1ca084137fcfae28e9f11f1f22c4b2a132d2d4a6))
+
 ## v0.0.22 (2023-04-24)
 ### Fix
 * Refactor config settings import ([`3beaf95`](https://github.com/mraniki/findmyorder/commit/3beaf95b52a1bbdbc0e25e7de89df768c6db0cbd))
