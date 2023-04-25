@@ -22,8 +22,8 @@ class findmyorder:
                message_to_parse: str = None,
                ):
       try:
-        print(settings.identifier)
-        myDict = settings.identifier
+        print(findmyorder.config.settings.identifier)
+        myDict = findmyorder.config.settings.identifier
 
         for word in myDict:
             self.logger.debug(f"Loop check {word}")
