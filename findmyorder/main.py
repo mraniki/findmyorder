@@ -23,7 +23,7 @@ class findmyorder:
                ):
       try:
         print(findmyorder.config.settings.identifier)
-        myDict = findmyorder.config.settings.identifier
+        myDict = settings.identifier
 
         for word in myDict:
             self.logger.debug(f"Loop check {word}")

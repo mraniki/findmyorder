@@ -1,6 +1,7 @@
 
 from dynaconf import Dynaconf, Validator
 
+
 settings = Dynaconf(
     envvar_prefix="FMO",
     settings_files=['settings.toml', '.secrets.toml'],
