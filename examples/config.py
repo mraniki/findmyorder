@@ -7,4 +7,7 @@ settings = Dynaconf(
     load_dotenv=True,
     environments=True,
     default_env="default",
+    validators=[
+        Validator("loglevel", default="INFO", apply_default_on_none=True),
+        ]
 )
