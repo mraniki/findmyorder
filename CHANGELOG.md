@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.28 (2023-04-25)
+### Fix
+* Add findmyorder and settings import to example.py ([`35831f5`](https://github.com/mraniki/findmyorder/commit/35831f522b2eed020779122a444a0873c10196a2))
+
 ## v0.0.27 (2023-04-25)
 ### Fix
 * Refactor config and main files to use settings object ([`1ace495`](https://github.com/mraniki/findmyorder/commit/1ace49593041b31320dd9c229991786b6a270860))
