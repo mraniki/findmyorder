@@ -3,7 +3,7 @@ import asyncio, logging
 
 from fastapi import FastAPI
 import uvicorn
-from config import settings
+#from config import settings
 
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=settings.loglevel)
 logger = logging.getLogger(__name__)
