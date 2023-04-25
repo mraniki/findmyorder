@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.24 (2023-04-25)
+### Fix
+* Remove unnecessary validators from config.py file. ([`a199e77`](https://github.com/mraniki/findmyorder/commit/a199e77ad4e3f1506702f4a36f77a8a001f7ea4d))
+
 ## v0.0.23 (2023-04-25)
 ### Fix
 * Reorg settings ([`7d96fdc`](https://github.com/mraniki/findmyorder/commit/7d96fdcc9a5f0d59fa526b1e249df01976e1b597))
