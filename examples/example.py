@@ -3,14 +3,13 @@ import asyncio, logging
 
 from fastapi import FastAPI
 import uvicorn
-from config import settings as example_settings
+from config import settings
 
-logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=example_settings.loglevel)
+logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=settings.loglevel)
 logger = logging.getLogger(__name__)
 logger.info(msg=f"log from settings: {settings.loglevel}")
 
 from findmyorder import findmyorder
-from findmyorder.config import settings
 
 async def main():
     while True:
