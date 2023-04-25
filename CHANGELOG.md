@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.27 (2023-04-25)
+### Fix
+* Refactor config and main files to use settings object ([`1ace495`](https://github.com/mraniki/findmyorder/commit/1ace49593041b31320dd9c229991786b6a270860))
+* Remove config.py and settings.toml, comment out config import in example.py. ([`a698c52`](https://github.com/mraniki/findmyorder/commit/a698c52898cc9879d3be9d6621e695873ff057dd))
+
 ## v0.0.26 (2023-04-25)
 ### Fix
 * Refactor findmyorder class to use fully qualified settings path ([`2bef3cf`](https://github.com/mraniki/findmyorder/commit/2bef3cf36c74308dbe8804f20d1b525a2b4e9239))
