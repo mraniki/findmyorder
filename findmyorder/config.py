@@ -1,5 +1,5 @@
 
-from dynaconf import Dynaconf
+from dynaconf import Dynaconf, Validator
 
 settings = Dynaconf(
     envvar_prefix="FMO",
