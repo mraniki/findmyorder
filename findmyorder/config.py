@@ -24,4 +24,4 @@ settings = Dynaconf(
 )
 
 
-settings.validators.validate()
+# settings.validators.validate()
