@@ -10,7 +10,6 @@ settings = Dynaconf(
     settings_files=[
         os.path.join(ROOT, "default_settings.toml"),
         os.path.join(ROOT, "settings.toml"),
-        os.path.join(ROOT, "testing_settings.toml"),
         os.path.join(ROOT, ".secrets.toml"),
     ],
     # settings_files=['settings.toml', '.secrets.toml'],

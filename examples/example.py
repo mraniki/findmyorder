@@ -1,14 +1,11 @@
-# import sys
-# sys.path.append('..')
-
 import asyncio, logging
-logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level='DEBUG')
-logger =  logging.getLogger(__name__)
-
 from fastapi import FastAPI
 import uvicorn
 
-from findmyorder.main import findmyorder
+logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level='DEBUG')
+logger =  logging.getLogger(__name__)
+
+from findmyorder import findmyorder
 
 async def main():
     while True:
