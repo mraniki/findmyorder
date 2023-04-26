@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.30 (2023-04-26)
+### Fix
+* Config ([`b596e6b`](https://github.com/mraniki/findmyorder/commit/b596e6b31f75e70e8f0f2f9f20047798dfa4e0b7))
+
 ## v0.0.29 (2023-04-26)
 ### Fix
 * Settings ([`d637c73`](https://github.com/mraniki/findmyorder/commit/d637c732c303f117dff9d296558fe77be9eaf8b6))
