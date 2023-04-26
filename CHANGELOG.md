@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.2 (2023-04-26)
+### Fix
+* Semantic check ([`6d6a65b`](https://github.com/mraniki/findmyorder/commit/6d6a65baafbea49f1e60944e196b1f24313c93c8))
+* More test cases in example file ([`b76bf6f`](https://github.com/mraniki/findmyorder/commit/b76bf6fa437e54085530b157573dc2ad130b1fb8))
+* Example file ([`1416baf`](https://github.com/mraniki/findmyorder/commit/1416baf1c6ef1ba3e76939aadf6ddee151ed2820))
+* Typo and example version ([`63944ab`](https://github.com/mraniki/findmyorder/commit/63944abc95db0d4dd6327ecce0e0c17076677331))
+
 ## v1.0.1 (2023-04-26)
 ### Fix
 * Typo ([`cf07934`](https://github.com/mraniki/findmyorder/commit/cf0793405058368e32ab480927a01de29ffa7c93))
