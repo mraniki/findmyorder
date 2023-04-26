@@ -31,6 +31,7 @@ class findmyorder:
     def identify_order(self,mystring: str = None,):
       # Define the grammar for parsing orders
       action = oneOf("BUY SELL LONG SHORT")
+      print(settings.identifier)
       currency_pair = Word(alphas, exact=6)
       market = Optional(Word(alphas, exact=4))
       leverage = Regex(r'Leverage: \w+ \((\d+(\.\d+)?X)\)')('leverage')
@@ -57,7 +58,7 @@ class findmyorder:
 
     def get_order(self,mystring: str = None,):
       try:
-        self.logger.debug(f"identify_order_element for {mystring}")
+        self.logger.debug(f"get_order for {mystring}")
 
         if (self.search(mystring)):
 
@@ -84,6 +85,6 @@ class findmyorder:
             return order
 
       except Exception as e:
-          self.logger.debug(f"error identify_order_element {e}")
+          self.logger.debug(f"error {e}")
           return
 

@@ -2,10 +2,12 @@ import asyncio, logging
 from fastapi import FastAPI
 import uvicorn
 
+from findmyorder import findmyorder
+from findmyorder import __version__
+
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level='DEBUG')
 logger =  logging.getLogger(__name__)
-
-from findmyorder import findmyorder
+logger.debug(f"findmyorder logger: {__name__} version: {__version__}")
 
 async def main():
     while True:
@@ -16,23 +18,26 @@ async def main():
             msg_order = "this is a test"
 
             order = fmo.search(msg_order)
-            logger.debug(f"Order identified: {order}")
+            logger.debug(f"search 1: {order}")
             order = fmo.get_order(msg_order)
-            logger.debug(f"Order identified: {order}")
+            logger.debug(f"get_order 1: {order}")
 
             msg_order = "buy btc"
 
-            order = fmo.search(msg_order)
-            logger.debug(f"Order identified: {order}")
             order = fmo.get_order(msg_order)
-            logger.debug(msg=f"Order identified: {order}")
+            logger.debug(msg=f"get_order 2: {order}")
 
             msg_order = "SELL BTC 1%"
-
-            order = fmo.search(msg_order)
-            logger.debug(f"Order identified: {order}")
             order = fmo.get_order(msg_order)
-            logger.debug(f"Order identified: {order}")
+            logger.debug(f"get_order 3 : {order}")
+
+            msg_order = "SELL BTCUSDT 1%"
+            order = fmo.get_order(msg_order)
+            logger.debug(f"get_order 4 : {order}")
+
+            msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
+            order = fmo.get_order(msg_order)
+            logger.debug(f"get_order 5 : {order}")
 
 
             await asyncio.sleep(10000)
