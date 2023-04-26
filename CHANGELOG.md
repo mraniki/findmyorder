@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.29 (2023-04-26)
+### Fix
+* Settings ([`d637c73`](https://github.com/mraniki/findmyorder/commit/d637c732c303f117dff9d296558fe77be9eaf8b6))
+* Settings ([`0d35ebe`](https://github.com/mraniki/findmyorder/commit/0d35ebe4f5006867320c3b8d4bbf93ac9c5c86bb))
+* Improved example ([`6d2793d`](https://github.com/mraniki/findmyorder/commit/6d2793d1ea0da0d200ead956d525c7568309d6a4))
+
 ## v0.0.28 (2023-04-25)
 ### Fix
 * Add findmyorder and settings import to example.py ([`35831f5`](https://github.com/mraniki/findmyorder/commit/35831f522b2eed020779122a444a0873c10196a2))
