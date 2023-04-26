@@ -2,10 +2,12 @@ import asyncio, logging
 from fastapi import FastAPI
 import uvicorn
 
+from findmyorder import findmyorder
+from findmyorder import __version__
+
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level='DEBUG')
 logger =  logging.getLogger(__name__)
-
-from findmyorder import findmyorder
+logger.debug(f"findmyorder logger: {__name__} version: {__version__}")
 
 async def main():
     while True:
