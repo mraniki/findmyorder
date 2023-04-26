@@ -1,9 +1,9 @@
 
-name: 🐍Build
+name: 🦎BuildDev
 
 on:
   push:
-    branches: [ dev"]
+    branches: [ "dev"]
   pull_request:
    branches: [ "dev"]
    paths-ignore:
