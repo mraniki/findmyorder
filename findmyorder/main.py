@@ -14,7 +14,7 @@ class findmyorder:
 
     def search(self,message_to_parse: str = None,):
       try:
-        print(settings.identifier)
+      #  print(settings.identifier)
         myDict = settings.identifier
 
         for word in myDict:
@@ -62,7 +62,7 @@ class findmyorder:
 
         if (self.search(mystring)):
 
-            parsed_order = identify_order(mystring)
+            parsed_order = self.identify_order(mystring)
             self.logger.info(msg=f"parsed_order: {parsed_order}")
 
             # order_raw = mystring.split()
