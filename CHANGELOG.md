@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.1 (2023-04-26)
+### Fix
+* Typo ([`cf07934`](https://github.com/mraniki/findmyorder/commit/cf0793405058368e32ab480927a01de29ffa7c93))
+
 ## v1.0.0 (2023-04-26)
 
 
