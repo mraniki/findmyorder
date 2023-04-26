@@ -1,7 +1,6 @@
 import os
 from dynaconf import Dynaconf, Validator
 
-
 ROOT = os.path.dirname(__file__)
 
 settings = Dynaconf(

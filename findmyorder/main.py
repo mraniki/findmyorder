@@ -1,12 +1,9 @@
 import asyncio, logging, re
 from datetime import datetime
+from .config import settings
 
-from findmyorder import __version__
-from findmyorder.config import settings
-print(findmyorder.__version__)
 
 # import pyparsing as pp
-
 # from translate import Translator
 # translator = Translator(to_lang="en")
 
@@ -23,7 +20,7 @@ class findmyorder:
                message_to_parse: str = None,
                ):
       try:
-        print(findmyorder.config.settings.identifier)
+        print(settings.identifier)
         myDict = settings.identifier
 
         for word in myDict:
