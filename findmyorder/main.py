@@ -31,6 +31,7 @@ class findmyorder:
     def identify_order(self,mystring: str = None,):
       # Define the grammar for parsing orders
       action = oneOf("BUY SELL LONG SHORT")
+      print(settings.identifier)
       currency_pair = Word(alphas, exact=6)
       market = Optional(Word(alphas, exact=4))
       leverage = Regex(r'Leverage: \w+ \((\d+(\.\d+)?X)\)')('leverage')
