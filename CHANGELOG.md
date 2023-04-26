@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.31 (2023-04-26)
+### Fix
+* Added version in example ([`fc7659f`](https://github.com/mraniki/findmyorder/commit/fc7659f5119a3b3f2e8d7a0eacb815789d2fde57))
+* Init ([`34d5c08`](https://github.com/mraniki/findmyorder/commit/34d5c083dbf15a71f57d008ae311e7dffa525196))
+
 ## v0.0.30 (2023-04-26)
 ### Fix
 * Config ([`b596e6b`](https://github.com/mraniki/findmyorder/commit/b596e6b31f75e70e8f0f2f9f20047798dfa4e0b7))
