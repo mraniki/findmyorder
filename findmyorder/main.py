@@ -65,24 +65,24 @@ class findmyorder:
             parsed_order = identify_order(mystring)
             self.logger.info(msg=f"parsed_order: {parsed_order}")
 
-            order_raw = mystring.split()
-            self.logger.info(msg=f"Order identified: {order_raw}")
+            # order_raw = mystring.split()
+            # self.logger.info(msg=f"Order identified: {order_raw}")
 
-            order = {}
-            order['market'] = 'Any'
-            order['exchange'] = 'Any'
-            order['timestamp'] = datetime.utcnow()
-            order['leverage'] = 1
-            order['ordertype'] = 'spot'
-            order['direction'] = 'BUY'
-            order['symbol'] = 'EURUSD'
-            order['quantity'] = 10
-            order['amount'] = 100
-            order['stoploss'] = 1000
-            order['takeprofit'] = {'tp1':1, 'tp2':10, 'tp3':100, 'tp4':1000, 'tp5':1000}
-            order['comments'] = 'findmyorder'
+            # order = {}
+            # order['market'] = 'Any'
+            # order['exchange'] = 'Any'
+            # order['timestamp'] = datetime.utcnow()
+            # order['leverage'] = 1
+            # order['ordertype'] = 'spot'
+            # order['direction'] = 'BUY'
+            # order['symbol'] = 'EURUSD'
+            # order['quantity'] = 10
+            # order['amount'] = 100
+            # order['stoploss'] = 1000
+            # order['takeprofit'] = {'tp1':1, 'tp2':10, 'tp3':100, 'tp4':1000, 'tp5':1000}
+            # order['comments'] = 'findmyorder'
             
-            return order
+            return parsed_order
 
       except Exception as e:
           self.logger.debug(f"error {e}")
