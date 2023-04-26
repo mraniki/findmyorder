@@ -7,3 +7,7 @@ def test_search():
     fmo = findmyorder()
     assert fmo.search('buy btc') == True
     assert fmo.search('hello') == False
+
+
+def test_hello():
+    print("Hello, World!")
