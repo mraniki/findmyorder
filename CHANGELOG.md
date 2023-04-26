@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.4 (2023-04-26)
+### Fix
+* Identify order function ([`2dcae51`](https://github.com/mraniki/findmyorder/commit/2dcae511303645dc2a8a1314e263dce402f40f40))
+
 ## v1.0.3 (2023-04-26)
 ### Fix
 * Identify order function ([`49281fe`](https://github.com/mraniki/findmyorder/commit/49281fe890e8b1a888fd5a87fc6b44796f4f9751))
