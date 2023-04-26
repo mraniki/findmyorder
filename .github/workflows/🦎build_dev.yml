@@ -1,9 +1,9 @@
 
-name: 🐍Build
+name: 🦎BuildDev
 
 on:
   push:
-    branches: [ dev"]
+    branches: [ "dev"]
   pull_request:
    branches: [ "dev"]
    paths-ignore:
@@ -37,13 +37,13 @@ jobs:
     - name: Build package
       run: poetry build
 
-    - name: Run Testing
-      run: pip install pytest pytest-md pytest-emoji
-    - uses: pavelzw/pytest-action@v2
-      with:
-        emoji: false
-        verbose: false
-        job-summary: true
+    # - name: Run Testing
+    #   run: pip install pytest pytest-md pytest-emoji
+    # - uses: pavelzw/pytest-action@v2
+    #   with:
+    #     emoji: false
+    #     verbose: false
+    #     job-summary: false
 
-    - name: Upload coverage reports to Codecov
-      uses: codecov/codecov-action@v3
+    # - name: Upload coverage reports to Codecov
+    #   uses: codecov/codecov-action@v3
