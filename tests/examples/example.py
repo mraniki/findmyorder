@@ -17,22 +17,23 @@ async def main():
 
             order = fmo.search(msg_order)
             logger.debug(f"Order identified: {order}")
-            order = fmo.identify(msg_order)
+            order = fmo.get_order(msg_order)
             logger.debug(f"Order identified: {order}")
 
             msg_order = "buy btc"
 
             order = fmo.search(msg_order)
             logger.debug(f"Order identified: {order}")
-            order = fmo.identify(msg_order)
+            order = fmo.get_order(msg_order)
             logger.debug(msg=f"Order identified: {order}")
 
             msg_order = "SELL BTC 1%"
 
             order = fmo.search(msg_order)
             logger.debug(f"Order identified: {order}")
-            order = fmo.identify(msg_order)
+            order = fmo.get_order(msg_order)
             logger.debug(f"Order identified: {order}")
+
 
             await asyncio.sleep(10000)
         except Exception as e:
