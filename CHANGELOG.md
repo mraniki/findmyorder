@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.3 (2023-04-26)
+### Fix
+* Identify order function ([`49281fe`](https://github.com/mraniki/findmyorder/commit/49281fe890e8b1a888fd5a87fc6b44796f4f9751))
+
 ## v1.0.2 (2023-04-26)
 ### Fix
 * Semantic check ([`6d6a65b`](https://github.com/mraniki/findmyorder/commit/6d6a65baafbea49f1e60944e196b1f24313c93c8))
