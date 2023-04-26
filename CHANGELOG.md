@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.0 (2023-04-26)
+
+
 ## v0.0.33 (2023-04-26)
 ### Fix
 * Pr check action ([`b570b49`](https://github.com/mraniki/findmyorder/commit/b570b4939c64f994e04fc7ec26ab9b525b0f2983))
