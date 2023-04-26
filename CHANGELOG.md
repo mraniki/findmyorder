@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v0.0.32 (2023-04-26)
+### Fix
+* Structure ([`77b9435`](https://github.com/mraniki/findmyorder/commit/77b9435ab156bd973c128ee4ae11d24776f5ca1c))
+* Action ([`0df307c`](https://github.com/mraniki/findmyorder/commit/0df307cd1f5338eb5b6a3b06b08cc465295ec9b4))
+* Unit test ([`83874e5`](https://github.com/mraniki/findmyorder/commit/83874e5246be44c3ce111201231fd178ba59f354))
+* More settings cleanup ([`b520cd6`](https://github.com/mraniki/findmyorder/commit/b520cd6a7f7c7883d3430a68d4f289358e83e8ba))
+* Action ([`428dd55`](https://github.com/mraniki/findmyorder/commit/428dd55cb1421e128ac0cc99588e6235f51e5a3a))
+* Structure ([`8a2259e`](https://github.com/mraniki/findmyorder/commit/8a2259ef6287ccda473d6e29569ee34b8ea97aff))
+* Gitignore ([`b4d632c`](https://github.com/mraniki/findmyorder/commit/b4d632ce8041ca71cad42b371d573ab526b3ae5e))
+
 ## v0.0.31 (2023-04-26)
 ### Fix
 * Added version in example ([`fc7659f`](https://github.com/mraniki/findmyorder/commit/fc7659f5119a3b3f2e8d7a0eacb815789d2fde57))
