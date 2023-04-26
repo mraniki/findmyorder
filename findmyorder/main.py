@@ -28,7 +28,7 @@ class findmyorder:
         self.logger.debug(f"error search {e}")
         return False
 
-    def identify_order(self,mystring: str = None,)
+    def identify_order(self,mystring: str = None,):
       # Define the grammar for parsing orders
       action = oneOf("BUY SELL LONG SHORT")
       currency_pair = Word(alphas, exact=6)
