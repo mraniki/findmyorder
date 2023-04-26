@@ -3,6 +3,7 @@ from datetime import datetime
 
 from findmyorder import __version__
 from findmyorder.config import settings
+print(findmyorder.__version__)
 
 # import pyparsing as pp
 
