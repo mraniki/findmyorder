@@ -85,6 +85,6 @@ class findmyorder:
             return parsed_order
 
       except Exception as e:
-          self.logger.debug(f"error {e}")
-          return
+          self.logger.debug(f"error get order {e}")
+          #return
 
