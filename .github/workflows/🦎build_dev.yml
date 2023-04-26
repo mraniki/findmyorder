@@ -43,7 +43,7 @@ jobs:
       with:
         emoji: false
         verbose: false
-        job-summary: true
+        job-summary: false
 
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3
