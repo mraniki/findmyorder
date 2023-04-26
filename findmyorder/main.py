@@ -3,10 +3,7 @@ from datetime import datetime
 
 from findmyorder.config import settings
 
-
-# import pyparsing as pp
-# from translate import Translator
-# translator = Translator(to_lang="en")
+from pyparsing import Word, alphas, nums, oneOf, Optional, Regex, Suppress, LineEnd, Group, delimitedList
 
 
 class findmyorder:
@@ -14,12 +11,8 @@ class findmyorder:
     def __init__(self,
                  ):
         self.logger =  logging.getLogger(__name__)
-        #self.logger.debug(f"find my order Logger:  {self.logger} on {__name__} version: {__version__}")
-       # translation = translator.translate("ACHETER")
-        
-    def search(self,
-               message_to_parse: str = None,
-               ):
+
+    def search(self,message_to_parse: str = None,):
       try:
         print(settings.identifier)
         myDict = settings.identifier
@@ -35,25 +28,45 @@ class findmyorder:
         self.logger.debug(f"error search {e}")
         return False
 
-    # def identify(self,
-    #            mystring: str = None,
-    #            ):
-    #     order_format = self.identify_order_format(mystring)
-    #     order_data = self.identify_order_element(mystring)
+    def identify_order(self,mystring: str = None,)
+      # Define the grammar for parsing orders
+      action = oneOf("BUY SELL LONG SHORT")
+      currency_pair = Word(alphas, exact=6)
+      market = Optional(Word(alphas, exact=4))
+      leverage = Regex(r'Leverage: \w+ \((\d+(\.\d+)?X)\)')('leverage')
+      percentage = Regex(r'\d+(\.\d+)?%')
+      quantity = Regex(r'\d+(\.\d+)?')('quantity')
+      stop_loss = Regex(r'sl=\d+')['stop_loss']
+      take_profit1 = Regex(r'tp1=\d+')['take_profit1']
+      take_profit2 = Regex(r'tp2=\d+')['take_profit2']
+      comment = Regex(r'comment=\w+')['comment']
 
-    # def identify_order_format(self,
-    #            mystring: str = None,
-    #            ):
-    #   return
+      # Define the complete order grammar
+      order_grammar = action('action') + currency_pair('currency_pair') + percentage('percentage') \
+                      + Optional(quantity) + Optional(stop_loss) + Optional(take_profit1) + Optional(take_profit2) + Optional(comment)
 
-    def identify(self,
-               mystring: str = None,
-               ):
+      try:
+          result = order_grammar.parseString(mystring)
+          self.logger.debug(f"order_template_parsing result {result}")
+          return results
+
+      except Exception as e:
+          self.logger.debug(f"error order_template {e}")
+          return
+
+
+    def get_order(self,mystring: str = None,):
       try:
         self.logger.debug(f"identify_order_element for {mystring}")
+
         if (self.search(mystring)):
+
+            parsed_order = identify_order(mystring)
+            self.logger.info(msg=f"parsed_order: {parsed_order}")
+
             order_raw = mystring.split()
             self.logger.info(msg=f"Order identified: {order_raw}")
+
             order = {}
             order['market'] = 'Any'
             order['exchange'] = 'Any'
@@ -68,20 +81,9 @@ class findmyorder:
             order['takeprofit'] = {'tp1':1, 'tp2':10, 'tp3':100, 'tp4':1000, 'tp5':1000}
             order['comments'] = 'findmyorder'
             
-            # if order_raw
-            #   order['direction'] = 'BUY'
             return order
 
       except Exception as e:
           self.logger.debug(f"error identify_order_element {e}")
           return
 
-
-
-
-# class order:
-
-#      def __init__(self,
-#                  ):
-#           self.direction = 'buy'
-#           self.symbol = 'EURUSD'
