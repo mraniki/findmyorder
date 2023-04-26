@@ -1,44 +1,46 @@
+# import sys
+# sys.path.append('..')
 
 import asyncio, logging
+logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level='DEBUG')
+logger =  logging.getLogger(__name__)
 
 from fastapi import FastAPI
 import uvicorn
 
-from findmyorder import findmyorder, settings
-
-
-logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=settings.loglevel)
-logger = logging.getLogger(__name__)
-logger.info(msg=f"log from settings: {settings.loglevel}")
-logger.info(msg=f"identifier from settings: {settings.identifier}")
+from findmyorder.main import findmyorder
 
 async def main():
     while True:
-        fmo = findmyorder()
-        print(fmo)
-        
-        msg_order = "this is a test"
+        try:
+            fmo = findmyorder()
+            print(fmo)
+            
+            msg_order = "this is a test"
 
-        order = fmo.search(msg_order)
-        logger.info(msg=f"Order identified: {order}")
-        order = fmo.identify(msg_order)
-        logger.info(msg=f"Order identified: {order}")
+            order = fmo.search(msg_order)
+            logger.debug(f"Order identified: {order}")
+            order = fmo.identify(msg_order)
+            logger.debug(f"Order identified: {order}")
 
-        msg_order = "buy btc"
+            msg_order = "buy btc"
 
-        order = fmo.search(msg_order)
-        logger.info(msg=f"Order identified: {order}")
-        order = fmo.identify(msg_order)
-        logger.info(msg=f"Order identified: {order}")
+            order = fmo.search(msg_order)
+            logger.debug(f"Order identified: {order}")
+            order = fmo.identify(msg_order)
+            logger.debug(msg=f"Order identified: {order}")
 
-        msg_order = "SELL BTC 1%"
+            msg_order = "SELL BTC 1%"
 
-        order = fmo.search(msg_order)
-        logger.info(msg=f"Order identified: {order}")
-        order = fmo.identify(msg_order)
-        logger.info(msg=f"Order identified: {order}")
+            order = fmo.search(msg_order)
+            logger.debug(f"Order identified: {order}")
+            order = fmo.identify(msg_order)
+            logger.debug(f"Order identified: {order}")
 
-        await asyncio.sleep(10000)
+            await asyncio.sleep(10000)
+        except Exception as e:
+            logger.error(f"error search {e}")
+
 
 app = FastAPI()
 
