@@ -20,6 +20,3 @@ settings = Dynaconf(
         Validator("identifier", default=["BUY", "SELL", "buy", "sell","Buy","Sell"],apply_default_on_none=True),
         ]
 )
-
-
-# settings.validators.validate()
