@@ -24,11 +24,6 @@ python-semantic-release = "*"
 pytest = "7.4"
 pytest-cov = "*"
 
-[pytest]
-filterwarnings =
-    ignore:.*U.*mode is deprecated:DeprecationWarning
-    
-
 [tool.pytest.ini_options]
 testpaths = "tests/"
 python_classes = [
