@@ -32,7 +32,7 @@ class findmyorder:
       self.logger.debug(f"identify_order for {mystring}")
       try:
         #parsing
-        action = oneOf(strs="BUY SELL LONG SHORT",caseless=True)
+        action = one_of(strs="BUY SELL LONG SHORT",caseless=True)
         currency_pair = Word(alphas, exact=6)
         market = Optional(Word(alphas, exact=4))
         percentage = Regex(r'\d+(\.\d+)?%')
