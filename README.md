@@ -3,7 +3,7 @@
 
 | <img width="200" alt="Logo" src="https://user-images.githubusercontent.com/8766259/233823991-cceaa05a-ff15-4796-a6bb-bcb3ee0d8859.jpg"> | A python package to identify and parse order for trade execution. |
 | ------------- | ------------- |
-|[![Pypi](https://badgen.net/badge/icon/findmyorder?icon=pypi&label)](https://pypi.org/project/findmyorder/) ![Version](https://img.shields.io/pypi/v/findmyorder)<br>  ![Pypi](https://img.shields.io/pypi/dm/findmyorder) [![🐍Build](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%90%8Dbuild.yml/badge.svg)](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%90%8Dbuild.yml) | Find order <br> Parse order |
+|[![Pypi](https://badgen.net/badge/icon/findmyorder?icon=pypi&label)](https://pypi.org/project/findmyorder/) ![Version](https://img.shields.io/pypi/v/findmyorder)<br>  ![Pypi](https://img.shields.io/pypi/dm/findmyorder)<br> [![🐍Build](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%90%8Dbuild.yml/badge.svg)](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%90%8Dbuild.yml) [![🧪Test](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%A7%AAtest_dev.yml/badge.svg)](https://github.com/mraniki/findmyorder/actions/workflows/%F0%9F%A7%AAtest_dev.yml) | Find order <br> Parse order |
 
 
 
