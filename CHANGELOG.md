@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.16 (2023-04-27)
+### Fix
+* Test yml ([`88ae2fc`](https://github.com/mraniki/findmyorder/commit/88ae2fcd66fa57a6b853eb98a6ed10d950c9a6c6))
+* New test ([`a05f3c4`](https://github.com/mraniki/findmyorder/commit/a05f3c450023a8b988a0df7c3acf3c4301153f56))
+
 ## v1.0.15 (2023-04-27)
 ### Fix
 * Grammar order ([`b6e7222`](https://github.com/mraniki/findmyorder/commit/b6e722266033ed02ed9d0b14b1994bd980e52dc3))
