@@ -8,10 +8,9 @@ settings = Dynaconf(
     project_root=os.path.dirname(ROOT),
     settings_files=[
         os.path.join(ROOT, "default_settings.toml"),
-        os.path.join(ROOT, "settings.toml"),
-        os.path.join(ROOT, ".secrets.toml"),
+        'settings.toml', 
+        '.secrets.toml'
     ],
-    # settings_files=['settings.toml', '.secrets.toml'],
     load_dotenv=True,
     environments=True,
     default_env="default",
@@ -20,6 +19,3 @@ settings = Dynaconf(
         Validator("identifier", default=["BUY", "SELL", "buy", "sell","Buy","Sell"],apply_default_on_none=True),
         ]
 )
-
-
-# settings.validators.validate()
