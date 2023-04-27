@@ -53,8 +53,7 @@ jobs:
       #              run test suite
       #----------------------------------------------
       - name: Test with pytest
-        run: |
-             python -m poetry run python -m pytest -v tests
+        run: poetry run pytest
         
       #----------------------------------------------
       #             upload coverage stats
