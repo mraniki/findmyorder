@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.12 (2023-04-27)
+### Fix
+* Regex in identify order function ([`ac59f15`](https://github.com/mraniki/findmyorder/commit/ac59f15d562ca5c58c4221068736e9bafc44a4da))
+* Cleanup ([`c97ebb9`](https://github.com/mraniki/findmyorder/commit/c97ebb9384ec18383fd2b7b51ee5bb23371766b9))
+
 ## v1.0.11 (2023-04-27)
 ### Fix
 * Settings structure ([`4cc4509`](https://github.com/mraniki/findmyorder/commit/4cc450953f3d43ad3d3c1bd716ecae4cb37cb22c))
