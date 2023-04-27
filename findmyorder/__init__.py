@@ -1,6 +1,6 @@
 __version__ = "1.0.18"
 
-from findmyorder.main import findmyorder
-from findmyorder.config import settings
+from .main import findmyorder
+from .config import settings
 
 
