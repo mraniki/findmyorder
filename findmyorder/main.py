@@ -47,7 +47,7 @@ class findmyorder:
         order_grammar = action('action') + currency_pair('currency_pair') \
         + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
-        result = order_grammar.parseString(mystring)
+        result = order_grammar.parse_string(instring=mystring,parse_all=false)
         self.logger.debug(f"identify_order result {result}")
         return results
 
