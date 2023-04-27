@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.18 (2023-04-27)
+### Fix
+* Test ([`9568eb4`](https://github.com/mraniki/findmyorder/commit/9568eb4175b3a74aecd3054894feb45c27623f66))
+* Test action ([`3330e4c`](https://github.com/mraniki/findmyorder/commit/3330e4c61ba5b52a6a23df200ec2f64838d4019c))
+
 ## v1.0.17 (2023-04-27)
 ### Fix
 * Test value ([`7a3f30e`](https://github.com/mraniki/findmyorder/commit/7a3f30eb10b3c8f966fea69fc6379e45841f346f))
