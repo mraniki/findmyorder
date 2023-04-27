@@ -1,6 +1,6 @@
 FROM python:3.10
 WORKDIR /app
-COPY ./tests/examples/ .
+COPY ./examples/ .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 EXPOSE 8443 8080
