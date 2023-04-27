@@ -34,7 +34,7 @@ class findmyorder:
         #parsing
         action = one_of(strs="BUY SELL LONG SHORT",caseless=True)
         currency_pair = Word(alphas, exact=6)
-        market = Optional(Word(alphas, exact=4))
+       # market = Optional(Word(alphas, exact=4))
         percentage = Regex(r'\d+(\.\d+)?%')
         # quantity = Regex(r'\d+(\.\d+)?')('quantity')
         # stop_loss = Regex(r'sl=\d+')['stop_loss']
