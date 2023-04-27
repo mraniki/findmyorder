@@ -59,8 +59,8 @@ class findmyorder:
 
 
       except Exception as e:
-          self.logger.debug(f"error identify_order {e}")
-          return
+          self.logger.error(f"identify_order {e}")
+          return None
 
 
     def get_order(self,mystring: str = None,):
@@ -93,6 +93,6 @@ class findmyorder:
           return None
 
       except Exception as e:
-          self.logger.debug(f"error get order {e}")
+          self.logger.error(f"get order {e}")
           #return
 
