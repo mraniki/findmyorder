@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.10 (2023-04-27)
+### Fix
+* Typo one_of ([`04d3f96`](https://github.com/mraniki/findmyorder/commit/04d3f961227f3c7d347a90974d3903257f0f7c62))
+
 ## v1.0.9 (2023-04-27)
 ### Fix
 * Version dep ([`6b5454b`](https://github.com/mraniki/findmyorder/commit/6b5454b4b93262290786f4d0404c5e09e3fd994b))
