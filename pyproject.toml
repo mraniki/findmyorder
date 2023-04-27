@@ -17,7 +17,7 @@ keywords = ["trading", "order", "trade","buy","sell"]
 python = ">=3.9,<3.11"
 asyncio = ">=3.4.3"
 dynaconf = ">=3.1.12"
-pyparsing = ">=3.0.0"
+pyparsing = ">=3.0.9"
 
 [tool.poetry.dev-dependencies]
 python-semantic-release = "*"
