@@ -48,9 +48,10 @@ class findmyorder:
                          + Optional(stop_loss) 
                          + Optional(take_profit)
                          + Optional(quantity) 
+                        # + Optional(comment)
                         # + Optional(take_profit1) 
                         # + Optional(take_profit2)  
-                        # + Optional(comment)
+
 
         result = order_grammar.parseString(mystring)
         self.logger.debug(f"identify_order result {result}")
