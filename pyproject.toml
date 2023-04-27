@@ -22,6 +22,8 @@ pyparsing = ">=3.0.9"
 [tool.poetry.dev-dependencies]
 python-semantic-release = "*"
 pytest = "*"
+# pytest-mock = "^3"
+# pytest-subtests = "^0.3"
 
 [tool.pytest.ini_options]
 testpaths = "tests/"
