@@ -44,14 +44,8 @@ class findmyorder:
         # comment = Regex(r'comment=\w+')['comment']
 
         #order grammar
-        order_grammar = action('action') + currency_pair('currency_pair') 
-                         + Optional(stop_loss) 
-                         + Optional(take_profit)
-                         + Optional(quantity) 
-                        # + Optional(comment)
-                        # + Optional(take_profit1) 
-                        # + Optional(take_profit2)  
-
+        order_grammar = action('action') + currency_pair('currency_pair') \
+        + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
         result = order_grammar.parseString(mystring)
         self.logger.debug(f"identify_order result {result}")
