@@ -1,9 +1,7 @@
 
 name: 🧪Test
 
-on: 
-  pull_request:
-   branches: [ "dev"]
+on: pull_request
 
 
 jobs:
@@ -50,11 +48,15 @@ jobs:
       #----------------------------------------------
       - name: Install project
         run: poetry install --no-interaction
+
       #----------------------------------------------
-      #    run test suite and output coverage file
+      #              run test suite
       #----------------------------------------------
-      - name: Test with pytest
-        run: poetry run pytest --cov=findmyorder --cov-report=xml
+      - name: Run tests
+        run: |
+          source .venv/bin/activate
+          pytest tests/
+          coverage report
       #----------------------------------------------
       #             upload coverage stats
       # (requires CODECOV_TOKEN in repository secrets)
