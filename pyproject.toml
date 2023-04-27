@@ -21,8 +21,13 @@ pyparsing = ">=3.0.9"
 
 [tool.poetry.dev-dependencies]
 python-semantic-release = "*"
-pytest = "*"
+pytest = "7.4"
 pytest-cov = "*"
+
+[pytest]
+filterwarnings =
+    ignore:.*U.*mode is deprecated:DeprecationWarning
+    
 
 [tool.pytest.ini_options]
 testpaths = "tests/"
