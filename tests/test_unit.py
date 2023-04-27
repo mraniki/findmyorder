@@ -8,7 +8,7 @@ from findmyorder import findmyorder
 
 
 def test_search():
-    fmo = findmyorder()
+    fmo = findmyorder.findmyorder()
     print(fmo)
     assert fmo.search('buy btc') == True
     assert fmo.search('hello') == False

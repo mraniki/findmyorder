@@ -5,7 +5,7 @@ ROOT = os.path.dirname(__file__)
 
 settings = Dynaconf(
     envvar_prefix="FMO",
-    project_root=os.path.dirname(ROOT),
+    root_path=os.path.dirname(ROOT),
     settings_files=[
         os.path.join(ROOT, "default_settings.toml"),
         'settings.toml', 

@@ -43,20 +43,17 @@ jobs:
       - name: Install dependencies
         if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
         run: poetry install --no-interaction --no-root
-      #----------------------------------------------
+      #---------------------------------------------- 
       # install your root project, if required
       #----------------------------------------------
       - name: Install project
         run: poetry install --no-interaction
 
       #----------------------------------------------
-      #              run test suite
+      #    run test suite and output coverage file
       #----------------------------------------------
-      - name: Run tests
-        run: |
-          source .venv/bin/activate
-          pytest tests/
-          coverage report
+      - name: Test with pytest
+        run: poetry run pytest
       #----------------------------------------------
       #             upload coverage stats
       # (requires CODECOV_TOKEN in repository secrets)
@@ -64,6 +61,6 @@ jobs:
       - name: Upload coverage
         uses: codecov/codecov-action@v3.1.3
         with:
-          token: ${{ secrets.CODECOV_TOKEN }}  # Only required for private repositories
-          file: ./coverage.xml
-          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}  #
+          # file: ./coverage.xml
+          # fail_ci_if_error: true

@@ -1,9 +1,9 @@
 import asyncio, logging, re
 from datetime import datetime
 
-from findmyorder.config import settings
+from .config import settings
 
-from pyparsing import one_of, Word, alphas, Regex, Optional
+from pyparsing import Regex, Optional
 
 
 class findmyorder:
