@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.17 (2023-04-27)
+### Fix
+* Test value ([`7a3f30e`](https://github.com/mraniki/findmyorder/commit/7a3f30eb10b3c8f966fea69fc6379e45841f346f))
+
 ## v1.0.16 (2023-04-27)
 ### Fix
 * Test yml ([`88ae2fc`](https://github.com/mraniki/findmyorder/commit/88ae2fcd66fa57a6b853eb98a6ed10d950c9a6c6))
