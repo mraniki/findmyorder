@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.9 (2023-04-27)
+### Fix
+* Version dep ([`6b5454b`](https://github.com/mraniki/findmyorder/commit/6b5454b4b93262290786f4d0404c5e09e3fd994b))
+
 ## v1.0.8 (2023-04-27)
 ### Fix
 * Regex ([`8a2bbcd`](https://github.com/mraniki/findmyorder/commit/8a2bbcdc1d9775acb0f6441b1b0327e6db0bd0cb))
