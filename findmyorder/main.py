@@ -3,7 +3,7 @@ from datetime import datetime
 
 from findmyorder.config import settings
 
-from pyparsing import Word, alphas, nums, oneOf, Optional, Regex, Suppress, LineEnd, Group, delimitedList
+from pyparsing import one_of, Word, alphas, Regex, Optional
 
 
 class findmyorder:
@@ -32,7 +32,7 @@ class findmyorder:
       self.logger.debug(f"identify_order for {mystring}")
       try:
         #parsing
-        action = oneOf("BUY SELL LONG SHORT")
+        action = oneOf(strs="BUY SELL LONG SHORT",caseless=True)
         currency_pair = Word(alphas, exact=6)
         market = Optional(Word(alphas, exact=4))
         percentage = Regex(r'\d+(\.\d+)?%')
@@ -50,7 +50,7 @@ class findmyorder:
                         # + Optional(take_profit1) 
                         # + Optional(take_profit2)  
                         # + Optional(comment)
-        self.logger.debug(f"order_grammar  {order_grammar}")
+
         result = order_grammar.parseString(mystring)
         self.logger.debug(f"identify_order result {result}")
         return results
