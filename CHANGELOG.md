@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.8 (2023-04-27)
+### Fix
+* Regex ([`8a2bbcd`](https://github.com/mraniki/findmyorder/commit/8a2bbcdc1d9775acb0f6441b1b0327e6db0bd0cb))
+
 ## v1.0.7 (2023-04-27)
 ### Fix
 * Troubleshoot regex error ([`0730cff`](https://github.com/mraniki/findmyorder/commit/0730cff4a2dd6932fdcf3c68fe0e27844ede1581))
