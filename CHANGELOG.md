@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.13 (2023-04-27)
+### Fix
+* Typo ([`e1ffb9c`](https://github.com/mraniki/findmyorder/commit/e1ffb9c6bae17698a1eaa9a2398ad035c93f70dd))
+* Get order ([`6f18820`](https://github.com/mraniki/findmyorder/commit/6f1882021f461a492f32ebb6da9076a3127a771b))
+
 ## v1.0.12 (2023-04-27)
 ### Fix
 * Regex in identify order function ([`ac59f15`](https://github.com/mraniki/findmyorder/commit/ac59f15d562ca5c58c4221068736e9bafc44a4da))
