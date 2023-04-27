@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.11 (2023-04-27)
+### Fix
+* Settings structure ([`4cc4509`](https://github.com/mraniki/findmyorder/commit/4cc450953f3d43ad3d3c1bd716ecae4cb37cb22c))
+* Cleanup ([`cfd7809`](https://github.com/mraniki/findmyorder/commit/cfd78098ef48acdf4516938009f85ae7467d7709))
+
 ## v1.0.10 (2023-04-27)
 ### Fix
 * Typo one_of ([`04d3f96`](https://github.com/mraniki/findmyorder/commit/04d3f961227f3c7d347a90974d3903257f0f7c62))
