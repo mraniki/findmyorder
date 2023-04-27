@@ -31,22 +31,23 @@ class findmyorder:
     def identify_order(self,mystring: str = None,):
       self.logger.debug(f"identify_order for {mystring}")
       try:
-        #parsing
-        action = one_of(strs="BUY SELL LONG SHORT",caseless=True)
-        currency_pair = Word(alphas, exact=6)
-       # market = Optional(Word(alphas, exact=4))
-        percentage = Regex(r'\d+(\.\d+)?%')
-        # quantity = Regex(r'\d+(\.\d+)?')('quantity')
-        # stop_loss = Regex(r'sl=\d+')['stop_loss']
+        action = Regex(r'/(SELL|BUY|long|short)/i')
+        currency_pair = Regex(r'(?<=SELL|BUY|long|short\s).\w+')
+        stop_loss = Regex(r'sl=(\d+)')
+        take_profit = Regex(r'tp=(\d+)')
+        quantity = Regex(r'q=(\d+)')
+        # percentage = Regex(r'\d+(\.\d+)?%')
         # take_profit1 = Regex(r'tp1=\d+')['take_profit1']
         # take_profit2 = Regex(r'tp2=\d+')['take_profit2']
         # leverage = Regex(r'Leverage: \w+ \((\d+(\.\d+)?X)\)')
+        # market = Optional(Word(alphas, exact=4))
         # comment = Regex(r'comment=\w+')['comment']
 
         #order grammar
-        order_grammar = action('action') + currency_pair('currency_pair') + percentage('percentage') 
-                        # + Optional(quantity)
-                        # + Optional(stop_loss) 
+        order_grammar = action('action') + currency_pair('currency_pair') 
+                         + Optional(stop_loss) 
+                         + Optional(take_profit)
+                         + Optional(quantity) 
                         # + Optional(take_profit1) 
                         # + Optional(take_profit2)  
                         # + Optional(comment)
