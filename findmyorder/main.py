@@ -44,14 +44,8 @@ class findmyorder:
         # comment = Regex(r'comment=\w+')['comment']
 
         #order grammar
-        order_grammar = action('action') + currency_pair('currency_pair') 
-                         + Optional(stop_loss) 
-                         + Optional(take_profit)
-                         + Optional(quantity) 
-                        # + Optional(comment)
-                        # + Optional(take_profit1) 
-                        # + Optional(take_profit2)  
-
+        order_grammar = action('action') + currency_pair('currency_pair') \
+        + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
         result = order_grammar.parseString(mystring)
         self.logger.debug(f"identify_order result {result}")
@@ -59,8 +53,8 @@ class findmyorder:
 
 
       except Exception as e:
-          self.logger.debug(f"error identify_order {e}")
-          return
+          self.logger.error(f"identify_order {e}")
+          return None
 
 
     def get_order(self,mystring: str = None,):
@@ -93,6 +87,6 @@ class findmyorder:
           return None
 
       except Exception as e:
-          self.logger.debug(f"error get order {e}")
+          self.logger.error(f"get order {e}")
           #return
 
