@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.14 (2023-04-27)
+### Fix
+* Typo parse_all and parse_string ([`0dee008`](https://github.com/mraniki/findmyorder/commit/0dee0089c4ef90013068191987b104c83a35f588))
+
 ## v1.0.13 (2023-04-27)
 ### Fix
 * Typo ([`e1ffb9c`](https://github.com/mraniki/findmyorder/commit/e1ffb9c6bae17698a1eaa9a2398ad035c93f70dd))
