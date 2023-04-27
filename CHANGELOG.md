@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.20 (2023-04-27)
+### Fix
+* Remove deprecated pytest filterwarnings. ([`52e308a`](https://github.com/mraniki/findmyorder/commit/52e308acacb42db39703db0e2320da554d50dd53))
+
 ## v1.0.19 (2023-04-27)
 ### Fix
 * Test action ([`c9dc3f3`](https://github.com/mraniki/findmyorder/commit/c9dc3f3eb589310259631efcef97d677fa2fced1))
