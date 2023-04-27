@@ -38,10 +38,10 @@ class findmyorder:
         leverage = Regex(r'Leverage: \w+ \((\d+(\.\d+)?X)\)')('leverage')
         percentage = Regex(r'\d+(\.\d+)?%')
         quantity = Regex(r'\d+(\.\d+)?')('quantity')
-        stop_loss = Regex(r'sl=\d+')['stop_loss']
-        take_profit1 = Regex(r'tp1=\d+')['take_profit1']
-        take_profit2 = Regex(r'tp2=\d+')['take_profit2']
-        comment = Regex(r'comment=\w+')['comment']
+        # stop_loss = Regex(r'sl=\d+')['stop_loss']
+        # take_profit1 = Regex(r'tp1=\d+')['take_profit1']
+        # take_profit2 = Regex(r'tp2=\d+')['take_profit2']
+        # comment = Regex(r'comment=\w+')['comment']
 
         #order grammar
         order_grammar = action('action') + currency_pair('currency_pair') + percentage('percentage') \
@@ -55,8 +55,9 @@ class findmyorder:
         self.logger.debug(f"identify_order result {result}")
         return results
 
+
       except Exception as e:
-          self.logger.debug(f"error order_template {e}")
+          self.logger.debug(f"error identify_order {e}")
           return
 
 
@@ -65,9 +66,9 @@ class findmyorder:
         self.logger.debug(f"get_order for {mystring}")
 
         if (self.search(mystring)):
-            self.logger.info(msg=f"get_order found: {mystring}")
-            parsed_order = self.identify_order(mystring)
-            self.logger.info(msg=f"parsed_order results: {parsed_order}")
+            # self.logger.info(msg=f"get_order found: {mystring}")
+            # parsed_order = self.identify_order(mystring)
+            # self.logger.info(msg=f"parsed_order results: {parsed_order}")
 
             # order_raw = mystring.split()
             # self.logger.info(msg=f"Order identified: {order_raw}")
@@ -85,8 +86,9 @@ class findmyorder:
             # order['stoploss'] = 1000
             # order['takeprofit'] = {'tp1':1, 'tp2':10, 'tp3':100, 'tp4':1000, 'tp5':1000}
             # order['comments'] = 'findmyorder'
-            
-            return parsed_order
+            return None
+        else:
+          return None
 
       except Exception as e:
           self.logger.debug(f"error get order {e}")
