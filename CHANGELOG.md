@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.7 (2023-04-27)
+### Fix
+* Troubleshoot regex error ([`0730cff`](https://github.com/mraniki/findmyorder/commit/0730cff4a2dd6932fdcf3c68fe0e27844ede1581))
+
 ## v1.0.6 (2023-04-27)
 ### Fix
 * Identify order function ([`d4336be`](https://github.com/mraniki/findmyorder/commit/d4336be6260a40cad9ebd22f728d952906804c04))
