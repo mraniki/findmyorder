@@ -1,5 +1,6 @@
 [default]
 identifier = ["BUY", "SELL", "buy", "sell","Buy","Sell","long","short"]
+order_type = '/(spot|future|margin)/i'
 VALUE = "On Default"
 
 

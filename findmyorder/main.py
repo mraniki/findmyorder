@@ -34,7 +34,7 @@ class findmyorder:
         stop_loss = Regex(r'sl=(\d+)')
         take_profit = Regex(r'tp=(\d+)')
         quantity = Regex(r'q=(\d+)')
-        ordertype = Regex(r'/(spot|future|margin)/i')
+        ordertype = Regex(settings.order_type)
         leverage_type = Regex(r'/(isolated|cross|margin)/i')
 
         order_grammar = action('action') + instrument('instrument') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
