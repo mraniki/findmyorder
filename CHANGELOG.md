@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.31 (2023-04-28)
+### Fix
+* Typo ([`87fcce8`](https://github.com/mraniki/findmyorder/commit/87fcce88f67440ce5587dad17d5a2c9eab74196e))
+
 ## v1.0.30 (2023-04-28)
 ### Fix
 * Parsing logic with settings support ([`2b3b625`](https://github.com/mraniki/findmyorder/commit/2b3b6258ad2782b11e55546ac514cfc25408da1f))
