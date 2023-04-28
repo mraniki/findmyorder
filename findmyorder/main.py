@@ -35,6 +35,7 @@ class findmyorder:
         take_profit = Regex(r'tp=(\d+)')
         quantity = Regex(r'q=(\d+)')
         ordertype = Regex(settings.order_type)
+        self.logger.debug(f"settings.order_type {settings.order_type}")
         leverage_type = Regex(r'/(isolated|cross|margin)/i')
 
         order_grammar = action('action') + instrument('instrument') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
