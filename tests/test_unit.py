@@ -17,4 +17,4 @@ def test_identify_order():
 
 def test_get_order():
     fmo = findmyorder()
-    assert fmo.get_order('hello') == None
+    assert fmo.get_order('hello') is None
