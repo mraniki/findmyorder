@@ -13,7 +13,7 @@ def test_search():
 
 def test_identify_order():
     fmo = findmyorder()
-    assert fmo.identify_order('hello') == None
+    assert fmo.identify_order('hello') is None
 
 def test_get_order():
     fmo = findmyorder()
