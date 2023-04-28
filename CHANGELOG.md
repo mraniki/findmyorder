@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.22 (2023-04-28)
+### Fix
+* Change ccy_pair to instrument ([`346e148`](https://github.com/mraniki/findmyorder/commit/346e14875fca85c70b000759b8ca96c4fe018c8e))
+* Bool typo ([`a6f43f1`](https://github.com/mraniki/findmyorder/commit/a6f43f1cd30f37232136da673e144c7da2f7e2ac))
+
 ## v1.0.21 (2023-04-28)
 ### Fix
 * Build action ([`447786d`](https://github.com/mraniki/findmyorder/commit/447786d03f40d0348e5c167bb583ad1a5fbe2c41))
