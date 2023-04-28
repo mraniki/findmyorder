@@ -53,14 +53,14 @@ jobs:
       #    run test suite and output coverage file
       #----------------------------------------------
       - name: Test with pytest
-        run: poetry run pytest --cov findmyorder
-      #----------------------------------------------
-      #             upload coverage stats
-      # (requires CODECOV_TOKEN in repository secrets)
-      #----------------------------------------------
-      - name: Upload coverage
-        uses: codecov/codecov-action@v3.1.3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}  #
-          # file: ./coverage.xml
-          # fail_ci_if_error: true
+        run: poetry run pytest --cov .
+      # #----------------------------------------------
+      # #             upload coverage stats
+      # # (requires CODECOV_TOKEN in repository secrets)
+      # #----------------------------------------------
+      # - name: Upload coverage
+      #   uses: codecov/codecov-action@v3.1.3
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}  #
+      #     # file: ./coverage.xml
+      #     # fail_ci_if_error: true
