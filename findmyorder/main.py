@@ -1,9 +1,8 @@
 import asyncio, logging, re
 from datetime import datetime
-
+from pyparsing import Regex, Optional
 from .config import settings
 
-from pyparsing import Regex, Optional
 
 
 class findmyorder:
@@ -36,12 +35,6 @@ class findmyorder:
         stop_loss = Regex(r'sl=(\d+)')
         take_profit = Regex(r'tp=(\d+)')
         quantity = Regex(r'q=(\d+)')
-        # percentage = Regex(r'\d+(\.\d+)?%')
-        # take_profit1 = Regex(r'tp1=\d+')['take_profit1']
-        # take_profit2 = Regex(r'tp2=\d+')['take_profit2']
-        # leverage = Regex(r'Leverage: \w+ \((\d+(\.\d+)?X)\)')
-        # market = Optional(Word(alphas, exact=4))
-        # comment = Regex(r'comment=\w+')['comment']
 
         order_grammar = action('action') + currency_pair('currency_pair') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
