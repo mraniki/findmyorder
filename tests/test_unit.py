@@ -11,6 +11,10 @@ def test_search():
     assert fmo.search('buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC') == True
     assert fmo.search('sell EURGBP sl=200 tp=400 q=2%') == True
 
-def test_search():
+def test_identify_order():
     fmo = findmyorder()
     assert fmo.identify_order('hello') == None
+
+def test_get_order():
+    fmo = findmyorder()
+    assert fmo.get_order('hello') == None
