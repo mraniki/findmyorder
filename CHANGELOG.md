@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.24 (2023-04-28)
+### Fix
+* Added timezone and proper timezone and added one_of ([`7e1a3d8`](https://github.com/mraniki/findmyorder/commit/7e1a3d877ca523b9c6a93c0948e0dccaf10e6edc))
+
 ## v1.0.23 (2023-04-28)
 ### Fix
 * Improving identify_order ([`fced933`](https://github.com/mraniki/findmyorder/commit/fced933b9aca185c220db0d27684b2310714fb32))
