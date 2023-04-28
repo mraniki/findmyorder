@@ -1,6 +1,6 @@
 import asyncio, logging, re
 from datetime import datetime, timezone
-from pyparsing import Regex, Optional, one_of, Word
+from pyparsing import Regex, Optional, one_of, Word, alphas
 from .config import settings
 
 
@@ -39,7 +39,7 @@ class findmyorder:
         self.logger.debug(f"settings.order_type {settings.order_type}")
         leverage_type = one_of(settings.leverage_type, caseless=True)
 
-        order_grammar = action('action') + instrument('instrument') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
+        order_grammar = action('action') + Optional(instrument) + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
         order = order_grammar.parse_string(instring=mystring,parse_all=False)
         self.logger.debug(f"identify_order order {order}")
