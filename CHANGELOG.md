@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.21 (2023-04-28)
+### Fix
+* Build action ([`447786d`](https://github.com/mraniki/findmyorder/commit/447786d03f40d0348e5c167bb583ad1a5fbe2c41))
+* Main ([`8e1fda2`](https://github.com/mraniki/findmyorder/commit/8e1fda26e89ddeb272409bc31d31bd221c416d61))
+* Rename ([`fcabbc7`](https://github.com/mraniki/findmyorder/commit/fcabbc7f2713a68000f9d5a520c8ce911fcbaade))
+* Added unit test for identify order ([`a4d793d`](https://github.com/mraniki/findmyorder/commit/a4d793d8494b7579a10e0c07ba89e3bbe6803be7))
+* Added test coverage results ([`62710dd`](https://github.com/mraniki/findmyorder/commit/62710dd851b9dae52106d621094266a044c67e63))
+
 ## v1.0.20 (2023-04-27)
 ### Fix
 * Remove deprecated pytest filterwarnings. ([`52e308a`](https://github.com/mraniki/findmyorder/commit/52e308acacb42db39703db0e2320da554d50dd53))
