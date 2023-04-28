@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.30 (2023-04-28)
+### Fix
+* Parsing logic with settings support ([`2b3b625`](https://github.com/mraniki/findmyorder/commit/2b3b6258ad2782b11e55546ac514cfc25408da1f))
+
 ## v1.0.29 (2023-04-28)
 ### Fix
 * Updated example get_order and remove regex logic ([`05a7f99`](https://github.com/mraniki/findmyorder/commit/05a7f9939b63bdcdc4fe102e7f7fa29162832754))
