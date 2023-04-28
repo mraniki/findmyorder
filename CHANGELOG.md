@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.27 (2023-04-28)
+### Fix
+* Return a dictionary ([`39d4ae5`](https://github.com/mraniki/findmyorder/commit/39d4ae5fcda7c4470f583c0bc9922f64618f8ca9))
+* Test for codecov ([`b56cf6e`](https://github.com/mraniki/findmyorder/commit/b56cf6e6f5e96acc85f5d257288254b007a30074))
+
 ## v1.0.26 (2023-04-28)
 ### Fix
 * Instrument parsing ([`e8b6f00`](https://github.com/mraniki/findmyorder/commit/e8b6f00a9d7421ba1c7c6b6035c8683872fae35a))
