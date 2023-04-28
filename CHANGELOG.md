@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.32 (2023-04-28)
+### Fix
+* Examples/Dockerfile to reduce vulnerabilities ([`4217ab2`](https://github.com/mraniki/findmyorder/commit/4217ab29a3c33a5454665b659f7eb1a344a61b04))
+
 ## v1.0.31 (2023-04-28)
 ### Fix
 * Typo ([`87fcce8`](https://github.com/mraniki/findmyorder/commit/87fcce88f67440ce5587dad17d5a2c9eab74196e))
