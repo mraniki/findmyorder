@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.25 (2023-04-28)
+### Fix
+* Instrumenst and lev type grammar ([`609c670`](https://github.com/mraniki/findmyorder/commit/609c67025e4e1cbd72867104922a4530be66155a))
+* Default settings ([`de5faaf`](https://github.com/mraniki/findmyorder/commit/de5faaf1aff4283fe6806ea432a78fbeccf0e6c8))
+
 ## v1.0.24 (2023-04-28)
 ### Fix
 * Added timezone and proper timezone and added one_of ([`7e1a3d8`](https://github.com/mraniki/findmyorder/commit/7e1a3d877ca523b9c6a93c0948e0dccaf10e6edc))
