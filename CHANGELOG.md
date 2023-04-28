@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.28 (2023-04-28)
+### Fix
+* Add results name to action variable in main.py ([`39beafc`](https://github.com/mraniki/findmyorder/commit/39beafca7a2451b870ccd9389224290e585ab7ce))
+
 ## v1.0.27 (2023-04-28)
 ### Fix
 * Return a dictionary ([`39d4ae5`](https://github.com/mraniki/findmyorder/commit/39d4ae5fcda7c4470f583c0bc9922f64618f8ca9))
