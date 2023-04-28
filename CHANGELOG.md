@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.33 (2023-04-28)
+### Fix
+* Increase unit testing ([`03d41c7`](https://github.com/mraniki/findmyorder/commit/03d41c7de80ed2d9a4886f304d134998688eab8f))
+* Added nonetype case for order ([`0d62aa9`](https://github.com/mraniki/findmyorder/commit/0d62aa944627b7784246058eac6938eb88e7e08b))
+
 ## v1.0.32 (2023-04-28)
 ### Fix
 * Examples/Dockerfile to reduce vulnerabilities ([`4217ab2`](https://github.com/mraniki/findmyorder/commit/4217ab29a3c33a5454665b659f7eb1a344a61b04))
