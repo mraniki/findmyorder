@@ -1,9 +1,11 @@
 [default]
 action_identifier = "BUY SELL LONG SHORT"
-order_type = "spot future margin"
-leverage_type = "cross isolated"
+stop_loss_identifier = 'sl='
+take_profit_identifier = 'tp='
+quantity_identifier = 'q='
+order_type_identifier = "spot future margin"
+leverage_type_identifier = "cross isolated"
 VALUE = "On Default"
-
 
 [testing]
 VALUE = "On Testing"
