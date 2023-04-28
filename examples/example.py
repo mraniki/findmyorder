@@ -44,6 +44,8 @@ async def main():
             msg_order = "sell EURGBP sl=200 tp=400 q=2%"
             order = fmo.get_order(msg_order)
             logger.info(f"get_order 4: {order}")
+            logger.info(f"action 4: {order['action']}")
+            logger.info(f"instrument 4: {order['instrument']}")
 
             await asyncio.sleep(10000)
         except Exception as e:
