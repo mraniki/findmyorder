@@ -2,11 +2,11 @@
 name: 🐍Build
 
 on:
+  push:
+    branches: [ "main"]
   pull_request:
    branches: [ "main"]
-   paths-ignore:
-    - "docs/**"
-    - "*.md"
+   
 
 jobs:
   build:
