@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.26 (2023-04-28)
+### Fix
+* Instrument parsing ([`e8b6f00`](https://github.com/mraniki/findmyorder/commit/e8b6f00a9d7421ba1c7c6b6035c8683872fae35a))
+
 ## v1.0.25 (2023-04-28)
 ### Fix
 * Instrumenst and lev type grammar ([`609c670`](https://github.com/mraniki/findmyorder/commit/609c67025e4e1cbd72867104922a4530be66155a))
