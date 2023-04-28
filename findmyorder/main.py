@@ -58,9 +58,9 @@ class findmyorder:
             order = {}
             order['action'] = parsed_order['action']
             order['instrument'] =  parsed_order['instrument']
-            order['stoploss'] = parsed_order['takeprofit']
-            order['takeprofit'] = parsed_order['takeprofit']
-            order['quantity'] = parsed_order['quantity']
+            order['stoploss'] = parsed_order['stoploss'] if (parsed_order['stoploss']) else 0
+            order['takeprofit'] = parsed_order['takeprofit'] if (parsed_order['takeprofit']) else 0
+            order['quantity'] = parsed_order['quantity'] if (parsed_order['quantity']) else 0
             order['timestamp'] = datetime.now(timezone.utc)
             # order['comments'] = 'findmyorder'
             # order['ordertype'] = 'spot'
