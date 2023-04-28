@@ -36,14 +36,14 @@ class findmyorder:
         take_profit = Regex(r'tp=(\d+)')
         quantity = Regex(r'q=(\d+)')
         ordertype = one_of(settings.order_type, caseless=True)
-        self.logger.debug(f"settings.order_type {settings.order_type}")
         leverage_type = one_of(settings.leverage_type, caseless=True)
 
         order_grammar = action('action') + Optional(instrument) + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
         order = order_grammar.parse_string(instring=mystring,parse_all=False)
         self.logger.debug(f"identify_order order {order}")
-        return order
+        self.logger.debug(f"identify_order order {order.asDict()}")
+        return order.asDict()
 
       except Exception as e:
           self.logger.error(f"identify_order {e}")
