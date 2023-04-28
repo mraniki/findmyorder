@@ -31,12 +31,12 @@ class findmyorder:
       self.logger.debug(f"identify_order for {mystring}")
       try:
         action = Regex(r'/(SELL|BUY|long|short)/i')
-        currency_pair = Regex(r'(?<=SELL|BUY|long|short\s).\w+')
+        instrument = Regex(r'(?<=SELL|BUY|long|short\s).\w+')
         stop_loss = Regex(r'sl=(\d+)')
         take_profit = Regex(r'tp=(\d+)')
         quantity = Regex(r'q=(\d+)')
 
-        order_grammar = action('action') + currency_pair('currency_pair') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
+        order_grammar = action('action') + instrument('instrument') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
         order = order_grammar.parse_string(instring=mystring,parse_all=False)
         self.logger.debug(f"identify_order order {order}")
@@ -54,25 +54,29 @@ class findmyorder:
         if (self.search(mystring)):
             self.logger.info(msg=f"get_order found: {mystring}")
             parsed_order = self.identify_order(mystring)
-            self.logger.info(msg=f"parsed_order results: {parsed_order}")
+            self.logger.info(msg=f"get_order parsed_order: {parsed_order}")
 
             # order_raw = mystring.split()
             # self.logger.info(msg=f"Order identified: {order_raw}")
 
-            # order = {}
+            order = {}
+            order['action'] = 'BUY'
+            order['instrument'] = 'EURUSD'
+            order['stoploss'] = 1000
+            order['takeprofit'] = {'tp1':10}
+            order['quantity'] = 10
+            # order['amount'] = 100
+            # order['comments'] = 'findmyorder'
             # order['market'] = 'Any'
-            # order['exchange'] = 'Any'
+            # order['instrument_type'] = 'Any'
+            # order['amount'] = 100
             # order['timestamp'] = datetime.utcnow()
             # order['leverage'] = 1
             # order['ordertype'] = 'spot'
-            # order['direction'] = 'BUY'
-            # order['symbol'] = 'EURUSD'
-            # order['quantity'] = 10
-            # order['amount'] = 100
-            # order['stoploss'] = 1000
-            # order['takeprofit'] = {'tp1':1, 'tp2':10, 'tp3':100, 'tp4':1000, 'tp5':1000}
-            # order['comments'] = 'findmyorder'
-            return None
+            self.logger.info(msg=f"get_order order: {order}")
+
+            return order
+
         else:
           return None
 
