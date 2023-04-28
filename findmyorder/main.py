@@ -34,7 +34,7 @@ class findmyorder:
         stop_loss = Regex(r'sl=(\d+)')
         take_profit = Regex(r'tp=(\d+)')
         quantity = Regex(r'q=(\d+)')
-        ordertype = Regex(settings.order_type)
+        ordertype = one_of(settings.order_type, caseless=True)
         self.logger.debug(f"settings.order_type {settings.order_type}")
         leverage_type = Regex(r'/(isolated|cross|margin)/i')
 

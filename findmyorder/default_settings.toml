@@ -1,6 +1,6 @@
 [default]
-identifier = ["BUY", "SELL", "buy", "sell","Buy","Sell","long","short"]
-order_type = "r'/(spot|future|margin)/i'"
+identifier = "BUY SELL LONG SHORT"
+order_type = "spot future margin"
 VALUE = "On Default"
 
 
