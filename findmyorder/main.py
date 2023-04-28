@@ -30,9 +30,9 @@ class findmyorder:
       try:
         action = one_of(settings.action_identifier, caseless=True).set_results_name("action")
         instrument = Word(alphas).set_results_name("instrument")
-        stop_loss = (PrecededBy(Literal(settings.stop_loss_identifier)) & Word(nums)).set_results_name("stop_loss")
+        stop_loss = Combine(settings.stop_loss_identifier + Word(nums)).set_results_name("stop_loss")
         take_profit = Combine(settings.take_profit_identifier + Word(nums)).set_results_name("take_profit")
-        quantity = Combine(settings.quantity_identifier + Word(nums)).set_results_name("quantity")+ Suppress("q=")
+        quantity = Combine(settings.quantity_identifier + Word(nums)).set_results_name("quantity")
         ordertype = one_of(settings.order_type_identifier, caseless=True).set_results_name("ordertype")
         leverage_type = one_of(settings.leverage_type_identifier, caseless=True).set_results_name("leverage_type")
 
