@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.29 (2023-04-28)
+### Fix
+* Updated example get_order and remove regex logic ([`05a7f99`](https://github.com/mraniki/findmyorder/commit/05a7f9939b63bdcdc4fe102e7f7fa29162832754))
+* Refactor pyparsing in findmyorder/main.py ([`e4fec00`](https://github.com/mraniki/findmyorder/commit/e4fec0048c29745941cd2583ff53f8a3d870c1e4))
+
 ## v1.0.28 (2023-04-28)
 ### Fix
 * Add results name to action variable in main.py ([`39beafc`](https://github.com/mraniki/findmyorder/commit/39beafca7a2451b870ccd9389224290e585ab7ce))
