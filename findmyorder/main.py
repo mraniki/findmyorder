@@ -4,7 +4,6 @@ from pyparsing import Regex, Optional
 from .config import settings
 
 
-
 class findmyorder:
 
     def __init__(self,
@@ -35,6 +34,8 @@ class findmyorder:
         stop_loss = Regex(r'sl=(\d+)')
         take_profit = Regex(r'tp=(\d+)')
         quantity = Regex(r'q=(\d+)')
+        ordertype = Regex(r'/(spot|future|margin)/i')
+        leverage_type = Regex(r'/(isolated|cross|margin)/i')
 
         order_grammar = action('action') + instrument('instrument') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
@@ -71,6 +72,7 @@ class findmyorder:
             # order['market'] = 'Any'
             # order['exchange'] = 'Any'
             # order['leverage'] = 1
+            # order['leverage_type'] = 'isolated'
             # order['amount'] = 100
 
             self.logger.info(msg=f"get_order order: {order}")
