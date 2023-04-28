@@ -46,7 +46,6 @@ class findmyorder:
           self.logger.error(f"identify_order {e}")
           return None
 
-
     def get_order(self,mystring: str = None,):
       try:
         self.logger.debug(f"get_order for {mystring}")
@@ -65,14 +64,15 @@ class findmyorder:
             order['stoploss'] = 1000
             order['takeprofit'] = {'tp1':10}
             order['quantity'] = 10
-            # order['amount'] = 100
+            order['timestamp'] = datetime.utcnow()
             # order['comments'] = 'findmyorder'
-            # order['market'] = 'Any'
-            # order['instrument_type'] = 'Any'
-            # order['amount'] = 100
-            # order['timestamp'] = datetime.utcnow()
-            # order['leverage'] = 1
             # order['ordertype'] = 'spot'
+            # order['instrument_type'] = 'Any'
+            # order['market'] = 'Any'
+            # order['exchange'] = 'Any'
+            # order['leverage'] = 1
+            # order['amount'] = 100
+
             self.logger.info(msg=f"get_order order: {order}")
 
             return order
