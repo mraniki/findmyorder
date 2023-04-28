@@ -1,4 +1,4 @@
-FROM python:3.12.0a5-slim
+FROM python:3.10
 WORKDIR /app
 COPY ./examples/ .
 RUN pip install --upgrade pip
