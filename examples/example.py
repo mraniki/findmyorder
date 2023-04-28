@@ -47,7 +47,7 @@ async def main():
             logger.info(f"action 4: {order['action']}")
             logger.info(f"instrument 4: {order['instrument']}")
 
-            await asyncio.sleep(10000)
+            await asyncio.sleep(100000)
         except Exception as e:
             logger.error(f"error search {e}")
 

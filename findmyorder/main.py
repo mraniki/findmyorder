@@ -16,9 +16,9 @@ class findmyorder:
         action = one_of(settings.action_identifier, caseless=True).set_results_name("action")
         order_grammar = action('action')
         order = order_grammar.parse_string(instring=mystring,parse_all=False)
-          if order:
-            self.logger.debug(f"found {order} in {mystring}")
-            return True
+        if order:
+          self.logger.debug(f"found {order} in {mystring}")
+          return True
         self.logger.debug(f"no order identified in {mystring} using {settings.action_identifier}")
         return False
       except Exception as e:
