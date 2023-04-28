@@ -1,6 +1,6 @@
 import asyncio, logging, re
-from datetime import datetime
-from pyparsing import Regex, Optional
+from datetime import datetime, timezone
+from pyparsing import Regex, Optional, one_of
 from .config import settings
 
 
@@ -29,12 +29,13 @@ class findmyorder:
     def identify_order(self,mystring: str = None,):
       self.logger.debug(f"identify_order for {mystring}")
       try:
-        action = Regex(r'/(SELL|BUY|long|short)/i')
+        action = one_of("SELL BUY long short", caseless=True)
         instrument = Regex(r'(?<=SELL|BUY|long|short\s).\w+')
         stop_loss = Regex(r'sl=(\d+)')
         take_profit = Regex(r'tp=(\d+)')
         quantity = Regex(r'q=(\d+)')
         ordertype = Regex(settings.order_type)
+        self.logger.debug(f"settings.order_type {settings.order_type}")
         leverage_type = Regex(r'/(isolated|cross|margin)/i')
 
         order_grammar = action('action') + instrument('instrument') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
@@ -65,7 +66,7 @@ class findmyorder:
             order['stoploss'] = 1000
             order['takeprofit'] = {'tp1':10}
             order['quantity'] = 10
-            order['timestamp'] = datetime.utcnow()
+            order['timestamp'] = datetime.now(timezone.utc)
             # order['comments'] = 'findmyorder'
             # order['ordertype'] = 'spot'
             # order['instrument_type'] = 'Any'
