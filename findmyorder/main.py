@@ -29,7 +29,7 @@ class findmyorder:
     def identify_order(self,mystring: str = None,):
       self.logger.debug(f"identify_order for {mystring}")
       try:
-        action = one_of("SELL BUY long short", caseless=True)
+        action = one_of("SELL BUY long short", caseless=True).set_results_name("action")
         # instrument = Regex(r'(?<=SELL|BUY|long|short\s).\w+')
         instrument = Word(alphas)
         stop_loss = Regex(r'sl=(\d+)')
