@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.23 (2023-04-28)
+### Fix
+* Improving identify_order ([`fced933`](https://github.com/mraniki/findmyorder/commit/fced933b9aca185c220db0d27684b2310714fb32))
+* Readme ([`c9aec1d`](https://github.com/mraniki/findmyorder/commit/c9aec1d9e48940816626394139cbef34d88d4102))
+
 ## v1.0.22 (2023-04-28)
 ### Fix
 * Change ccy_pair to instrument ([`346e148`](https://github.com/mraniki/findmyorder/commit/346e14875fca85c70b000759b8ca96c4fe018c8e))
