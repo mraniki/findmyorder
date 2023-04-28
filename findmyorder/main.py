@@ -43,8 +43,7 @@ class findmyorder:
         # market = Optional(Word(alphas, exact=4))
         # comment = Regex(r'comment=\w+')['comment']
 
-        order_grammar = action('action') + currency_pair('currency_pair') \
-        + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
+        order_grammar = action('action') + currency_pair('currency_pair') + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
 
         order = order_grammar.parse_string(instring=mystring,parse_all=false)
         self.logger.debug(f"identify_order order {order}")
