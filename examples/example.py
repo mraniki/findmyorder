@@ -25,32 +25,32 @@ async def main():
             logger.debug(f"findmyorder logger: {__name__} version: {__version__}")
             msg_order = "this is a test"
 
-            order = fmo.search(msg_order)
+            order = await fmo.search(msg_order)
             logger.debug(f"search 1: {order}")
-            order = fmo.identify_order(msg_order)
+            order = await fmo.identify_order(msg_order)
             logger.info(f"identify_order 1: {order}")
 
             msg_order = "buy btc"
 
-            order = fmo.search(msg_order)
+            order = await fmo.search(msg_order)
             logger.debug(f"search 2: {order}")
-            order = fmo.identify_order(msg_order)
+            order = await fmo.identify_order(msg_order)
             logger.info(msg=f"identify_order 2: {order}")
 
             msg_order = "SELL BTC 1%"
-            order = fmo.get_order(msg_order)
+            order = await fmo.get_order(msg_order)
             logger.info(f"get_order 1 : {order}")
 
             msg_order = "SELL BTCUSDT 1%"
-            order = fmo.get_order(msg_order)
+            order = await fmo.get_order(msg_order)
             logger.info(f"get_order 2: {order}")
 
             msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
-            order = fmo.get_order(msg_order)
+            order = await fmo.get_order(msg_order)
             logger.info(f"get_order 3: {order}")
 
             msg_order = "sell EURGBP sl=200 tp=400 q=2%"
-            order = fmo.get_order(msg_order)
+            order = await fmo.get_order(msg_order)
             logger.info(f"get_order 4: {order}")
             logger.info(f"action 4: {order['action']}")
             logger.info(f"instrument 4: {order['instrument']}")
