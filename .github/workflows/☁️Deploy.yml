@@ -21,6 +21,27 @@ jobs:
           title: "New Docker Ready"
           noprefix: true
           color: 0xf5d442
+      # - name: Actions Start Apprise
+      #   uses: cstuder/apprise-ga@v3
+      #   with:
+      #     title: "Notication title"
+      #     message: "Message"
+      #   env:
+      #     APPRISE_URL: ${{ secrets.APPRISE_URL }}
+      # - name: send telegram message on push
+      #   uses: appleboy/telegram-action@master
+      #   with:
+      #     to: ${{ secrets.TELEGRAM_TO }}
+      #     token: ${{ secrets.TELEGRAM_TOKEN }}
+      #     message: |
+      #       ${{ github.actor }} created commit:
+      #       Commit message: ${{ github.event.commits[0].message }}
+            
+      #       Repository: ${{ github.repository }}
+            
+      #       See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+
+
       # - name: get repository name
       #   run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
       # - name: update repo category by language
