@@ -5,10 +5,40 @@ on:
     workflows: [🐳Docker]
     types:
         - completed
-      
-        # - name: Build and deploy the application to Koyeb
-        #   uses: koyeb/action-git-deploy@v1
-        #   with:
-        #     service-env: "PORT=8000"
-        #     service-ports: "8000:http"
-        #     service-routes: "/:8000"
+
+
+jobs:
+  Notify
+    steps:
+      - name: Actions Start Discord
+        uses: sarisia/actions-status-discord@v1
+        if: always()
+        with:
+          webhook: ${{ secrets.DISCORD_WEBHOOK }}
+          title: "New Docker Ready"
+          noprefix: true
+          color: 0xf5d442
+
+  # Koyeb:
+  #   - name: Build and deploy the application to Koyeb
+  #     uses: koyeb/action-git-deploy@v1
+  #     with:
+  #       app-name: my-koyeb-app
+  #       service-name: my-koyeb-service
+  #       service-env: "PORT=8080"
+  #       service-ports: "8080:http"
+  #       service-routes: "/health:8080"
+
+
+  # deploy-deta:
+  #   name: Deploy
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3.5.2
+  #     - name: Deploy to Deta
+  #       uses: BogDAAAMN/deta-deploy-action@v1.0.1
+  #       with:
+  #         deta-access-token: ${{ secrets.DETA_ACCESS_TOKEN }}
+  #         deta-name: ${{ secrets.DETA_STAGING_MICRO_NAME }}
+  #         deta-project: ${{ secrets.DETA_PROJECT_NAME }}
