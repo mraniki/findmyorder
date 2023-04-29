@@ -20,14 +20,11 @@
       #     deta-access-token: ${{ secrets.DETA_ACCESS_TOKEN }}
       #     deta-name: ${{ secrets.DETA_STAGING_MICRO_NAME }}
       #     deta-project: ${{ secrets.DETA_PROJECT_NAME }}
-name: ☁️Deploy
+name: 🐳Docker
 
 on:
-  workflow_run:
-    workflows: [🐍Build]
-    branches: [main]
-    types:
-     - completed
+  release:
+      types: [published]
 
 jobs:
   push_to_registry:
@@ -66,6 +63,9 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
+          
+          
+      
       # - name: 'Build Inventory Image'
       #   run: |
       #     docker build -f examples/Dockerfile --tag ghcr.io/mraniki/dxsp:latest

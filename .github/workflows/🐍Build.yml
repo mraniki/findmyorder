@@ -27,6 +27,15 @@ jobs:
         poetry install
     - name: Build package
       run: poetry build
+      
+      
+    # - name: Lint Code Base
+    #   uses: github/super-linter@v5
+    #   env:
+    #     VALIDATE_ALL_CODEBASE: false
+    #     DEFAULT_BRANCH: main
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
 
   release:
       # Run semantic release:
@@ -43,12 +52,12 @@ jobs:
         with:
           fetch-depth: 0
       - name: Python Semantic Release
-        uses: relekang/python-semantic-release@v7.33.2
+        uses: relekang/python-semantic-release@v7.33.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repository_username: __token__
           repository_password: ${{ secrets.PYPI_API_TOKEN }}
-          additional_options: --patch
+          #additional_options: --patch
 
 #
     # BREAKING CHANGE:
