@@ -5,6 +5,7 @@ take_profit_identifier = 'tp='
 quantity_identifier = 'q='
 order_type_identifier = "spot future margin"
 leverage_type_identifier = "cross isolated"
+comment_identifier = "comment="
 VALUE = "On Default"
 
 [testing]

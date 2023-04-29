@@ -33,10 +33,18 @@ class findmyorder:
         stop_loss = Combine(settings.stop_loss_identifier + Word(nums)).set_results_name("stop_loss")
         take_profit = Combine(settings.take_profit_identifier + Word(nums)).set_results_name("take_profit")
         quantity = Combine(settings.quantity_identifier + Word(nums)).set_results_name("quantity")
-        ordertype = one_of(settings.order_type_identifier, caseless=True).set_results_name("ordertype")
+        order_type = one_of(settings.order_type_identifier, caseless=True).set_results_name("order_type")
         leverage_type = one_of(settings.leverage_type_identifier, caseless=True).set_results_name("leverage_type")
+        comment = one_of(settings.comment_identifier, caseless=True).set_results_name("comment")
 
-        order_grammar = action('action') + Optional(instrument,default=None) + Optional(stop_loss,default=None) + Optional(take_profit,default=None) + Optional(quantity,default=None) 
+        order_grammar = action('action') /
+                      + Optional(instrument,default=None) /
+                      + Optional(stop_loss,default=None) /
+                      + Optional(take_profit,default=None) /
+                      + Optional(quantity,default=None) /
+                      + Optional(ordertype,default=None) /
+                      + Optional(leverage_type,default=None) /
+                      + Optional(comment,default=None)
 
         order = order_grammar.parse_string(instring=mystring,parse_all=False)
         self.logger.debug(f"identify_order order {order}")
@@ -44,7 +52,7 @@ class findmyorder:
         return order.asDict()
 
       except Exception as e:
-          self.logger.error(f"identify_order {e}")
+          #self.logger.error(f"identify_order {e}")
           return None
 
     def get_order(self,mystring: str = None,):
@@ -58,17 +66,18 @@ class findmyorder:
             order = {}
             order['action'] = parsed_order['action']
             order['instrument'] =  parsed_order['instrument']
-            order['stoploss'] = parsed_order['stoploss'] 
-            order['takeprofit'] = parsed_order['takeprofit'] 
-            order['quantity'] = parsed_order['quantity'] 
+            order['stop_loss'] = parsed_order['stop_loss'] 
+            order['take_profit'] = parsed_order['take_profit'] 
+            order['quantity'] = parsed_order['quantity']
+            order['order_type'] = parsed_order['order_type'] 
+            order['leverage_type'] = parsed_order['leverage_type'] 
             order['timestamp'] = datetime.now(timezone.utc)
-            # order['comments'] = 'findmyorder'
-            # order['ordertype'] = 'spot'
+            order['comments'] = parsed_order['comment'] 
             # order['instrument_type'] = 'Any'
             # order['market'] = 'Any'
             # order['exchange'] = 'Any'
             # order['leverage'] = 1
-            # order['leverage_type'] = 'isolated'
+
             # order['amount'] = 100
 
             self.logger.info(msg=f"get_order order: {order}")
