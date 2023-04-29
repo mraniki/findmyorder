@@ -8,7 +8,7 @@ import logging
 import uvicorn
 from fastapi import FastAPI
 
-from findmyorder import __version__, FindMyOrder
+from findmyorder import FindMyOrder, __version__
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level="DEBUG"

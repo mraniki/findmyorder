@@ -1,4 +1,6 @@
-
+"""
+ FindMyOrder Main
+"""
 import logging
 
 from datetime import datetime, timezone
@@ -56,9 +58,9 @@ class FindMyOrder:
                 + Optional(instrument,default=None)
                 + Optional(stop_loss,default=None)
                 + Optional(take_profit,default=None)
-                + Optional(quantity,default=None) 
-                + Optional(order_type,default=None) 
-                + Optional(leverage_type,default=None) 
+                + Optional(quantity,default=None)
+                + Optional(order_type,default=None)
+                + Optional(leverage_type,default=None)
                 + Optional(comment,default=None)
               )
 
@@ -68,8 +70,8 @@ class FindMyOrder:
             return order.asDict()
 
         except Exception as e:
-          self.logger.error(f"identify_order {e}")
-          return None
+            self.logger.error(f"identify_order {e}")
+            return None
 
 
     async def get_order(
@@ -86,8 +88,7 @@ class FindMyOrder:
                 self.logger.info(msg=f"get_order order: {order}")
                 order['timestamp'] = datetime.now(timezone.utc)
                 return order
-            else:
-                return None
+            return None
 
         except Exception as e:
             self.logger.error(f"get order {e}")
