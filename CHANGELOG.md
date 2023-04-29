@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.38 (2023-04-29)
+### Fix
+* Logger setup ([`a18934c`](https://github.com/mraniki/findmyorder/commit/a18934cccc5d7976bed20ccbdc78ffcd1fd87665))
+
 ## v1.0.37 (2023-04-29)
 ### Fix
 * Lint ([`faf8bd9`](https://github.com/mraniki/findmyorder/commit/faf8bd9d5cfe721374d652b313a9726abc501a4a))
