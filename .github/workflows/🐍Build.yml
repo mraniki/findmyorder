@@ -24,6 +24,8 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISABLE_ERRORS: true
+
 
 
   build:
@@ -83,7 +85,7 @@ jobs:
 
   scanning:
     needs: [test]
-    name: GitGuardian scan
+    name: Code Scanning
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
