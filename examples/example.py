@@ -1,50 +1,56 @@
+"""
+Provides sexample for FindMyOrder
+"""
+
 import asyncio
 import logging
 
 import uvicorn
 from fastapi import FastAPI
-from findmyorder import __version__, findmyorder
+from findmyorder import FindMyOrder, __version__
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level="DEBUG"
 )
+
 logger =  logging.getLogger(__name__)
 
 
 async def main():
+    """Main"""
     while True:
         try:
-            fmo = findmyorder()
+            fmo = FindMyOrder()
             print(fmo)
             logger.debug(f"findmyorder logger: {__name__} version: {__version__}")
             msg_order = "this is a test"
 
-            order = fmo.search(msg_order)
+            order = await fmo.search(msg_order)
             logger.debug(f"search 1: {order}")
-            order = fmo.identify_order(msg_order)
+            order = await fmo.identify_order(msg_order)
             logger.info(f"identify_order 1: {order}")
 
             msg_order = "buy btc"
 
-            order = fmo.search(msg_order)
+            order = await fmo.search(msg_order)
             logger.debug(f"search 2: {order}")
-            order = fmo.identify_order(msg_order)
+            order = await fmo.identify_order(msg_order)
             logger.info(msg=f"identify_order 2: {order}")
 
             msg_order = "SELL BTC 1%"
-            order = fmo.get_order(msg_order)
+            order = await fmo.get_order(msg_order)
             logger.info(f"get_order 1 : {order}")
 
             msg_order = "SELL BTCUSDT 1%"
-            order = fmo.get_order(msg_order)
+            order = await fmo.get_order(msg_order)
             logger.info(f"get_order 2: {order}")
 
             msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
-            order = fmo.get_order(msg_order)
+            order = await fmo.get_order(msg_order)
             logger.info(f"get_order 3: {order}")
 
             msg_order = "sell EURGBP sl=200 tp=400 q=2%"
-            order = fmo.get_order(msg_order)
+            order = await fmo.get_order(msg_order)
             logger.info(f"get_order 4: {order}")
             logger.info(f"action 4: {order['action']}")
             logger.info(f"instrument 4: {order['instrument']}")
@@ -60,16 +66,19 @@ app = FastAPI()
 
 @app.on_event("startup")
 async def start():
+    """startup"""
     asyncio.create_task(main())
 
 
 @app.get("/")
 def read_root():
+    """root"""
     return {"FMO is online"}
 
 
 @app.get("/health")
 def health_check():
+    """healthcheck"""
     return {"FMO is online"}
 
 
