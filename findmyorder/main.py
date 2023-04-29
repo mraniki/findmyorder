@@ -23,7 +23,8 @@ class FindMyOrder:
     ):
         """Search an order."""
         try:
-            logging.debug(f"search for {mystring}")
+            # logging.debug(f"search for {mystring}")
+            logging.info(mystring)
             action = one_of(settings.action_identifier, caseless=True).set_results_name("action")
             order_grammar = action('action')
             order = order_grammar.parse_string(instring=mystring,parse_all=False)
