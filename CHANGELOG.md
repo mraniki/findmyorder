@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.36 (2023-04-29)
+### Fix
+* Action test ([`ca5ed23`](https://github.com/mraniki/findmyorder/commit/ca5ed232c63861307ee6c6569be887866cea5dab))
+
 ## v1.0.35 (2023-04-29)
 
 
