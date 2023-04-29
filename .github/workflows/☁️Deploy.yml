@@ -8,7 +8,9 @@ on:
 
 
 jobs:
-  Notify
+  Notify:
+    name: Discord
+    runs-on: ubuntu-latest
     steps:
       - name: Actions Start Discord
         uses: sarisia/actions-status-discord@v1
@@ -19,6 +21,7 @@ jobs:
           noprefix: true
           color: 0xf5d442
 
+
   # Koyeb:
   #   - name: Build and deploy the application to Koyeb
   #     uses: koyeb/action-git-deploy@v1
@@ -28,6 +31,7 @@ jobs:
   #       service-env: "PORT=8080"
   #       service-ports: "8080:http"
   #       service-routes: "/health:8080"
+
 
 
   # deploy-deta:
