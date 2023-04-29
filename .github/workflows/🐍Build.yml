@@ -27,6 +27,15 @@ jobs:
         poetry install
     - name: Build package
       run: poetry build
+      
+      
+    # - name: Lint Code Base
+    #   uses: github/super-linter@v5
+    #   env:
+    #     VALIDATE_ALL_CODEBASE: false
+    #     DEFAULT_BRANCH: main
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
 
   release:
       # Run semantic release:
