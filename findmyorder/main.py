@@ -68,18 +68,7 @@ class findmyorder:
 
             if (self.search(mystring)):
                 self.logger.info(msg=f"get_order found: {mystring}")
-                parsed_order = self.identify_order(mystring)
-                self.logger.info(msg=f"get_order parsed_order: {parsed_order}")
-                order = {}
-                order['action'] = parsed_order['action']
-                order['instrument'] =  parsed_order['instrument']
-                order['stop_loss'] = parsed_order['stop_loss']
-                order['take_profit'] = parsed_order['take_profit']
-                order['quantity'] = parsed_order['quantity']
-                order['order_type'] = parsed_order['order_type']
-                order['leverage_type'] = parsed_order['leverage_type']
-                order['timestamp'] = datetime.now(timezone.utc)
-                order['comments'] = parsed_order['comment']
+                order = self.identify_order(mystring)
                 self.logger.info(msg=f"get_order order: {order}")
                 return order
             else:
