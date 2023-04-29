@@ -54,7 +54,7 @@ class findmyorder:
 
             order = order_grammar.parse_string(instring=mystring,parse_all=False)
             self.logger.debug(f"identify_order order {order}")
-            self.logger.debug(f"identify_order order dict {order.asDict()}")
+            self.logger.info(f"identify_order order dict {order.asDict()}")
             return order.asDict()
 
         except Exception as e:
