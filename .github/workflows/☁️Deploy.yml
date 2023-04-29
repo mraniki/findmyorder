@@ -41,7 +41,7 @@ jobs:
 
 
 
-  # deploy-deta:
+  # Deta:
   #   name: Deploy
   #   runs-on: ubuntu-latest
   #   steps:
