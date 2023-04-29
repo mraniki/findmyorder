@@ -5,7 +5,9 @@ import uvicorn
 from findmyorder import findmyorder
 from findmyorder import __version__
 
-logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level='DEBUG')
+logging.basicConfig(
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level="DEBUG"
+    )
 logger =  logging.getLogger(__name__)
 
 
@@ -48,25 +50,29 @@ async def main():
             logger.info(f"instrument 4: {order['instrument']}")
 
             await asyncio.sleep(7200)
-            
+
         except Exception as e:
             logger.error(f"error search {e}")
 
 
 app = FastAPI()
 
-@app.on_event('startup')
+
+@app.on_event("startup")
 async def start():
     asyncio.create_task(main())
+
 
 @app.get("/")
 def read_root():
     return {"FMO is online"}
 
+
 @app.get("/health")
 def health_check():
     return {"FMO is online"}
 
+
 if __name__ == "__main__":
-    uvicorn.run(app, host='0.0.0.0', port=8080)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
 
