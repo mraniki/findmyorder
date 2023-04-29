@@ -36,7 +36,7 @@ class findmyorder:
         ordertype = one_of(settings.order_type_identifier, caseless=True).set_results_name("ordertype")
         leverage_type = one_of(settings.leverage_type_identifier, caseless=True).set_results_name("leverage_type")
 
-        order_grammar = action('action') + Optional(instrument) + Optional(stop_loss) + Optional(take_profit) + Optional(quantity) 
+        order_grammar = action('action') + Optional(instrument,default=None) + Optional(stop_loss,default=None) + Optional(take_profit,default=None) + Optional(quantity,default=None) 
 
         order = order_grammar.parse_string(instring=mystring,parse_all=False)
         self.logger.debug(f"identify_order order {order}")
@@ -58,9 +58,9 @@ class findmyorder:
             order = {}
             order['action'] = parsed_order['action']
             order['instrument'] =  parsed_order['instrument']
-            order['stoploss'] = parsed_order['stoploss'] if (parsed_order['stoploss']) else 0
-            order['takeprofit'] = parsed_order['takeprofit'] if (parsed_order['takeprofit']) else 0
-            order['quantity'] = parsed_order['quantity'] if (parsed_order['quantity']) else 0
+            order['stoploss'] = parsed_order['stoploss'] 
+            order['takeprofit'] = parsed_order['takeprofit'] 
+            order['quantity'] = parsed_order['quantity'] 
             order['timestamp'] = datetime.now(timezone.utc)
             # order['comments'] = 'findmyorder'
             # order['ordertype'] = 'spot'
