@@ -20,7 +20,13 @@ jobs:
           title: "New Docker Ready"
           noprefix: true
           color: 0xf5d442
-
+      # - name: get repository name
+      #   run: echo "REPOSITORY_NAME=${GITHUB_REPOSITORY#*/}" >> $GITHUB_ENV
+      # - name: update repo category by language
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     REPOSITORY: ${{ env.REPOSITORY_NAME }}
+      #     USERNAME: ${{ github.repository_owner }}
 
   # Koyeb:
   #   - name: Build and deploy the application to Koyeb
