@@ -1,9 +1,14 @@
+"""
+Provides sexample for FindMyOrder
+"""
+
 import asyncio
 import logging
 
 import uvicorn
 from fastapi import FastAPI
-from findmyorder import __version__, findmyorder
+
+from findmyorder import __version__, FindMyOrder
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level="DEBUG"
@@ -12,9 +17,10 @@ logger =  logging.getLogger(__name__)
 
 
 async def main():
+    """Main"""
     while True:
         try:
-            fmo = findmyorder()
+            fmo = FindMyOrder()
             print(fmo)
             logger.debug(f"findmyorder logger: {__name__} version: {__version__}")
             msg_order = "this is a test"
@@ -60,16 +66,19 @@ app = FastAPI()
 
 @app.on_event("startup")
 async def start():
+    """startup"""
     asyncio.create_task(main())
 
 
 @app.get("/")
 def read_root():
+    """root"""
     return {"FMO is online"}
 
 
 @app.get("/health")
 def health_check():
+    """healthcheck"""
     return {"FMO is online"}
 
 

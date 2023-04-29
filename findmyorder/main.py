@@ -1,5 +1,6 @@
-import asyncio
+
 import logging
+
 from datetime import datetime, timezone
 
 from pyparsing import Combine, Optional, Word, alphas, nums, one_of
@@ -7,16 +8,17 @@ from pyparsing import Combine, Optional, Word, alphas, nums, one_of
 from .config import settings
 
 
-class findmyorder:
+class FindMyOrder:
+    """Search an order an order."""
 
     def __init__(
         self,
     ):
         self.logger =  logging.getLogger(__name__)
 
-    def search(
-        self,
-        mystring: str,
+    async def search(
+            self,
+            mystring: str,
     ):
         """Search an order."""
         try:
@@ -27,16 +29,16 @@ class findmyorder:
             if order:
                 self.logger.debug(f"found {order} in {mystring}")
                 return True
-            self.logger.debug(f"no order identified in {mystring} using {settings.action_identifier}")
+            self.logger.debug(f"no order in {mystring} using {settings.action_identifier}")
             return False
         except Exception as e:
             logging.exception("SearchError: %s", e)
             return False
 
-    def identify_order(
-        self,
-        mystring: str,
-    ):
+    async def identify_order(
+                self,
+                mystring: str,
+        ):
         """Identify an order."""
         self.logger.debug(f"identify_order for {mystring}")
         try:
@@ -69,18 +71,20 @@ class findmyorder:
           self.logger.error(f"identify_order {e}")
           return None
 
-    def get_order(
-        self,
-        mystring: str,
-    ):
+
+    async def get_order(
+            self,
+            mystring: str,
+        ):
         """get an order."""
         try:
             self.logger.debug(f"get_order for {mystring}")
 
-            if (self.search(mystring)):
-                self.logger.info(msg=f"get_order found: {mystring}")
-                order = self.identify_order(mystring)
+            if await self.search(mystring):
+                self.logger.info(msg=f"get_order found in {mystring}")
+                order = await self.identify_order(mystring)
                 self.logger.info(msg=f"get_order order: {order}")
+                order['timestamp'] = datetime.now(timezone.utc)
                 return order
             else:
                 return None
