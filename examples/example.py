@@ -1,9 +1,10 @@
-import asyncio, logging
-from fastapi import FastAPI
-import uvicorn
+import asyncio
+import logging
 
-from findmyorder import findmyorder
-from findmyorder import __version__
+import uvicorn
+from fastapi import FastAPI
+
+from findmyorder import __version__, findmyorder
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level="DEBUG"
