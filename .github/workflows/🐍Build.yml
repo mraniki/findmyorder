@@ -3,14 +3,29 @@ name: 🐍Build
 
 on:
   push:
-    branches: [ "main"]
+    branches: ["master", "main"]
   pull_request:
-   branches: [ "main"]
-   
+  workflow_dispatch:
+  schedule:
+    - cron: '42 23 * * 5'
+
 
 jobs:
-  build:
 
+  coding-standards:
+    name: Linting & CodingStandards
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lint Code Base
+        uses: github/super-linter@v5
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+  build:
+    needs: [coding-standards]
     runs-on: ubuntu-latest
 
     steps:
@@ -28,22 +43,61 @@ jobs:
     - name: Build package
       run: poetry build
       
-      
-    # - name: Lint Code Base
-    #   uses: github/super-linter@v5
-    #   env:
-    #     VALIDATE_ALL_CODEBASE: false
-    #     DEFAULT_BRANCH: main
-    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+
+  test:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3.5.2
+      - name: Set up python
+        id: setup-python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
+        with:
+          virtualenvs-create: true
+          virtualenvs-in-project: true
+          installer-parallel: true
+      - name: Load cached venv
+        id: cached-poetry-dependencies
+        uses: actions/cache@v3
+        with:
+          path: .venv
+          key: venv-${{ runner.os }}-${{ steps.setup-python.outputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
+      - name: Install dependencies
+        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
+        run: poetry install --no-interaction --no-root
+      - name: Install project
+        run: poetry install --no-interaction
+      - name: Test with pytest
+        run: poetry run pytest --cov . --cov-report=xml
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+  scanning:
+    needs: [test]
+    name: GitGuardian scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # fetch all history so multiple commits can be scanned
+      - name: GitGuardian scan
+        uses: GitGuardian/ggshield-action@master
+        env:
+          GITHUB_PUSH_BEFORE_SHA: ${{ github.event.before }}
+          GITHUB_PUSH_BASE_SHA: ${{ github.event.base }}
+          GITHUB_PULL_BASE_SHA:  ${{ github.event.pull_request.base.sha }}
+          GITHUB_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
 
   release:
-      # Run semantic release:
-      # - Update CHANGELOG.md
-      # - Update version in code
-      # - Create git tag
-      # - Create GitHub release
-      # - Publish to PyPI
     if: ${{ github.ref == 'refs/heads/main' && github.event_name == 'push' }}
     runs-on: ubuntu-latest
     needs: [build]
@@ -59,16 +113,24 @@ jobs:
           repository_password: ${{ secrets.PYPI_API_TOKEN }}
           #additional_options: --patch
 
-#
-    # BREAKING CHANGE:
-    # feat: A new feature
-    # fix: A bug fix
-    # docs: Documentation only changes
-    # style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-    # refactor: A code change that neither fixes a bug nor adds a feature
-    # perf: A code change that improves performance
-    # test: Adding missing or correcting existing tests
-    # chore: Changes to the build process or auxiliary tools and libraries such as documentation generation
+  nightly-merge:
+    runs-on: ubuntu-latest
+    needs: [release]
+    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3.5.2
+      with:
+        fetch-depth: 0
+
+    - name: Nightly Merge
+      uses: robotology/gh-action-nightly-merge@v1.4.0
+      with:
+        stable_branch: 'main'
+        development_branch: 'dev'
+        allow_ff: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
          
 
