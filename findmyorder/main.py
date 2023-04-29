@@ -2,7 +2,6 @@
  FindMyOrder Main
 """
 import logging
-
 from datetime import datetime, timezone
 
 from pyparsing import Combine, Optional, Word, alphas, nums, one_of
@@ -24,14 +23,14 @@ class FindMyOrder:
     ):
         """Search an order."""
         try:
-            self.logger.debug(f"search for {mystring}")
+            logging.debug(f"search for {mystring}")
             action = one_of(settings.action_identifier, caseless=True).set_results_name("action")
             order_grammar = action('action')
             order = order_grammar.parse_string(instring=mystring,parse_all=False)
             if order:
-                self.logger.debug(f"found {order} in {mystring}")
+                logging.debug(f"found {order} in {mystring}")
                 return True
-            self.logger.debug(f"no order in {mystring} using {settings.action_identifier}")
+            logging.debug(f"no order in {mystring} using {settings.action_identifier}")
             return False
         except Exception as e:
             logging.exception("SearchError: %s", e)
@@ -42,7 +41,7 @@ class FindMyOrder:
             mystring: str,
         ):
         """Identify an order."""
-        self.logger.debug(f"identify_order for {mystring}")
+        logging.debug(f"identify_order for {mystring}")
         try:
             action = one_of(
                 settings.action_identifier, caseless=True
@@ -84,8 +83,8 @@ class FindMyOrder:
                     instring=mystring,
                     parse_all=False
                     )
-            self.logger.debug(f"identify_order order {order}")
-            self.logger.info(f"identify_order order dict {order.asDict()}")
+            logging.debug(f"identify_order order {order}")
+            logging.info(f"identify_order order dict {order.asDict()}")
             return order.asDict()
 
         except Exception as e:
@@ -99,7 +98,7 @@ class FindMyOrder:
         ):
         """get an order."""
         try:
-            self.logger.debug(f"get_order for {mystring}")
+            logging.debug(f"get_order for {mystring}")
 
             if await self.search(mystring):
                 self.logger.info(msg=f"get_order found in {mystring}")

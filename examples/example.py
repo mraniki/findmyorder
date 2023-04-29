@@ -7,7 +7,6 @@ import logging
 
 import uvicorn
 from fastapi import FastAPI
-
 from findmyorder import FindMyOrder, __version__
 
 logging.basicConfig(
