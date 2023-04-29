@@ -2,6 +2,9 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.35 (2023-04-29)
+
+
 ## v1.0.34 (2023-04-28)
 ### Fix
 * Refactor stop_loss and quantity identifiers in main.py ([`50b41ae`](https://github.com/mraniki/findmyorder/commit/50b41ae9ab9e0908b7bc32efb2bd8cecb98a82a0))
