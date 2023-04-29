@@ -40,14 +40,15 @@ class findmyorder:
         leverage_type = one_of(settings.leverage_type_identifier, caseless=True).set_results_name("leverage_type")
         comment = one_of(settings.comment_identifier, caseless=True).set_results_name("comment")
 
-        order_grammar = action('action')/
-                      + Optional(instrument,default=None)/
-                      + Optional(stop_loss,default=None)/
-                      + Optional(take_profit,default=None)/
-                      + Optional(quantity,default=None)/
-                      + Optional(ordertype,default=None)/
-                      + Optional(leverage_type,default=None)/
-                      + Optional(comment,default=None)
+        order_grammar = (action('action') + 
+          Optional(instrument,default=None) + 
+          Optional(stop_loss,default=None) + 
+          Optional(take_profit,default=None) + 
+          Optional(quantity,default=None) + 
+          Optional(ordertype,default=None) + 
+          Optional(leverage_type,default=None) + 
+          Optional(comment,default=None)
+          )
 
         order = order_grammar.parse_string(instring=mystring,parse_all=False)
         self.logger.debug(f"identify_order order {order}")
