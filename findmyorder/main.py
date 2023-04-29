@@ -9,11 +9,15 @@ from .config import settings
 
 class findmyorder:
 
-    def __init__(self,
-         ):
+    def __init__(
+        self,
+    ):
         self.logger =  logging.getLogger(__name__)
 
-    def search(self,mystring: str,):
+    def search(
+        self,
+        mystring: str,
+    ):
         """Search an order."""
         try:
             self.logger.debug(f"search for {mystring}")
@@ -29,7 +33,10 @@ class findmyorder:
             logging.exception("SearchError: %s", e)
             return False
 
-    def identify_order(self,mystring: str,):
+    def identify_order(
+        self,
+        mystring: str,
+    ):
         """Identify an order."""
         self.logger.debug(f"identify_order for {mystring}")
         try:
@@ -42,14 +49,15 @@ class findmyorder:
             leverage_type = one_of(settings.leverage_type_identifier, caseless=True).set_results_name("leverage_type")
             comment = one_of(settings.comment_identifier, caseless=True).set_results_name("comment")
 
-            order_grammar = (action('action') +
-              Optional(instrument,default=None) +
-              Optional(stop_loss,default=None) +
-              Optional(take_profit,default=None) +
-              Optional(quantity,default=None) +
-              Optional(order_type,default=None) +
-              Optional(leverage_type,default=None) +
-              Optional(comment,default=None)
+            order_grammar = (
+                action('action')
+                + Optional(instrument,default=None)
+                + Optional(stop_loss,default=None)
+                + Optional(take_profit,default=None)
+                + Optional(quantity,default=None) 
+                + Optional(order_type,default=None) 
+                + Optional(leverage_type,default=None) 
+                + Optional(comment,default=None)
               )
 
             order = order_grammar.parse_string(instring=mystring,parse_all=False)
@@ -61,7 +69,10 @@ class findmyorder:
           self.logger.error(f"identify_order {e}")
           return None
 
-    def get_order(self,mystring: str,):
+    def get_order(
+        self,
+        mystring: str,
+    ):
         """get an order."""
         try:
             self.logger.debug(f"get_order for {mystring}")
