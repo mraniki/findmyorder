@@ -8,7 +8,9 @@ on:
 
 
 jobs:
-  Notify
+  Notify:
+    name: Discord
+    runs-on: ubuntu-latest
     steps:
       - name: Actions Start Discord
         uses: sarisia/actions-status-discord@v1
