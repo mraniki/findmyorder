@@ -89,7 +89,6 @@ class FindMyOrder:
             return None
 
     async def get_order(
-        self,
         mystring: str,
         ):
         """get an order."""
