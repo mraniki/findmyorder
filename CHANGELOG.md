@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.45 (2023-04-30)
+### Fix
+* Unit test ([`f909808`](https://github.com/mraniki/findmyorder/commit/f909808804ffa8d0ea17498e52c28abbdfb09ca2))
+* Example logging ([`a9ff50a`](https://github.com/mraniki/findmyorder/commit/a9ff50aa5521b1fe89f86712f2c849660c15d139))
+
 ## v1.0.44 (2023-04-30)
 ### Fix
 * Remove old imports ([`d991c83`](https://github.com/mraniki/findmyorder/commit/d991c837309191fa696ff14b6905b315fbbdf201))
