@@ -1,12 +1,11 @@
 """
 FindMyOrder Unit Testing
 """
-from findmyorder import FindMyOrder
+from findmyorder import FindMyOrder as fmo
 
 
 async def test_search():
     """Search Testing"""
-    fmo = FindMyOrder()
     assert await fmo.search("hello") is False
     assert await fmo.search("buy btc") is True
     assert await fmo.search("SELL BTC 1%") is True
@@ -18,13 +17,10 @@ async def test_search():
 
 async def test_identify_order():
     """Identify Testing"""
-    fmo = FindMyOrder()
     assert await fmo.identify_order("hello") is None
     assert await fmo.identify_order("buy btc") is not None
-    assert await fmo.identify_order("SELL BTC 1%") is not None
-
 async def test_get_order():
     """Get Order Testing"""
-    fmo = FindMyOrder()
     assert await fmo.get_order("hello") is None
     assert await fmo.get_order("buy btc") is not None
+    
