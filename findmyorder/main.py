@@ -4,6 +4,7 @@
 import logging
 from datetime import datetime, timezone
 
+import pyparsing as pp
 from pyparsing import Combine, Optional, Word, alphas, nums, one_of
 
 from .config import settings
@@ -23,15 +24,7 @@ class FindMyOrder:
         """Search an order."""
         try:
             logging.info(mystring)
-            action = one_of(
-                        settings.action_identifier, 
-                        caseless=True
-                        ).set_results_name("action")
-            order_grammar = Optional('action',default=None)
-            order = order_grammar.parse_string(
-                        instring=mystring,
-                        parse_all=False)
-            if order:
+            if mystring.casefold() in settings.action_identifier.casefold():
                 logging.debug("found order in %s ", mystring)
                 return True
             logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
