@@ -8,7 +8,6 @@ from pyparsing import Combine, Optional, Word, alphas, nums, one_of
 
 from .config import settings
 
-
 class FindMyOrder:
     """Search an order an order."""
 
@@ -34,7 +33,7 @@ class FindMyOrder:
             logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
             return False
         except ParseException as e:
-            logging.exception("SearchError: %s", e)
+            logging.warning("SearchError: %s", e)
             return False
 
     async def identify_order(
