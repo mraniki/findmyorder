@@ -22,7 +22,6 @@ class FindMyOrder:
     ):
         """Search an order."""
         try:
-            # logging.debug(f"search for {mystring}")
             logging.info(mystring)
             action = one_of(settings.action_identifier, caseless=True).set_results_name("action")
             order_grammar = action('action')
@@ -90,7 +89,6 @@ class FindMyOrder:
         except Exception as e:
             logging.exception("IdentifyError: %s", e)
             return None
-
 
     async def get_order(
         self,
