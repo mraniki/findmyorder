@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.41 (2023-04-30)
+### Fix
+* Cleanup ([`1054993`](https://github.com/mraniki/findmyorder/commit/10549938e7696110642b2ca1aae9854b52b1b622))
+
 ## v1.0.40 (2023-04-30)
 ### Fix
 * Typo ([`0a8c99e`](https://github.com/mraniki/findmyorder/commit/0a8c99ed09dd0da43e9250a1d11ff75bf928e458))
