@@ -23,15 +23,20 @@ class FindMyOrder:
         """Search an order."""
         try:
             logging.info(mystring)
-            action = one_of(settings.action_identifier, caseless=True).set_results_name("action")
-            order_grammar = action('action')
-            order = order_grammar.parse_string(instring=mystring,parse_all=False)
+            action = one_of(
+                        settings.action_identifier, 
+                        caseless=True
+                        ).set_results_name("action")
+            order_grammar = Optional('action',default=None)
+            order = order_grammar.parse_string(
+                        instring=mystring,
+                        parse_all=False)
             if order:
                 logging.debug("found order in %s ", mystring)
                 return True
             logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
             return False
-        except ParseException as e:
+        except Exception as e:
             logging.warning("SearchError: %s", e)
             return False
 
