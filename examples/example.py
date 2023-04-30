@@ -31,32 +31,31 @@ async def main():
 
             msg_order = "buy btc"
             order = await fmo.search(msg_order)
-            logger.debug(f"search 2: {order}")
+            logger.debug("search 2: %s", order)
             order = await fmo.identify_order(msg_order)
-            logger.info(msg=f"identify_order 2: {order}")
+            logger.info("identify_order 2: %s", order)
 
             msg_order = "SELL BTC 1%"
             order = await fmo.get_order(msg_order)
-            logger.info(f"get_order 1 : {order}")
-
+            logger.info("get_order 1 %s", order)
             msg_order = "SELL BTCUSDT 1%"
             order = await fmo.get_order(msg_order)
-            logger.info(f"get_order 2: {order}")
+            logger.info("get_order 2: %s", order)
 
             msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
             order = await fmo.get_order(msg_order)
-            logger.info(f"get_order 3: {order}")
+            logger.info("get_order 3: %s", order)
 
             msg_order = "sell EURGBP sl=200 tp=400 q=2%"
             order = await fmo.get_order(msg_order)
-            logger.info(f"get_order 4: {order}")
-            logger.info(f"action 4: {order['action']}")
-            logger.info(f"instrument 4: {order['instrument']}")
+            logger.info("get_order 4: %s", order)
+            logger.info("action 4: %s",order['action'])
+            logger.info("instrument 4: %s", order['instrument'])
 
             await asyncio.sleep(7200)
 
         except Exception as e:
-            logger.error(f"error search {e}")
+            logger.error("error search %s", e)
 
 
 app = FastAPI()
