@@ -24,9 +24,12 @@ class FindMyOrder:
         """Search an order."""
         try:
             logging.info(mystring)
-            if mystring.casefold() in settings.action_identifier.casefold():
-                logging.debug("found order in %s ", mystring)
-                return True
+            logging.info(settings.action_identifier)
+            
+            for mystring in settings.action_identifier:
+                if mystring.lower() == settings.action_identifier.lower(): 
+                    logging.debug("found order in %s ", mystring)
+                    return True
             logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
             return False
         except Exception as e:
