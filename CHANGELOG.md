@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.42 (2023-04-30)
+### Fix
+* Search function .casefold() ([`fc15b44`](https://github.com/mraniki/findmyorder/commit/fc15b440424298e474f24c19442f825a98d48c12))
+* Improving search exception handling ([`3f9c5a0`](https://github.com/mraniki/findmyorder/commit/3f9c5a08ac424f88ab8b6beb0cc5911b0dd8cfb8))
+
 ## v1.0.41 (2023-04-30)
 ### Fix
 * Cleanup ([`1054993`](https://github.com/mraniki/findmyorder/commit/10549938e7696110642b2ca1aae9854b52b1b622))
