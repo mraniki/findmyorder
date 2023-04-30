@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.40 (2023-04-30)
+### Fix
+* Typo ([`0a8c99e`](https://github.com/mraniki/findmyorder/commit/0a8c99ed09dd0da43e9250a1d11ff75bf928e458))
+
 ## v1.0.39 (2023-04-30)
 ### Fix
 * ParseException ([`6b4e756`](https://github.com/mraniki/findmyorder/commit/6b4e7563b03af51f70fd7638a47096cbddaf971f))
