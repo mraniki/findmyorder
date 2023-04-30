@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.43 (2023-04-30)
+### Fix
+* Search ([`d1683c4`](https://github.com/mraniki/findmyorder/commit/d1683c4c1c347dc78383c369aa5d04e16b4208b4))
+
 ## v1.0.42 (2023-04-30)
 ### Fix
 * Search function .casefold() ([`fc15b44`](https://github.com/mraniki/findmyorder/commit/fc15b440424298e474f24c19442f825a98d48c12))
