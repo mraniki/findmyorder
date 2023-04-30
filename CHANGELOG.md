@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.38 (2023-04-29)
+### Fix
+* Logger setup ([`a18934c`](https://github.com/mraniki/findmyorder/commit/a18934cccc5d7976bed20ccbdc78ffcd1fd87665))
+
+## v1.0.37 (2023-04-29)
+### Fix
+* Lint ([`faf8bd9`](https://github.com/mraniki/findmyorder/commit/faf8bd9d5cfe721374d652b313a9726abc501a4a))
+* Lint ([`5736b4a`](https://github.com/mraniki/findmyorder/commit/5736b4acc4ab1ee4865a9acb24a8f112e5af6fb6))
+* Lint ([`1878ba4`](https://github.com/mraniki/findmyorder/commit/1878ba4e73f126645984bd2edbe7630745655035))
+* Lint ([`d0bddaf`](https://github.com/mraniki/findmyorder/commit/d0bddaf69cdfdb9892dc6e3856d377f5dba4ac2f))
+* Remove .DS_Store file and update README.md ([`11fa973`](https://github.com/mraniki/findmyorder/commit/11fa973b9c1ca938ca7ba922111450e70b36e7b3))
+* Linter ([`971595a`](https://github.com/mraniki/findmyorder/commit/971595a68573bf25578d0ed057e8c892579df8bf))
+* Lint ([`a9cc3d0`](https://github.com/mraniki/findmyorder/commit/a9cc3d0ddf0ff9207895ef86b1765eaabab5969c))
+* Import order ([`4c225d4`](https://github.com/mraniki/findmyorder/commit/4c225d4ee8a819a377a91e9dbdee4d82d13108bd))
+* Multiline ([`12b2ef2`](https://github.com/mraniki/findmyorder/commit/12b2ef2158f8974e67525c2622c24a3bad816ee9))
+
 ## v1.0.36 (2023-04-29)
 ### Fix
 * Action test ([`ca5ed23`](https://github.com/mraniki/findmyorder/commit/ca5ed232c63861307ee6c6569be887866cea5dab))
