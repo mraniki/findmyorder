@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.39 (2023-04-30)
+### Fix
+* ParseException ([`6b4e756`](https://github.com/mraniki/findmyorder/commit/6b4e7563b03af51f70fd7638a47096cbddaf971f))
+* Logging format ([`3666653`](https://github.com/mraniki/findmyorder/commit/3666653154eb6efde1831720746b1d30772d29f6))
+* Dep ([`f426555`](https://github.com/mraniki/findmyorder/commit/f426555a114b6f67a6a70acfb8e1959b292383bc))
+
 ## v1.0.38 (2023-04-29)
 ### Fix
 * Logger setup ([`a18934c`](https://github.com/mraniki/findmyorder/commit/a18934cccc5d7976bed20ccbdc78ffcd1fd87665))
