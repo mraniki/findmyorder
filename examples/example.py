@@ -10,8 +10,8 @@ from fastapi import FastAPI
 from findmyorder import FindMyOrder, __version__
 
 logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", 
-    level="DEBUG"
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    level="INFO"
 )
 
 logger =  logging.getLogger(__name__)
@@ -20,6 +20,7 @@ async def main():
     """Main"""
     while True:
         try:
+
             fmo = FindMyOrder()
             print(fmo)
             logger.debug("findmyorder logger: %s version: %s", __name__, __version__)
@@ -27,11 +28,8 @@ async def main():
 
             order = await fmo.search(msg_order)
             logger.debug("search 1: %s", order)
-            order = await fmo.identify_order(msg_order)
-            logger.info(f"identify_order 1: {order}")
 
             msg_order = "buy btc"
-
             order = await fmo.search(msg_order)
             logger.debug(f"search 2: {order}")
             order = await fmo.identify_order(msg_order)

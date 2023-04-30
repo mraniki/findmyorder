@@ -10,7 +10,7 @@ from pyparsing import Combine, Optional, Word, alphas, nums, one_of
 from .config import settings
 
 class FindMyOrder:
-    """Search an order."""
+    """Search an order an order."""
 
     def __init__(
         self,
@@ -24,12 +24,10 @@ class FindMyOrder:
         """Search an order."""
         try:
             logging.info(mystring)
-            logging.info(settings.action_identifier)
-            
-            for mystring in settings.action_identifier:
-                if mystring.lower() == settings.action_identifier.lower(): 
-                    logging.debug("found order in %s ", mystring)
-                    return True
+            logging.info("action identifier %s", settings.action_identifier)
+            if mystring.lower() in settings.action_identifier.lower():
+                logging.debug("found order in %s ", mystring)
+                return True
             logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
             return False
         except Exception as e:
