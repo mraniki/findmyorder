@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.44 (2023-04-30)
+### Fix
+* Remove old imports ([`d991c83`](https://github.com/mraniki/findmyorder/commit/d991c837309191fa696ff14b6905b315fbbdf201))
+
 ## v1.0.43 (2023-04-30)
 ### Fix
 * Search ([`d1683c4`](https://github.com/mraniki/findmyorder/commit/d1683c4c1c347dc78383c369aa5d04e16b4208b4))
