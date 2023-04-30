@@ -10,7 +10,7 @@ from pyparsing import Combine, Optional, Word, alphas, nums, one_of
 from .config import settings
 
 class FindMyOrder:
-    """Search an order an order."""
+    """Search an order."""
 
     def __init__(
         self,
