@@ -2,6 +2,7 @@
  FindMyOrder Config
 """
 import os
+
 from dynaconf import Dynaconf
 
 ROOT = os.path.dirname(__file__)
@@ -18,4 +19,3 @@ settings = Dynaconf(
     environments=True,
     default_env="default",
 )
-

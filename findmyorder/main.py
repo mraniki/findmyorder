@@ -29,11 +29,11 @@ class FindMyOrder:
             order_grammar = action('action')
             order = order_grammar.parse_string(instring=mystring,parse_all=False)
             if order:
-                logging.debug(f"found {order} in {mystring}")
+            logging.debug("found order in %s ", mystring)
                 return True
-            logging.debug(f"no order in {mystring} using {settings.action_identifier}")
+            logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
             return False
-        except Exception as e:
+        except ParseException as e:
             logging.exception("SearchError: %s", e)
             return False
 
@@ -42,7 +42,7 @@ class FindMyOrder:
             mystring: str,
         ):
         """Identify an order."""
-        logging.debug(f"identify_order for {mystring}")
+        logging.debug("identify_order: %s", mystring)
         try:
             action = one_of(
                 settings.action_identifier, caseless=True
@@ -84,8 +84,8 @@ class FindMyOrder:
                     instring=mystring,
                     parse_all=False
                     )
-            logging.debug(f"identify_order order {order}")
-            logging.info(f"identify_order order dict {order.asDict()}")
+            logging.debug("identify_order %s", order)
+            logging.info("identify_order:  %s", order.asDict())
             return order.asDict()
 
         except Exception as e:
@@ -99,12 +99,12 @@ class FindMyOrder:
         ):
         """get an order."""
         try:
-            logging.debug(f"get_order for {mystring}")
+            logging.debug("get_order: %s", mystring)
 
             if await self.search(mystring):
-                self.logger.info(msg=f"get_order found in {mystring}")
+                logging.info("get_order found in %s", mystring)
                 order = await self.identify_order(mystring)
-                self.logger.info(msg=f"get_order order: {order}")
+                logging.info("order: %s", order)
                 order["timestamp"] = datetime.now(timezone.utc)
                 return order
             return None
