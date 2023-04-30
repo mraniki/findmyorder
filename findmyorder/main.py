@@ -4,7 +4,6 @@
 import logging
 from datetime import datetime, timezone
 
-import pyparsing as pp
 from pyparsing import Combine, Optional, Word, alphas, nums, one_of
 
 from .config import settings
