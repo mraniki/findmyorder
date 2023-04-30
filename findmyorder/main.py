@@ -29,7 +29,7 @@ class FindMyOrder:
             order_grammar = action('action')
             order = order_grammar.parse_string(instring=mystring,parse_all=False)
             if order:
-            logging.debug("found order in %s ", mystring)
+                logging.debug("found order in %s ", mystring)
                 return True
             logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
             return False
