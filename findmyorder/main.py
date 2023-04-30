@@ -33,8 +33,8 @@ class FindMyOrder:
                 return True
             logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
             return False
-        except Exception as e:
-            #logging.exception("SearchError: %s", e)
+        except ParseException as e:
+            logging.exception("SearchError: %s", e)
             return False
 
     async def identify_order(
