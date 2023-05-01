@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.47 (2023-05-01)
+### Fix
+* Refactor logging in FindMyOrder class ([`17188f5`](https://github.com/mraniki/findmyorder/commit/17188f5356804890576eaeeb8eb076a5d7030919))
+* Update logging level and comment out two logger.info calls in example.py ([`1f86b49`](https://github.com/mraniki/findmyorder/commit/1f86b492152e90a626d957e2ce8cd0cddd568385))
+
 ## v1.0.46 (2023-04-30)
 ### Fix
 * Remove unnecessary self argument in FindMyOrder class constructor. ([`0ec79a9`](https://github.com/mraniki/findmyorder/commit/0ec79a98d8fc926c33e34a8d7705a927068c4a58))
