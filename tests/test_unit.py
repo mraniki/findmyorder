@@ -12,53 +12,89 @@ from findmyorder import FindMyOrder as fmo
 def find_my_order():
     return fmo()
 
-def test_search_order(find_my_order):
+async def test_search_valid_order(find_my_order):
+    """Search Testing"""
     mystring = "buy btc"
     assert await find_my_order.search(mystring) is True
 
-def test_search_no_order(find_my_order):
+async def test_search_no_order(find_my_order):
+    """Search Testing"""
     mystring = "This is not an order"
     assert await find_my_order.search(mystring) is False
 
-def test_search_exception(find_my_order, caplog):
+async def test_search_no_order_command(find_my_order):
+    """Search Testing"""
+    mystring = "/bal"
+    assert await find_my_order.search(mystring) is False
+
+async def test_search_exception(find_my_order, caplog):
+    """Search Testing"""
     mystring = ""
     await find_my_order.search(mystring)
     assert "SearchError" in caplog.text
-# async def test_search():
-#     """Search Testing"""
-#     assert await fmo.search("hello") is False
-#     assert await fmo.search("buy btc") is True
-#     assert await fmo.search("SELL BTC 1%") is True
-#     assert await fmo.search("BUY BTCUSDT 1%") is True
-#     assert await fmo.search("buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC") is True
-#     assert await fmo.search("sell EURGBP sl=200 tp=400 q=2%") is True
-#     assert await fmo.search("LONG ETHUSD sl=200 tp=400 q=2%") is True
-#     assert await fmo.search("SHORT CRUDEOIL sl=200 tp=400 q=2%") is True
+
+async def test_search_normal_order(find_my_order):
+    """Search Testing"""
+    mystring = "sell EURGBP sl=200 tp=400 q=2%"
+    assert await find_my_order.search(mystring) is True
+
+async def test_search_normal_order_variation(find_my_order):
+    """Search Testing"""
+    mystring = "LONG ETHUSD sl=200 tp=400 q=2%"
+    assert await find_my_order.search(mystring) is True
 
 async def test_identify_order():
     """Identify Testing"""
-    assert await fmo.identify_order("hello") is None
-    assert await fmo.identify_order("buy btc") is not None
-# async def test_get_order():
-#     """Get Order Testing"""
-#     assert await fmo.get_order("hello") is None
-#     assert await fmo.get_order("buy btc") is not None
-    
-
-@pytest.fixture
-def mock_get_order():
-    mock = MagicMock()
-    mock.search.return_value = True
-    mock.identify_order.return_value = {"action": "BUY", "instrument": "EURUSD", "quantity": 1}
-    return mock
-
-@pytest.mark.asyncio
-async def test_get_order(mock_get_order):
-    msg = "BUY EURUSD q=1"
-    result = await mock_get_order.get_order(msg)
+    find_my_order = FindMyOrder()
+    mystring = "buy btc"
+    result = find_my_order.identify_order(mystring)
     assert result is not None
-    assert result["action"] == BUY
-    assert result["instrument"] == "EURUSD"
-    assert result["quantity"] == 1
-    assert "timestamp" in result
-    assert isinstance(result["timestamp"], datetime)
+
+async def test_identify_order_invalid_input():
+    """Identify Testing"""
+    find_my_order = FindMyOrder()
+    mystring = "hello"
+    result = find_my_order.identify_order(mystring)
+    assert result is None
+
+async def test_valid_get_order():
+    """get order Testing"""
+    find_my_order = FindMyOrder()
+    mystring = "buy EURJPY sl=200 tp=400 q=2%"
+    expected = {
+        "action": "buy",
+        "instrument": "EURJPY",
+        "stop_loss": "200"
+        "take_profit": "400"
+        "quantity": "2"
+        "order_type": None
+        "leverage_type": None
+        "comment": None
+    }
+    result = find_my_order.get_order(mystring)
+    assert result == expected
+
+async def test_short_valid_get_order():
+    """get order Testing"""
+    find_my_order = FindMyOrder()
+    mystring = "buy EURUSD"
+    expected = {
+        "action": "buy",
+        "instrument": "EURJPY",
+        "stop_loss": None
+        "take_profit": None
+        "quantity": None
+        "order_type": None
+        "leverage_type": None
+        "comment": None
+    }
+    result = find_my_order.get_order(mystring)
+    assert result == expected
+
+async def test_invalid_get_order():
+    """get order Testing"""
+    find_my_order = FindMyOrder()
+    mystring = "ECHO 12345"
+    expected = None
+    result = find_my_order.get_order(mystring)
+    assert result == expected

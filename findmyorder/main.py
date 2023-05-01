@@ -19,7 +19,7 @@ class FindMyOrder:
     async def search(
         self,
         mystring: str,
-    ):
+    )-> bool:
         """Search an order."""
         try:
             logging.info(mystring)
@@ -37,7 +37,7 @@ class FindMyOrder:
     async def identify_order(
             self,
             mystring: str,
-        ):
+        ) -> dict:
         """Identify an order."""
         logging.debug("identify_order: %s", mystring)
         try:
