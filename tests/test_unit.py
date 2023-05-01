@@ -3,25 +3,24 @@ FindMyOrder Unit Testing
 """
     
 import pytest
-from findmyorder import FindMyOrder as fmo
+from findmyorder import FindMyOrder
 
-
-#@pytest.fixture
-def find_my_order():
-    return fmo()
 
 async def test_search_valid_order():
     """Search Testing"""
+    fmo = FindMyOrder()
     mystring = "buy btc"
     assert await fmo.search(mystring) is True
 
 async def test_search_no_order():
     """Search Testing"""
+    fmo = FindMyOrder()
     mystring = "This is not an order"
     assert await fmo.search(mystring) is False
 
 async def test_search_no_order_command():
     """Search Testing"""
+    fmo = FindMyOrder()
     mystring = "/bal"
     assert await fmo.search(mystring) is False
 
@@ -33,28 +32,33 @@ async def test_search_no_order_command():
 
 async def test_search_normal_order():
     """Search Testing"""
+    fmo = FindMyOrder()
     mystring = "sell EURGBP sl=200 tp=400 q=2%"
     assert await fmo.search(mystring) is True
 
 async def test_search_normal_order_variation():
     """Search Testing"""
+    fmo = FindMyOrder()
     mystring = "LONG ETHUSD sl=200 tp=400 q=2%"
     assert await fmo.search(mystring) is True
 
 async def test_identify_order():
     """Identify Testing"""
+    fmo = FindMyOrder()
     mystring = "buy btc"
     result = await fmo.identify_order(mystring)
     assert result is not None
 
 async def test_identify_order_invalid_input():
     """Identify Testing"""
+    fmo = FindMyOrder()
     mystring = "hello"
     result = await fmo.identify_order(mystring)
     assert result is None
 
 async def test_valid_get_order():
     """get order Testing"""
+    fmo = FindMyOrder()
     mystring = "buy EURJPY sl=200 tp=400 q=2%"
     expected = {
         "action": "buy",
@@ -71,6 +75,7 @@ async def test_valid_get_order():
 
 async def test_short_valid_get_order():
     """get order Testing"""
+    fmo = FindMyOrder()
     mystring = "buy EURUSD"
     expected = {
         "action": "buy",
@@ -87,6 +92,7 @@ async def test_short_valid_get_order():
 
 async def test_invalid_get_order():
     """get order Testing"""
+    fmo = FindMyOrder()
     mystring = "ECHO 12345"
     expected = None
     result = await fmo.get_order(mystring)
