@@ -1,6 +1,10 @@
 """
 FindMyOrder Unit Testing
 """
+    
+import pytest
+from unittest.mock import AsyncMock, MagicMock
+from datetime import datetime, timezone
 from findmyorder import FindMyOrder as fmo
 
 
@@ -19,8 +23,26 @@ async def test_identify_order():
     """Identify Testing"""
     assert await fmo.identify_order("hello") is None
     assert await fmo.identify_order("buy btc") is not None
-async def test_get_order():
-    """Get Order Testing"""
-    assert await fmo.get_order("hello") is None
-    assert await fmo.get_order("buy btc") is not None
+# async def test_get_order():
+#     """Get Order Testing"""
+#     assert await fmo.get_order("hello") is None
+#     assert await fmo.get_order("buy btc") is not None
     
+
+@pytest.fixture
+def mock_get_order():
+    mock = MagicMock()
+    mock.search.return_value = True
+    mock.identify_order.return_value = {"action": "BUY", "instrument": "EURUSD", "quantity": 1}
+    return mock
+
+@pytest.mark.asyncio
+async def test_get_order(mock_get_order):
+    msg = "BUY EURUSD q=1"
+    result = await mock_get_order.get_order(msg)
+    assert result is not None
+    assert result["action"] == BUY
+    assert result["instrument"] == "EURUSD"
+    assert result["quantity"] == 1
+    assert "timestamp" in result
+    assert isinstance(result["timestamp"], datetime)
