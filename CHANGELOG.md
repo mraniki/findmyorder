@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.52 (2023-05-01)
+### Fix
+* Refactor tests to use async/await ([`a51ff0f`](https://github.com/mraniki/findmyorder/commit/a51ff0fc0c450f53e9fb594a77ee451dffea3909))
+* Refactor test_unit.py to use FindMyOrder instance variable ([`5f72115`](https://github.com/mraniki/findmyorder/commit/5f7211577a508824e0c8978068c857135ba1f72e))
+* Refactor test_unit.py to include missing commas and remove unnecessary lines. ([`3946e37`](https://github.com/mraniki/findmyorder/commit/3946e37bf0e12663f68791114f2c05483cde5c60))
+
 ## v1.0.51 (2023-05-01)
 ### Fix
 * Missing suppress ([`4cd44ce`](https://github.com/mraniki/findmyorder/commit/4cd44ce95743c50f2139853ec1bfc0569c1b1a4f))
