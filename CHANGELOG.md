@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.53 (2023-05-01)
+### Fix
+* Unit test ([`0d0b908`](https://github.com/mraniki/findmyorder/commit/0d0b9085f2d258c3130705a949423db8055690d9))
+* Unit test ([`e7423b5`](https://github.com/mraniki/findmyorder/commit/e7423b579902484d48c5a50f2b5e945c3ed5b083))
+
 ## v1.0.52 (2023-05-01)
 ### Fix
 * Refactor tests to use async/await ([`a51ff0f`](https://github.com/mraniki/findmyorder/commit/a51ff0fc0c450f53e9fb594a77ee451dffea3909))
