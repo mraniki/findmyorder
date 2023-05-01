@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.49 (2023-05-01)
+### Fix
+* Unit test ([`5b9e59f`](https://github.com/mraniki/findmyorder/commit/5b9e59f5e7485c0fd49fde8b1795976822870a6b))
+* Increase unit test ([`9eec8bc`](https://github.com/mraniki/findmyorder/commit/9eec8bc07e5d3c124de7a2ac4194fb5eb28a8ea2))
+
 ## v1.0.48 (2023-05-01)
 ### Fix
 * Search order function ([`3567295`](https://github.com/mraniki/findmyorder/commit/356729571cab4d00223f016a270321b836d77a66))
