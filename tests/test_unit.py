@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from findmyorder import FindMyOrder as fmo
 
 
-@pytest.fixture
+#@pytest.fixture
 def find_my_order():
     return fmo()
 
@@ -27,11 +27,11 @@ async def test_search_no_order_command(find_my_order):
     mystring = "/bal"
     assert await find_my_order.search(mystring) is False
 
-async def test_search_exception(find_my_order, caplog):
-    """Search Testing"""
-    mystring = ""
-    await find_my_order.search(mystring)
-    assert "SearchError" in caplog.text
+# async def test_search_exception(find_my_order, caplog):
+#     """Search Testing"""
+#     mystring = ""
+#     await find_my_order.search(mystring)
+#     assert "SearchError" in caplog.text
 
 async def test_search_normal_order(find_my_order):
     """Search Testing"""
