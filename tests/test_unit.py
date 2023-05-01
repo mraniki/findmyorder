@@ -10,7 +10,7 @@ from findmyorder import FindMyOrder as fmo
 
 @pytest.fixture
 def find_my_order():
-    return FindMyOrder()
+    return fmo()
 
 def test_search_order(find_my_order):
     mystring = "buy btc"

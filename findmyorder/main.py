@@ -48,13 +48,13 @@ class FindMyOrder:
                 alphas
                 ).set_results_name("instrument")
             stop_loss = Combine(
-                settings.stop_loss_identifier + Word(nums)
+                    Suppress(settings.stop_loss_identifier) + Word(nums)
                 ).set_results_name("stop_loss")
             take_profit = Combine(
-                settings.take_profit_identifier + Word(nums)
+                Suppress(settings.take_profit_identifier) + Word(nums)
                 ).set_results_name("take_profit")
             quantity = Combine(
-                settings.quantity_identifier + Word(nums)
+                Suppress(settings.quantity_identifier) + Word(nums)
                 ).set_results_name("quantity")
             order_type = one_of(
                 settings.order_type_identifier, caseless=True
