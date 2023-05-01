@@ -4,7 +4,7 @@
 import logging
 from datetime import datetime, timezone
 
-from pyparsing import Combine, Optional, Word, alphas, nums, one_of
+from pyparsing import Combine, Optional, Word, alphas, nums, one_of, Suppress
 
 from .config import settings
 
@@ -19,7 +19,7 @@ class FindMyOrder:
     async def search(
         self,
         mystring: str,
-    ):
+    )-> bool:
         """Search an order."""
         try:
             logging.info(mystring)
@@ -37,7 +37,7 @@ class FindMyOrder:
     async def identify_order(
             self,
             mystring: str,
-        ):
+        ) -> dict:
         """Identify an order."""
         logging.debug("identify_order: %s", mystring)
         try:
