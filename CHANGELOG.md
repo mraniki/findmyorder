@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.51 (2023-05-01)
+### Fix
+* Missing suppress ([`4cd44ce`](https://github.com/mraniki/findmyorder/commit/4cd44ce95743c50f2139853ec1bfc0569c1b1a4f))
+* Improve unit tests ([`266dfee`](https://github.com/mraniki/findmyorder/commit/266dfeede974fd75b3a80b9683c9e8c4a5376678))
+* Add async/await to search tests ([`cda776e`](https://github.com/mraniki/findmyorder/commit/cda776e4b04def59b792aa77a8d9fa68e4c72246))
+
 ## v1.0.50 (2023-05-01)
 ### Fix
 * Removing non number for sl tp and q ([`d711eaf`](https://github.com/mraniki/findmyorder/commit/d711eafb9a92140d84e903ed2e3abf7366be32ad))
