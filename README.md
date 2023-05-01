@@ -21,7 +21,10 @@ Key features:
 
 # How to use it
 ```
-
+fmo = FindMyOrder()
+msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
+order = await fmo.get_order(msg_order)
+  
 ```
 ## Example
 [example](https://github.com/mraniki/findmyorder/blob/main/examples/example.py)
