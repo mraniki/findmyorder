@@ -45,21 +45,18 @@ async def test_search_normal_order_variation(find_my_order):
 
 async def test_identify_order():
     """Identify Testing"""
-    find_my_order = FindMyOrder()
     mystring = "buy btc"
-    result = find_my_order.identify_order(mystring)
+    result = fmo.identify_order(mystring)
     assert result is not None
 
 async def test_identify_order_invalid_input():
     """Identify Testing"""
-    find_my_order = FindMyOrder()
     mystring = "hello"
-    result = find_my_order.identify_order(mystring)
+    result = fmo.identify_order(mystring)
     assert result is None
 
 async def test_valid_get_order():
     """get order Testing"""
-    find_my_order = FindMyOrder()
     mystring = "buy EURJPY sl=200 tp=400 q=2%"
     expected = {
         "action": "buy",
@@ -71,12 +68,11 @@ async def test_valid_get_order():
         "leverage_type": None,
         "comment": None
     }
-    result = find_my_order.get_order(mystring)
+    result = fmo.get_order(mystring)
     assert result == expected
 
 async def test_short_valid_get_order():
     """get order Testing"""
-    find_my_order = FindMyOrder()
     mystring = "buy EURUSD"
     expected = {
         "action": "buy",
@@ -88,13 +84,12 @@ async def test_short_valid_get_order():
         "leverage_type": None,
         "comment": None
     }
-    result = find_my_order.get_order(mystring)
+    result = fmo.get_order(mystring)
     assert result == expected
 
 async def test_invalid_get_order():
     """get order Testing"""
-    find_my_order = FindMyOrder()
     mystring = "ECHO 12345"
     expected = None
-    result = find_my_order.get_order(mystring)
+    result = fmo.get_order(mystring)
     assert result == expected
