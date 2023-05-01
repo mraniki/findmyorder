@@ -64,11 +64,11 @@ async def test_valid_get_order():
     expected = {
         "action": "buy",
         "instrument": "EURJPY",
-        "stop_loss": "200"
-        "take_profit": "400"
-        "quantity": "2"
-        "order_type": None
-        "leverage_type": None
+        "stop_loss": "200",
+        "take_profit": "400",
+        "quantity": "2",
+        "order_type": None,
+        "leverage_type": None,
         "comment": None
     }
     result = find_my_order.get_order(mystring)
@@ -81,11 +81,11 @@ async def test_short_valid_get_order():
     expected = {
         "action": "buy",
         "instrument": "EURJPY",
-        "stop_loss": None
-        "take_profit": None
-        "quantity": None
-        "order_type": None
-        "leverage_type": None
+        "stop_loss": None,
+        "take_profit": None,
+        "quantity": None,
+        "order_type": None,
+        "leverage_type": None,
         "comment": None
     }
     result = find_my_order.get_order(mystring)
