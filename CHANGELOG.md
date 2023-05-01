@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.48 (2023-05-01)
+### Fix
+* Search order function ([`3567295`](https://github.com/mraniki/findmyorder/commit/356729571cab4d00223f016a270321b836d77a66))
+
 ## v1.0.47 (2023-05-01)
 ### Fix
 * Refactor logging in FindMyOrder class ([`17188f5`](https://github.com/mraniki/findmyorder/commit/17188f5356804890576eaeeb8eb076a5d7030919))
