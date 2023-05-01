@@ -23,8 +23,9 @@ class FindMyOrder:
         """Search an order."""
         try:
             logging.info(mystring)
+            string_check = mystring.split()[0]
             logging.info("action identifier %s", settings.action_identifier)
-            if mystring.lower() in settings.action_identifier.lower():
+            if string_check.lower() in settings.action_identifier.lower():
                 logging.debug("found order in %s ", mystring)
                 return True
             logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
