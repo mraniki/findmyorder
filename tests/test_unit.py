@@ -3,8 +3,6 @@ FindMyOrder Unit Testing
 """
     
 import pytest
-from unittest.mock import AsyncMock, MagicMock
-from datetime import datetime, timezone
 from findmyorder import FindMyOrder as fmo
 
 
@@ -43,19 +41,19 @@ async def test_search_normal_order_variation(find_my_order):
     mystring = "LONG ETHUSD sl=200 tp=400 q=2%"
     assert await find_my_order.search(mystring) is True
 
-async def test_identify_order():
+async def test_identify_order(find_my_order):
     """Identify Testing"""
     mystring = "buy btc"
-    result = fmo.identify_order(mystring)
+    result = await find_my_order.identify_order(mystring)
     assert result is not None
 
-async def test_identify_order_invalid_input():
+async def test_identify_order_invalid_input(find_my_order):
     """Identify Testing"""
     mystring = "hello"
-    result = fmo.identify_order(mystring)
+    result = await find_my_order.identify_order(mystring)
     assert result is None
 
-async def test_valid_get_order():
+async def test_valid_get_order(find_my_order):
     """get order Testing"""
     mystring = "buy EURJPY sl=200 tp=400 q=2%"
     expected = {
@@ -68,10 +66,10 @@ async def test_valid_get_order():
         "leverage_type": None,
         "comment": None
     }
-    result = fmo.get_order(mystring)
+    result = await find_my_order.get_order(mystring)
     assert result == expected
 
-async def test_short_valid_get_order():
+async def test_short_valid_get_order(find_my_order):
     """get order Testing"""
     mystring = "buy EURUSD"
     expected = {
@@ -84,12 +82,12 @@ async def test_short_valid_get_order():
         "leverage_type": None,
         "comment": None
     }
-    result = fmo.get_order(mystring)
+    result = await find_my_order.get_order(mystring)
     assert result == expected
 
-async def test_invalid_get_order():
+async def test_invalid_get_order(find_my_order):
     """get order Testing"""
     mystring = "ECHO 12345"
     expected = None
-    result = fmo.get_order(mystring)
+    result = await find_my_order.get_order(mystring)
     assert result == expected
