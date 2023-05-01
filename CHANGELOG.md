@@ -2,6 +2,11 @@
 
 <!--next-version-placeholder-->
 
+## v1.0.50 (2023-05-01)
+### Fix
+* Removing non number for sl tp and q ([`d711eaf`](https://github.com/mraniki/findmyorder/commit/d711eafb9a92140d84e903ed2e3abf7366be32ad))
+* Refactor find_my_order function to use fmo() instead of FindMyOrder() class. ([`aa244d0`](https://github.com/mraniki/findmyorder/commit/aa244d0c1d29a12bb5ea4c61d5a229f6a433a75c))
+
 ## v1.0.49 (2023-05-01)
 ### Fix
 * Unit test ([`5b9e59f`](https://github.com/mraniki/findmyorder/commit/5b9e59f5e7485c0fd49fde8b1795976822870a6b))
