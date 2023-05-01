@@ -14,15 +14,15 @@ def find_my_order():
 
 def test_search_order(find_my_order):
     mystring = "buy btc"
-    assert find_my_order.search(mystring) is True
+    assert await find_my_order.search(mystring) is True
 
 def test_search_no_order(find_my_order):
     mystring = "This is not an order"
-    assert find_my_order.search(mystring) is False
+    assert await find_my_order.search(mystring) is False
 
 def test_search_exception(find_my_order, caplog):
     mystring = ""
-    find_my_order.search(mystring)
+    await find_my_order.search(mystring)
     assert "SearchError" in caplog.text
 # async def test_search():
 #     """Search Testing"""
