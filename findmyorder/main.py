@@ -89,15 +89,16 @@ class FindMyOrder:
             return None
 
     async def get_order(
-        mystring: str,
+        self,
+        msg: str,
         ):
         """get an order."""
         try:
-            logging.debug("get_order: %s", mystring)
+            logging.debug("get_order %s", msg)
 
-            if await self.search(mystring):
-                logging.info("get_order found in %s", mystring)
-                order = await self.identify_order(mystring)
+            if await self.search(msg):
+                logging.info("get_order found in %s", msg)
+                order = await self.identify_order(msg)
                 logging.info("order: %s", order)
                 order["timestamp"] = datetime.now(timezone.utc)
                 return order

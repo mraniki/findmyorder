@@ -11,7 +11,7 @@ from findmyorder import FindMyOrder, __version__
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level="INFO"
+    level="DEBUG"
 )
 
 logger =  logging.getLogger(__name__)
@@ -49,8 +49,8 @@ async def main():
             msg_order = "sell EURGBP sl=200 tp=400 q=2%"
             order = await fmo.get_order(msg_order)
             logger.info("get_order 4: %s", order)
-            logger.info("action 4: %s",order['action'])
-            logger.info("instrument 4: %s", order['instrument'])
+           # logger.info("action 4: %s",order['action'])
+           # logger.info("instrument 4: %s", order['instrument'])
 
             await asyncio.sleep(7200)
 
