@@ -54,7 +54,7 @@ class FindMyOrder:
                 Suppress(settings.take_profit_identifier) + Word(nums)
                 ).set_results_name("take_profit")
             quantity = Combine(
-                Suppress(settings.quantity_identifier) + Word(nums)
+                Suppress(settings.quantity_identifier) + Word(nums) + Optional(Suppress("%"))
                 ).set_results_name("quantity")
             order_type = one_of(
                 settings.order_type_identifier, caseless=True
@@ -62,8 +62,8 @@ class FindMyOrder:
             leverage_type = one_of(
                 settings.leverage_type_identifier, caseless=True
                 ).set_results_name("leverage_type")
-            comment = one_of(
-                settings.comment_identifier, caseless=True
+            comment = Combine(
+            Suppress(settings.comment_identifier) + Word(alphas)
                 ).set_results_name("comment")
 
             order_grammar = (
