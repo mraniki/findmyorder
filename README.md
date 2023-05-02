@@ -9,8 +9,8 @@
 
 Key features:
 
-- Identify an order with word `BUY SELL LONG SHORT`
-- PArse and return a structure order with action and instrument as mandatory
+- Identify an order with word `BUY SELL LONG SHORT` or your own `Bull`, `to the moon`, `pump` via config file
+- Parse and return a structured order with action and instrument as mandatory
 - Settings for custom option
 
 

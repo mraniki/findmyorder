@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.0 (2023-05-02)
+### Feature
+* Uppercase action ([`bc504dc`](https://github.com/mraniki/findmyorder/commit/bc504dc11d532adb00ffe36130f866abaab88ee3))
+
+### Fix
+* Update default values for stop loss, take profit, and quantity in FindMyOrder class. ([`94baa6c`](https://github.com/mraniki/findmyorder/commit/94baa6cff7018cff855e420187abcd8c39907d5f))
+
 ## v1.0.53 (2023-05-01)
 ### Fix
 * Unit test ([`0d0b908`](https://github.com/mraniki/findmyorder/commit/0d0b9085f2d258c3130705a949423db8055690d9))
