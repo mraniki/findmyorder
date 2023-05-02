@@ -4,12 +4,12 @@
 import logging
 from datetime import datetime, timezone
 
-from pyparsing import Combine, Optional, Word, alphas, nums, one_of, Suppress
+from pyparsing import Combine, Optional, Word, alphas, nums, one_of, pyparsing_common,  Suppress
 
 from .config import settings
 
 class FindMyOrder:
-    """Search an order an order."""
+    """find an order class """
 
     def __init__(
         self,
@@ -43,7 +43,7 @@ class FindMyOrder:
         try:
             action = one_of(
                 settings.action_identifier, caseless=True
-                ).set_results_name("action")
+                ).set_results_name("action").set_parse_action(pyparsing_common.upcase_tokens)
             instrument = Word(
                 alphas
                 ).set_results_name("instrument")
