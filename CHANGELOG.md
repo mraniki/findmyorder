@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.1 (2023-05-02)
+### Fix
+* Refactor quantity and comment parsing in FindMyOrder class. ([`0f3ac82`](https://github.com/mraniki/findmyorder/commit/0f3ac82a09d27719cbd26f9ee74ded634b6fe30d))
+
 ## v1.1.0 (2023-05-02)
 ### Feature
 * Uppercase action ([`bc504dc`](https://github.com/mraniki/findmyorder/commit/bc504dc11d532adb00ffe36130f866abaab88ee3))
