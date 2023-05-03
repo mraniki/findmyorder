@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.5 (2023-05-03)
+### Fix
+* Refactor optional arguments in FindMyOrder class constructor ([`9e14ba0`](https://github.com/mraniki/findmyorder/commit/9e14ba017ff6be8872459d03b6e48c3d256c95c5))
+
 ## v1.1.4 (2023-05-03)
 ### Fix
 * Runtime location ([`fb93bb8`](https://github.com/mraniki/findmyorder/commit/fb93bb8b99732d3aee81525814a74a7d6c9235a7))
