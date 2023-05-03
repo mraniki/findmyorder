@@ -70,8 +70,8 @@ class FindMyOrder:
                 action("action")
                 + Optional(instrument,default=None)
                 + Optional(int(stop_loss),default=1000)
-                + Optional(int(take_profit),default=1000)
-                + Optional(int(quantity),default=1)
+                + Optional(take_profit,default=1000)
+                + Optional(quantity,default=1)
                 + Optional(order_type,default=None)
                 + Optional(leverage_type,default=None)
                 + Optional(comment,default=None)
@@ -101,6 +101,7 @@ class FindMyOrder:
                 logging.info("get_order found in %s", msg)
                 order = await self.identify_order(msg)
                 logging.info("order: %s", order)
+                #add check if no dict
                 order["timestamp"] = datetime.now(timezone.utc)
                 return order
             return None
