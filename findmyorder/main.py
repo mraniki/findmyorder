@@ -66,10 +66,12 @@ class FindMyOrder:
             Suppress(settings.comment_identifier) + Word(alphas)
                 ).set_results_name("comment")
 
+            #for action in settings.actions:
+            #print(f"{action.identifier} ({action.type})")
             order_grammar = (
                 action("action")
                 + Optional(instrument,default=None)
-                + Optional(int(stop_loss),default=1000)
+                + Optional(stop_loss,default=1000)
                 + Optional(take_profit,default=1000)
                 + Optional(quantity,default=1)
                 + Optional(order_type,default=None)
@@ -101,8 +103,8 @@ class FindMyOrder:
                 logging.info("get_order found in %s", msg)
                 order = await self.identify_order(msg)
                 logging.info("order: %s", order)
-                #add check if no dict
-                order["timestamp"] = datetime.now(timezone.utc)
+                if isinstance(order, dict):
+                    order["timestamp"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
                 return order
             return None
 
