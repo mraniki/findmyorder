@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.2 (2023-05-03)
+### Fix
+* Better unit testing ([`81dceb3`](https://github.com/mraniki/findmyorder/commit/81dceb3ef46f0e063c849650debb9172e479266e))
+* Unit test ([`79beeeb`](https://github.com/mraniki/findmyorder/commit/79beeeb5623e28293c1801d4d1d75b9a18a24b2d))
+* Unit test ([`7d5af5a`](https://github.com/mraniki/findmyorder/commit/7d5af5afeb94f2adcdd96bceabdc2c4f4a568c88))
+
 ## v1.1.1 (2023-05-02)
 ### Fix
 * Refactor quantity and comment parsing in FindMyOrder class. ([`0f3ac82`](https://github.com/mraniki/findmyorder/commit/0f3ac82a09d27719cbd26f9ee74ded634b6fe30d))
