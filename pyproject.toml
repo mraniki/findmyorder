@@ -22,6 +22,7 @@ pyparsing = ">=3.0.9"
 python-semantic-release = "*"
 pytest = "*"
 pytest-cov = "*"
+pytest-asyncio = "*"
 
 [tool.pytest.ini_options]
 testpaths = "tests/"
