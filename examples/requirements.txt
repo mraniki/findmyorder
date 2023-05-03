@@ -1,3 +1,3 @@
-fastapi>=0.95.1
-uvicorn>=0.21.0
-findmyorder>=1.0.42
+fastapi
+uvicorn
+findmyorder>=1.1.1
