@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.4 (2023-05-03)
+### Fix
+* Runtime location ([`fb93bb8`](https://github.com/mraniki/findmyorder/commit/fb93bb8b99732d3aee81525814a74a7d6c9235a7))
+* Pytest asyncio ([`42cb252`](https://github.com/mraniki/findmyorder/commit/42cb252bafb17c8f3d25d694c0afa51fccb2fa6a))
+* Runtime for cloud dep ([`cda4d47`](https://github.com/mraniki/findmyorder/commit/cda4d47e7ef8a30d6ab7955bd9a336a429efc508))
+* More granularity in action identifier config ([`2ab3545`](https://github.com/mraniki/findmyorder/commit/2ab3545fce8443369555ccb05d08f886442cca00))
+* For cloud deployment of example ([`891dce8`](https://github.com/mraniki/findmyorder/commit/891dce8c30799b5f3c6ef2af1401e2533aead7ba))
+
 ## v1.1.3 (2023-05-03)
 ### Fix
 * Code coverage ([`52d8c7d`](https://github.com/mraniki/findmyorder/commit/52d8c7d4e093d74ca87c42e43931b47f49f3e817))
