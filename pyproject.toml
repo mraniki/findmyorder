@@ -34,6 +34,7 @@ log_level = "DEBUG"
 pythonpath = [
   "."
 ]
+addopts = "--ignore-glob=example_*"
 
 [tool.semantic_release]
 version_variable = ["pyproject.toml:version","findmyorder/__init__.py:__version__"]
