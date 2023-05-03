@@ -1,6 +1,8 @@
 [default]
 action_identifier = "BUY SELL LONG SHORT"
-stop_loss_identifier = 'sl='
+action_in_identifier = "BUY LONG"
+action_out_identifier = "SELL SHORT"
+stop_loss_identifier = "sl="
 take_profit_identifier = 'tp='
 quantity_identifier = 'q='
 order_type_identifier = "spot future margin"
