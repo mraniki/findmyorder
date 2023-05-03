@@ -24,7 +24,7 @@ Key features:
 fmo = FindMyOrder()
 msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
 order = await fmo.get_order(msg_order)
-  
+#{'action': 'BUY', 'instrument': 'EURUSD', 'stop_loss': '1000', 'take_profit': '1000', 'quantity': '2', 'order_type': None, 'leverage_type': None, 'comment': None, 'timestamp': datetime.datetime(2023, 5, 3, 12, 10, 28, 731282, tzinfo=datetime.timezone.utc)}
 ```
 ## Example
 [example](https://github.com/mraniki/findmyorder/blob/main/examples/example.py)
