@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.6 (2023-05-03)
+### Fix
+* Int typo, dict control and future action identifier ([`018ffc5`](https://github.com/mraniki/findmyorder/commit/018ffc57846220e942d9a4688c3a25285ff76e48))
+
 ## v1.1.5 (2023-05-03)
 ### Fix
 * Refactor optional arguments in FindMyOrder class constructor ([`9e14ba0`](https://github.com/mraniki/findmyorder/commit/9e14ba017ff6be8872459d03b6e48c3d256c95c5))
