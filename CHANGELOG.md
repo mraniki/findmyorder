@@ -2,6 +2,10 @@
 
 <!--next-version-placeholder-->
 
+## v1.1.3 (2023-05-03)
+### Fix
+* Code coverage ([`52d8c7d`](https://github.com/mraniki/findmyorder/commit/52d8c7d4e093d74ca87c42e43931b47f49f3e817))
+
 ## v1.1.2 (2023-05-03)
 ### Fix
 * Better unit testing ([`81dceb3`](https://github.com/mraniki/findmyorder/commit/81dceb3ef46f0e063c849650debb9172e479266e))
