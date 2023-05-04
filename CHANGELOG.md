@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.4 (2023-05-04)
+### Fix
+* :bug: inherit secrets in action for pypi ([`800bca9`](https://github.com/mraniki/findmyorder/commit/800bca98fa5e2f63a436d734817de27d2caa36c9))
+
+### Other
+* Merge pull request #146 from mraniki/dev ([`786f762`](https://github.com/mraniki/findmyorder/commit/786f7623551daa9b2a239d79601164281c954074))
+* Merge pull request #145 from mraniki/main ([`9587628`](https://github.com/mraniki/findmyorder/commit/95876281d4bf57fd37829c9b3eaaf8afe6bd95c6))
+
 ## v1.2.3 (2023-05-04)
 ### Fix
 * 🐛 inherit secrets in action ([`cb3adc8`](https://github.com/mraniki/findmyorder/commit/cb3adc83acd2de3e6ae1b4854211ce455a038a5c))
