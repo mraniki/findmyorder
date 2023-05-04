@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.3 (2023-05-04)
+### Fix
+* 🐛 inherit secrets in action ([`cb3adc8`](https://github.com/mraniki/findmyorder/commit/cb3adc83acd2de3e6ae1b4854211ce455a038a5c))
+* ⚡️ minor fix ([`a79c777`](https://github.com/mraniki/findmyorder/commit/a79c7776799d8f62613f8560f853e2b0234e4452))
+
+### Other
+* Merge pull request #144 from mraniki/dev ([`8dcea6d`](https://github.com/mraniki/findmyorder/commit/8dcea6d7104bdf166f2248fea8c91d1a7a032442))
+* Refactor get_order tests ([`6561c13`](https://github.com/mraniki/findmyorder/commit/6561c13a0b69beabea8604a8aebac5ef55c4c780))
+* Merge pull request #143 from mraniki/main ([`1a131bd`](https://github.com/mraniki/findmyorder/commit/1a131bdf1a34235aebb3296c52237f155b7002e4))
+* Merge pull request #142 from mraniki/dev ([`26577db`](https://github.com/mraniki/findmyorder/commit/26577db0001b4213fae7aa4a82b555459e06b7f7))
+
 ## v1.2.2 (2023-05-04)
 ### Fix
 * ⚡️ update readme badge ([`5978bfb`](https://github.com/mraniki/findmyorder/commit/5978bfbf4b8e7fd9bf0e32de742ae9f6283de515))
