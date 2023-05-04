@@ -2,6 +2,32 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.1 (2023-05-04)
+### Fix
+* ⚡️fix semantic ([`4bd8bce`](https://github.com/mraniki/findmyorder/commit/4bd8bce9c0c7fe6084ec20839543438394fb6a7f))
+
+### Other
+* Merge pull request #138 from mraniki/dev ([`32c4452`](https://github.com/mraniki/findmyorder/commit/32c4452c7c2cc7ccf71a457cedc1f2f0351f17e0))
+
+## v1.2.0 (2023-05-04)
+### Feature
+* ✨Flow update ([`5d61d49`](https://github.com/mraniki/findmyorder/commit/5d61d49f3ebe1f7ae3f365a9fa8847699a9b2876))
+* ✨ resusable flow and use of emoji for release ([`9c1d2ff`](https://github.com/mraniki/findmyorder/commit/9c1d2ffef46f583feccd34479d80e51f433653c8))
+
+### Fix
+* ⚡️ 📝 added documentation ([`ab46cf3`](https://github.com/mraniki/findmyorder/commit/ab46cf3569d2b101ffea78b37c90c37c3669dc12))
+* 🐛 pytoml typo ([`e653461`](https://github.com/mraniki/findmyorder/commit/e6534615681f49a405edc756f56a73b66ee1aecd))
+
+### Other
+* Merge pull request #137 from mraniki/dev ([`07e7e67`](https://github.com/mraniki/findmyorder/commit/07e7e676c94baac70e45929b2270fc8e64bb9097))
+* Merge pull request #136 from mraniki/main ([`23fc128`](https://github.com/mraniki/findmyorder/commit/23fc1283d5a079e66e25edbc3c699e07ba51e8a8))
+* Semantic.yml update ([`1f62372`](https://github.com/mraniki/findmyorder/commit/1f62372e63ef7892cec915343ca82a928d137098))
+* Merge pull request #135 from mraniki/dev ([`455ddbc`](https://github.com/mraniki/findmyorder/commit/455ddbc5c8261835f407bcb0f2fc5279f57ee4ae))
+* Merge pull request #134 from mraniki/main ([`92f3903`](https://github.com/mraniki/findmyorder/commit/92f3903bd537c60d47c4e9faf9a4bdf8327529b1))
+* Merge pull request #130 from mraniki/renovate/configure ([`aa263f5`](https://github.com/mraniki/findmyorder/commit/aa263f5634a0ebc254f9c6d2688e1398b02f78eb))
+* Merge pull request #131 from mraniki/dev ([`72eb8a7`](https://github.com/mraniki/findmyorder/commit/72eb8a78b21ae705d6db7ab97f9822d7b8c1e11f))
+* Add renovate.json ([`1c88c08`](https://github.com/mraniki/findmyorder/commit/1c88c082a6a96288217702a09792e4b94caa8359))
+
 ## v1.1.6 (2023-05-03)
 ### Fix
 * Int typo, dict control and future action identifier ([`018ffc5`](https://github.com/mraniki/findmyorder/commit/018ffc57846220e942d9a4688c3a25285ff76e48))
