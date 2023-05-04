@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.2 (2023-05-04)
+### Fix
+* ⚡️ update readme badge ([`5978bfb`](https://github.com/mraniki/findmyorder/commit/5978bfbf4b8e7fd9bf0e32de742ae9f6283de515))
+
+### Other
+* Merge pull request #140 from mraniki/dev ([`04d56a3`](https://github.com/mraniki/findmyorder/commit/04d56a357525bcfa26f5ee2e7a1e2fb082a44ac1))
+* Merge pull request #139 from mraniki/main ([`65f9841`](https://github.com/mraniki/findmyorder/commit/65f98415dcd58f4d3027ca83219534e13431c8f3))
+
 ## v1.2.1 (2023-05-04)
 ### Fix
 * ⚡️fix semantic ([`4bd8bce`](https://github.com/mraniki/findmyorder/commit/4bd8bce9c0c7fe6084ec20839543438394fb6a7f))
