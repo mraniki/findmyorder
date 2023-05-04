@@ -1,3 +1,5 @@
 #used by https://github.com/Ezard/semantic-prs automatic check
-anyCommit: true
-commitsOnly: true
+# anyCommit: true
+# commitsOnly: true
+titleOnly: true
+
