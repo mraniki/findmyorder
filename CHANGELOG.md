@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.2.1 (2023-05-04)
+### Fix
+* ⚡️fix semantic ([`4bd8bce`](https://github.com/mraniki/findmyorder/commit/4bd8bce9c0c7fe6084ec20839543438394fb6a7f))
+
+### Other
+* Merge pull request #138 from mraniki/dev ([`32c4452`](https://github.com/mraniki/findmyorder/commit/32c4452c7c2cc7ccf71a457cedc1f2f0351f17e0))
+
 ## v1.2.0 (2023-05-04)
 ### Feature
 * ✨Flow update ([`5d61d49`](https://github.com/mraniki/findmyorder/commit/5d61d49f3ebe1f7ae3f365a9fa8847699a9b2876))
