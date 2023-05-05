@@ -40,7 +40,7 @@ jobs:
     needs: [docker]
     uses: mraniki/coding_toolset/.github/workflows/☁️Deploy.yml@main
     secrets: inherit
-  merge:
-    needs: [release]
-    uses: mraniki/coding_toolset/.github/workflows/⛙Automerge.yml@main
-    secrets: inherit
+  #merge:
+    #needs: [release]
+    #uses: mraniki/coding_toolset/.github/workflows/⛙Automerge.yml@main
+    #secrets: inherit
