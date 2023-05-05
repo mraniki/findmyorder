@@ -2,6 +2,46 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.0 (2023-05-05)
+### Feature
+* Update ✨Flow.yml ([`a2a029a`](https://github.com/mraniki/findmyorder/commit/a2a029a3be2b6cd05b9c1e9c39d8df92fd6a1ba3))
+
+### Other
+* Merge pull request #167 from mraniki/dev ([`acec977`](https://github.com/mraniki/findmyorder/commit/acec97712e36ad3a2ef0f4a8a155640ee69dd03e))
+* :art:fix example ([`af4db23`](https://github.com/mraniki/findmyorder/commit/af4db2301522432c1cd8c082107968dd5415b91e))
+* Merge pull request #166 from mraniki/dev ([`632c494`](https://github.com/mraniki/findmyorder/commit/632c494caec413287dfd17487bb6956805e7c2ef))
+* 🚑 fix timestamp error ([`86b2309`](https://github.com/mraniki/findmyorder/commit/86b2309f42a5607bd42a5e6f77bfd6983f0d266c))
+* Merge pull request #165 from mraniki/dev ([`2d550cc`](https://github.com/mraniki/findmyorder/commit/2d550ccccdf9905498a689b36055b837850c23fa))
+* :art: test dockerfile location ([`12ce205`](https://github.com/mraniki/findmyorder/commit/12ce20511add48fff8ef88c27c5f3d8d7fae1c0f))
+* Merge pull request #164 from mraniki/dev ([`1bf27b7`](https://github.com/mraniki/findmyorder/commit/1bf27b7d717e749a2cff6efc9152088cdff31c40))
+* :art: test dockerfile location ([`9f11bc8`](https://github.com/mraniki/findmyorder/commit/9f11bc894d8ada4b35b9d72fb8225f9639d63dce))
+* Merge pull request #163 from mraniki/dev ([`d32d058`](https://github.com/mraniki/findmyorder/commit/d32d058dd889373a0307d4b79b8e572785cfa843))
+* Merge branch 'dev' of git@github.com:mraniki/findmyorder.git ([`87502bc`](https://github.com/mraniki/findmyorder/commit/87502bc2feb6939867ed6857959c891422f56a7c))
+* :art: fix dockerfile location ([`e9a4325`](https://github.com/mraniki/findmyorder/commit/e9a432570eacd44df9a13d927df3e19ab7df6066))
+* Merge pull request #162 from mraniki/dev ([`ac744c6`](https://github.com/mraniki/findmyorder/commit/ac744c698a56a79698085bf635fa55c037644ef2))
+* Merge pull request #161 from mraniki/main ([`d24c4b1`](https://github.com/mraniki/findmyorder/commit/d24c4b1921ba4e9c9b78308233d57aef39578cd5))
+* Merge pull request #160 from mraniki/dev ([`eea9dc5`](https://github.com/mraniki/findmyorder/commit/eea9dc5d96d4632e6dad0111972152cbf259ef93))
+* Merge branch 'dev' of git@github.com:mraniki/findmyorder.git ([`134ca90`](https://github.com/mraniki/findmyorder/commit/134ca903f7a7bc4418ba8ac1dd365b731ed51680))
+* :art: fix Add fix type to semantic.yml. ([`fb26369`](https://github.com/mraniki/findmyorder/commit/fb26369656c25ac1a7586da2ce3fe10557caee1f))
+* Merge pull request #159 from mraniki/main ([`9e4ac1a`](https://github.com/mraniki/findmyorder/commit/9e4ac1a90e66620d328671fb08f9a1cad7d08e8a))
+* Merge pull request #158 from mraniki/dev ([`f6fda78`](https://github.com/mraniki/findmyorder/commit/f6fda78f1e8771732b08e5f3e416305152b4ca5a))
+* Merge pull request #157 from mraniki/main ([`0051e23`](https://github.com/mraniki/findmyorder/commit/0051e23be22bc9b06e3a35f44ed777402ce4253e))
+* :art: fix Add fix type to semantic.yml. ([`0841692`](https://github.com/mraniki/findmyorder/commit/0841692d9c5aad8c9480645e6786e81803ff779e))
+* Merge pull request #156 from mraniki/dev ([`1c43837`](https://github.com/mraniki/findmyorder/commit/1c438373416c9610de6edbc45a3504748dd0aaf1))
+* :art: fix: Update GitHub workflow file, commenting out merge job. ([`6b2e0e3`](https://github.com/mraniki/findmyorder/commit/6b2e0e3fd9f9095d9588dcb581353baafa1ebf59))
+* Merge pull request #155 from mraniki/dev ([`5eff16e`](https://github.com/mraniki/findmyorder/commit/5eff16ee0f02813595f9457919de770e93de683f))
+* Merge pull request #154 from mraniki/main ([`89ffc39`](https://github.com/mraniki/findmyorder/commit/89ffc398f53600e13d560cd15cd6191fa88afb62))
+* 🎨 added merge in action ([`c7c0921`](https://github.com/mraniki/findmyorder/commit/c7c0921c66c9d447d3bc86a7d45dd81d5d380e95))
+* Merge pull request #153 from mraniki/dev ([`715bb39`](https://github.com/mraniki/findmyorder/commit/715bb39973b4ea9579de69c20b0d7d48f9fa224e))
+* Merge pull request #152 from mraniki/main ([`8ff81e2`](https://github.com/mraniki/findmyorder/commit/8ff81e21ec2cda7fe0239c021509fb72875844c3))
+* Merge pull request #151 from mraniki/dev ([`da148a9`](https://github.com/mraniki/findmyorder/commit/da148a91aa464af2fd3707289ac1a737a8092f15))
+* Merge branch 'dev' of git@github.com:mraniki/findmyorder.git ([`c3c5e7b`](https://github.com/mraniki/findmyorder/commit/c3c5e7b0cb8f18710b62f9e91a7642b330da2da8))
+* Update commit types and add bug type ([`5602ff9`](https://github.com/mraniki/findmyorder/commit/5602ff94c02652f8749261421dcdf85f32978137))
+* Merge pull request #150 from mraniki/main ([`55675fb`](https://github.com/mraniki/findmyorder/commit/55675fba122d3f97c300ac17664afb2146e9d497))
+* :art:Refactor: Replace emoji with corresponding code in semantic.yml file. ([`ca8997c`](https://github.com/mraniki/findmyorder/commit/ca8997ce74ee3b09191f8ff450f51102887f8b19))
+* Merge pull request #149 from mraniki/dev ([`1d8efef`](https://github.com/mraniki/findmyorder/commit/1d8efef410585d044f975fd9ef77128bf022df95))
+* Merge pull request #147 from mraniki/main ([`1138021`](https://github.com/mraniki/findmyorder/commit/1138021b993dfab42dbccba9f583d0f6fc46cd56))
+
 ## v1.2.4 (2023-05-04)
 ### Fix
 * :bug: inherit secrets in action for pypi ([`800bca9`](https://github.com/mraniki/findmyorder/commit/800bca98fa5e2f63a436d734817de27d2caa36c9))
