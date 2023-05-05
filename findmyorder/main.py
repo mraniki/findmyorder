@@ -2,11 +2,12 @@
  FindMyOrder Main
 """
 import logging
-from datetime import datetime, timezone
+from datetime import datetime
 
 from pyparsing import Combine, Optional, Word, alphas, nums, one_of, pyparsing_common,  Suppress
 
 from .config import settings
+
 
 class FindMyOrder:
     """find an order class """
@@ -19,7 +20,7 @@ class FindMyOrder:
     async def search(
         self,
         mystring: str,
-    )-> bool:
+    ) -> bool:
         """Search an order."""
         try:
             logging.info(mystring)
@@ -37,7 +38,7 @@ class FindMyOrder:
     async def identify_order(
             self,
             mystring: str,
-        ) -> dict:
+            ) -> dict:
         """Identify an order."""
         logging.debug("identify_order: %s", mystring)
         try:
@@ -48,13 +49,17 @@ class FindMyOrder:
                 alphas
                 ).set_results_name("instrument")
             stop_loss = Combine(
-                    Suppress(settings.stop_loss_identifier) + Word(nums)
+                    Suppress(settings.stop_loss_identifier) 
+                    + Word(nums)
                 ).set_results_name("stop_loss")
             take_profit = Combine(
-                Suppress(settings.take_profit_identifier) + Word(nums)
+                Suppress(settings.take_profit_identifier) 
+                + Word(nums)
                 ).set_results_name("take_profit")
             quantity = Combine(
-                Suppress(settings.quantity_identifier) + Word(nums) + Optional(Suppress("%"))
+                Suppress(settings.quantity_identifier) 
+                + Word(nums)
+                + Optional(Suppress("%"))
                 ).set_results_name("quantity")
             order_type = one_of(
                 settings.order_type_identifier, caseless=True
@@ -63,20 +68,21 @@ class FindMyOrder:
                 settings.leverage_type_identifier, caseless=True
                 ).set_results_name("leverage_type")
             comment = Combine(
-            Suppress(settings.comment_identifier) + Word(alphas)
+                    Suppress(settings.comment_identifier) 
+                    + Word(alphas)
                 ).set_results_name("comment")
 
-            #for action in settings.actions:
-            #print(f"{action.identifier} ({action.type})")
+            # for action in settings.actions:
+            # print(f"{action.identifier} ({action.type})")
             order_grammar = (
                 action("action")
-                + Optional(instrument,default=None)
-                + Optional(stop_loss,default=1000)
-                + Optional(take_profit,default=1000)
-                + Optional(quantity,default=1)
-                + Optional(order_type,default=None)
-                + Optional(leverage_type,default=None)
-                + Optional(comment,default=None)
+                + Optional(instrument, default=None)
+                + Optional(stop_loss, default=1000)
+                + Optional(take_profit, default=1000)
+                + Optional(quantity, default=1)
+                + Optional(order_type, default=None)
+                + Optional(leverage_type, default=None)
+                + Optional(comment, default=None)
               )
 
             order = order_grammar.parse_string(
@@ -104,7 +110,7 @@ class FindMyOrder:
                 order = await self.identify_order(msg)
                 logging.info("order: %s", order)
                 if isinstance(order, dict):
-                    order["timestamp"] = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+                    order["timestamp"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
                 return order
             return None
 
