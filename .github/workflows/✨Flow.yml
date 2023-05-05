@@ -8,19 +8,26 @@ on:
   schedule:
     - cron: '42 23 * * 5'
 
-
 jobs:
   lint:
     uses: mraniki/coding_toolset/.github/workflows/🦺Lint.yml@main
+    secrets: inherit
   test:
     needs: [lint]
     uses: mraniki/coding_toolset/.github/workflows/🧪Test.yml@main
+    secrets: inherit
   security:
     needs: [lint]
     uses: mraniki/coding_toolset/.github/workflows/🔏Security.yml@main
+    secrets: inherit
   build:
     needs: [lint]
     uses: mraniki/coding_toolset/.github/workflows/🐍Build.yml@main
+    secrets: inherit
+  # version:
+  #   needs: [lint]
+  #   uses: mraniki/coding_toolset/.github/workflows/🔖Version.yml@main
+  #   secrets: inherit
   release:
     needs: [build]
     uses: mraniki/coding_toolset/.github/workflows/📦Release.yml@main
@@ -32,3 +39,8 @@ jobs:
   deploy:
     needs: [docker]
     uses: mraniki/coding_toolset/.github/workflows/☁️Deploy.yml@main
+    secrets: inherit
+  merge:
+    needs: [release]
+    uses: mraniki/coding_toolset/.github/workflows/⛙Automerge.yml@main
+    secrets: inherit
