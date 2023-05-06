@@ -4,7 +4,10 @@
 import logging
 from datetime import datetime
 
-from pyparsing import Combine, Optional, Word, alphas, nums, one_of, pyparsing_common,  Suppress
+from pyparsing import (
+    Combine, Optional, Word, alphas,
+    nums, one_of, pyparsing_common,
+    Suppress)
 
 from .config import settings
 
@@ -29,7 +32,7 @@ class FindMyOrder:
             if string_check.lower() in settings.action_identifier.lower():
                 logging.debug("found order in %s ", mystring)
                 return True
-            logging.debug("no order in : %s using %s", mystring, settings.action_identifier)
+            logging.debug("no order found")
             return False
         except Exception as e:
             logging.warning("SearchError: %s", e)
@@ -44,20 +47,21 @@ class FindMyOrder:
         try:
             action = one_of(
                 settings.action_identifier, caseless=True
-                ).set_results_name("action").set_parse_action(pyparsing_common.upcase_tokens)
+                ).set_results_name("action").set_parse_action(
+                    pyparsing_common.upcase_tokens)
             instrument = Word(
                 alphas
                 ).set_results_name("instrument")
             stop_loss = Combine(
-                    Suppress(settings.stop_loss_identifier) 
+                    Suppress(settings.stop_loss_identifier)
                     + Word(nums)
                 ).set_results_name("stop_loss")
             take_profit = Combine(
-                Suppress(settings.take_profit_identifier) 
+                Suppress(settings.take_profit_identifier)
                 + Word(nums)
                 ).set_results_name("take_profit")
             quantity = Combine(
-                Suppress(settings.quantity_identifier) 
+                Suppress(settings.quantity_identifier)
                 + Word(nums)
                 + Optional(Suppress("%"))
                 ).set_results_name("quantity")
@@ -68,7 +72,7 @@ class FindMyOrder:
                 settings.leverage_type_identifier, caseless=True
                 ).set_results_name("leverage_type")
             comment = Combine(
-                    Suppress(settings.comment_identifier) 
+                    Suppress(settings.comment_identifier)
                     + Word(alphas)
                 ).set_results_name("comment")
 
@@ -100,7 +104,7 @@ class FindMyOrder:
     async def get_order(
         self,
         msg: str,
-        ):
+    ):
         """get an order."""
         try:
             logging.debug("get_order %s", msg)
@@ -110,7 +114,8 @@ class FindMyOrder:
                 order = await self.identify_order(msg)
                 logging.info("order: %s", order)
                 if isinstance(order, dict):
-                    order["timestamp"] = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+                    order["timestamp"] = datetime.utcnow().strftime(
+                        "%Y-%m-%dT%H:%M:%SZ")
                 return order
             return None
 
