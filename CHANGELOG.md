@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.1 (2023-05-06)
+### Fix
+* ⚡️lint ([`986e4a1`](https://github.com/mraniki/findmyorder/commit/986e4a1c91ecc74922a812cc865629af869032dc))
+* 🥅 fix test_search_exception ([`050b59b`](https://github.com/mraniki/findmyorder/commit/050b59b63ad58657b7d84bf7a4949f243de866af))
+* 🥅 test for search ([`0c6b03f`](https://github.com/mraniki/findmyorder/commit/0c6b03f95e891b2fc28b1ec5972a7ae98267bd60))
+* 🥅 test for exception ([`d35b42d`](https://github.com/mraniki/findmyorder/commit/d35b42d01ced90f779c7e5bea39c6cf3fcf2521b))
+
+### Other
+* Merge pull request #168 from mraniki/dev ([`00eb101`](https://github.com/mraniki/findmyorder/commit/00eb101f873fae72306e6b7751623b67b82476c1))
+
 ## v1.3.0 (2023-05-05)
 ### Feature
 * Update ✨Flow.yml ([`a2a029a`](https://github.com/mraniki/findmyorder/commit/a2a029a3be2b6cd05b9c1e9c39d8df92fd6a1ba3))
