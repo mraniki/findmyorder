@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.2 (2023-05-06)
+### Fix
+* ⚡️ lint ([`0fc4f72`](https://github.com/mraniki/findmyorder/commit/0fc4f72d128cc2594a72f39e91318e26d268be6e))
+* 🥅 added short order and default value test ([`0d3aaa1`](https://github.com/mraniki/findmyorder/commit/0d3aaa1484c09af61fe514d67e9acc509f8be806))
+
+### Other
+* Merge pull request #169 from mraniki/dev ([`186cc65`](https://github.com/mraniki/findmyorder/commit/186cc653df9c4a79d3dacb468499186ea01a4ade))
+* Merge branch 'main' into dev ([`a886c99`](https://github.com/mraniki/findmyorder/commit/a886c9984439b0720fab019522e50a46c2f98a00))
+
 ## v1.3.1 (2023-05-06)
 ### Fix
 * ⚡️lint ([`986e4a1`](https://github.com/mraniki/findmyorder/commit/986e4a1c91ecc74922a812cc865629af869032dc))
