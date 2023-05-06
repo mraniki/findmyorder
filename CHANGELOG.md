@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.3 (2023-05-06)
+### Fix
+* ⚡️ unit test tweak ([`33fa98c`](https://github.com/mraniki/findmyorder/commit/33fa98c2b81c5ed191b8774126233fa97cc5bf6b))
+
+### Other
+* Merge pull request #170 from mraniki/dev ([`2072f39`](https://github.com/mraniki/findmyorder/commit/2072f3936625944a012a2d48257bfeac77a18550))
+* Change info to debug for identifier ([`cb3c1e7`](https://github.com/mraniki/findmyorder/commit/cb3c1e73eeb36e6619692bed57b6717dc88c8228))
+
 ## v1.3.2 (2023-05-06)
 ### Fix
 * ⚡️ lint ([`0fc4f72`](https://github.com/mraniki/findmyorder/commit/0fc4f72d128cc2594a72f39e91318e26d268be6e))
