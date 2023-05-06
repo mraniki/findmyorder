@@ -29,7 +29,7 @@ async def test_search_no_order_command():
 async def test_search_exception():
     """Search Testing"""
     mystring = ""
-    await find_my_order.search(mystring)
+    await fmo.search(mystring)
     
 @pytest.mark.asyncio
 async def test_search_normal_order():
