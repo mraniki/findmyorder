@@ -1,10 +1,11 @@
 """
 FindMyOrder Unit Testing
 """
-    
+
 import pytest
 from datetime import datetime
 from findmyorder import FindMyOrder
+
 
 @pytest.mark.asyncio
 async def test_search_valid_order():
@@ -12,12 +13,16 @@ async def test_search_valid_order():
     fmo = FindMyOrder()
     mystring = "buy btc"
     assert await fmo.search(mystring) is True
+
+
 @pytest.mark.asyncio
 async def test_search_no_order():
     """Search Testing"""
     fmo = FindMyOrder()
     mystring = "This is not an order"
     assert await fmo.search(mystring) is False
+
+
 @pytest.mark.asyncio
 async def test_search_no_order_command():
     """Search Testing"""
@@ -25,26 +30,31 @@ async def test_search_no_order_command():
     mystring = "/bal"
     assert await fmo.search(mystring) is False
 
+
 @pytest.mark.xfail
 async def test_search_exception():
     """Search Testing"""
+    fmo = FindMyOrder()
     mystring = ""
     await fmo.search(mystring)
-    
+
+
 @pytest.mark.asyncio
 async def test_search_normal_order():
     """Search Testing"""
     fmo = FindMyOrder()
     mystring = "sell EURGBP sl=200 tp=400 q=2%"
     assert await fmo.search(mystring) is True
-    
+
+
 @pytest.mark.asyncio
 async def test_search_normal_order_variation():
     """Search Testing"""
     fmo = FindMyOrder()
     mystring = "LONG ETHUSD sl=200 tp=400 q=2%"
     assert await fmo.search(mystring) is True
-    
+
+
 @pytest.mark.asyncio
 async def test_identify_order():
     """Identify Testing"""
@@ -52,7 +62,8 @@ async def test_identify_order():
     mystring = "buy btc"
     result = await fmo.identify_order(mystring)
     assert result is not None
-    
+
+
 @pytest.mark.asyncio
 async def test_identify_order_invalid_input():
     """Identify Testing"""
@@ -60,6 +71,7 @@ async def test_identify_order_invalid_input():
     mystring = "hello"
     result = await fmo.identify_order(mystring)
     assert result is None
+
 
 @pytest.mark.asyncio
 async def test_valid_get_order():
@@ -87,6 +99,7 @@ async def test_valid_get_order():
     assert result["leverage_type"] == expected["leverage_type"]
     assert result["comment"] == expected["comment"]
     assert type(result["timestamp"] is datetime)
+
 
 @pytest.mark.asyncio
 async def test_invalid_get_order():
