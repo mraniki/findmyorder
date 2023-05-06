@@ -25,23 +25,26 @@ async def test_search_no_order_command():
     mystring = "/bal"
     assert await fmo.search(mystring) is False
 
-# async def test_search_exception(find_my_order, caplog):
-#     """Search Testing"""
-#     mystring = ""
-#     await find_my_order.search(mystring)
-#     assert "SearchError" in caplog.text
+@pytest.mark.xfail
+async def test_search_exception():
+    """Search Testing"""
+    mystring = ""
+    await find_my_order.search(mystring)
+    
 @pytest.mark.asyncio
 async def test_search_normal_order():
     """Search Testing"""
     fmo = FindMyOrder()
     mystring = "sell EURGBP sl=200 tp=400 q=2%"
     assert await fmo.search(mystring) is True
+    
 @pytest.mark.asyncio
 async def test_search_normal_order_variation():
     """Search Testing"""
     fmo = FindMyOrder()
     mystring = "LONG ETHUSD sl=200 tp=400 q=2%"
     assert await fmo.search(mystring) is True
+    
 @pytest.mark.asyncio
 async def test_identify_order():
     """Identify Testing"""
@@ -49,6 +52,7 @@ async def test_identify_order():
     mystring = "buy btc"
     result = await fmo.identify_order(mystring)
     assert result is not None
+    
 @pytest.mark.asyncio
 async def test_identify_order_invalid_input():
     """Identify Testing"""
@@ -83,6 +87,7 @@ async def test_valid_get_order():
     assert result["leverage_type"] == expected["leverage_type"]
     assert result["comment"] == expected["comment"]
     assert type(result["timestamp"] is datetime)
+    
 @pytest.mark.asyncio
 async def test_short_valid_get_order():
     """get order Testing"""
@@ -109,6 +114,7 @@ async def test_short_valid_get_order():
     assert result["leverage_type"] == expected["leverage_type"]
     assert result["comment"] == expected["comment"]
     assert type(result["timestamp"] is datetime)
+    
 @pytest.mark.asyncio
 async def test_invalid_get_order():
     """get order Testing"""
