@@ -114,7 +114,7 @@ async def test_short_valid_get_order():
         "quantity": 1,
         "order_type": None,
         "leverage_type": None,
-        "comment": None ,
+        "comment": None,
         "timestamp": datetime.now()
     }
     result = await fmo.get_order(mystring)
