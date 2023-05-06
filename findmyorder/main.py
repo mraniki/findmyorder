@@ -23,9 +23,9 @@ class FindMyOrder:
     ) -> bool:
         """Search an order."""
         try:
-            logging.info(mystring)
+            logging.debug(mystring)
             string_check = mystring.split()[0]
-            logging.info("action identifier %s", settings.action_identifier)
+            logging.debug("action identifier %s", settings.action_identifier)
             if string_check.lower() in settings.action_identifier.lower():
                 logging.debug("found order in %s ", mystring)
                 return True

@@ -77,9 +77,9 @@ async def test_identify_order_invalid_input():
 async def test_valid_get_order():
     """get order Testing"""
     fmo = FindMyOrder()
-    mystring = "buy EURJPY sl=200 tp=400 q=2%"
+    mystring = "sell EURJPY sl=200 tp=400 q=2%"
     expected = {
-        "action": "BUY",
+        "action": "SELL",
         "instrument": "EURJPY",
         "stop_loss": 200,
         "take_profit": 400,
