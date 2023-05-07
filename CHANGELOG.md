@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.5 (2023-05-07)
+### Fix
+* 🥅better error handling for search ([`cc38a4f`](https://github.com/mraniki/findmyorder/commit/cc38a4f496ce0deef89e51814d5f6371f4947994))
+
+### Other
+* Merge pull request #172 from mraniki/dev ([`f42011f`](https://github.com/mraniki/findmyorder/commit/f42011f281d86a1d62c1738a7f65e127ba8b9673))
+
 ## v1.3.4 (2023-05-06)
 ### Fix
 * ⚡️ lint improvement + utc time ([`cce51be`](https://github.com/mraniki/findmyorder/commit/cce51be314b96d46a3e44f397e47826607738ce4))
