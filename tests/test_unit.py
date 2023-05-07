@@ -31,7 +31,7 @@ async def test_search_no_order_command():
     assert await fmo.search(mystring) is False
 
 
-@pytest.mark.xfail
+@pytest.mark.xfail(raises=TypeError)
 async def test_search_exception():
     """Search Testing"""
     fmo = FindMyOrder()

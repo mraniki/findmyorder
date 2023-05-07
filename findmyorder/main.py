@@ -26,17 +26,18 @@ class FindMyOrder:
     ) -> bool:
         """Search an order."""
         try:
-            logging.debug(mystring)
-            string_check = mystring.split()[0]
-            logging.debug("action identifier %s", settings.action_identifier)
-            if string_check.lower() in settings.action_identifier.lower():
-                logging.debug("found order in %s ", mystring)
-                return True
+            if mystring:
+                string_check = mystring.split()[0]
+                logging.debug("action identifier %s",
+                              settings.action_identifier)
+                if string_check.lower() in settings.action_identifier.lower():
+                    logging.debug("found order in %s ", mystring)
+                    return True
             logging.debug("no order found")
             return False
-        except Exception as e:
-            logging.warning("SearchError: %s", e)
+        except TypeError:
             return False
+            raise TypeError("exception in search")
 
     async def identify_order(
             self,
