@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.8 (2023-05-08)
+### Fix
+* 🥅 Added test for exception handling in test_unit.py ([`f90fcdb`](https://github.com/mraniki/findmyorder/commit/f90fcdb8c891929cf509caf78b218b18e3906939))
+
+### Other
+* Merge pull request #175 from mraniki/dev ([`79b7cf2`](https://github.com/mraniki/findmyorder/commit/79b7cf258256e26cb39e4dd5bb072d476b1d44c0))
+
 ## v1.3.7 (2023-05-08)
 ### Fix
 * ⚡️ updated logger name ([`4a42961`](https://github.com/mraniki/findmyorder/commit/4a429610f085d3c12dd1003e79a5608cf2c0ed11))
