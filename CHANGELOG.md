@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.6 (2023-05-08)
+### Fix
+* ⚡️ unit test and gitignore improvment ([`0264b7a`](https://github.com/mraniki/findmyorder/commit/0264b7af76078dce871bc36dd824a6750926a482))
+
+### Other
+* Merge pull request #173 from mraniki/dev ([`97277e4`](https://github.com/mraniki/findmyorder/commit/97277e486f28e3dfb43eda2af3bf3af390de3443))
+
 ## v1.3.5 (2023-05-07)
 ### Fix
 * 🥅better error handling for search ([`cc38a4f`](https://github.com/mraniki/findmyorder/commit/cc38a4f496ce0deef89e51814d5f6371f4947994))
