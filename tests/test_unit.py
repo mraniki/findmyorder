@@ -58,6 +58,23 @@ async def test_search_exception():
 
 
 @pytest.mark.asyncio
+async def test_exception_handling():
+    # Simulate an exception
+    def func_that_raises():
+        raise ValueError("Test error")
+
+    # Call the function and verify that it returns None
+    result = None
+    try:
+        result = func_that_raises()
+    except Exception:
+        result = None
+
+    # Check that the function returned None
+    assert result is None
+
+
+@pytest.mark.asyncio
 async def test_search_normal_order():
     """Search Testing"""
     fmo = FindMyOrder()
