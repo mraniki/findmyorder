@@ -18,7 +18,7 @@ class FindMyOrder:
     def __init__(
         self,
     ):
-        self.logger = logging.getLogger(__name__)
+        self.logger = logging.getLogger("FMO")
 
     async def search(
         self,
@@ -37,7 +37,6 @@ class FindMyOrder:
             return False
         except Exception:
             return False
-
 
     async def identify_order(
             self,
