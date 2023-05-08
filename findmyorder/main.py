@@ -35,9 +35,9 @@ class FindMyOrder:
                     return True
             logging.debug("no order found")
             return False
-        except TypeError:
+        except Exception:
             return False
-            raise TypeError("exception in search")
+
 
     async def identify_order(
             self,
