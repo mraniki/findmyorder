@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.7 (2023-05-08)
+### Fix
+* ⚡️ updated logger name ([`4a42961`](https://github.com/mraniki/findmyorder/commit/4a429610f085d3c12dd1003e79a5608cf2c0ed11))
+
+### Other
+* Merge pull request #174 from mraniki/dev ([`ca18dc5`](https://github.com/mraniki/findmyorder/commit/ca18dc52dee9febd3603897880709e09dee0ef95))
+
 ## v1.3.6 (2023-05-08)
 ### Fix
 * ⚡️ unit test and gitignore improvment ([`0264b7a`](https://github.com/mraniki/findmyorder/commit/0264b7af76078dce871bc36dd824a6750926a482))
