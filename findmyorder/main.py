@@ -4,10 +4,11 @@
 import logging
 from datetime import datetime
 
+import emoji
 from pyparsing import (
     Combine, Optional, Word, alphas,
-    nums, one_of, pyparsing_common,
-    Suppress)
+    nums, one_of, ParseBaseException,
+    pyparsing_common, Suppress)
 
 from .config import settings
 
@@ -36,6 +37,18 @@ class FindMyOrder:
             logging.debug("no order found")
             return False
         except Exception:
+            return False
+
+    async def contains_emoji(self, s: str) -> bool:
+        """Check if the input string contains an emoji."""
+        return any(character in emoji.UNICODE_EMOJI_ENGLISH for character in s)
+
+    async def is_match(self, grammar, s: str) -> bool:
+        """Check if the input string matches the given grammar."""
+        try:
+            grammar.parseString(s, parseAll=True)
+            return True
+        except ParseBaseException:
             return False
 
     async def identify_order(
@@ -81,9 +94,9 @@ class FindMyOrder:
             order_grammar = (
                 action("action")
                 + Optional(instrument, default=None)
-                + Optional(stop_loss, default=1000)
-                + Optional(take_profit, default=1000)
-                + Optional(quantity, default=1)
+                + Optional(stop_loss, default=settings.stop_loss)
+                + Optional(take_profit, default=settings.take_profit)
+                + Optional(quantity, default=settings.quantity)
                 + Optional(order_type, default=None)
                 + Optional(leverage_type, default=None)
                 + Optional(comment, default=None)
@@ -94,7 +107,7 @@ class FindMyOrder:
                     parse_all=False
                     )
             logging.debug("identify_order %s", order)
-            logging.info("identify_order:  %s", order.asDict())
+            # logging.info("identify_order:  %s", order.asDict())
             return order.asDict()
 
         except Exception as e:
@@ -110,9 +123,9 @@ class FindMyOrder:
             logging.debug("get_order %s", msg)
 
             if await self.search(msg):
-                logging.info("get_order found in %s", msg)
+                logging.debug("get_order found in %s", msg)
                 order = await self.identify_order(msg)
-                logging.info("order: %s", order)
+                logging.debug("order: %s", order)
                 if isinstance(order, dict):
                     order["timestamp"] = datetime.utcnow().strftime(
                         "%Y-%m-%dT%H:%M:%SZ")
@@ -122,3 +135,47 @@ class FindMyOrder:
         except Exception as e:
             logging.exception("GetOrderError: %s", e)
             return None
+
+
+# Grammar
+# class TradingGrammar:
+#     def __init__(self):
+#         self.action = self._action()
+#         self.instrument = self._instrument()
+#         self.exchange = self._exchange()
+
+# grammar = TradingGrammar()
+
+# new_order_grammar = (
+#     grammar.currency_pair
+#     + grammar.exchange
+#     + grammar.take_profit_targets
+# )
+# CORNIX type
+# currency_pair = Combine(Suppress("#") + Word(alphas + "/") + Word(alphas))\
+#     .set_results_name("currency_pair")
+# exchange = Group(Suppress("Exchanges:") + delimitedList(Word(alphas + " "), delim=", "))\
+#     .set_results_name("exchanges")
+# signal_type = Group(Suppress("Signal Type:") + Word(alphas + " ()"))\
+#     .set_results_name("signal_type")
+# leverage = Group(Suppress("Leverage:") + Word(alphas + " (.)"))\
+#     .set_results_name("leverage")
+# entry_targets = Group(Suppress("Entry Targets:") + OneOrMore(Group(Word(nums + ".") + Suppress("-") + Word(nums + ".%"))))\
+#     .set_results_name("entry_targets")
+# take_profit_targets = Group(Suppress("Take-Profit Targets:") + OneOrMore(Word(nums + ".")))\
+#     .set_results_name("take_profit_targets")
+# stop_targets = Group(Suppress("Stop Targets:") + OneOrMore(Word(nums + ".")))\
+#     .set_results_name("stop_targets")
+# trailing_config = Group(Suppress("Trailing Configuration:") + Group(Word(alphas + ":") + Word(alphas + "-") + Suppress("Trigger:") + Word(alphas + " ()")))\
+#     .set_results_name("trailing_config")
+
+# new_order_grammar = (
+#     currency_pair
+#     + exchange
+#     + signal_type
+#     + leverage
+#     + entry_targets
+#     + take_profit_targets
+#     + stop_targets
+#     + trailing_config
+# )
