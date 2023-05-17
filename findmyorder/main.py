@@ -138,11 +138,11 @@ class FindMyOrder:
 
 
 # Grammar
-class TradingGrammar:
-    def __init__(self):
-        self.action = self._action()
-        self.instrument = self._instrument()
-        self.exchange = self._exchange()
+# class TradingGrammar:
+#     def __init__(self):
+#         self.action = self._action()
+#         self.instrument = self._instrument()
+#         self.exchange = self._exchange()
 
 # grammar = TradingGrammar()
 
