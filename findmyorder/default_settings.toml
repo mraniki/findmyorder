@@ -14,6 +14,9 @@ quantity_identifier = 'q='
 order_type_identifier = "spot future margin"
 leverage_type_identifier = "cross isolated"
 comment_identifier = "comment="
+stop_loss = 1000
+take_profit = 1000
+quantity = 1
 VALUE = "On Default"
 
 [testing]
