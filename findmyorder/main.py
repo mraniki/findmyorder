@@ -19,7 +19,7 @@ class FindMyOrder:
     def __init__(
         self,
     ):
-        self.logger = logging.getLogger("FMO")
+        self.logger = logging.getLogger(name="FMO")
 
     async def search(
         self,
