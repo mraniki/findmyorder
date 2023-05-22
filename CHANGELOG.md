@@ -2,6 +2,27 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.9 (2023-05-22)
+### Fix
+* Merge pull request #180 from mraniki/dev ([`6a521b9`](https://github.com/mraniki/findmyorder/commit/6a521b96c5df76ddcdfc737f6c497504f76bd20a))
+* ⚡ update pyproject ([`cb3ed76`](https://github.com/mraniki/findmyorder/commit/cb3ed76fc5d1b60aaaca645b58b153597612afa2))
+* ⚡update ([`4fd420d`](https://github.com/mraniki/findmyorder/commit/4fd420d4792dad3fe9e286ce2829bf7bd975e3ff))
+* ⚡️ update ([`6597c95`](https://github.com/mraniki/findmyorder/commit/6597c9503f5bac1d18cd9bb2b94a28ac25f650a6))
+* Merge pull request #179 from mraniki/dev ([`a72e1f3`](https://github.com/mraniki/findmyorder/commit/a72e1f34aee53dce6cfbaafbeb7f87c435511013))
+* ⚡ bump ([`72f71ef`](https://github.com/mraniki/findmyorder/commit/72f71ef20eb54e11375aa53c87544fadd876ba76))
+* ⚡ Update README.md ([`53dbd6e`](https://github.com/mraniki/findmyorder/commit/53dbd6ecc5d6b6fed0e8b1081bb0d4939f96fff2))
+* Merge pull request #178 from mraniki/dev ([`37af545`](https://github.com/mraniki/findmyorder/commit/37af5453db77deca489b65deeb429ca05a066125))
+* 🐛 updating pyproject ([`0f71d88`](https://github.com/mraniki/findmyorder/commit/0f71d8854358b10b0e5b6ddb2b4c1b0911c89257))
+* 🐛 logger fix ([`3636000`](https://github.com/mraniki/findmyorder/commit/36360000b8fec81d4b64f82470a5fff57222cd3f))
+* ⚡ cleanup ([`27bf154`](https://github.com/mraniki/findmyorder/commit/27bf154c98880a235d8453cb40eed3ef03a4e60a))
+* ⚡ update the python dep ([`639ca77`](https://github.com/mraniki/findmyorder/commit/639ca776d1af0c0f0b742c64db9661f14bd166b8))
+* Merge pull request #177 from mraniki/dev ([`6bd2bb8`](https://github.com/mraniki/findmyorder/commit/6bd2bb8d9e291e0c764ca2a35c936f35b501a5ac))
+* ⚡ improvement ([`e794b69`](https://github.com/mraniki/findmyorder/commit/e794b691fc904a39e20df0d4d8d87c6d9ef5e8be))
+* Merge pull request #176 from mraniki/dev ([`6e380f1`](https://github.com/mraniki/findmyorder/commit/6e380f1816f3456395d3bf1587b9d9f3681ee920))
+* 🐛 bugfix ([`770751a`](https://github.com/mraniki/findmyorder/commit/770751a815b3a02e5d2319a11f7d7f087ad04487))
+* ⚡ keeping trading grammar ([`7d1bcb6`](https://github.com/mraniki/findmyorder/commit/7d1bcb620f8b4f6a31c5f68a068dd8c192cee81c))
+* 🥚 identify emoji and new type of grammar ([`f6aafa3`](https://github.com/mraniki/findmyorder/commit/f6aafa3013b3e66bd2702ee8fc9bc8624788318a))
+
 ## v1.3.8 (2023-05-08)
 ### Fix
 * 🥅 Added test for exception handling in test_unit.py ([`f90fcdb`](https://github.com/mraniki/findmyorder/commit/f90fcdb8c891929cf509caf78b218b18e3906939))
