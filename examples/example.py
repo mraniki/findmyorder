@@ -1,5 +1,5 @@
 """
-Provides sexample for FindMyOrder
+Provides example for FindMyOrder
 """
 
 import asyncio
