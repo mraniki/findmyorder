@@ -7,7 +7,6 @@ license = "MIT License"
 readme = "README.md"
 keywords = ["trading", "order", "trade","buy","sell"]
 
-
 [tool.poetry.urls]
 "Changelog" =  "https://github.com/mraniki/findmyorder/blob/dev/CHANGELOG.rst"
 "Support" =  "https://github.com/mraniki/findmyorder/discussions"
@@ -25,6 +24,7 @@ python-semantic-release = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-asyncio = "*"
+pytest-mock = "*"
 
 [tool.pytest.ini_options]
 testpaths = "tests/"
@@ -51,7 +51,7 @@ major_emoji = ":boom:"
 #major_emoji¶ #💥:boom:
 minor_emoji = ":sparkles:,:children_crossing:,:lipstick:,:iphone:,:egg:,:chart_with_upwards_trend:"
 #minor_emoji #✨🥚🚸📱💄📈
-patch_emoji = ":ambulance:,:lock:,:arrow_up:,:bug:,:zap:,:goal_net:,:alien:,:wheelchair:,:speech_balloon:,:mag:,:apple:,:penguin:,:checkered_flag:,:robot:,:green_apple:"
+patch_emoji = ":ambulance:,:lock:,:arrow_up:,:bug:,:zap:,:goal_net:,:alien:,:wheelchair:,:speech_balloon:,:mag:,:apple:,:penguin:,:checkered_flag:,:robot:,:green_apple:,⚡️,🎨,🐛,🚑️,💄,🔒️,⬇️,⬆️,📌,📈,➕,➖,🔧,🌐,✏️,⏪️,📦️,👽️,🍱,♿️,💬,🗃️ ,🚸,📱,🥚,⚗️,🔍️,🏷️ ,🚩,🥅,💫,🗑️ ,🛂,🩹,👔,"
 #patch_emoji # 🐛🚑⚡🔒👽🔍💬🥅♿🍏🐧🏁🤖
 
 [build-system]
