@@ -23,11 +23,11 @@ order = await fmo.get_order(msg_order)
 #{'action': 'BUY', 'instrument': 'EURUSD', 'stop_loss': '1000', 'take_profit': '1000', 'quantity': '2', 'order_type': None, 'leverage_type': None, 'comment': None, 'timestamp': datetime.datetime(2023, 5, 3, 12, 10, 28, 731282, tzinfo=datetime.timezone.utc)}
 ```
 
-## Example
+### Example
 
 [example](https://github.com/mraniki/findmyorder/blob/main/examples/example.py)
 
-## Real use case
+### Real use case
 
 [TalkyTrader, submit trading order to CEX & DEX with messaging platform (Telegram, Matrix and Discord)](https://github.com/mraniki/tt)
 
@@ -35,9 +35,6 @@ order = await fmo.get_order(msg_order)
 
 [Wiki](https://github.com/mraniki/findmyorder/wiki)
 
-## 🚧 Roadmap
-
-[🚧 Roadmap](https://github.com/mraniki/findmyorder/milestones)
 
 ## Questions? Want to help?
 
