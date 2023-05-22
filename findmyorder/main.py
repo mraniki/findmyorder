@@ -154,20 +154,36 @@ class FindMyOrder:
 # CORNIX type
 # currency_pair = Combine(Suppress("#") + Word(alphas + "/") + Word(alphas))\
 #     .set_results_name("currency_pair")
-# exchange = Group(Suppress("Exchanges:") + delimitedList(Word(alphas + " "), delim=", "))\
-#     .set_results_name("exchanges")
-# signal_type = Group(Suppress("Signal Type:") + Word(alphas + " ()"))\
+# exchange = Group(Suppress("Exchanges:")
+# + delimitedList(
+    # Word(alphas + " "),
+    # delim=", ")
+    # ).set_results_name("exchanges")
+# signal_type = Group(
+    # Suppress("Signal Type:")
+    # + Word(alphas + " ()"))
 #     .set_results_name("signal_type")
-# leverage = Group(Suppress("Leverage:") + Word(alphas + " (.)"))\
+# leverage = Group(
+    # Suppress("Leverage:")
+    # + Word(alphas + " (.)"))\
 #     .set_results_name("leverage")
-# entry_targets = Group(Suppress("Entry Targets:") + OneOrMore(Group(Word(nums + ".") + Suppress("-") + Word(nums + ".%"))))\
-#     .set_results_name("entry_targets")
-# take_profit_targets = Group(Suppress("Take-Profit Targets:") + OneOrMore(Word(nums + ".")))\
-#     .set_results_name("take_profit_targets")
-# stop_targets = Group(Suppress("Stop Targets:") + OneOrMore(Word(nums + ".")))\
-#     .set_results_name("stop_targets")
-# trailing_config = Group(Suppress("Trailing Configuration:") + Group(Word(alphas + ":") + Word(alphas + "-") + Suppress("Trigger:") + Word(alphas + " ()")))\
-#     .set_results_name("trailing_config")
+# entry_targets = Group(Suppress("Entry Targets:")
+# + OneOrMore(Group(Word(nums
+# + ".")
+# + Suppress("-")
+# + Word(nums + ".%")))).set_results_name("entry_targets")
+# take_profit_targets = Group(
+    # Suppress("Take-Profit Targets:")
+    # + OneOrMore(Word(nums + "."))).set_results_name("take_profit_targets")
+# stop_targets = Group(
+    # Suppress("Stop Targets:")
+    # + OneOrMore(Word(nums + "."))).set_results_name("stop_targets")
+# trailing_config = Group(
+    # Suppress("Trailing Configuration:")
+    # + Group(Word(alphas + ":")
+    # + Word(alphas + "-")
+    # + Suppress("Trigger:")
+    # + Word(alphas + " ()"))).set_results_name("trailing_config")
 
 # new_order_grammar = (
 #     currency_pair
