@@ -14,9 +14,10 @@ keywords = ["trading", "order", "trade","buy","sell"]
 "Issues" =  "https://github.com/mraniki/findmyorder/issues"
 
 [tool.poetry.dependencies]
-python = ">=3.9"
-dynaconf = ">=3.1.12"
-pyparsing = ">=3.0.9"
+python = "^3.10"
+asyncio = "*"
+dynaconf = "*"
+pyparsing = "^3.0.9"
 emoji = "*"
 
 [tool.poetry.dev-dependencies]
