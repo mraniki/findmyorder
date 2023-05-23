@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.10 (2023-05-23)
+### Fix
+* 👷 CI Change ([`5382eb3`](https://github.com/mraniki/findmyorder/commit/5382eb39085e6e20a2b8328cfcfca09888ca552f))
+* 👷 CI change ([`d32db57`](https://github.com/mraniki/findmyorder/commit/d32db5738c765a966dc0cded9ea9bb04c7654d7c))
+
+### Other
+* Merge pull request #181 from mraniki/dev ([`1a2dadc`](https://github.com/mraniki/findmyorder/commit/1a2dadc17dd93f19068a9c7207638219cf14ab0e))
+
 ## v1.3.9 (2023-05-22)
 ### Fix
 * Merge pull request #180 from mraniki/dev ([`6a521b9`](https://github.com/mraniki/findmyorder/commit/6a521b96c5df76ddcdfc737f6c497504f76bd20a))
