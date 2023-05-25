@@ -105,7 +105,7 @@ async def test_identify_order_invalid_input():
     fmo = FindMyOrder()
     mystring = "hello"
     result = await fmo.identify_order(mystring)
-    assert result is None
+    assert str(result).startswith("Expected")
 
 
 @pytest.mark.asyncio
