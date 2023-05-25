@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.11 (2023-05-25)
+### Fix
+* 🎨 minor improvement ([`ec7036c`](https://github.com/mraniki/findmyorder/commit/ec7036c9daa1b73ea7e2f5dd3409f051ec865711))
+
+### Other
+* Merge pull request #182 from mraniki/dev ([`ac8b9e6`](https://github.com/mraniki/findmyorder/commit/ac8b9e6807ab920b9f75f5161aff07a5b23d92df))
+
 ## v1.3.10 (2023-05-23)
 ### Fix
 * 👷 CI Change ([`5382eb3`](https://github.com/mraniki/findmyorder/commit/5382eb39085e6e20a2b8328cfcfca09888ca552f))
