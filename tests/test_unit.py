@@ -30,31 +30,13 @@ async def test_search_no_order_command():
     mystring = "/bal"
     assert await fmo.search(mystring) is False
 
-
-# @pytest.mark.xfail(raises=IndexError)
+pa. 
 @pytest.mark.asyncio
 async def test_search_exception():
     """Search Testing"""
     fmo = FindMyOrder()
     mystring = ""
     assert await fmo.search(mystring) is False
-
-# @pytest.mark.asyncio
-# async def test_search_exception(caplog):
-#     # Arrange
-#     fmo = FindMyOrder()
-#     mystring = None  # This will cause a TypeError when calling split()
-
-#     # Act and assert
-#     with pytest.raises(AttributeError) as excinfo:
-#         await fmo.search(mystring)
-
-#     # Check the exception message
-#     assert "exception in search" in str(excinfo.value)
-
-#     # Check the logging message
-#     assert "SearchError: list index out of range" in caplog.text
-#     assert "exception in search" in caplog.text
 
 
 @pytest.mark.asyncio
