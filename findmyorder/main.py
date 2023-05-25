@@ -23,18 +23,14 @@ class FindMyOrder:
 
     async def search(
         self,
-        mystring: str,
+        my_string: str,
     ) -> bool:
         """Search an order."""
         try:
-            if mystring:
-                string_check = mystring.split()[0]
-                logging.debug("action identifier %s",
-                              settings.action_identifier)
-                if string_check.lower() in settings.action_identifier.lower():
-                    logging.debug("found order in %s ", mystring)
+            if my_string:
+                string_check = my_string.split()[0].lower()
+                if string_check in settings.action_identifier.lower():
                     return True
-            logging.debug("no order found")
             return False
         except Exception:
             return False
@@ -53,10 +49,9 @@ class FindMyOrder:
 
     async def identify_order(
             self,
-            mystring: str,
+            my_string: str,
             ) -> dict:
         """Identify an order."""
-        logging.debug("identify_order: %s", mystring)
         try:
             action = one_of(
                 settings.action_identifier, caseless=True
@@ -89,8 +84,6 @@ class FindMyOrder:
                     + Word(alphas)
                 ).set_results_name("comment")
 
-            # for action in settings.actions:
-            # print(f"{action.identifier} ({action.type})")
             order_grammar = (
                 action("action")
                 + Optional(instrument, default=None)
@@ -103,16 +96,13 @@ class FindMyOrder:
               )
 
             order = order_grammar.parse_string(
-                    instring=mystring,
+                    instring=my_string,
                     parse_all=False
                     )
-            logging.debug("identify_order %s", order)
-            # logging.info("identify_order:  %s", order.asDict())
             return order.asDict()
 
         except Exception as e:
-            logging.exception("IdentifyError: %s", e)
-            return None
+            return e
 
     async def get_order(
         self,
@@ -123,9 +113,7 @@ class FindMyOrder:
             logging.debug("get_order %s", msg)
 
             if await self.search(msg):
-                logging.debug("get_order found in %s", msg)
                 order = await self.identify_order(msg)
-                logging.debug("order: %s", order)
                 if isinstance(order, dict):
                     order["timestamp"] = datetime.utcnow().strftime(
                         "%Y-%m-%dT%H:%M:%SZ")
@@ -133,8 +121,7 @@ class FindMyOrder:
             return None
 
         except Exception as e:
-            logging.exception("GetOrderError: %s", e)
-            return None
+            return e
 
 
 # Grammar
