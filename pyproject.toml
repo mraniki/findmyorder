@@ -37,7 +37,7 @@ log_level = "DEBUG"
 pythonpath = [
   "."
 ]
-addopts = "--capture=no --ignore=/tests --ignore=/examples"
+addopts = "--capture=no --ignore=/tests --ignore=examples/"
 
 [build-system]
 requires = ["poetry-core"]
