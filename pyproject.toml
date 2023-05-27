@@ -31,8 +31,8 @@ pytest-mock = "*"
 coverage = "*"
 
 [tool.pytest.ini_options]
-testpaths = "tests"
 pythonpath = "."
+testpaths = "tests"
 python_classes = "Test*"
 log_format = "%(asctime)s - %(levelname)s - %(name)s - %(message)s"
 log_level = "DEBUG"
