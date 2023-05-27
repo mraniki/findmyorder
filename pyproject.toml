@@ -37,7 +37,7 @@ log_level = "DEBUG"
 pythonpath = [
   "."
 ]
-addopts = "--capture=no --ignore-glob=example*"
+addopts = "--capture=no --ignore-glob=example* --ignore-glob=test*"
 ignore="test example"
 
 [build-system]
