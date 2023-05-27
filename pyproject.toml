@@ -36,7 +36,10 @@ pythonpath = "."
 python_classes = "Test*"
 log_format = "%(asctime)s - %(levelname)s - %(name)s - %(message)s"
 log_level = "DEBUG"
-addopts = "--cov findmyorder --cov-report term-missing --verbose"
+addopts = [
+  "--cov findmyorder --cov-report term-missing --verbose",
+  "--ignore=/examples",
+  ]
 # addopts = [
 #     "--capture=no",
 #     "--ignore=tests",
