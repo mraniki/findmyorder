@@ -6,6 +6,9 @@ authors = ["mraniki <8766259+mraniki@users.noreply.github.com>"]
 license = "MIT License"
 readme = "README.md"
 keywords = ["trading", "order", "trade","buy","sell"]
+packages = [
+    {include = "findmyorder"}
+]
 
 [tool.poetry.urls]
 "Changelog" =  "https://github.com/mraniki/findmyorder/blob/dev/CHANGELOG.rst"
@@ -25,24 +28,29 @@ pytest = "*"
 pytest-cov = "*"
 pytest-asyncio = "*"
 pytest-mock = "*"
+coverage = "*"
 
 [tool.pytest.ini_options]
-testpaths = "tests/"
-python_classes = [
-  "Test*",
-  "*Test"
-]
+testpaths = "tests"
+pythonpath = "."
+python_classes = "Test*"
 log_format = "%(asctime)s - %(levelname)s - %(name)s - %(message)s"
 log_level = "DEBUG"
-#pythonpath = [
-#  "."
-#]
-addopts = [
-    "--capture=no",
-    "--ignore=tests",
-    "--ignore=/examples",
-    "--ignore-glob=examples/*.py"
-]
+addopts = "--cov findmyorder --cov-report term-missing --verbose"
+# addopts = [
+#     "--capture=no",
+#     "--ignore=tests",
+#     "--ignore=/examples",
+#     "--ignore-glob=examples/*.py"
+# ]
+
+# [tool.coverage.run]
+# branch = true
+# omit = [
+#     "tests/*",
+#     "examples/*"
+# ]
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
