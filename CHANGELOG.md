@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.14 (2023-05-27)
+### Fix
+* ⚡ improve code coverage ([`cf09cc7`](https://github.com/mraniki/findmyorder/commit/cf09cc7ddb10c77a05257b18b39583570d7665d6))
+
+### Other
+* Merge pull request #185 from mraniki/dev ([`d664a14`](https://github.com/mraniki/findmyorder/commit/d664a14d320fd65961c1f3a3c15602acabe2f8eb))
+
 ## v1.3.13 (2023-05-27)
 ### Fix
 * :wrench: Change envvar_prefix to "TT" in config.py. ([`3a2f96d`](https://github.com/mraniki/findmyorder/commit/3a2f96d0e29a615509735b8d6cf5e3e08031d0f2))
