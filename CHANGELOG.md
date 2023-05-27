@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.18 (2023-05-27)
+### Fix
+* ⚡ improve code cov ([`d78fcfb`](https://github.com/mraniki/findmyorder/commit/d78fcfbf6f674bb1321b374f5c6cb8153ade97c8))
+
+### Other
+* Merge pull request #189 from mraniki/dev ([`9e6d276`](https://github.com/mraniki/findmyorder/commit/9e6d2766c4e3900ef0ba0db091af2dfb880a1d69))
+* Merge branch 'dev' of git@github.com:mraniki/findmyorder.git ([`a092fd4`](https://github.com/mraniki/findmyorder/commit/a092fd47bd841c54b0f292b5703b9c8721c09cd9))
+
 ## v1.3.17 (2023-05-27)
 ### Fix
 * ⚡ improve code cov ([`a66a968`](https://github.com/mraniki/findmyorder/commit/a66a9684d4b375b3f1853076ba049f3e31695c5d))
