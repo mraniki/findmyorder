@@ -2,6 +2,15 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.16 (2023-05-27)
+### Fix
+* ⚡ improve code coverage ([`1fa0cc6`](https://github.com/mraniki/findmyorder/commit/1fa0cc6dca68fa308635c378267308f7d3c0ec16))
+* ⚡ improve code coverage ([`edd0db7`](https://github.com/mraniki/findmyorder/commit/edd0db789714456f7100c36b8b66b6355befabf7))
+
+### Other
+* Merge pull request #187 from mraniki/dev ([`6548a28`](https://github.com/mraniki/findmyorder/commit/6548a288eaf4e9435d9a98709661e371efc9491e))
+* Merge branch 'dev' of git@github.com:mraniki/findmyorder.git ([`10d3e94`](https://github.com/mraniki/findmyorder/commit/10d3e94f13f641054b70f2c9ccb4f40bb252efe4))
+
 ## v1.3.15 (2023-05-27)
 ### Fix
 * ⚡ improve code coverage ([`239c92c`](https://github.com/mraniki/findmyorder/commit/239c92c3f992cf73d7ea5a6654e13549f52ac2fe))
