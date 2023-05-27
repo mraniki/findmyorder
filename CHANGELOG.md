@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.12 (2023-05-27)
+### Fix
+* 🚨 fix unit test linter ([`9b6ef76`](https://github.com/mraniki/findmyorder/commit/9b6ef76c70dacce8bd001254fc51e32866043681))
+* ✅ unit test update ([`33773aa`](https://github.com/mraniki/findmyorder/commit/33773aaaa1b240a61b3ce91aa76d24e6973f958d))
+* 🔧 removing envvar_prefix ([`8d13720`](https://github.com/mraniki/findmyorder/commit/8d137208543cb77b8d4647e4945ca6da1ea2df45))
+* :fire: remove code ([`a9340c5`](https://github.com/mraniki/findmyorder/commit/a9340c542007cc22ee3b529d163a347f9254cf99))
+
+### Other
+* Merge pull request #183 from mraniki/dev ([`f216a88`](https://github.com/mraniki/findmyorder/commit/f216a8892ee4646fdb0a32e786ba822bb790062e))
+* Merge branch 'dev' of git@github.com:mraniki/findmyorder.git ([`599f377`](https://github.com/mraniki/findmyorder/commit/599f377425452ba90ddf9e72a2f7ca19932f1e52))
+
 ## v1.3.11 (2023-05-25)
 ### Fix
 * 🎨 minor improvement ([`ec7036c`](https://github.com/mraniki/findmyorder/commit/ec7036c9daa1b73ea7e2f5dd3409f051ec865711))
