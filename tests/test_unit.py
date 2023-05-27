@@ -6,6 +6,20 @@ import pytest
 from datetime import datetime
 from findmyorder import FindMyOrder
 
+@pytest.fixture
+def expected_result():
+    return {
+        "action": "BUY",
+        "instrument": "EURUSD",
+        "stop_loss": 1000,
+        "take_profit": 1000,
+        "quantity": 1,
+        "order_type": None,
+        "leverage_type": None,
+        "comment": None,
+        "timestamp": datetime.now()
+    }
+
 
 @pytest.mark.asyncio
 async def test_search_valid_order():
@@ -119,30 +133,20 @@ async def test_valid_get_order():
 
 
 @pytest.mark.asyncio
-async def test_short_valid_get_order():
+async def test_short_valid_get_order(expected_result):
     """get order Testing"""
     fmo = FindMyOrder()
     mystring = "buy EURUSD"
-    expected = {
-        "action": "BUY",
-        "instrument": "EURUSD",
-        "stop_loss": 1000,
-        "take_profit": 1000,
-        "quantity": 1,
-        "order_type": None,
-        "leverage_type": None,
-        "comment": None,
-        "timestamp": datetime.now()
-    }
+
     result = await fmo.get_order(mystring)
-    assert result["action"] == expected["action"]
-    assert result["instrument"] == expected["instrument"]
-    assert result["stop_loss"] == expected["stop_loss"]
-    assert result["take_profit"] == expected["take_profit"]
-    assert result["quantity"] == expected["quantity"]
-    assert result["order_type"] == expected["order_type"]
-    assert result["leverage_type"] == expected["leverage_type"]
-    assert result["comment"] == expected["comment"]
+    assert result["action"] == expected_result["action"]
+    assert result["instrument"] == expected_result["instrument"]
+    assert result["stop_loss"] == expected_result["stop_loss"]
+    assert result["take_profit"] == expected_result["take_profit"]
+    assert result["quantity"] == expected_result["quantity"]
+    assert result["order_type"] == expected_result["order_type"]
+    assert result["leverage_type"] == expected_result["leverage_type"]
+    assert result["comment"] == expected_result["comment"]
     assert type(result["timestamp"] is datetime)
 
 
