@@ -38,7 +38,7 @@ pythonpath = [
   "."
 ]
 addopts = "--capture=no --ignore-glob=example*"
-ignore="tests examples"
+ignore="test example"
 
 [build-system]
 requires = ["poetry-core"]
