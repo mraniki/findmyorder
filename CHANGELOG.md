@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.13 (2023-05-27)
+### Fix
+* :wrench: Change envvar_prefix to "TT" in config.py. ([`3a2f96d`](https://github.com/mraniki/findmyorder/commit/3a2f96d0e29a615509735b8d6cf5e3e08031d0f2))
+
+### Other
+* Merge pull request #184 from mraniki/dev ([`c47a840`](https://github.com/mraniki/findmyorder/commit/c47a840d3e819bea3b95d21030ddd99ee3a141aa))
+
 ## v1.3.12 (2023-05-27)
 ### Fix
 * 🚨 fix unit test linter ([`9b6ef76`](https://github.com/mraniki/findmyorder/commit/9b6ef76c70dacce8bd001254fc51e32866043681))
