@@ -70,8 +70,8 @@ minor_emoji = [
   "feat,🥚,🚀,💄,✨,:rocket:,:sparkles:,:lipstick:,:egg:"
   ]
 patch_emoji = [
-  "fix,🎨,🐛,🚑,⚡,🔥,🚨,♻️,🔧,⬆️,🩹,👷,📝,🔒,👽,💬,🥅,✅,🐳,🙈,⚗️,🧐,🔇,🔊,
-  :mute:,:loud_sound:,:monocle_face:,:alembic:,:see_no_evil:,:white_check_mark:,
-  :arrow_up:,:recycle:,:fire,:whale:,:art:,:ambulance:,:lock:,:arrow_up:,:bug:,
-  :zap:,:goal_net:,:alien:,:speech_balloon:,:rotating_light:,:construction_worker:"
+  "fix,🎨,🐛,🚑,⚡,🔥,🚨,♻️,🔧,⬆️,🩹,👷,📝,🔒,👽,💬,🥅,✅,🐳,🙈,⚗️,🧐,🔇,🔊,",
+  ":mute:,:loud_sound:,:monocle_face:,:alembic:,:see_no_evil:,:white_check_mark:,",
+  ":arrow_up:,:recycle:,:fire,:whale:,:art:,:ambulance:,:lock:,:arrow_up:,:bug:",
+  ":zap:,:goal_net:,:alien:,:speech_balloon:,:rotating_light:,:construction_worker:"
   ]
