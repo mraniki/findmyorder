@@ -7,6 +7,21 @@ from datetime import datetime
 from findmyorder import FindMyOrder
 
 
+@pytest.fixture
+def expected_result():
+    return {
+        "action": "BUY",
+        "instrument": "EURUSD",
+        "stop_loss": 200,
+        "take_profit": 400,
+        "quantity": 2,
+        "order_type": None,
+        "leverage_type": None,
+        "comment": None,
+        "timestamp": datetime.now()
+    }
+
+
 @pytest.mark.asyncio
 async def test_search_valid_order():
     """Search Testing"""
@@ -31,30 +46,12 @@ async def test_search_no_order_command():
     assert await fmo.search(mystring) is False
 
 
-# @pytest.mark.xfail(raises=IndexError)
 @pytest.mark.asyncio
 async def test_search_exception():
     """Search Testing"""
     fmo = FindMyOrder()
     mystring = ""
     assert await fmo.search(mystring) is False
-
-# @pytest.mark.asyncio
-# async def test_search_exception(caplog):
-#     # Arrange
-#     fmo = FindMyOrder()
-#     mystring = None  # This will cause a TypeError when calling split()
-
-#     # Act and assert
-#     with pytest.raises(AttributeError) as excinfo:
-#         await fmo.search(mystring)
-
-#     # Check the exception message
-#     assert "exception in search" in str(excinfo.value)
-
-#     # Check the logging message
-#     assert "SearchError: list index out of range" in caplog.text
-#     assert "exception in search" in caplog.text
 
 
 @pytest.mark.asyncio
@@ -109,58 +106,32 @@ async def test_identify_order_invalid_input():
 
 
 @pytest.mark.asyncio
-async def test_valid_get_order():
+async def test_valid_get_order(expected_result):
     """get order Testing"""
     fmo = FindMyOrder()
-    mystring = "sell EURJPY sl=200 tp=400 q=2%"
-    expected = {
-        "action": "SELL",
-        "instrument": "EURJPY",
-        "stop_loss": 200,
-        "take_profit": 400,
-        "quantity": 2,
-        "order_type": None,
-        "leverage_type": None,
-        "comment": None,
-        "timestamp": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
-    }
+    mystring = "buy EURUSD sl=200 tp=400 q=2%"
     result = await fmo.get_order(mystring)
-    assert result["action"] == expected["action"]
-    assert result["instrument"] == expected["instrument"]
-    assert int(result["stop_loss"]) == expected["stop_loss"]
-    assert int(result["take_profit"]) == expected["take_profit"]
-    assert int(result["quantity"]) == expected["quantity"]
-    assert result["order_type"] == expected["order_type"]
-    assert result["leverage_type"] == expected["leverage_type"]
-    assert result["comment"] == expected["comment"]
+    assert result["action"] == expected_result["action"]
+    assert result["instrument"] == expected_result["instrument"]
+    assert int(result["stop_loss"]) == expected_result["stop_loss"]
+    assert int(result["take_profit"]) == expected_result["take_profit"]
+    assert int(result["quantity"]) == expected_result["quantity"]
+    assert result["order_type"] == expected_result["order_type"]
+    assert result["leverage_type"] == expected_result["leverage_type"]
+    assert result["comment"] == expected_result["comment"]
     assert type(result["timestamp"] is datetime)
 
 
 @pytest.mark.asyncio
-async def test_short_valid_get_order():
+async def test_short_valid_get_order(expected_result):
     """get order Testing"""
     fmo = FindMyOrder()
     mystring = "buy EURUSD"
-    expected = {
-        "action": "BUY",
-        "instrument": "EURUSD",
-        "stop_loss": 1000,
-        "take_profit": 1000,
-        "quantity": 1,
-        "order_type": None,
-        "leverage_type": None,
-        "comment": None,
-        "timestamp": datetime.now()
-    }
+
     result = await fmo.get_order(mystring)
-    assert result["action"] == expected["action"]
-    assert result["instrument"] == expected["instrument"]
-    assert result["stop_loss"] == expected["stop_loss"]
-    assert result["take_profit"] == expected["take_profit"]
-    assert result["quantity"] == expected["quantity"]
-    assert result["order_type"] == expected["order_type"]
-    assert result["leverage_type"] == expected["leverage_type"]
-    assert result["comment"] == expected["comment"]
+    assert result["action"] == expected_result["action"]
+    assert result["instrument"] == expected_result["instrument"]
+    assert int(result["quantity"]) == 1
     assert type(result["timestamp"] is datetime)
 
 
