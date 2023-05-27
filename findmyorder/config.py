@@ -10,7 +10,7 @@ ROOT = os.path.dirname(__file__)
 
 # Load the default settings file
 settings = Dynaconf(
-    # envvar_prefix="FMO",
+    envvar_prefix="TT",
     # Set the root path of the project
     root_path=os.path.dirname(ROOT),
     # Load the default settings file
