@@ -2,6 +2,27 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.19 (2023-05-28)
+### Fix
+* 👷 CI Change ([`2fdfb37`](https://github.com/mraniki/findmyorder/commit/2fdfb37b18d06607c1cf9128e564a3c7d8706e03))
+* 👷 CI Change ([`51a724f`](https://github.com/mraniki/findmyorder/commit/51a724faf429b868f19569a0c96626b08107b49e))
+* 👷 CI Change ([`9da7d35`](https://github.com/mraniki/findmyorder/commit/9da7d35c6b9bd4e81eefe26aa814d93eb1f3b427))
+* 👷 CI Change ([`6dfc39a`](https://github.com/mraniki/findmyorder/commit/6dfc39ad5a7c3d6f4c6c67260956c590cec9a77e))
+* 👷 CI Change ([`55e1001`](https://github.com/mraniki/findmyorder/commit/55e1001a98527a48d69d112ccc3fe968d21cd8f5))
+* 👷 CI Change ([`4b0169a`](https://github.com/mraniki/findmyorder/commit/4b0169a73dfb3e57e5e79e597fc553c0900d7406))
+* 👷 CI Change ([`e38dcc1`](https://github.com/mraniki/findmyorder/commit/e38dcc1b4b69605931e839ac937fb23a9c34872d))
+* 👷 CI Change ([`2c56d71`](https://github.com/mraniki/findmyorder/commit/2c56d71786e285e3ca1e724f9593cdbf04b01bf1))
+* 👷 CI Change ([`e78afee`](https://github.com/mraniki/findmyorder/commit/e78afee203d47373be11c447b951b71a86d3ef92))
+* 👷 CI Change ([`1e9629d`](https://github.com/mraniki/findmyorder/commit/1e9629d56c8d4f8479d0ba711af028753a8dedc8))
+
+### Other
+* Merge pull request #192 from mraniki/dev ([`f7b4fe0`](https://github.com/mraniki/findmyorder/commit/f7b4fe0f08d3a1ea1fe44b18137eb86c38968ae6))
+* :construction_worker_man: CI Change ([`c83033b`](https://github.com/mraniki/findmyorder/commit/c83033bf5932aa40e4661729fff010bff6f6e8ea))
+* Merge pull request #191 from mraniki/dev ([`c7e2989`](https://github.com/mraniki/findmyorder/commit/c7e2989bed7687ad389a3c5b739403b696e7be53))
+* Merge pull request #190 from mraniki/dev ([`f762e1b`](https://github.com/mraniki/findmyorder/commit/f762e1b0478f464676187e9a1230956b048d7a94))
+* :construction_worker_man: CI Change ([`b5d1a31`](https://github.com/mraniki/findmyorder/commit/b5d1a31cd9570586f444d7252bc2c4f0ae5289d5))
+* :construction_worker_man: CI Change ([`7beef89`](https://github.com/mraniki/findmyorder/commit/7beef891f98171a3b98454e24b1fbed4b9cb987a))
+
 ## v1.3.18 (2023-05-27)
 ### Fix
 * ⚡ improve code cov ([`d78fcfb`](https://github.com/mraniki/findmyorder/commit/d78fcfbf6f674bb1321b374f5c6cb8153ade97c8))
