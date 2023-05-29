@@ -4,17 +4,12 @@ FindMyOrder Unit Testing
 
 from datetime import datetime
 import pytest
-from pyparsing import (alphas, nums, Combine, Optional, one_of, 
-    ParseException, ParseResults,
-    Suppress, Word)
 from findmyorder import FindMyOrder
-from findmyorder.config import settings
 
 @pytest.fixture
 def fmo():
     """return fmo"""
-    fmo = FindMyOrder()
-    return fmo
+    return FindMyOrder()
 
 
 @pytest.fixture
@@ -55,48 +50,50 @@ def standard_order_with_emoji():
 
 
 @pytest.fixture
-def standard_short_crypto_order():
-    """return valid order"""
-    return "buy WBTC"
-
-
-@pytest.fixture
 def standard_crypto_order():
     """return valid order"""
     return "LONG ETHUSD sl=200 tp=400 q=2%"
 
 
 @pytest.fixture
+def standard_short_crypto_order():
+    """return valid order"""
+    return "buy WBTC"
+
+
+@pytest.fixture
 def invalid_order():
     """return fmo"""
-    return """hello World"""
+    return "hello World"
+
+
+@pytest.fixture
+def bot_command():
+    return "/bal"
 
 
 @pytest.fixture
 def invalid_order_2():
     """return fmo"""
-    return """buy buy"""
+    return "This is not an order"
 
 
 @pytest.mark.asyncio
-async def test_search_valid_order(fmo):
+async def test_search_valid_order(fmo, standard_short_crypto_order):
     """Search Testing"""
-    mystring = "buy btc"
-    assert await fmo.search(mystring) is True
+    assert await fmo.search(standard_short_crypto_order) is True
 
 
 @pytest.mark.asyncio
-async def test_search_no_order(fmo):
+async def test_search_no_order(fmo, invalid_order_2):
     """Search Testing"""
-    mystring = "This is not an order"
-    assert await fmo.search(mystring) is False
+    assert await fmo.search(invalid_order_2) is False
 
 
 @pytest.mark.asyncio
-async def test_search_no_order_command(fmo):
+async def test_search_no_order_command(fmo, bot_command):
     """Search Testing"""
-    mystring = "/bal"
-    assert await fmo.search(mystring) is False
+    assert await fmo.search(bot_command) is False
 
 
 @pytest.mark.asyncio
