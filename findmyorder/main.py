@@ -4,7 +4,7 @@
 import logging
 from datetime import datetime
 
-import emoji
+from emoji import is_emoji
 from pyparsing import (
     Combine, Optional, Word, alphas,
     nums, one_of, ParseBaseException,
@@ -32,20 +32,14 @@ class FindMyOrder:
                 if string_check in settings.action_identifier.lower():
                     return True
             return False
-        except Exception:
-            return False
+        except Exception as e:
+            return e
 
-    async def contains_emoji(self, s: str) -> bool:
+    async def contains_emoji(self, input_string: str) -> bool:
         """Check if the input string contains an emoji."""
-        return any(character in emoji.UNICODE_EMOJI_ENGLISH for character in s)
+        print(input_string)
+        return is_emoji(input_string)
 
-    async def is_match(self, grammar, s: str) -> bool:
-        """Check if the input string matches the given grammar."""
-        try:
-            grammar.parseString(s, parseAll=True)
-            return True
-        except ParseBaseException:
-            return False
 
     async def identify_order(
             self,

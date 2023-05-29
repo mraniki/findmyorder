@@ -10,6 +10,7 @@ packages = [
     {include = "findmyorder"}
 ]
 
+
 [tool.poetry.urls]
 "Changelog" =  "https://github.com/mraniki/findmyorder/blob/dev/CHANGELOG.rst"
 "Support" =  "https://github.com/mraniki/findmyorder/discussions"
