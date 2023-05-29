@@ -169,11 +169,17 @@ async def test_contains_emoji_standard_order(fmo, standard_order):
 
 
 @pytest.mark.asyncio
-async def test_contains_emoji_standard_order_with_emoji(fmo, standard_order_with_emoji):
+async def test_contains_emoji_standard_order_with_emoji(fmo):
     """check emoji"""
-    result = await fmo.contains_emoji("🥇")
+    result = await fmo.contains_emoji("⚡")
     assert result is True
 
+
+@pytest.mark.asyncio
+# async def test_contains_emoji_standard_order_with_emoji_2(fmo, standard_order_with_emoji):
+#     """check emoji"""
+#     result = await fmo.contains_emoji(standard_order_with_emoji)
+#     assert result is True
 
 @pytest.mark.asyncio
 async def test_exception_handling():

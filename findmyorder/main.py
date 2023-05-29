@@ -32,8 +32,8 @@ class FindMyOrder:
                 if string_check in settings.action_identifier.lower():
                     return True
             return False
-        except Exception:
-            return False
+        except Exception as e:
+            return e
 
     async def contains_emoji(self, input_string: str) -> bool:
         """Check if the input string contains an emoji."""
@@ -115,7 +115,7 @@ class FindMyOrder:
             return None
 
         except Exception as e:
-            return None
+            return e
 
 
 # Grammar
