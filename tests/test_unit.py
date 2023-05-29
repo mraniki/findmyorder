@@ -41,15 +41,6 @@ def standard_short_order():
 
 
 @pytest.fixture
-def standard_order_with_emoji():
-    """return emoji type order"""
-    return """⚡️⚡️ #BNB/USDT ⚡️⚡️
-    Exchanges: ByBit USDT, Binance Futures
-    Signal Type: Regular (Long)
-    Leverage: Cross (20.0X)"""
-
-
-@pytest.fixture
 def standard_crypto_order():
     """return valid order"""
     return "LONG ETHUSD sl=200 tp=400 q=2%"
@@ -59,6 +50,15 @@ def standard_crypto_order():
 def standard_short_crypto_order():
     """return valid order"""
     return "buy WBTC"
+
+
+@pytest.fixture
+def standard_order_with_emoji():
+    """return emoji type order"""
+    return """⚡️⚡️ #BNB/USDT ⚡️⚡️
+    Exchanges: ByBit USDT, Binance Futures
+    Signal Type: Regular (Long)
+    Leverage: Cross (20.0X)"""
 
 
 @pytest.fixture
@@ -101,23 +101,6 @@ async def test_search_exception(fmo):
     """Search Testing"""
     mystring = ""
     assert await fmo.search(mystring) is False
-
-
-@pytest.mark.asyncio
-async def test_exception_handling():
-    # Simulate an exception
-    def func_that_raises():
-        raise ValueError("Test error")
-
-    # Call the function and verify that it returns None
-    result = None
-    try:
-        result = func_that_raises()
-    except Exception:
-        result = None
-
-    # Check that the function returned None
-    assert result is None
 
 
 @pytest.mark.asyncio
@@ -190,3 +173,20 @@ async def test_contains_emoji_standard_order_with_emoji(fmo, standard_order_with
     """check emoji"""
     result = await fmo.contains_emoji("🥇")
     assert result is True
+
+
+@pytest.mark.asyncio
+async def test_exception_handling():
+    # Simulate an exception
+    def func_that_raises():
+        raise ValueError("Test error")
+
+    # Call the function and verify that it returns None
+    result = None
+    try:
+        result = func_that_raises()
+    except Exception:
+        result = None
+
+    # Check that the function returned None
+    assert result is None
