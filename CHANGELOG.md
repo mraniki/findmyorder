@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.20 (2023-05-29)
+### Fix
+* 🚨 linter ([`78acfc2`](https://github.com/mraniki/findmyorder/commit/78acfc27857409cc56d69a786c5da0b09cb2348a))
+* 🎨 code format ([`19f86e8`](https://github.com/mraniki/findmyorder/commit/19f86e858f247d0799afa333ff1f8eb5f9ea4bf2))
+* ♻️ refactor ([`130ede4`](https://github.com/mraniki/findmyorder/commit/130ede4379b565d53bd53d32b7963cd21455e4d1))
+* ✅ unit test  and code cleanup ([`da1fa66`](https://github.com/mraniki/findmyorder/commit/da1fa661277ebc3fcf84e0e668cc43fc13158f9a))
+
+### Other
+* Merge pull request #193 from mraniki/dev ([`68eb2db`](https://github.com/mraniki/findmyorder/commit/68eb2dbbaa0ebe26c5044ede3019752076ad392c))
+* Feat: :art: ok ([`8ea7f42`](https://github.com/mraniki/findmyorder/commit/8ea7f4297c53c1be175fe83b82072ae467406e54))
+
 ## v1.3.19 (2023-05-28)
 ### Fix
 * 👷 CI Change ([`2fdfb37`](https://github.com/mraniki/findmyorder/commit/2fdfb37b18d06607c1cf9128e564a3c7d8706e03))
