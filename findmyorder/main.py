@@ -7,8 +7,7 @@ from datetime import datetime
 from emoji import is_emoji
 from pyparsing import (
     Combine, Optional, Word, alphas,
-    nums, one_of, ParseBaseException,
-    pyparsing_common, Suppress)
+    nums, one_of, pyparsing_common, Suppress)
 
 from .config import settings
 

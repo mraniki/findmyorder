@@ -33,4 +33,5 @@ order = await fmo.get_order(msg_order)
 
 ## Documentation
 
+
 [![wiki](https://img.shields.io/badge/🪙🗿-wiki-0080ff)](https://talkytrader.gitbook.io/talky/)
