@@ -2,6 +2,18 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.21 (2023-05-31)
+### Fix
+* ⬆️ dependencies ([`7a8d545`](https://github.com/mraniki/findmyorder/commit/7a8d54530405089a0c5fbf5f3c0d806aa1025986))
+* 💬 doc ([`49b6abe`](https://github.com/mraniki/findmyorder/commit/49b6abe1ddf4aa5fee73eea864c03efb45d69628))
+
+### Other
+* Merge pull request #194 from mraniki/dev ([`4c49ed2`](https://github.com/mraniki/findmyorder/commit/4c49ed250d3ae6ddd76b2f716b5404fce60bcfae))
+* Merge branch 'main' into dev ([`54b1ab3`](https://github.com/mraniki/findmyorder/commit/54b1ab399873ececc3122cd233715cd51e9cce6e))
+* Update README.md ([`5b0c826`](https://github.com/mraniki/findmyorder/commit/5b0c826cef3ccdfde512fdd81dd6b2da2b0849aa))
+* Update README.md ([`a8bcfe5`](https://github.com/mraniki/findmyorder/commit/a8bcfe57aa70d26ccbdeb860c367bb6b6acb9301))
+* Update README.md ([`8a559fc`](https://github.com/mraniki/findmyorder/commit/8a559fcff8a3465f2f74786a0eed3d6e3e32038e))
+
 ## v1.3.20 (2023-05-29)
 ### Fix
 * 🚨 linter ([`78acfc2`](https://github.com/mraniki/findmyorder/commit/78acfc27857409cc56d69a786c5da0b09cb2348a))
