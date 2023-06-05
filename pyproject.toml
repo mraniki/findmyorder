@@ -25,7 +25,7 @@ emoji = "*"
 
 [tool.poetry.group.docs.dependencies]
 autodoc_pydantic = "^1.8.0"
-myst_parser = "^0.18.1"
+myst_parser = "^1.0.0"
 nbsphinx = "^0.8.9"
 sphinx = "^4.5.0"
 sphinx-autobuild = "^2021.3.14"
