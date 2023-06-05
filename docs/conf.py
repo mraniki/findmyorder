@@ -1,126 +1,70 @@
-from __future__ import annotations
+# Configuration file for the Sphinx documentation builder.
 
-import re
-import subprocess
+#
+# This file only contains a selection of the most common options. For a full
+# list see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
+
+# -- Path setup --------------------------------------------------------------
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+#
+import os
 import sys
-from importlib.machinery import SourceFileLoader
-from pathlib import Path
-from subprocess import check_output
-from typing import Any
 
-from docutils.nodes import Element, reference
-from sphinx.addnodes import pending_xref
-from sphinx.application import Sphinx
-from sphinx.builders import Builder
-from sphinx.domains.python import PythonDomain
-from sphinx.environment import BuildEnvironment
-from sphinx.ext.autodoc import Options
-from sphinx.ext.extlinks import ExternalLinksChecker
+sys.path.insert(0, os.path.abspath("../../src"))
 
-from findmyorder import __version__
+# -- Project information -----------------------------------------------------
 
-release, version = __version__, ".".join(__version__.split(".")[:2])
-master_doc, source_suffix = "index", ".rst"
+project = "{{project_name}}"
+copyright = "2023, {{author_name}}"
+author = "{{author_name}}"
 
-html_theme = "furo"
-html_title, html_last_updated_fmt = "tox", "%Y-%m-%dT%H:%M:%S"
-pygments_style, pygments_dark_style = "sphinx", "monokai"
-html_static_path, html_css_files = ["_static"], ["custom.css"]
 
+# -- General configuration ---------------------------------------------------
+
+# Add any Sphinx extension module names here, as strings. They can be
+# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
+# ones.
 extensions = [
     "sphinx.ext.autodoc",
+    "sphinx.ext.autosummary",
     "sphinx.ext.autosectionlabel",
-    "sphinx.ext.extlinks",
-    "sphinx.ext.intersphinx",
-    "sphinx_argparse_cli",
-    "sphinx_autodoc_typehints",
-    "sphinx_inline_tabs",
-    "sphinx_copybutton",
+    "sphinx.ext.viewcode",
+    "myst_parser",
+    "autodoc2",
 ]
 
-exclude_patterns = ["_build", "changelog/*", "_draft.rst"]
-autoclass_content, autodoc_member_order, autodoc_typehints = "class", "bysource", "none"
-autodoc_default_options = {
-    "member-order": "bysource",
-    "undoc-members": True,
-    "show-inheritance": True,
-}
-autosectionlabel_prefix_document = True
+# Add any paths that contain templates here, relative to this directory.
+templates_path = ["_templates"]
 
-extlinks = {
-    "issue": ("https://github.com/tox-dev/tox/issues/%s", "#%s"),
-    "pull": ("https://github.com/tox-dev/tox/pull/%s", "PR #%s"),
-    "discussion": ("https://github.com/tox-dev/tox/discussions/%s", "#%s"),
-    "user": ("https://github.com/%s", "@%s"),
-    "gh_repo": ("https://github.com/%s", "%s"),
-    "gh": ("https://github.com/%s", "%s"),
-    "pypi": ("https://pypi.org/project/%s", "%s"),
-}
-intersphinx_mapping = {
-    "python": ("https://docs.python.org/3", None),
-    "packaging": ("https://packaging.pypa.io/en/latest", None),
-}
-nitpicky = True
-nitpick_ignore = []
-linkcheck_workers = 10
-extlinks_detect_hardcoded_links = True
+# List of patterns, relative to source directory, that match files and
+# directories to ignore when looking for source files.
+# This pattern also affects html_static_path and html_extra_path.
+exclude_patterns = []
 
 
-def process_signature(
-    app: Sphinx,  # noqa: U100
-    objtype: str,
-    name: str,  # noqa: U100
-    obj: Any,  # noqa: U100
-    options: Options,
-    args: str,  # noqa: U100
-    retann: str | None,  # noqa: U100
-) -> None | tuple[None, None]:
-    # skip-member is not checked for class level docs, so disable via signature processing
-    return (None, None) if objtype == "class" and "__init__" in options.get("exclude-members", set()) else None
+# -- Options for HTML output -------------------------------------------------
+
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+html_theme = "sphinx_rtd_theme"
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ["_static"]
 
 
-def setup(app: Sphinx) -> None:
-    here = Path(__file__).parent
-    # 1. run towncrier
-    root, exe = here.parent, Path(sys.executable)
-    towncrier = exe.with_name(f"towncrier{exe.suffix}")
-    cmd = [str(towncrier), "build", "--draft", "--version", "NEXT"]
-    new = check_output(cmd, cwd=root, text=True, stderr=subprocess.DEVNULL)
-    (root / "docs" / "_draft.rst").write_text("" if "No significant changes" in new else new)
+autodoc2_packages = [
+    "../../src/{{package_name}}",
+]
+# Enable all docstrings as Myst Markdown
+autodoc2_docstring_parser_regexes = [
+    (r".*", "myst"),
+]
 
-    class PatchedPythonDomain(PythonDomain):
-        def resolve_xref(
-            self,
-            env: BuildEnvironment,
-            fromdocname: str,
-            builder: Builder,
-            type: str,
-            target: str,
-            node: pending_xref,
-            contnode: Element,
-        ) -> Element:
-            # fixup some wrongly resolved mappings
-            mapping = {
-                "_io.TextIOWrapper": "io.TextIOWrapper",
-                "tox.config.of_type.T": "typing.TypeVar",  # used by Sphinx bases
-                "tox.config.loader.api.T": "typing.TypeVar",  # used by Sphinx bases
-                "tox.config.loader.convert.T": "typing.TypeVar",  # used by Sphinx bases
-                "tox.tox_env.installer.T": "typing.TypeVar",  # used by Sphinx bases
-                "concurrent.futures._base.Future": "concurrent.futures.Future",
-            }
-            if target in mapping:
-                target = node["reftarget"] = mapping[target]
-                # node.children[0].children[0] = Text(target, target)
-            return super().resolve_xref(env, fromdocname, builder, type, target, node, contnode)
-
-    app.connect("autodoc-process-signature", process_signature, priority=400)
-    app.add_domain(PatchedPythonDomain, override=True)
-    tox_cfg = SourceFileLoader("tox_conf", str(here / "tox_conf.py")).load_module().ToxConfig
-    app.add_directive(tox_cfg.name, tox_cfg)
-
-    def check_uri(self, refnode: reference) -> None:
-        if refnode.document.attributes["source"].endswith("index.rst"):
-            return  # do not use for the index file
-        return prev_check(self, refnode)
-
-    prev_check, ExternalLinksChecker.check_uri = ExternalLinksChecker.check_uri, check_uri
+myst_heading_anchors = 2
