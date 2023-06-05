@@ -2,6 +2,45 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.23 (2023-06-05)
+### Fix
+* 📝 doc ([`1a285de`](https://github.com/mraniki/findmyorder/commit/1a285dedba164cd0c58236d46711663b1fe90328))
+* 📝 doc ([`c40857b`](https://github.com/mraniki/findmyorder/commit/c40857bf1d90dc2cc3639d0ab302aa992bc1b4e4))
+* 📝 doc ([`bf4ca37`](https://github.com/mraniki/findmyorder/commit/bf4ca370380eea9b19ded74079ce6f0540e36e75))
+
+### Other
+* Update pyproject.toml ([`46acc37`](https://github.com/mraniki/findmyorder/commit/46acc3719bdad3f68fdff2912adccc63adaa3558))
+* Update conf.py ([`389703e`](https://github.com/mraniki/findmyorder/commit/389703e67e6c2b1d134140d6992a8bb8d796871b))
+* Update conf.py ([`59555b2`](https://github.com/mraniki/findmyorder/commit/59555b20c835071c8f16dacd037907b105859ac4))
+* Update pyproject.toml ([`dbf3d49`](https://github.com/mraniki/findmyorder/commit/dbf3d4961c7a7a02a45c15032c4c4f05f312964a))
+* Update renovate.json ([`97d7912`](https://github.com/mraniki/findmyorder/commit/97d7912e251d73ffb42760a6475386456c53b8f6))
+* Update renovate.json ([`219c813`](https://github.com/mraniki/findmyorder/commit/219c8138e433f68a165f35e92c37b7b6afc5d044))
+* Update conf.py ([`dd35f69`](https://github.com/mraniki/findmyorder/commit/dd35f693f0d3fc1e4261edcbbc16a8a78bcd563a))
+* Update pyproject.toml ([`b73f353`](https://github.com/mraniki/findmyorder/commit/b73f3536cac3338e85cc2ed045672d2ff23c109a))
+* Update pyproject.toml ([`0258489`](https://github.com/mraniki/findmyorder/commit/02584897437cac86c3ebdc8c809e25733257f196))
+* Update pyproject.toml ([`117bd6c`](https://github.com/mraniki/findmyorder/commit/117bd6ce94222b62299a8183cfcdb5a450f832f8))
+* Update conf.py ([`2c45847`](https://github.com/mraniki/findmyorder/commit/2c45847499825a900af5378b46c86cbc8508890c))
+* Update conf.py ([`972661f`](https://github.com/mraniki/findmyorder/commit/972661f6938a693dd7d2e352275e3545b7a49739))
+* Update .readthedocs.yaml ([`a2d0036`](https://github.com/mraniki/findmyorder/commit/a2d003647d5448d083025f14a054301425bc8191))
+* Delete requirements.txt ([`f2e64de`](https://github.com/mraniki/findmyorder/commit/f2e64deeecbfcccd3f7e0d8fc141d21041ebcad7))
+* Update conf.py ([`6d080c2`](https://github.com/mraniki/findmyorder/commit/6d080c20873da275757fc91616951d59448aee81))
+* Update requirements.txt ([`e366aa2`](https://github.com/mraniki/findmyorder/commit/e366aa236581a06adf0892f2b490d8ce5d82a032))
+* Update requirements.txt ([`df046c1`](https://github.com/mraniki/findmyorder/commit/df046c1ef7300c2432bb3413f4cdfcbcf87b4bca))
+* Update requirements.txt ([`92b60b9`](https://github.com/mraniki/findmyorder/commit/92b60b94c0972725f9737d44fa635548503fa1d3))
+* Merge pull request #202 from mraniki/renovate/nbsphinx-0.x ([`f3648f7`](https://github.com/mraniki/findmyorder/commit/f3648f7a186a4ed295cc33bc737778f2848a1aef))
+* Update renovate.json ([`466975a`](https://github.com/mraniki/findmyorder/commit/466975aa9179832d83a5d135fb0f17bd6b1d21f4))
+* Update dependency nbsphinx to v0.9.2 ([`84f81e3`](https://github.com/mraniki/findmyorder/commit/84f81e3f982a345eb53ab2f6ec104b1355252f15))
+* Merge pull request #200 from mraniki/dev ([`b8ffbfc`](https://github.com/mraniki/findmyorder/commit/b8ffbfc0922b562ecc90fe0d4a16ac9446936ae4))
+* Merge branch 'main' into dev ([`dc78ef9`](https://github.com/mraniki/findmyorder/commit/dc78ef92d0547cd17579460073a8c8ba600e3ead))
+* Update .readthedocs.yaml ([`b3fd2b5`](https://github.com/mraniki/findmyorder/commit/b3fd2b53e2899cb32f7b643fdf266c21ba23b721))
+* Merge pull request #197 from mraniki/renovate/nbsphinx-0.x ([`ea44b08`](https://github.com/mraniki/findmyorder/commit/ea44b0843de6d75f7c4289b34493d1796d4b2d20))
+* Merge branch 'main' into renovate/nbsphinx-0.x ([`bcb0276`](https://github.com/mraniki/findmyorder/commit/bcb0276f417c17fe15b3e4c4c9feb69122d122d6))
+* Update dependency nbsphinx to ^0.9.0 ([`7936029`](https://github.com/mraniki/findmyorder/commit/79360291253f140846dba490201fc6e7e781eedd))
+* Merge pull request #198 from mraniki/renovate/myst_parser-1.x ([`8a3f4f6`](https://github.com/mraniki/findmyorder/commit/8a3f4f69526dd2b46fef032f2695183aecea7d25))
+* Merge pull request #199 from mraniki/renovate/sphinx-7.x ([`6f15829`](https://github.com/mraniki/findmyorder/commit/6f158295efb2c18699889f8f67e3934628285656))
+* Update dependency sphinx to v7 ([`97aede1`](https://github.com/mraniki/findmyorder/commit/97aede11bcf3401b9aab0188ae858a77a524719d))
+* Update dependency myst_parser to v1 ([`f3d5fc4`](https://github.com/mraniki/findmyorder/commit/f3d5fc43a64f6984ac357e361264518d32594945))
+
 ## v1.3.22 (2023-06-05)
 ### Fix
 * 📝 docs ([`40f5e4e`](https://github.com/mraniki/findmyorder/commit/40f5e4e2b0cae7cd3b565b5d6972421f56415168))
