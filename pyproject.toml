@@ -23,14 +23,8 @@ pyparsing = "^3.0.9"
 emoji = "^2.4.0"
 
 [tool.poetry.group.docs.dependencies]
-# Main documentation-as-code (HTML/PDF generator)
-Sphinx = "*"
-# Read the docs (pretty) theme for sphinx
-sphinx-rtd-theme = "1.*"
-# Markdown parser for sphinx: Sphinx uses "RST" files, this adds markdown
-myst-parser = "*"
-# Automatic Python module docs (javadoc-style)
-sphinx-autodoc2 = "*"
+sphinx = "^7.0"
+furo = "2023.5.20"
 
 [tool.poetry.dev-dependencies]
 python-semantic-release = "*"
