@@ -3,4 +3,7 @@
   "extends": [
     "config:base"
   ]
+  "fileMatch": [
+    "(^|/)([\\w-]*)requirements\\.(txt|pip)$"
+  ]
 }
