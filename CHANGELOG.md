@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.25 (2023-06-05)
+### Fix
+* 📝 doc ([`8101f82`](https://github.com/mraniki/findmyorder/commit/8101f82f9cd3247139d0941d752b3c266ec74690))
+* 📝 doc ([`14f02d8`](https://github.com/mraniki/findmyorder/commit/14f02d8a4f4ba44be473fd857041fdba1bca9e8d))
+
+### Other
+* Merge pull request #208 from mraniki/dev ([`ffef6cb`](https://github.com/mraniki/findmyorder/commit/ffef6cb442a780116c8e65d26f4c8691a003bed3))
+
 ## v1.3.24 (2023-06-05)
 ### Fix
 * 👷 CI Change ([`68386a2`](https://github.com/mraniki/findmyorder/commit/68386a221d4f6f5074326541a15b60edb86ecac0))
