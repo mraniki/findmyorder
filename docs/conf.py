@@ -17,7 +17,7 @@ from sphinx.environment import BuildEnvironment
 from sphinx.ext.autodoc import Options
 from sphinx.ext.extlinks import ExternalLinksChecker
 
-from tox import __version__
+from findmyorder import __version__
 
 release, version = __version__, ".".join(__version__.split(".")[:2])
 master_doc, source_suffix = "index", ".rst"
