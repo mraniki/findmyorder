@@ -8,4 +8,7 @@
       "(^|/)([\\w-]*)requirements\\.(txt|pip)$"
     ]
   },
+  {
+    "extends": [":semanticCommitTypeAll(⬆️)"]
+  }
 }
