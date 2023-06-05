@@ -13,7 +13,7 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.extlinks']
 source_suffix = '.rst'
 master_doc = 'index'
-project = 'Pelican'
+project = 'FindMyOrder'
 year = datetime.datetime.now().date().year
 copyright = f'2023–{year}'
 exclude_patterns = ['_build']
@@ -40,7 +40,7 @@ html_theme_options = {
 }
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Pelicandoc'
+htmlhelp_basename = 'fmo'
 
 html_use_smartypants = True
 
