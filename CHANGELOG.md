@@ -2,6 +2,25 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.24 (2023-06-05)
+### Fix
+* 👷 CI Change ([`68386a2`](https://github.com/mraniki/findmyorder/commit/68386a221d4f6f5074326541a15b60edb86ecac0))
+* 📝 docs ([`2cb80e3`](https://github.com/mraniki/findmyorder/commit/2cb80e3f2bc533632a1cad66131d4e0af08db329))
+
+### Other
+* Merge pull request #207 from mraniki/dev ([`e518316`](https://github.com/mraniki/findmyorder/commit/e51831618eba197184ce4973040460f6f3bfcdbf))
+* Merge pull request #206 from mraniki/main ([`05b681c`](https://github.com/mraniki/findmyorder/commit/05b681c300ce127d80dfb0dc60a416d79b9400fe))
+* Merge branch 'dev' into main ([`b1e549a`](https://github.com/mraniki/findmyorder/commit/b1e549ae32bdb005d3063fd146891e299785dc9e))
+* :memo: docs ([`376bb73`](https://github.com/mraniki/findmyorder/commit/376bb730c3edf62639ff6e7f991cb956c7d143a4))
+* Merge pull request #205 from mraniki/dev ([`27015f4`](https://github.com/mraniki/findmyorder/commit/27015f4b2ad5ab9cd920458d6eb944562bcfc639))
+* :arrow_up: Fix typo in requirements.txt file. ([`3bcb763`](https://github.com/mraniki/findmyorder/commit/3bcb763023caad6d76eb2a2d2ca4bce5f9f6a44a))
+* Merge pull request #203 from mraniki/renovate/typing-extensions-4.x ([`7353189`](https://github.com/mraniki/findmyorder/commit/7353189632b6b1d6f12e1e80afbf47679898dd28))
+* Update dependency typing-extensions to v4.6.3 ([`41bb406`](https://github.com/mraniki/findmyorder/commit/41bb406ea6920beac80e4e81202ea8b9a2e30e41))
+* Merge pull request #204 from mraniki/dev ([`5c49669`](https://github.com/mraniki/findmyorder/commit/5c49669c1f31862c2a886666c2ab4f6104edc131))
+* Merge branch 'main' into dev ([`75561e3`](https://github.com/mraniki/findmyorder/commit/75561e3881ff5dd201d0dcb847a419c816bdb4d5))
+* Update conf.py ([`ccccf4c`](https://github.com/mraniki/findmyorder/commit/ccccf4cf61588e9203211a610a0f3bb63268851b))
+* Update pyproject.toml ([`8dfd823`](https://github.com/mraniki/findmyorder/commit/8dfd82340e525050ae7a70d406461029f54a922d))
+
 ## v1.3.23 (2023-06-05)
 ### Fix
 * 📝 doc ([`1a285de`](https://github.com/mraniki/findmyorder/commit/1a285dedba164cd0c58236d46711663b1fe90328))
