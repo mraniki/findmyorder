@@ -2,6 +2,14 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.22 (2023-06-05)
+### Fix
+* 📝 docs ([`40f5e4e`](https://github.com/mraniki/findmyorder/commit/40f5e4e2b0cae7cd3b565b5d6972421f56415168))
+
+### Other
+* Merge pull request #195 from mraniki/dev ([`5355179`](https://github.com/mraniki/findmyorder/commit/5355179dbdf705cc793df3268237fee6632a2b03))
+* :memo: Add Sphinx, sphinx-rtd-theme, and sphinxcontrib-napoleon to extras ([`dbe7aa1`](https://github.com/mraniki/findmyorder/commit/dbe7aa18879967510d47283f8a265b4037ce7265))
+
 ## v1.3.21 (2023-05-31)
 ### Fix
 * ⬆️ dependencies ([`7a8d545`](https://github.com/mraniki/findmyorder/commit/7a8d54530405089a0c5fbf5f3c0d806aa1025986))
