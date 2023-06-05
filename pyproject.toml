@@ -22,6 +22,12 @@ asyncio = "*"
 dynaconf = "*"
 pyparsing = "^3.0.9"
 emoji = "*"
+Sphinx = { version = "4.2.0", optional = true }
+sphinx-rtd-theme = { version = "1.0.0", optional = true }
+sphinxcontrib-napoleon = { version = "0.7", optional = true }
+
+[tool.poetry.extras]
+docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
 
 [tool.poetry.dev-dependencies]
 python-semantic-release = "*"
