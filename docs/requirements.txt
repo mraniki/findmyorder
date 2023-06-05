@@ -4,10 +4,10 @@ nbsphinx==0.9.2
 sphinx==7.0.1
 sphinx-autobuild==2021.3.14
 sphinx_book_theme
-sphinx_rtd_theme==1.0.0
+sphinx_rtd_theme==1.2.1
 sphinx-typlog-theme==0.8.0
 sphinx-panels
 toml
 myst_nb
 sphinx_copybutton
-pydata-sphinx-theme==0.13.1
+pydata-sphinx-theme==0.13.3
