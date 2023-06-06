@@ -8,5 +8,5 @@
     "fileMatch": [
       "(^|/)([\\w-]*)requirements\\.(txt|pip)$"
     ]
-  },
+  }
 }
