@@ -6,7 +6,7 @@
   ],
   "semanticCommits": "enabled",
   "pip_requirements": {
-    "enabled": true
+    "enabled": true,
     "fileMatch": [
       "(^|/)([\\w-]*)requirements\\.(txt|pip)$"
     ]
