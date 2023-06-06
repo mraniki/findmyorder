@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.28 (2023-06-06)
+### Fix
+* ⬆️ Update renovate.json ([`a27d0a5`](https://github.com/mraniki/findmyorder/commit/a27d0a51924a0d7550d6c72a2a6d19ce474608a6))
+* ⬆️ Update and rename renovate.json to .github/renovate.json ([`185e284`](https://github.com/mraniki/findmyorder/commit/185e284a73dc056fd69ff131797b3900bd29d4a1))
+
+### Other
+* Merge pull request #214 from mraniki/renovate/configure ([`f140fa3`](https://github.com/mraniki/findmyorder/commit/f140fa3d529f67953ac94ac9f8f6453cc6341df1))
+* Add renovate.json ([`37bc8a6`](https://github.com/mraniki/findmyorder/commit/37bc8a63bae3541c14d741754230dc276718a2a3))
+* Delete renovate.json ([`7b77a2e`](https://github.com/mraniki/findmyorder/commit/7b77a2ed58a4056d1493dad8d8f4031ebd99516f))
+* Merge pull request #213 from mraniki/dev ([`795594a`](https://github.com/mraniki/findmyorder/commit/795594ae4b9f87bfbde3984b94e208c081fafca8))
+* :construction_worker_man:‍♂️Refactor Renovate configuration for Poetry ([`a573ed0`](https://github.com/mraniki/findmyorder/commit/a573ed021e71eae090ac1db08ab3c15c5bd7d176))
+* Merge pull request #212 from mraniki/dev ([`9a8060f`](https://github.com/mraniki/findmyorder/commit/9a8060f6dc5f34bccbc2082a9aef1dd1ea86e4ef))
+* :memo:  Update Sphinx fail_on_warning to false ([`2776f2f`](https://github.com/mraniki/findmyorder/commit/2776f2fe65abd2bf2be0c5601eb012ccec93fd55))
+* Merge pull request #211 from mraniki/dev ([`b7a60d7`](https://github.com/mraniki/findmyorder/commit/b7a60d7ab1064d50fd8978e1e3ecedd3dab57e8c))
+* :memo: doc ([`367638d`](https://github.com/mraniki/findmyorder/commit/367638d2d1f8a1603974a690de52c4491c75a042))
+
 ## v1.3.27 (2023-06-05)
 ### Fix
 * 📝 doc ([`84c1197`](https://github.com/mraniki/findmyorder/commit/84c119777a9bf540e182a8b3270ef0146e4bf276))
