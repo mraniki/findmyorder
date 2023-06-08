@@ -2,6 +2,26 @@
 
 <!--next-version-placeholder-->
 
+## v1.3.29 (2023-06-08)
+
+### Fix
+
+* 👷 CI Change ([`6e82a6c`](https://github.com/mraniki/findmyorder/commit/6e82a6cc07ec155ef8464cb35b14cccaac1434c8))
+
+### Other
+
+* :arrow_up: Fix typo in requirements.txt file. ([`d007827`](https://github.com/mraniki/findmyorder/commit/d00782794860bc94ec9d8e526c8f3d7d6ce53918))
+* Update renovate.json ([`e3f178e`](https://github.com/mraniki/findmyorder/commit/e3f178e0c2f7b860a76f08115f1f169fc70f4dde))
+* Merge pull request #217 from mraniki/renovate/python-3.x ([`f11d247`](https://github.com/mraniki/findmyorder/commit/f11d247b0c14fededed1b0f09579a1889d72f539))
+* Update Dockerfile ([`2624bf0`](https://github.com/mraniki/findmyorder/commit/2624bf01527d1be0dc6108c16fd6a8a4a8285251))
+* Update renovate.json ([`598c3f4`](https://github.com/mraniki/findmyorder/commit/598c3f4aa6ffbd3a1894e1d9986a1fad618245c8))
+* Update python Docker tag to v3.11 ([`45d7aaa`](https://github.com/mraniki/findmyorder/commit/45d7aaaab2812986efdd4c6ac3915fde188a146c))
+* Update renovate.json to .github/renovate.json ([`4388aad`](https://github.com/mraniki/findmyorder/commit/4388aad74b015add8f0cbef9ac2ca19f89f61e7d))
+* Update renovate.json ([`e2e15f1`](https://github.com/mraniki/findmyorder/commit/e2e15f1b3c6ef301d9bae953aff6c1b3ac220ed4))
+* Add renovate.json ([`5b99328`](https://github.com/mraniki/findmyorder/commit/5b99328edd8583603a82fdbc44a0cfb526cd3ab3))
+* Delete renovate.json ([`cc24263`](https://github.com/mraniki/findmyorder/commit/cc2426305b8ef839ed62f4362a6e4f9789c1521c))
+* Update renovate.json ([`13a3f26`](https://github.com/mraniki/findmyorder/commit/13a3f268a56cf6ea45b04dd961720d4d66f2b216))
+
 ## v1.3.28 (2023-06-06)
 ### Fix
 * ⬆️ Update renovate.json ([`a27d0a5`](https://github.com/mraniki/findmyorder/commit/a27d0a51924a0d7550d6c72a2a6d19ce474608a6))
