@@ -17,7 +17,8 @@ comment_identifier = "comment="
 stop_loss = 1000
 take_profit = 1000
 quantity = 1
-replace_symbol = false
+instrument_mapping = false
+mapping = {"BTC"="BTCUSDT","ETH"="ETHUSDT"}
 VALUE = "On Default"
 
 [testing]
