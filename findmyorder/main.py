@@ -4,7 +4,7 @@
 import logging
 from datetime import datetime
 
-from emoji import is_emoji
+import emoji
 from pyparsing import (
     Combine, Optional, Word, alphas,
     nums, one_of, pyparsing_common, Suppress)
@@ -25,20 +25,16 @@ class FindMyOrder:
         my_string: str,
     ) -> bool:
         """Search an order."""
-        try:
-            if my_string:
-                string_check = my_string.split()[0].lower()
-                if string_check in settings.action_identifier.lower():
-                    return True
-            return False
-        except Exception as e:
-            return e
+        if my_string:
+            string_check = my_string.split()[0].lower()
+            if string_check in settings.action_identifier.lower():
+                return True
+        return False
+
 
     async def contains_emoji(self, input_string: str) -> bool:
         """Check if the input string contains an emoji."""
-        print(input_string)
-        return is_emoji(input_string)
-
+        return any(emoji.is_emoji(character) for character in input_string)
 
     async def identify_order(
             self,
@@ -102,29 +98,26 @@ class FindMyOrder:
         msg: str,
     ):
         """get an order."""
-        try:
-            logging.debug("get_order %s", msg)
 
-            if await self.search(msg):
-                order = await self.identify_order(msg)
-                if isinstance(order, dict):
-                    order["timestamp"] = datetime.utcnow().strftime(
-                        "%Y-%m-%dT%H:%M:%SZ")
-                if settings.instrument_mapping:
-                    self.replace_symbol(order)
-                return order
-            return None
-
-        except Exception as e:
-            return e
-
-    async def replace_symbol(
-        self, 
-        order: dict,):
-        symbol = order["instrument"]
-        if symbol in settings.mapping:
-            order["instrument"] = settings.mapping[symbol]
+        if await self.search(msg):
+            order = await self.identify_order(msg)
+            if isinstance(order, dict):
+                order["timestamp"] = datetime.utcnow().strftime(
+                    "%Y-%m-%dT%H:%M:%SZ")
+            print(settings.instrument_mapping)
+            if settings.instrument_mapping:
+                await self.replace_instrument(order)
             return order
+        return None
+
+    async def replace_instrument(self, order):
+        instrument = order["instrument"]
+        for item in settings.mapping:
+            if item["id"] == instrument:
+                order["instrument"] = item["alt"]
+                break
+        return order
+
 # Grammar
 # class TradingGrammar:
 #     def __init__(self):
