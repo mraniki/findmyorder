@@ -2,6 +2,21 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.1 (2023-06-10)
+
+### Fix
+
+* 🔇 remove logs ([`618a52f`](https://github.com/mraniki/findmyorder/commit/618a52fefc7980e1850eeae27e60e292eefbc716))
+* ⚡ perf ([`e47dadc`](https://github.com/mraniki/findmyorder/commit/e47dadc69b6220f89bb8931b4d3d4444964839a7))
+* ♻️ refactor contains emoji ([`afc69bf`](https://github.com/mraniki/findmyorder/commit/afc69bffa6b1ffb9cd10dd6cc2edbae1d3768fa4))
+* 🎨 added symbol replacement capability and fixed the emoji func ([`d22a60f`](https://github.com/mraniki/findmyorder/commit/d22a60fcf3fc1a2f3894b37f5b6a90f836f2fa6c))
+* ✅ unit test ([`4dfce04`](https://github.com/mraniki/findmyorder/commit/4dfce04b025ab318ee7b237d98d3a9d825877d82))
+
+### Other
+
+* Merge branch 'dev' of git@github.com:mraniki/findmyorder.git ([`4c13a54`](https://github.com/mraniki/findmyorder/commit/4c13a54feacd1b13e3de204775779a56bb555a2e))
+* :white_check_mark: unit test ([`0b8c13d`](https://github.com/mraniki/findmyorder/commit/0b8c13d820b9f6671a1094880289d89e5728b41c))
+
 ## v1.4.0 (2023-06-10)
 
 ### Feature
