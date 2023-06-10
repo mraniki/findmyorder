@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.0 (2023-06-10)
+
+### Feature
+
+* 🥚 Add replace_symbol option and function ([`373e675`](https://github.com/mraniki/findmyorder/commit/373e675c68be5b768fd40425e07813102e6cea1c))
+
+### Other
+
+* :zap: Update default_settings.toml and main.py files with new instrument_mapping feature and mapping dictionary. ([`c2f7866`](https://github.com/mraniki/findmyorder/commit/c2f7866f0fce457e72fd09a0cf19f31c29e7b8b4))
+
 ## v1.3.29 (2023-06-08)
 
 ### Fix
