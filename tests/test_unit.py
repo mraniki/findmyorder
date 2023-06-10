@@ -81,7 +81,6 @@ def order_with_emoji():
     Leverage: Cross (20.0X)"""
 
 
-
 @pytest.fixture
 def bot_command():
     return "/bal"
