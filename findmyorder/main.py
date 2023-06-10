@@ -36,11 +36,7 @@ class FindMyOrder:
 
     async def contains_emoji(self, input_string: str) -> bool:
         """Check if the input string contains an emoji."""
-        for character in input_string:
-            if emoji.is_emoji(character):
-                return True
-        return False
-
+        return any(emoji.is_emoji(character) for character in input_string)
 
     async def identify_order(
             self,
