@@ -53,6 +53,26 @@ def standard_short_crypto_order():
 
 
 @pytest.fixture
+def standard_mapping_order():
+    """return valid order"""
+    return "buy BTC"
+
+@pytest.fixture
+def result_mapping_order():
+    """return standard expected results"""
+    return {
+        "action": "BUY",
+        "instrument": "BTCUSDT",
+        "stop_loss": 1000,
+        "take_profit": 1000,
+        "quantity": 1,
+        "order_type": None,
+        "leverage_type": None,
+        "comment": None,
+        "timestamp": datetime.now()
+        }
+
+@pytest.fixture
 def standard_order_with_emoji():
     """return emoji type order"""
     return """⚡️⚡️ #BNB/USDT ⚡️⚡️
@@ -160,6 +180,14 @@ async def test_short_valid_get_order(fmo, standard_short_order, result_standard_
     assert int(result["quantity"]) == 1
     assert type(result["timestamp"] is datetime)
 
+@pytest.mark.asyncio
+async def test_short_valid_get_order(fmo, standard_short_order, result_standard_order):
+    """get order Testing"""
+    result = await fmo.get_order(standard_short_order)
+    assert result["action"] == result_standard_order["action"]
+    assert result["instrument"] == result_standard_order["instrument"]
+    assert int(result["quantity"]) == 1
+    assert type(result["timestamp"] is datetime)
 
 @pytest.mark.asyncio
 async def test_contains_emoji_standard_order(fmo, standard_order):
@@ -175,7 +203,7 @@ async def test_contains_emoji_standard_order_with_emoji(fmo):
     assert result is True
 
 
-@pytest.mark.asyncio
+#@pytest.mark.asyncio
 # async def test_contains_emoji_standard_order_with_emoji_2(fmo, standard_order_with_emoji):
 #     """check emoji"""
 #     result = await fmo.contains_emoji(standard_order_with_emoji)
@@ -196,3 +224,4 @@ async def test_exception_handling():
 
     # Check that the function returned None
     assert result is None
+
