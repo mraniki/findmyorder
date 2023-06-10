@@ -1,13 +1,13 @@
 [default]
 action_identifier = "BUY SELL LONG SHORT"
-action_in_identifier = "BUY LONG"
-action_out_identifier = "SELL SHORT"
-actions = [
-    { identifier = "BUY", type = "IN" },
-    { identifier = "SELL", type = "OUT" },
-    { identifier = "LONG", type = "IN" },
-    { identifier = "SHORT", type = "OUT" }
-]
+# action_in_identifier = "BUY LONG"
+# action_out_identifier = "SELL SHORT"
+# actions = [
+#     { identifier = "BUY", type = "IN" },
+#     { identifier = "SELL", type = "OUT" },
+#     { identifier = "LONG", type = "IN" },
+#     { identifier = "SHORT", type = "OUT" }
+# ]
 stop_loss_identifier = "sl="
 take_profit_identifier = 'tp='
 quantity_identifier = 'q='
@@ -18,7 +18,10 @@ stop_loss = 1000
 take_profit = 1000
 quantity = 1
 instrument_mapping = false
-mapping = {"BTC"="BTCUSDT","ETH"="ETHUSDT"}
+mapping =  [
+    { identifier = "BTC", alt = "BTCTEST" },
+    { identifier = "ETH", type = "ETHTEST" },
+ ]
 VALUE = "On Default"
 
 [testing]

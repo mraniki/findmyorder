@@ -4,13 +4,22 @@ FindMyOrder Unit Testing
 
 from datetime import datetime
 import pytest
-from findmyorder import FindMyOrder
+from unittest.mock import patch
+from findmyorder import FindMyOrder, settings
+
 
 @pytest.fixture
 def fmo():
     """return fmo"""
     return FindMyOrder()
 
+@pytest.fixture
+def fmo_custom():
+    """return custom fmo"""
+    with patch("findmyorder.config.settings", autospec=True):
+        settings.instrument_mapping = True
+        settings.quantity = 10
+        return FindMyOrder()
 
 @pytest.fixture
 def standard_order():
@@ -51,9 +60,8 @@ def standard_short_crypto_order():
     """return valid order"""
     return "buy WBTC"
 
-
 @pytest.fixture
-def standard_mapping_order():
+def mapping_order():
     """return valid order"""
     return "buy BTC"
 
@@ -181,12 +189,13 @@ async def test_short_valid_get_order(fmo, standard_short_order, result_standard_
     assert type(result["timestamp"] is datetime)
 
 @pytest.mark.asyncio
-async def test_short_valid_get_order(fmo, standard_short_order, result_standard_order):
-    """get order Testing"""
-    result = await fmo.get_order(standard_short_order)
-    assert result["action"] == result_standard_order["action"]
-    assert result["instrument"] == result_standard_order["instrument"]
-    assert int(result["quantity"]) == 1
+async def test_mapping_order(fmo_custom, mapping_order, result_mapping_order):
+    """replace instrument Testing"""
+    result = await fmo_custom.get_order(mapping_order)
+    print(result)
+    assert result["action"] == result_mapping_order["action"]
+    assert result["instrument"] == result_mapping_order["instrument"]
+    assert int(result["quantity"]) == 10
     assert type(result["timestamp"] is datetime)
 
 @pytest.mark.asyncio
