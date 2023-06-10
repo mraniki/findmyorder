@@ -110,13 +110,21 @@ class FindMyOrder:
                 if isinstance(order, dict):
                     order["timestamp"] = datetime.utcnow().strftime(
                         "%Y-%m-%dT%H:%M:%SZ")
+                if settings.instrument_mapping:
+                    self.replace_symbol(order)
                 return order
             return None
 
         except Exception as e:
             return e
 
-
+    async def replace_symbol(
+        self, 
+        order: dict,):
+        symbol = order["instrument"]
+        if symbol in settings.mapping:
+            order["instrument"] = settings.mapping[symbol]
+            return order
 # Grammar
 # class TradingGrammar:
 #     def __init__(self):
