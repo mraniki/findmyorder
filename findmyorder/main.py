@@ -4,7 +4,7 @@
 import logging
 from datetime import datetime
 
-from emoji import is_emoji
+import emoji
 from pyparsing import (
     Combine, Optional, Word, alphas,
     nums, one_of, pyparsing_common, Suppress)
@@ -36,8 +36,10 @@ class FindMyOrder:
 
     async def contains_emoji(self, input_string: str) -> bool:
         """Check if the input string contains an emoji."""
-        print(input_string)
-        return is_emoji(input_string)
+        for character in input_string:
+            if emoji.is_emoji(character):
+                return True
+        return False
 
 
     async def identify_order(
@@ -110,18 +112,19 @@ class FindMyOrder:
                 if isinstance(order, dict):
                     order["timestamp"] = datetime.utcnow().strftime(
                         "%Y-%m-%dT%H:%M:%SZ")
+                print(settings.instrument_mapping)
                 if settings.instrument_mapping:
-                    self.replace_instrument(order)
+                    await self.replace_instrument(order)
                 return order
             return None
 
         except Exception as e:
             return e
 
-    async def replace_instrument(self, order: dict):
+    async def replace_instrument(self, order):
         instrument = order["instrument"]
         for item in settings.mapping:
-            if item["identifier"] == instrument:
+            if item["id"] == instrument:
                 order["instrument"] = item["alt"]
                 break
         return order

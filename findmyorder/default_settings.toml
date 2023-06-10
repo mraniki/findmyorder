@@ -18,11 +18,55 @@ stop_loss = 1000
 take_profit = 1000
 quantity = 1
 instrument_mapping = false
-mapping =  [
-    { identifier = "BTC", alt = "BTCTEST" },
-    { identifier = "ETH", type = "ETHTEST" },
- ]
-VALUE = "On Default"
+mapping = [
+    { id = "EURUSD", alt = "EURUSD" },
+    { id = "USDJPY", alt = "USDJPY" },
+    { id = "GBPUSD", alt = "GBPUSD" },
+    { id = "USDCHF", alt = "USDCHF" },
+    { id = "AUDUSD", alt = "AUDUSD" },
+    { id = "NZDUSD", alt = "NZDUSD" },
+    { id = "USDCAD", alt = "USDCAD" },
+    { id = "GBPJPY", alt = "GBPJPY" },
+    { id = "EURCAD", alt = "EURCAD" },
+    { id = "EURAUD", alt = "EURAUD" },
+    { id = "EURGBP", alt = "EURGBP" },
+    { id = "EURJPY", alt = "EURJPY" },
+    { id = "CADJPY", alt = "CADJPY" },
+    { id = "GOLD", alt = "XAUUSD" },
+    { id = "SILVER", alt = "XAGUSD" },
+    { id = "COPPER", alt = "COPPER" },
+    { id = "BRENTOIL", alt = "UKOil" },
+    { id = "CRUDEOIL", alt = "USOil" },
+    { id = "NATURALGAS", alt = "NGAS" },
+    { id = "GERMANY40", alt = "DE30" },
+    { id = "US500", alt = "US500" },
+    { id = "US2000", alt = "US2000" },
+    { id = "DOLLARINDEX", alt = "DOLLARINDEX" },
+    { id = "VIX", alt = "VIX" },
+    { id = "US30", alt = "DJ30" },
+    { id = "US100", alt = "USTEC" },
+    { id = "EU50", alt = "STOXX50" },
+    { id = "UK100", alt = "UK100" },
+    { id = "HK50", alt = "HK50" },
+    { id = "AU200", alt = "AUS200" },
+    { id = "NIKKEI225", alt = "JPN225" },
+    { id = "NIFTY50", alt = "IND50" },
+    { id = "CAC40", alt = "F40" },
+    { id = "AAPL", alt = "AAPL" },
+    { id = "TSLA", alt = "TSLA" },
+    { id = "META", alt = "META" },
+    { id = "MSFT", alt = "MSFT" },
+    { id = "BTC", alt = "BTCUSDT" },
+    { id = "ETH", alt = "ETHUSDT" },
+    { id = "BNB", alt = "BNBUSDT" },
+    { id = "MATIC", alt = "MATIC-PERP" },
+    { id = "SOL", alt = "SOL/USDT" }
+]
+
+
+# [mapping]
+# BTC = "BTCUSDT"
+
 
 [testing]
-VALUE = "On Testing"
+quantity = 10
