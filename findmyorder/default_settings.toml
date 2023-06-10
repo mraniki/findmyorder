@@ -17,7 +17,7 @@ comment_identifier = "comment="
 stop_loss = 1000
 take_profit = 1000
 quantity = 1
-instrument_mapping = false
+instrument_mapping = true
 mapping = [
     { id = "EURUSD", alt = "EURUSD" },
     { id = "USDJPY", alt = "USDJPY" },
@@ -41,7 +41,7 @@ mapping = [
     { id = "GERMANY40", alt = "DE30" },
     { id = "US500", alt = "US500" },
     { id = "US2000", alt = "US2000" },
-    { id = "DOLLARINDEX", alt = "DOLLARINDEX" },
+    { id = "DOLLARINDEX", alt = "DXY" },
     { id = "VIX", alt = "VIX" },
     { id = "US30", alt = "DJ30" },
     { id = "US100", alt = "USTEC" },
@@ -58,9 +58,8 @@ mapping = [
     { id = "MSFT", alt = "MSFT" },
     { id = "BTC", alt = "BTCUSDT" },
     { id = "ETH", alt = "ETHUSDT" },
-    { id = "BNB", alt = "BNBUSDT" },
-    { id = "MATIC", alt = "MATIC-PERP" },
-    { id = "SOL", alt = "SOL/USDT" }
+    { id = "BNB", alt = "BNB/USDT" },
+    { id = "MATIC", alt = "MATIC-PERP" }
 ]
 
 
