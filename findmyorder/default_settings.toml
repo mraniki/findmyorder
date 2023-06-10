@@ -17,6 +17,7 @@ comment_identifier = "comment="
 stop_loss = 1000
 take_profit = 1000
 quantity = 1
+replace_symbol = false
 VALUE = "On Default"
 
 [testing]
