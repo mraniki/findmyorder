@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.2 (2023-06-11)
+
+### Fix
+
+* 🔧 config ([`9aceca2`](https://github.com/mraniki/findmyorder/commit/9aceca292f53cde7513b3b99b79f5555e325e65f))
+
 ## v1.4.1 (2023-06-10)
 
 ### Fix
