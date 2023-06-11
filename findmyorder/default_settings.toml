@@ -1,4 +1,5 @@
 [default]
+findmyorder_enabled = true
 action_identifier = "BUY SELL LONG SHORT"
 # action_in_identifier = "BUY LONG"
 # action_out_identifier = "SELL SHORT"
