@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.3 (2023-06-14)
+
+### Fix
+
+* 🐳 dockerignore ([`ddb144d`](https://github.com/mraniki/findmyorder/commit/ddb144d003e46d16f8c73cea19bd6de310beccfb))
+
+### Other
+
+* Rename examples/.requirements/requirements.txt to .requirements/requirements.txt ([`7b6e684`](https://github.com/mraniki/findmyorder/commit/7b6e6849b52bb651b47130fc047fb635f8db8e37))
+* Rename examples/requirements.txt to examples/.requirements/requirements.txt ([`16da8d7`](https://github.com/mraniki/findmyorder/commit/16da8d79b3ad254c6fe7d60feaf6c2a7919a5f01))
+
 ## v1.4.2 (2023-06-11)
 
 ### Fix
