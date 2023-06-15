@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.4 (2023-06-15)
+
+### Fix
+
+* 🔧 config org ([`fcaf425`](https://github.com/mraniki/findmyorder/commit/fcaf4259606985d21f8d548b7e3ff5607112520c))
+
+### Other
+
+* Update Dockerfile ([`ef0802e`](https://github.com/mraniki/findmyorder/commit/ef0802e4eaf70e69c891e00428d3e0c402fabc08))
+* Update Dockerfile ([`932b97a`](https://github.com/mraniki/findmyorder/commit/932b97a1f9348399904ce15e6ebb2529c48a525c))
+
 ## v1.4.3 (2023-06-14)
 
 ### Fix
