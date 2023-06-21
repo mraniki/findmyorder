@@ -2,6 +2,13 @@
 
 <!--next-version-placeholder-->
 
+## v1.4.5 (2023-06-21)
+
+### Fix
+
+* Update pyproject.toml ([`428eafb`](https://github.com/mraniki/findmyorder/commit/428eafb7d3b1f3ef24ea436ec7e11bad718c9ebe))
+* Update pyproject.toml ([`22da695`](https://github.com/mraniki/findmyorder/commit/22da695567446771fb335e89a106dd5e81127304))
+
 ## v1.4.4 (2023-06-15)
 
 ### Fix
