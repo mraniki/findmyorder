@@ -17,7 +17,7 @@ packages = [
 "Issues" =  "https://github.com/mraniki/findmyorder/issues"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 dynaconf = "^3.1.12"
 pyparsing = "^3.0.9"
 emoji = "^2.5.1"
@@ -27,9 +27,9 @@ Sphinx = "7.0.1"
 furo = "2023.5.20"
 
 [tool.poetry.dev-dependencies]
-python-semantic-release = "*"
-pytest = "*"
-pytest-cov = "*"
+python-semantic-release = "^7.34.3"
+pytest = "^7.0"
+pytest-cov = "^4.1"
 pytest-asyncio = "*"
 pytest-mock = "*"
 coverage = "*"
@@ -62,5 +62,5 @@ commit_parser = "semantic_release.history.emoji_parser"
 use_textual_changelog_sections = true
 major_emoji = "BREAKING,💥,:boom:"
 minor_emoji = "feat,🥚,:egg:,🚀,:rocket:,💄,:lipstick:,✨,:sparkles:"
-patch_emoji = "fix,Update,🎨,:art:,🐛,:bug:,🚑,⚡,:zap:,🔥,:fire:,🚨,:rotating_light:,♻️,:recycle:,🔧,:wrench:,⬆️|:arrow_up:,🩹,👷,📝,🔒,:lock:,👽,:alien:,💬,🥅,✅,:white_check_mark:,🐳,🙈,⚗️,🧐,🔇,🔊"
+patch_emoji = "fix,Update,🎨,:art:,🐛,:bug:,🚑,⚡,:zap:,🔥,:fire:,🚨,:rotating_light:,♻️,:recycle:,🔧,:wrench:,⬆️,:arrow_up:,🩹,👷,📝,🔒,:lock:,👽,:alien:,💬,🥅,✅,:white_check_mark:,🐳,:whale:,🙈,⚗️,🧐,🔇,:mute:,🔊:volume:"
 
