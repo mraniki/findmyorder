@@ -2,6 +2,18 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.1 (2023-06-25)
+
+### Fix
+
+* Update dependabot.yml with commit message prefix ([`42df83b`](https://github.com/mraniki/findmyorder/commit/42df83bf968b571cbe1d9a3b8f58dfd8945bae25))
+
+### Other
+
+* Merge pull request #228 from mraniki/dev ([`e802689`](https://github.com/mraniki/findmyorder/commit/e80268946a31c8c9ac2bd757df6519ca1e1eff2a))
+* Merge branch 'main' into dev ([`99a2f2c`](https://github.com/mraniki/findmyorder/commit/99a2f2c74c256fe89b560c8fa79a842cb37f0a4c))
+* Merge pull request #227 from mraniki/main ([`cc30dfd`](https://github.com/mraniki/findmyorder/commit/cc30dfdbb012d1bdfd8b01ce8adb09a193678b5e))
+
 ## v1.5.0 (2023-06-25)
 
 ### Feature
