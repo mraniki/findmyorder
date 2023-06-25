@@ -2,6 +2,23 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.0 (2023-06-25)
+
+### Feature
+
+* Update ✨Flow.yml ([`fd2778e`](https://github.com/mraniki/findmyorder/commit/fd2778efc642cf8ba54b17e49a9f5913ba554a74))
+
+### Fix
+
+* :memo: docs ([`6b54f6f`](https://github.com/mraniki/findmyorder/commit/6b54f6fea4b43afbc5a0d9756ac1c821e4412975))
+* :arrow_up: dep update ([`b506ea5`](https://github.com/mraniki/findmyorder/commit/b506ea5cfe43afd1dfeb6fb8f368f9c2028fbae9))
+* :arrow_up:dep update ([`4fb1e97`](https://github.com/mraniki/findmyorder/commit/4fb1e9797e6456ef3d504accd69f7446e8d9a732))
+* Update pyproject.toml ([`c99d9b1`](https://github.com/mraniki/findmyorder/commit/c99d9b1348b76d7805e63c2a6e13c2a6c92c6a2b))
+
+### Other
+
+* Merge pull request #226 from mraniki/dev ([`3dd061a`](https://github.com/mraniki/findmyorder/commit/3dd061aa08509c38adee8453cb12fcb5efa5a979))
+
 ## v1.4.5 (2023-06-21)
 
 ### Fix
