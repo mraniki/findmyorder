@@ -2,6 +2,18 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.2 (2023-06-26)
+
+### Fix
+
+* Update README.md ([`bf5c589`](https://github.com/mraniki/findmyorder/commit/bf5c5892f5ad3628ac76594ae286df17b131f60f))
+
+### Other
+
+* Merge pull request #229 from mraniki/dev ([`31f851d`](https://github.com/mraniki/findmyorder/commit/31f851d10878fb5f91c28eaa5d218e7fc371cb64))
+* Merge branch 'dev' of git@github.com:mraniki/findmyorder.git ([`4308a46`](https://github.com/mraniki/findmyorder/commit/4308a4637d2f12cba9f4cfe8d5cea5587a06a0f0))
+* :construction_worker_man:‍♂️Flow.yml ([`e25ed60`](https://github.com/mraniki/findmyorder/commit/e25ed605176dd20def1f4b18a83f69eaa260bb2a))
+
 ## v1.5.1 (2023-06-25)
 
 ### Fix
