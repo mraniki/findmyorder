@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.3 (2023-07-03)
+
+### Fix
+
+* :white_check_mark: added testing for mapping ([`0da7314`](https://github.com/mraniki/findmyorder/commit/0da731461b55c3c418123bd76683f807decfb474))
+* 💬 comments ([`a39429e`](https://github.com/mraniki/findmyorder/commit/a39429e54b00feb308c097540004be38c6fb08f6))
+* 🐛  version import missing ([`b0fb029`](https://github.com/mraniki/findmyorder/commit/b0fb029e2931f3aa1894745e759f522f04b7e304))
+* ✅ added testing for mapping ([`2835f45`](https://github.com/mraniki/findmyorder/commit/2835f453c434ffd26dcac7e4df22ff4eb64676ae))
+* 📝  Doc config ([`90915d8`](https://github.com/mraniki/findmyorder/commit/90915d80f272e0f07c5ea3a0d2f224c43853271e))
+* 👷 CI Change ([`ad5ba39`](https://github.com/mraniki/findmyorder/commit/ad5ba39aaa4bd8449f4703a8c05beb60db7cc428))
+* 🔧  config  update ([`4730ba2`](https://github.com/mraniki/findmyorder/commit/4730ba21a440d9e5565b77edefa729760561953c))
+
+### Other
+
+* Merge pull request #230 from mraniki/dev ([`cd9eebe`](https://github.com/mraniki/findmyorder/commit/cd9eebe5b9890bb3312d5854f1ae2207bb91d4c5))
+
 ## v1.5.2 (2023-06-26)
 
 ### Fix
