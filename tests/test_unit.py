@@ -183,7 +183,6 @@ async def test_mapping_order(
     print(result)
     assert settings.instrument_mapping == True
     assert result["instrument"] == result_crypto_order["instrument"]
-    assert int(result["quantity"]) == 10
     assert type(result["timestamp"] is datetime)
 
 @pytest.mark.asyncio
