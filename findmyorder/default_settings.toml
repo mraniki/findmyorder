@@ -36,22 +36,8 @@ take_profit = 1000
 quantity = 1
 instrument_mapping = true
 mapping = [
-    { id = "EURUSD", alt = "EURUSD" },
-    { id = "USDJPY", alt = "USDJPY" },
-    { id = "GBPUSD", alt = "GBPUSD" },
-    { id = "USDCHF", alt = "USDCHF" },
-    { id = "AUDUSD", alt = "AUDUSD" },
-    { id = "NZDUSD", alt = "NZDUSD" },
-    { id = "USDCAD", alt = "USDCAD" },
-    { id = "GBPJPY", alt = "GBPJPY" },
-    { id = "EURCAD", alt = "EURCAD" },
-    { id = "EURAUD", alt = "EURAUD" },
-    { id = "EURGBP", alt = "EURGBP" },
-    { id = "EURJPY", alt = "EURJPY" },
-    { id = "CADJPY", alt = "CADJPY" },
     { id = "GOLD", alt = "XAUUSD" },
     { id = "SILVER", alt = "XAGUSD" },
-    { id = "COPPER", alt = "COPPER" },
     { id = "BRENTOIL", alt = "UKOil" },
     { id = "CRUDEOIL", alt = "USOil" },
     { id = "NATURALGAS", alt = "NGAS" },
@@ -71,10 +57,8 @@ mapping = [
     { id = "CAC40", alt = "F40" },
     { id = "AAPL", alt = "AAPL" },
     { id = "TSLA", alt = "TSLA" },
-    { id = "META", alt = "META" },
-    { id = "MSFT", alt = "MSFT" },
-    { id = "BTC", alt = "BTCUSDT" },
-    { id = "ETH", alt = "ETHUSDT" },
+    { id = "BTC", alt = "WBTC" },
+    { id = "ETH", alt = "WETH" },
     { id = "BNB", alt = "BNB/USDT" },
     { id = "MATIC", alt = "MATIC-PERP" }
 ]
@@ -104,22 +88,8 @@ take_profit = 1000
 quantity = 1
 instrument_mapping = true
 mapping = [
-    { id = "EURUSD", alt = "EURUSD" },
-    { id = "USDJPY", alt = "USDJPY" },
-    { id = "GBPUSD", alt = "GBPUSD" },
-    { id = "USDCHF", alt = "USDCHF" },
-    { id = "AUDUSD", alt = "AUDUSD" },
-    { id = "NZDUSD", alt = "NZDUSD" },
-    { id = "USDCAD", alt = "USDCAD" },
-    { id = "GBPJPY", alt = "GBPJPY" },
-    { id = "EURCAD", alt = "EURCAD" },
-    { id = "EURAUD", alt = "EURAUD" },
-    { id = "EURGBP", alt = "EURGBP" },
-    { id = "EURJPY", alt = "EURJPY" },
-    { id = "CADJPY", alt = "CADJPY" },
     { id = "GOLD", alt = "XAUUSD" },
     { id = "SILVER", alt = "XAGUSD" },
-    { id = "COPPER", alt = "COPPER" },
     { id = "BRENTOIL", alt = "UKOil" },
     { id = "CRUDEOIL", alt = "USOil" },
     { id = "NATURALGAS", alt = "NGAS" },
@@ -139,10 +109,8 @@ mapping = [
     { id = "CAC40", alt = "F40" },
     { id = "AAPL", alt = "AAPL" },
     { id = "TSLA", alt = "TSLA" },
-    { id = "META", alt = "META" },
-    { id = "MSFT", alt = "MSFT" },
-    { id = "BTC", alt = "BTCUSDT" },
-    { id = "ETH", alt = "ETHUSDT" },
+    { id = "BTC", alt = "WBTC" },
+    { id = "ETH", alt = "WETH" },
     { id = "BNB", alt = "BNB/USDT" },
     { id = "MATIC", alt = "MATIC-PERP" }
 ]

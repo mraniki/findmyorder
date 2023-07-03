@@ -31,7 +31,6 @@ class FindMyOrder:
                 return True
         return False
 
-
     async def contains_emoji(self, input_string: str) -> bool:
         """Check if the input string contains an emoji."""
         return any(emoji.is_emoji(character) for character in input_string)
@@ -117,6 +116,9 @@ class FindMyOrder:
                 order["instrument"] = item["alt"]
                 break
         return order
+    
+    async def get_info(self):
+        return f"{__class__.__name__} {__version__}\n"
 
 # Grammar
 # class TradingGrammar:

@@ -8,18 +8,17 @@ from unittest.mock import patch
 from findmyorder import FindMyOrder, settings
 
 
-@pytest.fixture
+
+
+@pytest.fixture(scope="session", autouse=True)
+def set_test_settings():
+    settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
+    
+
+@pytest.fixture(name="fmo")
 def fmo():
     """return fmo"""
     return FindMyOrder()
-
-@pytest.fixture
-def fmo_custom():
-    """return custom fmo"""
-    with patch("findmyorder.config.settings", autospec=True):
-        settings.instrument_mapping = True
-        settings.quantity = 10
-        return FindMyOrder()
 
 @pytest.fixture
 def order():
@@ -62,7 +61,7 @@ def result_crypto_order():
     """return standard expected results"""
     return {
         "action": "SHORT",
-        "instrument": "ETHUSDT",
+        "instrument": "WETH",
         "stop_loss": 1000,
         "take_profit": 1000,
         "quantity": 10,
@@ -90,6 +89,12 @@ def bot_command():
 def invalid_order():
     """return fmo"""
     return "This is not an order"
+
+@pytest.mark.asyncio
+async def test_settings():
+    """Search Testing"""
+    assert settings.VALUE == "On Testing"
+    assert settings.findmyorder_enabled == True
 
 
 @pytest.mark.asyncio
@@ -170,13 +175,13 @@ async def test_short_valid_get_order(fmo, short_order, result_order):
 
 @pytest.mark.asyncio
 async def test_mapping_order(
-    fmo_custom,
+    fmo,
     crypto_short_order,
     result_crypto_order):
     """replace instrument Testing"""
-    result = await fmo_custom.get_order(crypto_short_order)
+    result = await fmo.get_order(crypto_short_order)
     print(result)
-    assert settings.instrument_mapping
+    assert settings.instrument_mapping == True
     assert result["instrument"] == result_crypto_order["instrument"]
     assert int(result["quantity"]) == 10
     assert type(result["timestamp"] is datetime)
