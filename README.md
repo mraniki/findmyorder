@@ -8,7 +8,8 @@ Key features:
 
 - Identify an order with word `BUY SELL LONG SHORT` or your own `Bull`, `to the moon`, `pump` via config file
 - Parse and return a structured order with action and instrument as mandatory
-- Settings for custom option
+- Capability to map a given instrument to a new one (e.g BTC to WBTC or ETHUSD to ETH)
+- Settings for custom options
 
 ## Install
 
@@ -16,7 +17,8 @@ Key features:
 
 ## How to use it
 
-```
+```python
+>>> from findmyorder import FindMyOrder
 fmo = FindMyOrder()
 msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
 order = await fmo.get_order(msg_order)
@@ -29,9 +31,8 @@ order = await fmo.get_order(msg_order)
 
 ### Real use case
 
-[TalkyTrader, submit trading order to CEX & DEX with messaging platform (Telegram, Matrix and Discord)](https://github.com/mraniki/tt)
+[TalkyTrader](https://github.com/mraniki/tt)
 
 ## Documentation
-
 
 [![wiki](https://img.shields.io/badge/🪙🗿-wiki-0080ff)](https://talkytrader.gitbook.io/talky/)
