@@ -110,14 +110,16 @@ class FindMyOrder:
         return None
 
     async def replace_instrument(self, order):
+        """ replace instrument by an alternative instrument """
         instrument = order["instrument"]
         for item in settings.mapping:
             if item["id"] == instrument:
                 order["instrument"] = item["alt"]
                 break
         return order
-    
+
     async def get_info(self):
+        """ get info about the class """
         return f"{__class__.__name__} {__version__}\n"
 
 # Grammar
