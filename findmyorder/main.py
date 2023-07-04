@@ -97,7 +97,6 @@ class FindMyOrder:
         msg: str,
     ):
         """get an order."""
-
         if await self.search(msg):
             order = await self.identify_order(msg)
             if isinstance(order, dict):
