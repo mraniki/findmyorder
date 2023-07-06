@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.4 (2023-07-06)
+
+### Fix
+
+* Update README.md ([`17540a0`](https://github.com/mraniki/findmyorder/commit/17540a0d17bd528e27ebf403265416d6c1c9dcf6))
+
 ## v1.5.3 (2023-07-03)
 
 ### Fix
