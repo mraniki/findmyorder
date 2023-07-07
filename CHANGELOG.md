@@ -2,6 +2,23 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.5 (2023-07-07)
+
+### Fix
+
+* ⬆️(deps): update dependency sphinx to v7 ([`fad82a2`](https://github.com/mraniki/findmyorder/commit/fad82a2a0e7332b5606c9daf711015fa9fd0ae17))
+* :memo: pyproject doc related update ([`dc4578d`](https://github.com/mraniki/findmyorder/commit/dc4578d08abf7af8753117b93c3757d900ee9769))
+* :memo: readmydocs updated config ([`e90d981`](https://github.com/mraniki/findmyorder/commit/e90d98105b0c73de63fa754f1f57d97f63cfdb79))
+* 📝 readmydocs updated config ([`863a737`](https://github.com/mraniki/findmyorder/commit/863a737a178ee8ac45ba196a470fd2a8a95b1c0d))
+* ⚗️  review action approach ([`ce5f780`](https://github.com/mraniki/findmyorder/commit/ce5f7807853ad5aa934131e34e1488bf1e502dd2))
+
+### Other
+
+* Merge pull request #232 from mraniki/renovate/sphinx-7.x ([`50c245a`](https://github.com/mraniki/findmyorder/commit/50c245a949cdc2b79358a4349ca92134aeebffff))
+* Updating Requirements ([`eb4ce59`](https://github.com/mraniki/findmyorder/commit/eb4ce59119d736ae331db8261cac920b86e0b2dd))
+* Merge pull request #231 from mraniki/dev ([`fb472d6`](https://github.com/mraniki/findmyorder/commit/fb472d6bb368b8f6cb062cc29357337ad710f4fd))
+* Merge branch 'main' into dev ([`2e54918`](https://github.com/mraniki/findmyorder/commit/2e54918c13e74c7bad439e1c4a241877a09b8141))
+
 ## v1.5.4 (2023-07-06)
 
 ### Fix
