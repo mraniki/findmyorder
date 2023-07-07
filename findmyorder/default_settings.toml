@@ -17,14 +17,6 @@
 VALUE = "Production - Default"
 findmyorder_enabled = true
 action_identifier = "BUY SELL LONG SHORT"
-# action_in_identifier = "BUY LONG"
-# action_out_identifier = "SELL SHORT"
-# actions = [
-#     { identifier = "BUY", type = "IN" },
-#     { identifier = "SELL", type = "OUT" },
-#     { identifier = "LONG", type = "IN" },
-#     { identifier = "SHORT", type = "OUT" }
-# ]
 stop_loss_identifier = "sl="
 take_profit_identifier = 'tp='
 quantity_identifier = 'q='
@@ -48,14 +40,12 @@ mapping = [
 VALUE = "On Testing"
 findmyorder_enabled = true
 action_identifier = "BUY SELL LONG SHORT"
-# action_in_identifier = "BUY LONG"
-# action_out_identifier = "SELL SHORT"
-# actions = [
-#     { identifier = "BUY", type = "IN" },
-#     { identifier = "SELL", type = "OUT" },
-#     { identifier = "LONG", type = "IN" },
-#     { identifier = "SHORT", type = "OUT" }
-# ]
+actions = [
+    { identifier = "BUY", type = "BUY" },
+    { identifier = "SELL", type = "SELL" },
+    { identifier = "LONG", type = "BUY" },
+    { identifier = "SHORT", type = "SELL" }
+]
 stop_loss_identifier = "sl="
 take_profit_identifier = 'tp='
 quantity_identifier = 'q='
