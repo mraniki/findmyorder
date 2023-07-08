@@ -22,6 +22,7 @@ How To Use it
 
 Settings
 ==================
+Setting available via settings.toml
 .. literalinclude:: ../auto_findmyorder/default_settings.toml.py
    :language: toml
 
@@ -42,6 +43,4 @@ Talky
 .. * :doc:`DXSP <DXSP:index>`
 .. * :doc:`IamListening <iamlistening:index>`
 .. * :doc:`TalkyTrend <TalkyTrend:index>`
-.. * `Talkytrader <https://talkytrader.github.io/wiki>`_
-.. image:: https://i.imgur.com/Q7iDDyB.jpg
-   :align: left
+.. * `Talkytrader <https://talkytrader.github.io/wiki>`
