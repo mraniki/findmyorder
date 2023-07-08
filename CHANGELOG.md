@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.22 (2023-07-08)
+
+### Fix
+
+* :memo: Update conf.py ([`39059d6`](https://github.com/mraniki/findmyorder/commit/39059d61cb59a01b5703fdfd633ba26e7e3d47ef))
+
+### Other
+
+* Merge pull request #235 from mraniki/dev ([`a95a7fe`](https://github.com/mraniki/findmyorder/commit/a95a7fe1549e0b846e4eb0b00594d2ad7323a6ef))
+
 ## v1.5.21 (2023-07-08)
 
 ### Fix
