@@ -18,31 +18,30 @@ FindMyOrder
 How To Use it
 ==================
 the following example illustrate how to use the module
-:class: dropdown
+
 .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/examples/example.py
    :language: python
-
+   :class: dropdown
 
 Settings
 ==================
 Setting available via settings.toml
 
-:class: dropdown
-.. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/findmyorder/default_settings.toml
-   :language: toml
+    .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/findmyorder/default_settings.toml
+       :language: python
+       :class: dropdown
 
 FMO class
 ==================
 * :doc:`findmyorder <findmyorder:findmyorder>`
 
 
+.. Indices and tables
+.. ==================
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
 
 
 Talky
