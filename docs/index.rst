@@ -32,7 +32,7 @@ Setting available via settings.toml
 
 FMO class
 ==================
-* :doc:`findmyorder <findmyorder:main>`
+* :doc:`findmyorder <findmyorder.main>`
 
 
 
