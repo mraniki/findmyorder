@@ -17,14 +17,13 @@ FindMyOrder
 
 How To Use it
 ==================
-.. literalinclude:: ../../auto_examples/examples.py
+.. literalinclude:: ../../examples/examples.py
    :language: python
 
 Settings
 ==================
 Setting available via settings.toml
-.. literalinclude:: ../auto_findmyorder/default_settings.toml.py
-   :language: toml
+
 
 
 Indices and tables
