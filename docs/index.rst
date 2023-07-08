@@ -10,7 +10,7 @@ FindMyOrder
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
 
@@ -20,10 +20,15 @@ How To Use it
 .. literalinclude :: /examples/examples.py
    :language: python
 
-Environment Variables
+
+
+Indices and tables
 ==================
-.. literalinclude :: /findmyorder/default_settings.toml
-   :language: toml
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
 
 
 Talky
@@ -33,17 +38,4 @@ Talky
 * :doc:`DXSP <DXSP:index>`
 * :doc:`IamListening <iamlistening:index>`
 * :doc:`TalkyTrend <TalkyTrend:index>`
-
-Talky
-==================
 * `Talkytrader <https://talkytrader.github.io/wiki>`_
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-* :ref:`modindex`
