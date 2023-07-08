@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.17 (2023-07-08)
+
+### Fix
+
+* Update index.rst ([`cb6dafe`](https://github.com/mraniki/findmyorder/commit/cb6dafe800ad7efa66c7f3e457e259e668700ef4))
+* Update index.rst ([`34a3884`](https://github.com/mraniki/findmyorder/commit/34a38840a014f6c01259494a7d0416cb244ca5cb))
+* Update index.rst ([`54c0625`](https://github.com/mraniki/findmyorder/commit/54c06251ddc31db7d99c167b9df4b505c1d00bf2))
+* Update index.rst ([`eafc6d4`](https://github.com/mraniki/findmyorder/commit/eafc6d43ac9ecc274a83784ca0eff0e054dc1490))
+* Update index.rst ([`516eda0`](https://github.com/mraniki/findmyorder/commit/516eda0c3125dbb303c3ea39452a0707a358b4f2))
+
 ## v1.5.16 (2023-07-08)
 
 ### Fix
