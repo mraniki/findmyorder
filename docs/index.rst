@@ -25,5 +25,5 @@ Indices and tables
 
 Talky
 ==================
-* :ref:`talkytrader`
-* :ref:`dxsp`
+* :ref:`talkytrader:index`
+* :doc:`Talkytrader <talkytrader:index>`
