@@ -25,6 +25,12 @@ Indices and tables
 
 Talky
 ==================
-* :ref:`talkytrader:index`
 * :doc:`Talkytrader <talkytrader:index>`
+* :doc:`findmyorder <findmyorder:index>`
+* :doc:`DXSP <DXSP:index>`
+* :doc:`IamListening <iamlistening:index>`
+* :doc:`TalkyTrend <TalkyTrend:index>`
+
+Talky
+==================
 * Talkytrader <https://talkytrader.github.io/wiki>
