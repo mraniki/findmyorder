@@ -19,8 +19,8 @@ How To Use it
 ==================
 the following example illustrate how to use the module
 :class: dropdown
-    .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/examples/example.py
-    :language: python
+.. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/examples/example.py
+   :language: python
 
 
 Settings
@@ -28,12 +28,12 @@ Settings
 Setting available via settings.toml
 
 :class: dropdown
-    .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/findmyorder/default_settings.toml
-    :language: python
+.. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/findmyorder/default_settings.toml
+   :language: toml
 
 FMO class
 ==================
-* :doc:`findmyorder <findmyorder.main>`
+* :doc:`findmyorder <findmyorder:findmyorder>`
 
 
 
