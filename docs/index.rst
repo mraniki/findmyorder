@@ -15,12 +15,15 @@ FindMyOrder
 
 
 
-Indices and tables
+How To Use it
 ==================
+.. literalinclude :: /examples/examples.py
+   :language: python
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Environment Variables
+==================
+.. literalinclude :: /findmyorder/default_settings.toml
+   :language: toml
 
 
 Talky
@@ -33,4 +36,14 @@ Talky
 
 Talky
 ==================
-* Talkytrader <https://talkytrader.github.io/wiki>
+* `Talkytrader <https://talkytrader.github.io/wiki>`_
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+* :ref:`modindex`
