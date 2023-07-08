@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.27 (2023-07-08)
+
+### Fix
+
+* :memo: Update index.rst file with new links and language settings ([`481f36b`](https://github.com/mraniki/findmyorder/commit/481f36bf352886b1c22981d2a506eaab81ce35bd))
+
+### Other
+
+* Merge branch 'main' of git@github.com:mraniki/findmyorder.git ([`4d97f52`](https://github.com/mraniki/findmyorder/commit/4d97f52845aef7399aa8da30728f224922fa3176))
+
 ## v1.5.26 (2023-07-08)
 
 ### Fix
