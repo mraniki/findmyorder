@@ -2,6 +2,17 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.23 (2023-07-08)
+
+### Fix
+
+* :whale: Update Dockerfile with new dependencies ([`ec68b3f`](https://github.com/mraniki/findmyorder/commit/ec68b3f89c5ae64c02690e6de0b4f6344447f482))
+* :memo: Update index.rst file with new width and add example and FMO class documentation. ([`d4fcd5d`](https://github.com/mraniki/findmyorder/commit/d4fcd5dcf728381ddee31943b0a157af0252c667))
+
+### Other
+
+* Merge pull request #236 from mraniki/dev ([`061bb84`](https://github.com/mraniki/findmyorder/commit/061bb84703f7f682ac754c04b3963876793029c6))
+
 ## v1.5.22 (2023-07-08)
 
 ### Fix
