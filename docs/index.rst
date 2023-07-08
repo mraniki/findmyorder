@@ -21,3 +21,9 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
+Talky
+==================
+* :ref:`talkytrader`
+* :ref:`dxsp`
