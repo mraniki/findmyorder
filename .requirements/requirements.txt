@@ -1,3 +1,0 @@
-findmyorder
-fastapi
-uvicorn
