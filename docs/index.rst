@@ -16,5 +16,4 @@ FindMyOrder
    :maxdepth: 2
    :caption: Contents:
 
-
-.. :ref:`talkytrader:ref-role`
+.. :ref:`talkytrader:index`
