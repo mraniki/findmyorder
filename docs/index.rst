@@ -17,12 +17,12 @@ FindMyOrder
 
 How To Use it
 ==================
-.. literalinclude :: ../../examples/examples.py
+.. literalinclude:: ../../examples/examples.py
    :language: python
 
 Settings
 ==================
-.. literalinclude :: ../findmyorder/default_settings.toml.py
+.. literalinclude:: ../findmyorder/default_settings.toml.py
    :language: toml
 
 
@@ -43,3 +43,5 @@ Talky
 .. * :doc:`IamListening <iamlistening:index>`
 .. * :doc:`TalkyTrend <TalkyTrend:index>`
 .. * `Talkytrader <https://talkytrader.github.io/wiki>`_
+.. image:: https://i.imgur.com/Q7iDDyB.jpg
+   :align: left
