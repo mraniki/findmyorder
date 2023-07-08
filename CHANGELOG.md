@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.25 (2023-07-08)
+
+### Fix
+
+* :zap: Update Sphinx extensions and add toggle button ([`8b795a7`](https://github.com/mraniki/findmyorder/commit/8b795a75c462cc090b3cc5565716cc5e5d7d848f))
+
+### Other
+
+* Merge branch 'main' of git@github.com:mraniki/findmyorder.git ([`cbca0e9`](https://github.com/mraniki/findmyorder/commit/cbca0e949d4c52c42eabed62ca457ab5cb426248))
+
 ## v1.5.24 (2023-07-08)
 
 ### Fix
