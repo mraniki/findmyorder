@@ -19,16 +19,21 @@ How To Use it
 ==================
 the following example illustrate how to use the module
 
-.. note::
+.. example::
     :class: dropdown
     
     .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/examples/example.py
        :language: python
 
+
+
 Settings
 ==================
 Setting available via settings.toml
 
+.. settings::
+    :class: dropdown
+    
     .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/findmyorder/default_settings.toml
        :language: toml
 
