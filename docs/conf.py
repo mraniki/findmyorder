@@ -35,6 +35,7 @@ extensions = [
     'sphinx_copybutton',
     'myst_parser',
     'sphinxext.remoteliteralinclude',
+    'sphinx_togglebutton',
     # 'sphinx_inline_tabs',
     # 'sphinx_reredirects',
     # 'sphinx_design',
