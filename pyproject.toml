@@ -48,6 +48,7 @@ sphinx-copybutton= "^0.5.2"
 myst-parser = "^2.0.0"
 sphinx-notfound-page = "^0.8.3"
 seed_intersphinx_mapping = "^1.2.1"
+sphinxext-remoteliteralinclude = "^0.4.0"
 
 
 [tool.pytest.ini_options]
