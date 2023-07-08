@@ -27,3 +27,4 @@ Talky
 ==================
 * :ref:`talkytrader:index`
 * :doc:`Talkytrader <talkytrader:index>`
+* Talkytrader <https://talkytrader.github.io/wiki>
