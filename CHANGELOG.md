@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.31 (2023-07-08)
+
+### Fix
+
+* Update index.rst file ([`b88b458`](https://github.com/mraniki/findmyorder/commit/b88b4580af55b414018697e4a20a770d3f79836d))
+
+### Other
+
+* Merge branch 'main' of git@github.com:mraniki/findmyorder.git ([`2ea2ff7`](https://github.com/mraniki/findmyorder/commit/2ea2ff7aeb61eb8d9f099542bcd6d345f2703deb))
+
 ## v1.5.30 (2023-07-08)
 
 ### Fix
