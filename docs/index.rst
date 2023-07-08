@@ -19,9 +19,9 @@ How To Use it
 ==================
 the following example illustrate how to use the module
 
-.. example::
+.. note::
     :class: dropdown
-    
+
     .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/examples/example.py
        :language: python
 
@@ -31,8 +31,8 @@ Settings
 ==================
 Setting available via settings.toml
 
-.. settings::
-    :class: dropdown
+.. setting::
+   :class: dropdown
     
     .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/findmyorder/default_settings.toml
        :language: toml
