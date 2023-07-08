@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.21 (2023-07-08)
+
+### Fix
+
+* Update and rename test.txt to requirements.txt ([`9f53b8b`](https://github.com/mraniki/findmyorder/commit/9f53b8b02097d16d9064fd23b551da1939c988fa))
+
 ## v1.5.20 (2023-07-08)
 
 ### Fix
