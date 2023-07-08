@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.29 (2023-07-08)
+
+### Fix
+
+* :recycle: Refactor index.rst file ([`792318f`](https://github.com/mraniki/findmyorder/commit/792318f6b728022010e603cec8a897903e80121e))
+
+### Other
+
+* Merge branch 'main' of git@github.com:mraniki/findmyorder.git ([`cb53132`](https://github.com/mraniki/findmyorder/commit/cb531320b53bd48c64cba99441b277c622c966d0))
+
 ## v1.5.28 (2023-07-08)
 
 ### Fix
