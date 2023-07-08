@@ -10,7 +10,7 @@ FindMyOrder
    :width: 200
    :alt: Alternative text
 
-- :ref:`:ref: role <talky:ref-role>`
+- :ref:`:ref: role <talkytrader:ref-role>`
 
 .. toctree::
    :maxdepth: 2
