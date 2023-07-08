@@ -2,6 +2,18 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.8 (2023-07-08)
+
+### Fix
+
+* Update index.rst ([`9a9827e`](https://github.com/mraniki/findmyorder/commit/9a9827ed8c64dfca96fffade1e54988f2095e882))
+* Update index.rst ([`995ec50`](https://github.com/mraniki/findmyorder/commit/995ec50043c1b598c8f952e2befad9d545861c2d))
+* Update pyproject.toml ([`1cbf96d`](https://github.com/mraniki/findmyorder/commit/1cbf96d9aab25a3e671ba90dcf5585a008787d3e))
+
+### Other
+
+* Delete requirements.txt ([`7df0c3e`](https://github.com/mraniki/findmyorder/commit/7df0c3ea78ccb7bb0711ccee59dcd47dc69e5b59))
+
 ## v1.5.7 (2023-07-08)
 
 ### Fix
