@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.19 (2023-07-08)
+
+### Fix
+
+* Update index.rst ([`e15fac8`](https://github.com/mraniki/findmyorder/commit/e15fac82286f27b0d65c36e89dc58e7eb0d51ad7))
+
 ## v1.5.18 (2023-07-08)
 
 ### Fix
