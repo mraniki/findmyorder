@@ -38,8 +38,8 @@ Indices and tables
 Talky
 ==================
 * :doc:`Talkytrader <talkytrader:index>`
-* :doc:`findmyorder <findmyorder:index>`
-* :doc:`DXSP <DXSP:index>`
-* :doc:`IamListening <iamlistening:index>`
-* :doc:`TalkyTrend <TalkyTrend:index>`
-* `Talkytrader <https://talkytrader.github.io/wiki>`_
+.. * :doc:`findmyorder <findmyorder:index>`
+.. * :doc:`DXSP <DXSP:index>`
+.. * :doc:`IamListening <iamlistening:index>`
+.. * :doc:`TalkyTrend <TalkyTrend:index>`
+.. * `Talkytrader <https://talkytrader.github.io/wiki>`_
