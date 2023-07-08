@@ -17,7 +17,7 @@ FindMyOrder
 
 How To Use it
 ==================
-.. literalinclude:: ../../examples/examples.py
+.. literalinclude:: https://raw.githubusercontent.com/mraniki/findmyorder/main/examples/example.py
    :language: python
 
 Settings
