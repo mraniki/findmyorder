@@ -2,6 +2,21 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.20 (2023-07-08)
+
+### Fix
+
+* Update test.txt ([`e30aa2a`](https://github.com/mraniki/findmyorder/commit/e30aa2ae70e96ba129a3bc4f0c949a825bca1783))
+* Update index.rst ([`b1160a7`](https://github.com/mraniki/findmyorder/commit/b1160a7fdb0cc6fd72d7f47f843be1df0ebe9082))
+* Update conf.py ([`b6277b3`](https://github.com/mraniki/findmyorder/commit/b6277b389e3259fb91f948468bb9dc15e7c3b012))
+* Update pyproject.toml ([`ca3a9ac`](https://github.com/mraniki/findmyorder/commit/ca3a9ac7f904a3ae862120b900023d8e1c1a440b))
+* Update index.rst ([`2e20db2`](https://github.com/mraniki/findmyorder/commit/2e20db243496f1dc103c6ea8161fd43de9be03d9))
+* Update index.rst ([`62e490c`](https://github.com/mraniki/findmyorder/commit/62e490c9f78d35681fc8926549dab267ed565fd5))
+
+### Other
+
+* Create test.txt ([`6c2dcda`](https://github.com/mraniki/findmyorder/commit/6c2dcda274406023babcbfed7114df7d5f577bc9))
+
 ## v1.5.19 (2023-07-08)
 
 ### Fix
