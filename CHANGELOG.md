@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.7 (2023-07-08)
+
+### Fix
+
+* :memo: Docs ([`a0de284`](https://github.com/mraniki/findmyorder/commit/a0de284d52be41cfd17e763a815d78fd553492a4))
+
+### Other
+
+* Merge pull request #234 from mraniki/dev ([`b327ab7`](https://github.com/mraniki/findmyorder/commit/b327ab750cbf39e9b68ee7c1d7025f6514206271))
+
 ## v1.5.6 (2023-07-08)
 
 ### Fix
