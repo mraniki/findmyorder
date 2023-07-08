@@ -25,18 +25,25 @@ the following example illustrate how to use the module
     .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/examples/example.py
        :language: python
 
+       
+       
+       
 
 
 Settings
 ==================
 Setting available via settings.toml
 
-.. setting::
+.. note::
    :class: dropdown
     
     .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/findmyorder/default_settings.toml
        :language: toml
 
+       
+       
+       
+       
 
 FMO class
 ==================
