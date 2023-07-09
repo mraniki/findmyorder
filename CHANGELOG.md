@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v1.5.32 (2023-07-09)
+
+### Fix
+
+* Update README.md ([`a3cb13a`](https://github.com/mraniki/findmyorder/commit/a3cb13a276e8a5b3939935e177cfbd99e2fc700f))
+
 ## v1.5.31 (2023-07-08)
 
 ### Fix
