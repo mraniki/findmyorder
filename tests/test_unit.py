@@ -45,6 +45,10 @@ def result_order():
         "timestamp": datetime.now()
     }
 
+@pytest.fixture
+def ignore_order():
+    """return valid order"""
+    return "buy US500"
 
 @pytest.fixture
 def crypto_order():
@@ -172,6 +176,14 @@ async def test_short_valid_get_order(fmo, short_order, result_order):
     assert result["instrument"] == result_order["instrument"]
     assert int(result["quantity"]) == 1
     assert type(result["timestamp"] is datetime)
+
+
+@pytest.mark.asyncio
+async def test_ignoteorder(fmo, ignore_order):
+    """ignore order Testing"""
+    result = await fmo.get_order(ignore_order)
+    assert result is None
+
 
 @pytest.mark.asyncio
 async def test_mapping_order(

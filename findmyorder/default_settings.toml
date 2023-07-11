@@ -33,7 +33,7 @@ mapping = [
     { id = "BTC", alt = "WBTC" },
     { id = "ETH", alt = "WETH" },
 ]
-
+ignore_instrument = "US500 USTEC DOGE"
 
 
 [testing]

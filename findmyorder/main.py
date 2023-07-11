@@ -105,6 +105,9 @@ class FindMyOrder:
             print(settings.instrument_mapping)
             if settings.instrument_mapping:
                 await self.replace_instrument(order)
+            if order["instrument"] in settings.ignore_instrument:
+                """ ignoring instrument"""
+                return
             return order
         return None
 
