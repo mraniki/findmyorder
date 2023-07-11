@@ -2,6 +2,22 @@
 
 <!--next-version-placeholder-->
 
+## v1.6.0 (2023-07-11)
+
+### Feature
+
+* 🥚ignore_instrument  setting ([`ea9b57f`](https://github.com/mraniki/findmyorder/commit/ea9b57f9872a008c8e829ad9ff4ef2f1396157c7))
+
+### Fix
+
+* ✅  added unit test for get_info ([`b8deab5`](https://github.com/mraniki/findmyorder/commit/b8deab5d763ea3a17296fedd7ed6956584517806))
+
+### Other
+
+* Merge pull request #237 from mraniki/dev ([`4416ef1`](https://github.com/mraniki/findmyorder/commit/4416ef1bb5bb71522b4ef6247ba200a5981fea3c))
+* Merge pull request #238 from mraniki/sourcery/dev ([`d608a15`](https://github.com/mraniki/findmyorder/commit/d608a153d17cb0ee06a1e0062c352bb5ba3394b2))
+* 'Refactored by Sourcery' ([`79ef2ba`](https://github.com/mraniki/findmyorder/commit/79ef2ba396cfbed6f478ff31c8c5cff78f9802e4))
+
 ## v1.5.32 (2023-07-09)
 
 ### Fix
