@@ -4,10 +4,7 @@ FindMyOrder Unit Testing
 
 from datetime import datetime
 import pytest
-from unittest.mock import patch
 from findmyorder import FindMyOrder, settings
-
-
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -45,6 +42,10 @@ def result_order():
         "timestamp": datetime.now()
     }
 
+@pytest.fixture
+def ignore_order():
+    """return valid order"""
+    return "buy US500"
 
 @pytest.fixture
 def crypto_order():
@@ -94,8 +95,16 @@ def invalid_order():
 async def test_settings():
     """Search Testing"""
     assert settings.VALUE == "On Testing"
-    assert settings.findmyorder_enabled == True
+    assert settings.findmyorder_enabled is True
 
+
+@pytest.mark.asyncio
+async def test_info(fmo):
+    """Search Testing"""
+    result = await fmo.get_info()
+    print(result)
+    assert result is not None
+    assert str(result).startswith("FindMyOrder")
 
 @pytest.mark.asyncio
 async def test_search_valid_order(fmo, crypto_order):
@@ -173,6 +182,14 @@ async def test_short_valid_get_order(fmo, short_order, result_order):
     assert int(result["quantity"]) == 1
     assert type(result["timestamp"] is datetime)
 
+
+@pytest.mark.asyncio
+async def test_ignore_eorder(fmo, ignore_order):
+    """ignore order Testing"""
+    result = await fmo.get_order(ignore_order)
+    assert result is None
+
+
 @pytest.mark.asyncio
 async def test_mapping_order(
     fmo,
@@ -181,9 +198,10 @@ async def test_mapping_order(
     """replace instrument Testing"""
     result = await fmo.get_order(crypto_short_order)
     print(result)
-    assert settings.instrument_mapping == True
+    assert settings.instrument_mapping is True
     assert result["instrument"] == result_crypto_order["instrument"]
     assert type(result["timestamp"] is datetime)
+
 
 @pytest.mark.asyncio
 async def test_contains_no_emoji(fmo, order):
@@ -214,4 +232,3 @@ async def test_exception_handling():
 
     # Check that the function returned None
     assert result is None
-
