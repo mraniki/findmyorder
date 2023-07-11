@@ -97,19 +97,19 @@ class FindMyOrder:
         msg: str,
     ):
         """get an order."""
-        if await self.search(msg):
-            order = await self.identify_order(msg)
-            if isinstance(order, dict):
-                order["timestamp"] = datetime.utcnow().strftime(
-                    "%Y-%m-%dT%H:%M:%SZ")
-            print(settings.instrument_mapping)
-            if settings.instrument_mapping:
-                await self.replace_instrument(order)
-            if order["instrument"] in settings.ignore_instrument:
-                """ ignoring instrument"""
-                return
-            return order
-        return None
+        if not await self.search(msg):
+            return None
+        order = await self.identify_order(msg)
+        if isinstance(order, dict):
+            order["timestamp"] = datetime.utcnow().strftime(
+                "%Y-%m-%dT%H:%M:%SZ")
+        print(settings.instrument_mapping)
+        if settings.instrument_mapping:
+            await self.replace_instrument(order)
+        if order["instrument"] in settings.ignore_instrument:
+            """ ignoring instrument"""
+            return
+        return order
 
     async def replace_instrument(self, order):
         """ replace instrument by an alternative instrument """
