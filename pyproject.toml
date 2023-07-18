@@ -28,8 +28,29 @@ dynaconf = "^3.1.12"
 pyparsing = "^3.0.9"
 emoji = "^2.5.1"
 
-[tool.poetry.dev-dependencies]
-python-semantic-release = "^7.34.3"
+[tool.poetry.group.dev.dependencies]
+python-semantic-release = "^8.0.1"
+ruff = "^0.0.278"
+
+[tool.ruff]
+select = [
+  "E",  # pycodestyle
+  "F",  # pyflakes
+  "I",  # isort
+]
+exclude = [
+  ".github/*",
+  "docs/*",
+]
+ignore = ["E401","F401","F811"]
+format = "github"
+
+[tool.pylint.exceptions]
+overgeneral-exceptions = [
+    "builtins.BaseException",
+    "builtins.Exception",
+    "builtins.RuntimeError",
+]
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.0"
