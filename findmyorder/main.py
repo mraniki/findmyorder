@@ -6,9 +6,18 @@ from datetime import datetime
 
 import emoji
 from pyparsing import (
-    Combine, Optional, Word, alphas,
-    nums, one_of, pyparsing_common, Suppress)
+    Combine,
+    Optional,
+    Suppress,
+    Word,
+    alphas,
+    nums,
+    one_of,
+    pyparsing_common,
+)
+
 from findmyorder import __version__
+
 from .config import settings
 
 
