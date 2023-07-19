@@ -28,8 +28,9 @@ dynaconf = "^3.1.12"
 pyparsing = "^3.0.9"
 emoji = "^2.5.1"
 
+
 [tool.poetry.group.dev.dependencies]
-python-semantic-release = "^8.0.1"
+python-semantic-release = "^8.0.2"
 ruff = "^0.0.278"
 
 [tool.ruff]
@@ -52,6 +53,7 @@ overgeneral-exceptions = [
     "builtins.Exception",
     "builtins.RuntimeError",
 ]
+
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.0"
