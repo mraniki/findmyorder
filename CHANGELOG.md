@@ -2,6 +2,31 @@
 
 
 
+## v1.7.0 (2023-07-24)
+
+### Other
+
+* Merge pull request #249 from mraniki/renovate/ruff-0.x
+
+⬆️(deps): update dependency ruff to ^0.0.280 ([`8894c17`](https://github.com/mraniki/findmyorder/commit/8894c172df5e4ab07408cd152744986e70130953))
+
+* Merge pull request #251 from mraniki/dev
+
+🥚 🔊 loguru implementation ([`c75198f`](https://github.com/mraniki/findmyorder/commit/c75198ff0090be2c54a3f8a59d1295b66bbc202e))
+
+### Update
+
+* Update Requirements ([`d2a2f12`](https://github.com/mraniki/findmyorder/commit/d2a2f12604ff8c140350ffb27e7d9e22260c173b))
+
+### ⬆️
+
+* ⬆️(deps): update dependency ruff to ^0.0.280 ([`565cd1d`](https://github.com/mraniki/findmyorder/commit/565cd1d275f6b287f004526e383291ab7eb06048))
+
+### 🥚
+
+* 🥚 🔊 loguru implementation ([`c83e09e`](https://github.com/mraniki/findmyorder/commit/c83e09e33adac0fe11d89e90ce8810b6bad8deac))
+
+
 ## v1.6.1 (2023-07-20)
 
 ### Other
