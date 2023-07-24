@@ -10,60 +10,35 @@ from fastapi import FastAPI
 
 from findmyorder import FindMyOrder, __version__
 
-logging.basicConfig(
-    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
-    level="DEBUG"
-)
-
-logger = logging.getLogger(__name__)
-logging.getLogger('findmyorder').setLevel(logging.DEBUG)
-
 
 async def main():
     """Main"""
     while True:
-        try:
+        fmo = FindMyOrder()
+        print(fmo)
 
-            fmo = FindMyOrder()
-            print(fmo)
-            logger.debug(
-                "findmyorder logger: %s version: %s",
-                __name__,
-                __version__)
+        msg_order = ""
+        await fmo.search(msg_order)
 
-            msg_order = ""
-            order = await fmo.search(msg_order)
-            logger.debug("search 0: %s", order)
+        msg_order = "this is a test"
+        await fmo.search(msg_order)
 
-            msg_order = "this is a test"
-            order = await fmo.search(msg_order)
-            logger.debug("search 1: %s", order)
+        msg_order = "buy btc"
+        await fmo.search(msg_order)
+        await fmo.identify_order(msg_order)
 
-            msg_order = "buy btc"
-            order = await fmo.search(msg_order)
-            logger.debug("search 2: %s", order)
-            order = await fmo.identify_order(msg_order)
-            logger.info("identify_order 2: %s", order)
+        msg_order = "SELL BTC 1%"
+        await fmo.get_order(msg_order)
+        msg_order = "SELL BTCUSDT 1%"
+        await fmo.get_order(msg_order)
 
-            msg_order = "SELL BTC 1%"
-            order = await fmo.get_order(msg_order)
-            logger.info("get_order 1 %s", order)
-            msg_order = "SELL BTCUSDT 1%"
-            order = await fmo.get_order(msg_order)
-            logger.info("get_order 2: %s", order)
+        msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
+        await fmo.get_order(msg_order)
 
-            msg_order = "buy EURUSD sl=1000 tp=1000 q=1 comment=FOMC"
-            order = await fmo.get_order(msg_order)
-            logger.info("get_order 3: %s", order)
+        msg_order = "sell EURGBP sl=200 tp=400 q=2%"
+        await fmo.get_order(msg_order)
 
-            msg_order = "sell EURGBP sl=200 tp=400 q=2%"
-            order = await fmo.get_order(msg_order)
-            logger.info("get_order 4: %s", order)
-
-            await asyncio.sleep(7200)
-
-        except Exception as e:
-            logger.error("error search %s", e)
+        await asyncio.sleep(7200)
 
 
 app = FastAPI()

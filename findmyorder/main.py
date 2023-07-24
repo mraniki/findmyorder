@@ -1,10 +1,10 @@
 """
  FindMyOrder Main
 """
-import logging
 from datetime import datetime
 
 import emoji
+from loguru import logger
 from pyparsing import (
     Combine,
     Optional,
@@ -27,7 +27,8 @@ class FindMyOrder:
     def __init__(
         self,
     ):
-        self.logger = logging.getLogger(name="FMO")
+        self.logger = logger
+        # logging.getLogger(name="FMO")
 
     async def search(
         self,
