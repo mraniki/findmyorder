@@ -3,13 +3,16 @@ Provides example for FindMyOrder
 """
 
 import asyncio
-import logging
+import sys
 
 import uvicorn
 from fastapi import FastAPI
+from loguru import logger
 
 from findmyorder import FindMyOrder, __version__
 
+logger.remove()
+logger.add(sys.stderr, level="INFO")
 
 async def main():
     """Main"""
