@@ -186,9 +186,16 @@ async def test_short_valid_get_order(fmo, short_order, result_order):
 
 
 @pytest.mark.asyncio
-async def test_ignore_eorder(fmo, ignore_order):
+async def test_ignore_order(fmo, ignore_order):
     """ignore order Testing"""
     result = await fmo.get_order(ignore_order)
+    assert result is None
+
+
+@pytest.mark.asyncio
+async def test_invalid_get_order(fmo, invalid_order):
+    """ignore order Testing"""
+    result = await fmo.get_order(invalid_order)
     assert result is None
 
 
