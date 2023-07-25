@@ -2,6 +2,27 @@
 
 
 
+## v1.7.1 (2023-07-25)
+
+### :white_check_mark:
+
+* :white_check_mark:  increase test coverage ([`836bb97`](https://github.com/mraniki/findmyorder/commit/836bb97a586b0d5bbfaa2da72659731bc0dff94d))
+
+### Other
+
+* Merge pull request #252 from mraniki/dev
+
+✅ loguru pytest ([`e9f03ee`](https://github.com/mraniki/findmyorder/commit/e9f03ee442bb9ad4ac346f071575cd5cef47ecd0))
+
+### Update
+
+* Update Requirements ([`0142dd9`](https://github.com/mraniki/findmyorder/commit/0142dd99d15d0b86dcb849334e68486728a7a92a))
+
+### ✅
+
+* ✅ loguru pytest ([`20a2ea9`](https://github.com/mraniki/findmyorder/commit/20a2ea94165053146e357573b1debbd02d441775))
+
+
 ## v1.7.0 (2023-07-24)
 
 ### Other
