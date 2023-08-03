@@ -2,6 +2,29 @@
 
 
 
+## v1.7.2 (2023-08-03)
+
+### Other
+
+* Merge pull request #255 from mraniki/dev
+
+📝 RTD initial release ([`9c8178e`](https://github.com/mraniki/findmyorder/commit/9c8178e1c2874699d1e7fb7e5d0c4f3913232680))
+
+### Update
+
+* Update Requirements ([`98ed507`](https://github.com/mraniki/findmyorder/commit/98ed50784476d60b19d8e5e86fc35e9bec93f145))
+
+### 📝
+
+* 📝 ([`2cf980a`](https://github.com/mraniki/findmyorder/commit/2cf980a036db1a92c10203fa756207a54e7e0756))
+
+* 📝 RTD ([`625d28e`](https://github.com/mraniki/findmyorder/commit/625d28e48888ef502f0a35bd5f5c56c5669fe488))
+
+* 📝 RTD update ([`6d2fc3f`](https://github.com/mraniki/findmyorder/commit/6d2fc3fd7abc7fbe237d511174e136d4590ebe97))
+
+* 📝 RTD initial release ([`b4487d1`](https://github.com/mraniki/findmyorder/commit/b4487d18bf80078c1d6d3a2dba601770ce3f49c5))
+
+
 ## v1.7.1 (2023-07-25)
 
 ### :white_check_mark:
