@@ -2,6 +2,15 @@
 
 
 
+## v1.7.3 (2023-08-03)
+
+### Other
+
+* Merge pull request #254 from mraniki/dependabot/pip/ruff-gte-0.0.280-and-lt-0.0.282
+
+⬆️ Dep: Update ruff requirement from ^0.0.280 to &gt;=0.0.280,&lt;0.0.282 ([`516aa58`](https://github.com/mraniki/findmyorder/commit/516aa585ed46d5a303fdff31fdfd4b1f4271dcfa))
+
+
 ## v1.7.2 (2023-08-03)
 
 ### Other
@@ -13,6 +22,23 @@
 ### Update
 
 * Update Requirements ([`98ed507`](https://github.com/mraniki/findmyorder/commit/98ed50784476d60b19d8e5e86fc35e9bec93f145))
+
+* Update Requirements ([`e434bd9`](https://github.com/mraniki/findmyorder/commit/e434bd9600db59e9b06005c0a9366afe02d5cbcf))
+
+* :arrow_up: Dep: Update ruff requirement
+
+Updates the requirements on [ruff](https://github.com/astral-sh/ruff) to permit the latest version.
+- [Release notes](https://github.com/astral-sh/ruff/releases)
+- [Changelog](https://github.com/astral-sh/ruff/blob/main/BREAKING_CHANGES.md)
+- [Commits](https://github.com/astral-sh/ruff/compare/v0.0.280...v0.0.281)
+
+---
+updated-dependencies:
+- dependency-name: ruff
+  dependency-type: direct:development
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0ae9f6c`](https://github.com/mraniki/findmyorder/commit/0ae9f6c075dfae290d8577b3905ef791ab14f531))
 
 ### 📝
 
