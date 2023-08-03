@@ -1,68 +1,21 @@
-.. findmyorder documentation, Mon Jun  5 19:56:53 2023.
+.. _findmyorder_index:
 
-
+===========
 FindMyOrder
 ===========
 
-.. image:: https://user-images.githubusercontent.com/8766259/233823991-cceaa05a-ff15-4796-a6bb-bcb3ee0d8859.jpg
-   :align: right
-   :width: 50
+| Find My order,
+| a parsing package to find trading order
 
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents:
+   :maxdepth: 4
+   
+   01_start
+   02_config
+   03_module
 
 
+.. raw:: html
 
-How To Use it
-==================
-the following example illustrate how to use the module
-
-.. note::
-    :class: dropdown
-
-    .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/examples/example.py
-       :language: python
-
-       
-       
-       
-
-
-Settings
-==================
-Setting available via settings.toml
-
-.. note::
-   :class: dropdown
-    
-    .. rli:: https://raw.githubusercontent.com/mraniki/findmyorder/main/findmyorder/default_settings.toml
-       :language: toml
-
-       
-       
-       
-       
-
-FMO class
-==================
-* :doc:`findmyorder <findmyorder:findmyorder>`
-
-
-.. Indices and tables
-.. ==================
-
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
-
-
-Talky
-==================
-* :doc:`Talkytrader <talkytrader:index>`
-.. * :doc:`findmyorder <findmyorder:index>`
-.. * :doc:`DXSP <DXSP:index>`
-.. * :doc:`IamListening <iamlistening:index>`
-.. * :doc:`TalkyTrend <TalkyTrend:index>`
-.. * `Talkytrader <https://talkytrader.github.io/wiki>`
+   <br>
