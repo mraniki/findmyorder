@@ -42,15 +42,6 @@ source_suffix = ['.rst', '.md']
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
-intersphinx_mapping = {
-    "python": ("http://docs.python.org/", None),
-    "sphinx": ("https://www.sphinx-doc.org/en/master/", None),
-    "talkytrader": ("https://talky.readthedocs.io", None),
-    "findmyorder": ("https://findmyorder.readthedocs.io", None),
-    "dxsp": ("https://dxsp.readthedocs.io", None),
-    "iamlistening": ("https://iamlistening.rtfd.io/", None),
-    "talkytrend": ("https://talkytrend.readthedocs.io", None),
-}
 
 # -- Options for HTML output -------------------------------------------------
 
