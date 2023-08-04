@@ -2,6 +2,23 @@
 
 
 
+## v1.7.4 (2023-08-04)
+
+### :bug:
+
+* :memo::bug: ([`d87413a`](https://github.com/mraniki/findmyorder/commit/d87413a5ef7d2c33f374c66a84decdc152ab6a44))
+
+### Other
+
+* Merge pull request #260 from mraniki/dev
+
+:memo::bug: ([`371947a`](https://github.com/mraniki/findmyorder/commit/371947a917fb148a5e18a694f1773352d185667a))
+
+### 📝
+
+* 📝 RTD update ([`0d2be7f`](https://github.com/mraniki/findmyorder/commit/0d2be7f1e4b44a58dc8f624974dfffeb871cb0de))
+
+
 ## v1.7.3 (2023-08-03)
 
 ### Other
