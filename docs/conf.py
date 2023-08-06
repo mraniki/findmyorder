@@ -46,7 +46,6 @@ intersphinx_mapping = {
 }
 
 intersphinx_disabled_reftypes = ["*"]
-hoverxref_auto_ref = True
 hoverxref_intersphinx = [
     'readthedocs',
     'sphinx',
