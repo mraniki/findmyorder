@@ -2,6 +2,19 @@
 
 
 
+## v1.7.6 (2023-08-06)
+
+### :speech_balloon:
+
+* :speech_balloon: Refactor README.md file ([`ded5194`](https://github.com/mraniki/findmyorder/commit/ded5194b73e5cd6bb48f10fe0e1ed58ed2a6bc21))
+
+### Other
+
+* Merge pull request #261 from mraniki/dev
+
+:speech_balloon: Refactor README.md file ([`a4234b1`](https://github.com/mraniki/findmyorder/commit/a4234b186ddbebb255b19e451590cea2a87ed526))
+
+
 ## v1.7.5 (2023-08-05)
 
 ### Update
