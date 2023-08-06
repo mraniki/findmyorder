@@ -36,6 +36,7 @@
 </code>
 </pre>
 
-<h5>Example</h5>
 
-https://github.com/mraniki/findmyorder/blob/6211e686abf1321ab3d5a8ac33068f854b0e9336/examples/example.py#L1-L90
+<h5>Documentation</h5>
+<a href="https://talky.readthedocs.io/projects/findmyorder/en/latest/"><img src="https://img.shields.io/badge/Documentation-000000?style=for-the-badge&logo=readthedocs&logoColor=white"></a><br>
+
