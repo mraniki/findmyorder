@@ -2,6 +2,19 @@
 
 
 
+## v1.7.7 (2023-08-06)
+
+### Other
+
+* Merge pull request #262 from mraniki/dev
+
+📝 intersphinx setup ([`6582e8b`](https://github.com/mraniki/findmyorder/commit/6582e8b6840b56a364f624a73f1b01cd50a78976))
+
+### 📝
+
+* 📝 intersphinx setup ([`931d5f8`](https://github.com/mraniki/findmyorder/commit/931d5f899f0230adf47f95a9091175d129b65b8c))
+
+
 ## v1.7.6 (2023-08-06)
 
 ### :speech_balloon:
