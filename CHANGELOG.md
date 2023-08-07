@@ -2,6 +2,17 @@
 
 
 
+## v1.7.11 (2023-08-07)
+
+### Other
+
+* Merge pull request #266 from mraniki/dev
+
+💬 readme update ([`ed82989`](https://github.com/mraniki/findmyorder/commit/ed82989f2a3c71ac1b9cd89f0f8cb8d51fcc5e6c))
+
+* Merge branch &#39;main&#39; into dev ([`399dbe4`](https://github.com/mraniki/findmyorder/commit/399dbe40bd4de894b73144e28d3bccdb00800f46))
+
+
 ## v1.7.10 (2023-08-07)
 
 ### Other
@@ -9,6 +20,10 @@
 * Merge pull request #265 from mraniki/dev
 
 📝 logo ([`54be359`](https://github.com/mraniki/findmyorder/commit/54be35986cc2d6102fdbe48255854cedde29610e))
+
+### 💬
+
+* 💬 readme update ([`9211dd4`](https://github.com/mraniki/findmyorder/commit/9211dd4fb7e3c4ff1c1ab9cfaa3d4558006ea0a2))
 
 ### 📝
 
