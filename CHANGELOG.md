@@ -2,6 +2,31 @@
 
 
 
+## v1.7.8 (2023-08-07)
+
+### Fix
+
+* 📝 intersphinx fix ([`d928a7e`](https://github.com/mraniki/findmyorder/commit/d928a7e652b0decde1e7f63a979f84099f8d52c6))
+
+* 📝  fix ([`bf2b38c`](https://github.com/mraniki/findmyorder/commit/bf2b38c02a957c3578b6a3b2fec9bd78429f7b9d))
+
+### Other
+
+* Merge pull request #263 from mraniki/dev
+
+📝  sphinx.ext.extlinks ([`9f6159c`](https://github.com/mraniki/findmyorder/commit/9f6159c880542ae7ee1e5af9d72b72bb37913c90))
+
+### 🎨
+
+* 🎨 improve docs with hovering ([`d2aede8`](https://github.com/mraniki/findmyorder/commit/d2aede8e6077a388e5c7a86a3392ad3a5312978e))
+
+### 📝
+
+* 📝 updating docs template and sphinx ([`3ed9178`](https://github.com/mraniki/findmyorder/commit/3ed917861cfb171d8b78e1d9d07fa954ea0a770a))
+
+* 📝  sphinx.ext.extlinks ([`9670dcd`](https://github.com/mraniki/findmyorder/commit/9670dcdd40f361ecd2ab1eac919dcba171c008ca))
+
+
 ## v1.7.7 (2023-08-06)
 
 ### Other
