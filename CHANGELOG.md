@@ -2,6 +2,19 @@
 
 
 
+## v1.7.9 (2023-08-07)
+
+### Other
+
+* Merge pull request #264 from mraniki/dev
+
+⬆️ ([`b14486d`](https://github.com/mraniki/findmyorder/commit/b14486d2c6174776113d76c7407de3c9516800ae))
+
+### ⬆️
+
+* ⬆️ ([`8b57bb8`](https://github.com/mraniki/findmyorder/commit/8b57bb8fb27aa67848fdbcf372063fd646d2bf8a))
+
+
 ## v1.7.8 (2023-08-07)
 
 ### Fix
