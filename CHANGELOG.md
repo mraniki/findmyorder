@@ -2,6 +2,19 @@
 
 
 
+## v1.7.10 (2023-08-07)
+
+### Other
+
+* Merge pull request #265 from mraniki/dev
+
+📝 logo ([`54be359`](https://github.com/mraniki/findmyorder/commit/54be35986cc2d6102fdbe48255854cedde29610e))
+
+### 📝
+
+* 📝 logo ([`bc5ebcf`](https://github.com/mraniki/findmyorder/commit/bc5ebcfbcea53365c83b41f6d045afd31d272209))
+
+
 ## v1.7.9 (2023-08-07)
 
 ### Other
