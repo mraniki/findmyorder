@@ -2,6 +2,33 @@
 
 
 
+## v1.7.12 (2023-08-08)
+
+### :memo:
+
+* :memo: ([`ed34ad7`](https://github.com/mraniki/findmyorder/commit/ed34ad7f3171c7b1f87182336e4997d0def70e2c))
+
+### Other
+
+* Merge pull request #267 from mraniki/dev ([`56de006`](https://github.com/mraniki/findmyorder/commit/56de006ed021b2b4402088ca1744d2e995cae4d4))
+
+### ⚗️
+
+* ⚗️ pyscript ([`8c9c490`](https://github.com/mraniki/findmyorder/commit/8c9c490047ba4ed648b98a068d1f840ebe288de0))
+
+### 📝
+
+* 📝 ([`66e7dca`](https://github.com/mraniki/findmyorder/commit/66e7dca4df760a6884bedb01d9ee7ee423d57643))
+
+* 📝 adding pyscript ([`7628393`](https://github.com/mraniki/findmyorder/commit/762839350e9c9bfae750807800f66d12904288e4))
+
+* 📝 conf update for intersphinx ([`5c114a6`](https://github.com/mraniki/findmyorder/commit/5c114a621bad236ffd133c4c40ef2c79c0189eab))
+
+### 🔧
+
+* 📝 🔧  settings documentation ([`b80cd67`](https://github.com/mraniki/findmyorder/commit/b80cd67a6739b32bd3e4101d514a32ca7a8823f9))
+
+
 ## v1.7.11 (2023-08-07)
 
 ### Other
