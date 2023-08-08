@@ -43,7 +43,7 @@ PyScript
         print(fmo)
         msg_order = "buy btc"
         print(await fmo.search(msg_order))
-        (await fmo.identify_order(msg_order))
+        print(await fmo.identify_order(msg_order))
 
     </py-script>
    </body>
