@@ -11,99 +11,52 @@
 # port = 8081
 # or via ENVVARS 
 # export TT_PORT=8081
- 
 
 [default]
+# Dynaconf settings verification
 VALUE = "Production - Default"
+
+# Module Enable/Disable
 findmyorder_enabled = true
+
+# Keyword to be use to identify an order
 action_identifier = "BUY SELL LONG SHORT"
+# Keyword identifier for stoploss
 stop_loss_identifier = "sl="
+# Keyword identifier for take-profit
 take_profit_identifier = 'tp='
+# Keyword identifier for quantity
 quantity_identifier = 'q='
+# Keyword identifier for order type
 order_type_identifier = "spot future margin"
+# Keyword identifier for leverage
 leverage_type_identifier = "cross isolated"
+# Keyword identifier for comments
 comment_identifier = "comment="
+
+# Stoploss default value is none is provided
 stop_loss = 1000
+# Take-Profit default value is none is provided
 take_profit = 1000
+# Quantity default value is none is provided
 quantity = 1
+
+# Settings to enable or disable
+# instrument mapping
 instrument_mapping = true
+# instrument mapping to use and alternative 
+#  symbol when generating the order
 mapping = [
     { id = "GOLD", alt = "XAUUSD" },
     { id = "SILVER", alt = "XAGUSD" },
     { id = "BTC", alt = "WBTC" },
     { id = "ETH", alt = "WETH" },
 ]
+
+# Instrument to be ignored
+# when generating an order
 ignore_instrument = "US500 USTEC DOGE"
 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###
 ########################################
-
-
-
-
-                                        
-# _   _                           _   ___  
-#| | | |                         | | |__ \ 
-#| |_| |__   ___    ___ _ __   __| |    )|
-#| __| '_ \ / _ \  / _ \ '_ \ / _` |   / / 
-#| |_| | | |  __/ |  __/ | | | (_| |  |_|  
-# \__|_| |_|\___|  \___|_| |_|\__,_|  (_)  
-########################################                                                                                      
-
-
-
-
-
-
-########################################
-###         TESTING SETTINGS         ###
-########################################
-
-[testing]
-VALUE = "On Testing"
-findmyorder_enabled = true
-action_identifier = "BUY SELL LONG SHORT"
-actions = [
-    { identifier = "BUY", type = "BUY" },
-    { identifier = "SELL", type = "SELL" },
-    { identifier = "LONG", type = "BUY" },
-    { identifier = "SHORT", type = "SELL" }
-]
-stop_loss_identifier = "sl="
-take_profit_identifier = 'tp='
-quantity_identifier = 'q='
-order_type_identifier = "spot future margin"
-leverage_type_identifier = "cross isolated"
-comment_identifier = "comment="
-stop_loss = 1000
-take_profit = 1000
-quantity = 1
-instrument_mapping = true
-mapping = [
-    { id = "GOLD", alt = "XAUUSD" },
-    { id = "SILVER", alt = "XAGUSD" },
-    { id = "BRENTOIL", alt = "UKOil" },
-    { id = "CRUDEOIL", alt = "USOil" },
-    { id = "NATURALGAS", alt = "NGAS" },
-    { id = "GERMANY40", alt = "DE30" },
-    { id = "US500", alt = "US500" },
-    { id = "US2000", alt = "US2000" },
-    { id = "DOLLARINDEX", alt = "DXY" },
-    { id = "VIX", alt = "VIX" },
-    { id = "US30", alt = "DJ30" },
-    { id = "US100", alt = "USTEC" },
-    { id = "EU50", alt = "STOXX50" },
-    { id = "UK100", alt = "UK100" },
-    { id = "HK50", alt = "HK50" },
-    { id = "AU200", alt = "AUS200" },
-    { id = "NIKKEI225", alt = "JPN225" },
-    { id = "NIFTY50", alt = "IND50" },
-    { id = "CAC40", alt = "F40" },
-    { id = "AAPL", alt = "AAPL" },
-    { id = "TSLA", alt = "TSLA" },
-    { id = "BTC", alt = "WBTC" },
-    { id = "ETH", alt = "WETH" },
-    { id = "BNB", alt = "BNB/USDT" },
-    { id = "MATIC", alt = "MATIC-PERP" }
-]
