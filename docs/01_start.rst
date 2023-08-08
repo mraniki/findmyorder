@@ -41,9 +41,7 @@ PyScript
 
         fmo = FindMyOrder()
         print(fmo)
-        msg_order = "buy btc"
-        print(await fmo.search(msg_order))
-        print(await fmo.identify_order(msg_order))
+
 
     </py-script>
    </body>
