@@ -2,6 +2,19 @@
 
 
 
+## v1.7.13 (2023-08-08)
+
+### Other
+
+* Merge pull request #268 from mraniki/renovate/ruff-0.x
+
+⬆️(deps): update dependency ruff to &gt;=0.0.283,&lt;0.0.284 ([`7ae1402`](https://github.com/mraniki/findmyorder/commit/7ae14029c7bef321bbf598bd5d9663c5079a2ae8))
+
+### ⬆️
+
+* ⬆️(deps): update dependency ruff to &gt;=0.0.283,&lt;0.0.284 ([`a801965`](https://github.com/mraniki/findmyorder/commit/a801965c26017f9599a01b0a46ba2395094b1107))
+
+
 ## v1.7.12 (2023-08-08)
 
 ### :memo:
