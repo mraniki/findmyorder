@@ -36,7 +36,7 @@ class FindMyOrder:
         """Search an order."""
         if my_string:
             string_check = my_string.split()[0].lower()
-            self.debug(string_check)
+            self.logger.debug(string_check)
             if string_check in settings.action_identifier.lower():
                 return True
         return False
@@ -94,7 +94,7 @@ class FindMyOrder:
             )
 
             order = order_grammar.parse_string(instring=my_string, parse_all=False)
-            self.debug(order)
+            self.logger.debug(order)
             return order.asDict()
 
         except Exception as e:
@@ -115,7 +115,7 @@ class FindMyOrder:
         if order["instrument"] in settings.ignore_instrument:
             """ignoring instrument"""
             return
-        self.debug(order)
+        self.logger.debug(order)
         return order
 
     async def replace_instrument(self, order):
