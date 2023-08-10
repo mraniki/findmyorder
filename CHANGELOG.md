@@ -2,6 +2,27 @@
 
 
 
+## v1.7.14 (2023-08-10)
+
+### Other
+
+* Merge pull request #271 from mraniki/dev
+
+👷 CI Change ([`5d6d9ac`](https://github.com/mraniki/findmyorder/commit/5d6d9ac5a1bc98702d528b9583f824a6866cab9b))
+
+### 🐛
+
+* 🐛 ([`30bbc33`](https://github.com/mraniki/findmyorder/commit/30bbc33406351eb7d41f2c386c070d41eb1da07c))
+
+### 👷
+
+* 👷 CI Change ([`563594e`](https://github.com/mraniki/findmyorder/commit/563594eb43097f60d7602bfb40058df9a9d8a7e4))
+
+### 🔊
+
+* 🔊 Added logs for better troubleshoot check ([`11c0c0e`](https://github.com/mraniki/findmyorder/commit/11c0c0ef0b6b741136e571bea467bee29790eb4d))
+
+
 ## v1.7.13 (2023-08-08)
 
 ### Other
