@@ -2,6 +2,23 @@
 
 
 
+## v1.7.16 (2023-08-11)
+
+### :speech_balloon:
+
+* :speech_balloon::speaker: added better debug log ([`95b3051`](https://github.com/mraniki/findmyorder/commit/95b3051aafbe2ef288be7bfbc0b6c8a608eb2023))
+
+### Other
+
+* Merge pull request #272 from mraniki/dev
+
+:speech_balloon: :speaker: added better debug log ([`4da79de`](https://github.com/mraniki/findmyorder/commit/4da79dec4c6614bf32400a4fd046c3eb0f280255))
+
+### Update
+
+* Update Requirements ([`bdcdf29`](https://github.com/mraniki/findmyorder/commit/bdcdf29d615860b770294de306b45e893cdf86a9))
+
+
 ## v1.7.15 (2023-08-10)
 
 ### Other
