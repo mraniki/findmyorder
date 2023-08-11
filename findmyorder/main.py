@@ -36,7 +36,7 @@ class FindMyOrder:
         """Search an order."""
         if my_string:
             string_check = my_string.split()[0].lower()
-            self.logger.debug(string_check)
+            self.logger.debug("Searching order identifier in {}", string_check)
             if string_check in settings.action_identifier.lower():
                 return True
         return False
@@ -94,11 +94,12 @@ class FindMyOrder:
             )
 
             order = order_grammar.parse_string(instring=my_string, parse_all=False)
-            self.logger.debug(order)
+            self.logger.debug("Order parsed {}", order)
             return order.asDict()
 
-        except Exception as e:
-            return e
+        except Exception as error:
+            self.logger.error(error)
+            return error
 
     async def get_order(
         self,
@@ -106,16 +107,18 @@ class FindMyOrder:
     ):
         """get an order."""
         if not await self.search(msg):
+            self.logger.debug("No order identified")
             return None
         order = await self.identify_order(msg)
         if isinstance(order, dict):
             order["timestamp"] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
         if settings.instrument_mapping:
+            self.logger.debug("mapping")
             await self.replace_instrument(order)
         if order["instrument"] in settings.ignore_instrument:
-            """ignoring instrument"""
+            self.logger.debug("Ignoring instrument {}", order["instrument"])
             return
-        self.logger.debug(order)
+        self.logger.debug("Order identified {}", order)
         return order
 
     async def replace_instrument(self, order):
@@ -125,4 +128,5 @@ class FindMyOrder:
             if item["id"] == instrument:
                 order["instrument"] = item["alt"]
                 break
+        self.logger.debug("Instrument symbol changed", order)
         return order
