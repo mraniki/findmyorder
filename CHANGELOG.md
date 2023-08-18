@@ -2,6 +2,23 @@
 
 
 
+## v1.7.17 (2023-08-18)
+
+### :recycle:
+
+* :recycle::arrow_up:dep downgrade ([`d1213c6`](https://github.com/mraniki/findmyorder/commit/d1213c67893aee13da04165c66db1177415ff156))
+
+### Other
+
+* Merge pull request #275 from mraniki/dev
+
+:recycle::arrow_up:dep downgrade ([`e76d3b8`](https://github.com/mraniki/findmyorder/commit/e76d3b8bf64e707812df29764db759b3a2b61243))
+
+### Update
+
+* Update Requirements ([`daebaed`](https://github.com/mraniki/findmyorder/commit/daebaeddf82c163eab8b66e0f18989e46b648d7d))
+
+
 ## v1.7.16 (2023-08-11)
 
 ### :speech_balloon:
