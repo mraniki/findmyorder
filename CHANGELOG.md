@@ -2,6 +2,13 @@
 
 
 
+## v1.7.20 (2023-08-20)
+
+### ⬆️
+
+* ⬆️(deps): update dependency sphinx to v7.1.2 ([`c73065f`](https://github.com/mraniki/findmyorder/commit/c73065fb482b38dc23f691e641336548488a96c5))
+
+
 ## v1.7.19 (2023-08-20)
 
 ### Update
