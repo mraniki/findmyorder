@@ -2,6 +2,15 @@
 
 
 
+## v1.7.19 (2023-08-20)
+
+### Update
+
+* Update renovate.json ([`6463864`](https://github.com/mraniki/findmyorder/commit/6463864f5af89bd660b6819a8e5bdd55e53877f0))
+
+* Update pyproject.toml ([`e5db4c9`](https://github.com/mraniki/findmyorder/commit/e5db4c973617a5b6b0374f5bb669dd672acb15e5))
+
+
 ## v1.7.18 (2023-08-20)
 
 ### Update
