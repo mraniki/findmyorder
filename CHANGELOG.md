@@ -2,6 +2,17 @@
 
 
 
+## v1.7.18 (2023-08-20)
+
+### Update
+
+* Update pyproject.toml ([`dadc362`](https://github.com/mraniki/findmyorder/commit/dadc36207a5654c9ce9be1a5a497c1a8702bd4b6))
+
+### ⬆️
+
+* ⬆️(deps): update dependency sphinx to v7.2.2 ([`996472f`](https://github.com/mraniki/findmyorder/commit/996472fed80714e973430e58199477bef3fee133))
+
+
 ## v1.7.17 (2023-08-18)
 
 ### :recycle:
