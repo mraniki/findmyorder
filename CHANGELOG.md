@@ -2,7 +2,24 @@
 
 
 
+## v1.7.21 (2023-08-20)
+
+### Other
+
+* Merge pull request #279 from mraniki/dev
+
+👷Flow.yml ([`c1e82c9`](https://github.com/mraniki/findmyorder/commit/c1e82c9ecfde31975b8cc578a4610c002c2c1f9c))
+
+* :construction_worker_man:Flow.yml ([`fb381a1`](https://github.com/mraniki/findmyorder/commit/fb381a1f9930abe98d624379fa00386df32a789a))
+
+* Merge branch &#39;main&#39; into dev ([`c3a7ff4`](https://github.com/mraniki/findmyorder/commit/c3a7ff4490c443084e3a49f8f978e853fc6916c7))
+
+
 ## v1.7.20 (2023-08-20)
+
+### Other
+
+* Merge branch &#39;main&#39; into dev ([`fc32d3f`](https://github.com/mraniki/findmyorder/commit/fc32d3fc1b4d0be25f10807a6be505df5f0dbe05))
 
 ### ⬆️
 
@@ -10,6 +27,12 @@
 
 
 ## v1.7.19 (2023-08-20)
+
+### Other
+
+* Merge branch &#39;main&#39; into dev ([`abf05d7`](https://github.com/mraniki/findmyorder/commit/abf05d70d38dc6e39fe4a9b415d1bdc328d74ceb))
+
+* Merge branch &#39;main&#39; into dev ([`16a9e14`](https://github.com/mraniki/findmyorder/commit/16a9e149be4e5becf0210fa506b331b699cee1f5))
 
 ### Update
 
@@ -19,6 +42,16 @@
 
 
 ## v1.7.18 (2023-08-20)
+
+### :fire:
+
+* :fire: ([`190c4d5`](https://github.com/mraniki/findmyorder/commit/190c4d57a505423874049ec4aa4f1cc408a7d2ba))
+
+### Other
+
+* Merge branch &#39;main&#39; into dev ([`6455c55`](https://github.com/mraniki/findmyorder/commit/6455c55b063fcdcd86706afa53df7c368783a7ac))
+
+* Merge branch &#39;main&#39; into dev ([`744852c`](https://github.com/mraniki/findmyorder/commit/744852cea65abd7c75c6f3b1a262cd6c4a79993b))
 
 ### Update
 
