@@ -1,7 +1,7 @@
 """
 FindMyOrder Versioning
 """
-__version__ = "1.7.19"
+__version__ = "1.7.20"
 
 from .config import settings
 from .main import FindMyOrder
