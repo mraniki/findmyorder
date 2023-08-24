@@ -2,6 +2,21 @@
 
 
 
+## v1.7.22 (2023-08-24)
+
+### Other
+
+* Merge pull request #283 from mraniki/dev ([`55d0862`](https://github.com/mraniki/findmyorder/commit/55d08623c4370843eeecdcd877ff40ceb7d673a9))
+
+### 👷
+
+* 👷 CI cleanup ([`54ec348`](https://github.com/mraniki/findmyorder/commit/54ec3482084b64f7f6bad8c43407a393fa22f850))
+
+### 🔥
+
+* 🔥 cleanup ([`0a7753e`](https://github.com/mraniki/findmyorder/commit/0a7753eee5e4d75acb4f17ae770af815a9b0af72))
+
+
 ## v1.7.21 (2023-08-20)
 
 ### Other
