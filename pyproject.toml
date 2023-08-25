@@ -32,7 +32,7 @@ emoji = "^2.5.1"
 
 [tool.poetry.group.dev.dependencies]
 python-semantic-release = "^8.0.2"
-ruff = ">=0.0.284,<0.0.285"
+ruff = ">=0.0.286,<0.0.287"
 
 [tool.ruff]
 select = [
