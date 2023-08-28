@@ -2,13 +2,30 @@
 
 
 
+## v1.7.26 (2023-08-28)
+
+### Other
+
+* Merge pull request #290 from mraniki/dev
+
+Update Requirements ([`5257193`](https://github.com/mraniki/findmyorder/commit/5257193455e4f41b2f3b3e4c462d72749b3f231a))
+
+* Merge branch &#39;main&#39; into dev ([`7f46e0b`](https://github.com/mraniki/findmyorder/commit/7f46e0bebad8f1696af21ad044eed39a6cea09be))
+
+
 ## v1.7.25 (2023-08-28)
 
 ### Other
 
+* Merge branch &#39;main&#39; into dev ([`4b6ce40`](https://github.com/mraniki/findmyorder/commit/4b6ce403f8c0bc1494df6a714a929c1d0acaa0b2))
+
 * Merge pull request #289 from mraniki/dev
 
 🐛 📝 extension error ([`b65c247`](https://github.com/mraniki/findmyorder/commit/b65c247eb2463657b4474a32e9a087fb0c47f787))
+
+### Update
+
+* Update Requirements ([`893c9c2`](https://github.com/mraniki/findmyorder/commit/893c9c286590b85d37711ee1ba4dc7417e70c45d))
 
 ### 🐛
 
