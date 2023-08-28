@@ -2,11 +2,32 @@
 
 
 
+## v1.7.25 (2023-08-28)
+
+### Other
+
+* Merge pull request #289 from mraniki/dev
+
+🐛 📝 extension error ([`b65c247`](https://github.com/mraniki/findmyorder/commit/b65c247eb2463657b4474a32e9a087fb0c47f787))
+
+### 🐛
+
+* 🐛 📝  extension error ([`8af3ae7`](https://github.com/mraniki/findmyorder/commit/8af3ae75c06831224485153e4f38b2104937b9ff))
+
+### 📝
+
+* 📝 ([`492ace6`](https://github.com/mraniki/findmyorder/commit/492ace69f6b6f5f1d864844761f46cde4340d998))
+
+
 ## v1.7.24 (2023-08-28)
 
 ### Update
 
 * Update pyproject.toml ([`fc3c2bc`](https://github.com/mraniki/findmyorder/commit/fc3c2bc2893e672a97d834e40a06cbd920f7bd96))
+
+### 📝
+
+* 📝 ([`10db91c`](https://github.com/mraniki/findmyorder/commit/10db91c83e321079fc533732470fae1212d2ef04))
 
 
 ## v1.7.23 (2023-08-27)
