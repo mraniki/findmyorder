@@ -2,6 +2,13 @@
 
 
 
+## v1.7.24 (2023-08-28)
+
+### Update
+
+* Update pyproject.toml ([`fc3c2bc`](https://github.com/mraniki/findmyorder/commit/fc3c2bc2893e672a97d834e40a06cbd920f7bd96))
+
+
 ## v1.7.23 (2023-08-27)
 
 ### Other
