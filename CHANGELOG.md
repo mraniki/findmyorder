@@ -2,6 +2,13 @@
 
 
 
+## v1.7.27 (2023-08-30)
+
+### Update
+
+* Update README.md ([`4f7586b`](https://github.com/mraniki/findmyorder/commit/4f7586b5d8f593691a58decb8e1d72165d178ba7))
+
+
 ## v1.7.26 (2023-08-28)
 
 ### Other
