@@ -2,6 +2,19 @@
 
 
 
+## v1.7.28 (2023-08-31)
+
+### Other
+
+* Merge pull request #291 from mraniki/renovate/sphinx-7.x
+
+⬆️ 🛠️(deps): update dependency sphinx to v7.2.5 ([`00ffb70`](https://github.com/mraniki/findmyorder/commit/00ffb70a3ba8a205d868fa76ccd35a7bfcf0213f))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.2.5 ([`4b93280`](https://github.com/mraniki/findmyorder/commit/4b93280c9cce2381ca7ed2bec6423d345225f385))
+
+
 ## v1.7.27 (2023-08-30)
 
 ### Update
