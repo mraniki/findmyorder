@@ -2,6 +2,43 @@
 
 
 
+## v1.7.30 (2023-09-07)
+
+### :fire:
+
+* :fire: Remove test_contains_emoji function ([`ccb4af3`](https://github.com/mraniki/findmyorder/commit/ccb4af321cd2276ac677233316f7a9623a12b08a))
+
+### Other
+
+* Merge pull request #296 from mraniki/dev
+
+Merge pull request #295 from mraniki/main ([`ed95e88`](https://github.com/mraniki/findmyorder/commit/ed95e88012ecf0a44c2e091245a5cdd2e5f75d44))
+
+* Merge pull request #295 from mraniki/main
+
+Merge pull request #294 from mraniki/dev ([`5eee3e1`](https://github.com/mraniki/findmyorder/commit/5eee3e1f1389c08036d2536406aef0b84226c696))
+
+* Merge pull request #294 from mraniki/dev
+
+📝 🔥 remove emoji dep and improve docs. ([`f247018`](https://github.com/mraniki/findmyorder/commit/f247018c7ada985babb74817c55a17ab2ad9a9fc))
+
+### Update
+
+* Update Requirements ([`3cd4cdd`](https://github.com/mraniki/findmyorder/commit/3cd4cdd8470519f599b7a25cca248c0524a6b98f))
+
+### ⬆️
+
+* ⬆️ ([`a446810`](https://github.com/mraniki/findmyorder/commit/a44681070c0abbff750228ff6b3f069375deb51c))
+
+### 🎨
+
+* 🎨 ([`a293eda`](https://github.com/mraniki/findmyorder/commit/a293eda07c929f89b130c2318c38e57f71b1ce22))
+
+### 🔥
+
+* 📝 🔥 remove emoji dep and improve docs. ([`d20f901`](https://github.com/mraniki/findmyorder/commit/d20f9015a3141a46c88d773ea7c3bf7016bc44a4))
+
+
 ## v1.7.29 (2023-09-03)
 
 ### Other
