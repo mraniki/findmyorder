@@ -1,6 +1,6 @@
 """
  FindMyOrder Main
- 
+
 """
 from datetime import datetime
 
@@ -23,7 +23,7 @@ from .config import settings
 
 class FindMyOrder:
     """
-    Class to find an order
+    Class to find and parse trading order
 
     Args:
         None
