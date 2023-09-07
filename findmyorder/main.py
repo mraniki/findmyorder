@@ -1,9 +1,9 @@
 """
  FindMyOrder Main
+ 
 """
 from datetime import datetime
 
-import emoji
 from loguru import logger
 from pyparsing import (
     Combine,
@@ -22,7 +22,23 @@ from .config import settings
 
 
 class FindMyOrder:
-    """find an order class"""
+    """
+    Class to find an order
+
+    Args:
+        None
+
+    Returns:
+        None
+
+    Methods:
+        search(my_string: str) -> bool
+        get_info() -> str
+        identify_order(my_string: str) -> dict
+        get_order(msg: str) -> dict
+        replace_instrument(order: dict) -> None
+
+    """
 
     def __init__(
         self,
@@ -33,7 +49,16 @@ class FindMyOrder:
         self,
         my_string: str,
     ) -> bool:
-        """Search an order."""
+        """
+        Search an order.
+
+        Args:
+            my_string (str): Message
+
+        Returns:
+            bool
+
+        """
         if my_string:
             string_check = my_string.split()[0].lower()
             self.logger.debug("Searching order identifier in {}", string_check)
@@ -42,18 +67,30 @@ class FindMyOrder:
         return False
 
     async def get_info(self):
-        """get info about the class"""
-        return f"{__class__.__name__} {__version__}\n"
+        """
+        get info about the class
 
-    async def contains_emoji(self, input_string: str) -> bool:
-        """Check if the input string contains an emoji."""
-        return any(emoji.is_emoji(character) for character in input_string)
+        Returns:
+            str
+
+        """
+        return f"{__class__.__name__} {__version__}\n"
 
     async def identify_order(
         self,
         my_string: str,
     ) -> dict:
-        """Identify an order."""
+        """
+        Identify an order and return a dictionary
+        with the order parameters
+
+        Args:
+            my_string (str): Message
+
+        Returns:
+            dict
+
+        """
         try:
             action = (
                 one_of(settings.action_identifier, caseless=True)
@@ -105,7 +142,17 @@ class FindMyOrder:
         self,
         msg: str,
     ):
-        """get an order."""
+        """
+        Get an order from a message. The message can be
+        an order or an order identifier
+
+        Args:
+            msg (str): Message
+
+        Returns:
+            dict
+
+        """
         if not await self.search(msg):
             self.logger.debug("No order identified")
             return None
@@ -122,7 +169,16 @@ class FindMyOrder:
         return order
 
     async def replace_instrument(self, order):
-        """replace instrument by an alternative instrument"""
+        """
+        Replace instrument by an alternative instrument, if the
+        instrument is not in the mapping, it will be ignored.
+
+        Args:
+            order (dict):
+
+        Returns:
+            dict
+        """
         instrument = order["instrument"]
         for item in settings.mapping:
             if item["id"] == instrument:
