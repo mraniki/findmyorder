@@ -36,7 +36,5 @@
 </code>
 </pre>
 
-
 <h5>Documentation</h5>
 <a href="https://talky.readthedocs.io/projects/findmyorder/en/latest/"><img src="https://img.shields.io/badge/Documentation-000000?style=for-the-badge&logo=readthedocs&logoColor=white"></a><br>
-
