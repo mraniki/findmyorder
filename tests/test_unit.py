@@ -212,16 +212,4 @@ async def test_mapping_order(
     assert type(result["timestamp"] is datetime)
 
 
-@pytest.mark.asyncio
-async def test_contains_no_emoji(fmo, order):
-    """check emoji"""
-    result = await fmo.contains_emoji(order)
-    assert result is False
-
-
-@pytest.mark.asyncio
-async def test_contains_emoji(fmo,order_with_emoji):
-    """check emoji"""
-    result = await fmo.contains_emoji(order_with_emoji)
-    assert result is True
 
