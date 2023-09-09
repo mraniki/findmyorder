@@ -2,6 +2,19 @@
 
 
 
+## v1.7.34 (2023-09-09)
+
+### Other
+
+* Merge pull request #297 from mraniki/dev
+
+👷 CI Change ([`fa6d638`](https://github.com/mraniki/findmyorder/commit/fa6d638af620aba122abb202b4290d89494695a0))
+
+### 👷
+
+* 👷 CI Change ([`3264039`](https://github.com/mraniki/findmyorder/commit/3264039387fb1ca6d74483fc2947118cc427af4a))
+
+
 ## v1.7.33 (2023-09-07)
 
 ### Update
