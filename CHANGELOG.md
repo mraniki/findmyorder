@@ -2,6 +2,23 @@
 
 
 
+## v1.7.37 (2023-09-27)
+
+### Other
+
+* Merge pull request #302 from mraniki/dev
+
+🚨 Linter cleanup ([`82fbee0`](https://github.com/mraniki/findmyorder/commit/82fbee07d39d30c8d39820ce00aeeff1693cd8e7))
+
+### 🚨
+
+* 🚨 ([`a5144ba`](https://github.com/mraniki/findmyorder/commit/a5144ba02114547693162b3c970de16f61ec3237))
+
+* 🚨 ([`0f096aa`](https://github.com/mraniki/findmyorder/commit/0f096aa801af1f921df4b9def857a818abce0538))
+
+* 🚨 ([`11b2976`](https://github.com/mraniki/findmyorder/commit/11b29763f1c70397d896ef52bbee6475752c1882))
+
+
 ## v1.7.36 (2023-09-27)
 
 ### Other
