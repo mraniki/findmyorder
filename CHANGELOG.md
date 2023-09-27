@@ -2,6 +2,29 @@
 
 
 
+## v1.7.35 (2023-09-27)
+
+### Other
+
+* Merge pull request #300 from mraniki/dev
+
+Dev ([`6f17091`](https://github.com/mraniki/findmyorder/commit/6f17091db8e771d7c468642078064797b03f86b1))
+
+* Merge pull request #299 from mraniki/renovate/pydata-sphinx-theme-0.x
+
+⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.14.0 ([`f4522b6`](https://github.com/mraniki/findmyorder/commit/f4522b6207b56c4a3df7d18441bcbdda48572f66))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency pydata-sphinx-theme to ^0.14.0 ([`7f1d0a1`](https://github.com/mraniki/findmyorder/commit/7f1d0a18bcb49b80477983663d366cd9ac6a8a42))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.2.6 ([`5f3f9e6`](https://github.com/mraniki/findmyorder/commit/5f3f9e69d015b4f4b969b5b73ff2704229a328db))
+
+### 👷
+
+* 👷 CI Change ([`1732b2c`](https://github.com/mraniki/findmyorder/commit/1732b2c7a3df49f82cdf2ee6bc94203c1410845f))
+
+
 ## v1.7.34 (2023-09-09)
 
 ### Other
