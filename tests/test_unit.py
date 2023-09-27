@@ -6,7 +6,8 @@ from datetime import datetime
 
 import pytest
 
-from findmyorder import FindMyOrder, settings
+from findmyorder import FindMyOrder
+from findmyorder.config import settings
 
 
 @pytest.fixture(scope="session", autouse=True)
