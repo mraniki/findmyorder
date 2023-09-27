@@ -9,10 +9,11 @@ import uvicorn
 from fastapi import FastAPI
 from loguru import logger
 
-from findmyorder import FindMyOrder, __version__
+from findmyorder import FindMyOrder
 
 logger.remove()
 logger.add(sys.stderr, level="INFO")
+
 
 async def main():
     """Main"""
