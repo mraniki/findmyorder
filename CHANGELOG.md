@@ -2,6 +2,19 @@
 
 
 
+## v1.7.36 (2023-09-27)
+
+### Other
+
+* Merge pull request #301 from mraniki/dev
+
+🩹 version declaration ([`1a4b489`](https://github.com/mraniki/findmyorder/commit/1a4b489cb37fadd986f11fb27f65c579e5789700))
+
+### 🩹
+
+* 🩹 version declaration ([`ca1b94d`](https://github.com/mraniki/findmyorder/commit/ca1b94d61660ebc7d1c91f8b6ccf2de7cbd19788))
+
+
 ## v1.7.35 (2023-09-27)
 
 ### Other
