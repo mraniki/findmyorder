@@ -17,8 +17,7 @@ from pyparsing import (
 )
 
 from findmyorder import __version__
-
-from .config import settings
+from findmyorder.config import settings
 
 
 class FindMyOrder:

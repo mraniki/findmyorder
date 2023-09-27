@@ -12,22 +12,25 @@ from findmyorder import FindMyOrder, settings
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
-    
+
 
 @pytest.fixture(name="fmo")
 def fmo():
     """return fmo"""
     return FindMyOrder()
 
+
 @pytest.fixture
 def order():
     """return valid order"""
     return "buy EURUSD sl=200 tp=400 q=2%"
 
+
 @pytest.fixture
 def short_order():
     """return valid order"""
     return "Buy EURUSD"
+
 
 @pytest.fixture
 def result_order():
@@ -41,23 +44,27 @@ def result_order():
         "order_type": None,
         "leverage_type": None,
         "comment": None,
-        "timestamp": datetime.now()
+        "timestamp": datetime.now(),
     }
+
 
 @pytest.fixture
 def ignore_order():
     """return valid order"""
     return "buy US500"
 
+
 @pytest.fixture
 def crypto_order():
     """return valid order"""
     return "SHORT ETH sl=200 tp=400 q=2%"
 
+
 @pytest.fixture
 def crypto_short_order():
     """return valid order"""
     return "Sell ETH"
+
 
 @pytest.fixture
 def result_crypto_order():
@@ -71,8 +78,9 @@ def result_crypto_order():
         "order_type": None,
         "leverage_type": None,
         "comment": None,
-        "timestamp": datetime.now()
-        }
+        "timestamp": datetime.now(),
+    }
+
 
 @pytest.fixture
 def order_with_emoji():
@@ -93,6 +101,7 @@ def invalid_order():
     """return fmo"""
     return "This is not an order"
 
+
 @pytest.mark.asyncio
 async def test_settings():
     """Search Testing"""
@@ -107,6 +116,7 @@ async def test_info(fmo):
     print(result)
     assert result is not None
     assert str(result).startswith("FindMyOrder")
+
 
 @pytest.mark.asyncio
 async def test_search_valid_order(fmo, crypto_order):
@@ -134,13 +144,13 @@ async def test_search_exception(fmo):
 
 
 @pytest.mark.asyncio
-async def test_search_normal_order(fmo,order):
+async def test_search_normal_order(fmo, order):
     """Search Testing"""
     assert await fmo.search(order) is True
 
 
 @pytest.mark.asyncio
-async def test_search_normal_order_variation(fmo,crypto_order):
+async def test_search_normal_order_variation(fmo, crypto_order):
     """Search Testing"""
     assert await fmo.search(crypto_order) is True
 
@@ -157,7 +167,6 @@ async def test_identify_order_invalid_input(fmo, invalid_order):
     """Identify Testing"""
     result = await fmo.identify_order(invalid_order)
     assert str(result).startswith("Expected")
-
 
 
 @pytest.mark.asyncio
@@ -200,16 +209,10 @@ async def test_invalid_get_order(fmo, invalid_order):
 
 
 @pytest.mark.asyncio
-async def test_mapping_order(
-    fmo,
-    crypto_short_order,
-    result_crypto_order):
+async def test_mapping_order(fmo, crypto_short_order, result_crypto_order):
     """replace instrument Testing"""
     result = await fmo.get_order(crypto_short_order)
     print(result)
     assert settings.instrument_mapping is True
     assert result["instrument"] == result_crypto_order["instrument"]
     assert type(result["timestamp"] is datetime)
-
-
-
