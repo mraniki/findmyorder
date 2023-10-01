@@ -24,8 +24,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-dynaconf = "^3.2.0"
-loguru = "^0.6.0"
+dynaconf = ">=3.2.0"
+loguru = ">=0.6.0"
 pyparsing = "^3.0.9"
 
 
