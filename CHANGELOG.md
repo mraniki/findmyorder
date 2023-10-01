@@ -2,6 +2,29 @@
 
 
 
+## v1.7.38 (2023-10-01)
+
+### Other
+
+* Merge pull request #303 from mraniki/dev
+
+👷 CI Change ([`18dc56d`](https://github.com/mraniki/findmyorder/commit/18dc56da4509936688ca47d1c179a607ccb5c04f))
+
+### Update
+
+* Update test_unit.py ([`54838cf`](https://github.com/mraniki/findmyorder/commit/54838cf777fd43326a7bcfa67540dbe67c1b97e9))
+
+* Update Requirements ([`93459a9`](https://github.com/mraniki/findmyorder/commit/93459a9544190a56a5124de1f3421797e1e19552))
+
+* Update pyproject.toml ([`3f09a8e`](https://github.com/mraniki/findmyorder/commit/3f09a8e8448d8c2e57c3b64d4621f42269d28b91))
+
+* Update Requirements ([`60f7aae`](https://github.com/mraniki/findmyorder/commit/60f7aae2055d1931fda456dbf5669223bdce504f))
+
+### 👷
+
+* 👷 CI Change ([`8ade342`](https://github.com/mraniki/findmyorder/commit/8ade3423f4a23c1a9200f42ce8875d755b679252))
+
+
 ## v1.7.37 (2023-09-27)
 
 ### Other
