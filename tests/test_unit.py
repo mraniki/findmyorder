@@ -51,8 +51,8 @@ def result_order():
 
 @pytest.fixture
 def ignore_order():
-    """return valid order"""
-    return "buy US500"
+    """return order to ignore"""
+    return "buy DOGE"
 
 
 @pytest.fixture
