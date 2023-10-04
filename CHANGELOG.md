@@ -2,6 +2,19 @@
 
 
 
+## v1.8.0 (2023-10-04)
+
+### Other
+
+* Merge pull request #305 from mraniki/dev
+
+🥚Add support for .op.toml configuration file ([`014e0b1`](https://github.com/mraniki/findmyorder/commit/014e0b16760c7a0757604a7aec088be014034411))
+
+### 🥚
+
+* 🥚Add support for .op.toml configuration file ([`9ddca48`](https://github.com/mraniki/findmyorder/commit/9ddca486f955803597dcdfcb45eb51e50a7d09ee))
+
+
 ## v1.7.38 (2023-10-01)
 
 ### Other
