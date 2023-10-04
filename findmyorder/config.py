@@ -19,6 +19,7 @@ settings = Dynaconf(
         'talky_settings.toml',
         'settings.toml',
         '.secrets.toml'
+        ".op.toml",
     ],
     # Load the.env file
     load_dotenv=True,
