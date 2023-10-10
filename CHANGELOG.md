@@ -2,6 +2,34 @@
 
 
 
+## v1.8.2 (2023-10-10)
+
+### :fire:
+
+* :fire: Remove overgeneral-exceptions from pyproject.toml ([`d644e15`](https://github.com/mraniki/findmyorder/commit/d644e15080e7b4a0baae0f52c20a3f0f8e037391))
+
+### Other
+
+* Merge pull request #310 from mraniki/dev
+
+♻️ Remove unnecessary lines in pyproject.toml file ([`ddf87c7`](https://github.com/mraniki/findmyorder/commit/ddf87c7070526dc5dca0c25457b925e98e1fff16))
+
+* Remove unnecessary lines in pyproject.toml file ([`c31a28b`](https://github.com/mraniki/findmyorder/commit/c31a28bfdfc0a6f7bf0c219613bd7ccd0fa4e05e))
+
+* Merge pull request #309 from mraniki/dev
+
+Add automatic merge on approval rule ([`27bb172`](https://github.com/mraniki/findmyorder/commit/27bb17250ea96092d227c75b5e188eb1dee42154))
+
+* Add automatic merge on approval rule
+
+- Added a new file `.github/.mergify.yml` with rules for automatic mergi
+ng of pull requests on approval. The rules include conditions for
+succes
+sful build and test checks, as well as no check failures. The merge
+meth
+od used is the default merge. ([`b64f6d4`](https://github.com/mraniki/findmyorder/commit/b64f6d4f6f4afe9945b7b3f36a6f940d60083567))
+
+
 ## v1.8.1 (2023-10-10)
 
 ### Other
