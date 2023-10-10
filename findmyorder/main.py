@@ -4,7 +4,6 @@
 """
 from datetime import datetime
 
-from loguru import logger
 from pyparsing import (
     Combine,
     Optional,
@@ -43,12 +42,17 @@ class FindMyOrder:
     def __init__(
         self,
     ):
-        self.logger = logger
+        """
+        Initializes the class instance.
 
-    async def search(
-        self,
-        my_string: str,
-    ) -> bool:
+        Args:
+            self (ClassName): The class instance.
+
+        Returns:
+            None
+        """
+
+    async def search(self, my_string: str) -> bool:
         """
         Search an order.
 
