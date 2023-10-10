@@ -30,8 +30,10 @@ pyparsing = "^3.0.9"
 
 
 [tool.poetry.group.dev.dependencies]
-python-semantic-release = "^8.0.7"
-ruff = "*"
+python-semantic-release = ">=8.0.8"
+ruff = "^0.0.292"
+black = "^23.3.0"
+pre-commit = "^3.3.1"
 
 [tool.ruff]
 select = [
@@ -43,8 +45,7 @@ exclude = [
   ".github/*",
   "docs/*",
 ]
-ignore = ["E401","F401","F811"]
-format = "github"
+
 fixable = ["ALL"]
 
 [tool.pylint.exceptions]
@@ -64,7 +65,7 @@ pytest = "^7.0"
 pytest-cov = "^4.1"
 pytest-asyncio = "^0.21.0"
 pytest-mock = "^3.11.1"
-pytest-loguru = "^0.2.0"
+pytest-loguru = "^0.3.0"
 
 
 
@@ -97,6 +98,10 @@ omit = [
     "*/config.py"
 ]
  
+[tool.bandit]
+exclude_dirs = ["tests","docs"]
+skips = ["B101","B104"]
+
 [tool.semantic_release]
 upload_to_vcs_release = true
 version_variables = ["findmyorder/__init__.py:__version__"]

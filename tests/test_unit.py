@@ -34,6 +34,28 @@ def short_order():
 
 
 @pytest.fixture
+def order_2():
+    """return order 2"""
+    return """
+    📊 FUTURES Exchanges: Binance, ByBit USDT
+
+    #AAVEUSDT
+
+    🟢LONG ENTRY :- 65.20 - 63.70
+
+    Leverage: Cross (2X)
+
+    👇TAKE PROFIT
+
+    1) 65.70
+    2) 66.20
+    3) 66.70
+
+    Stop Loss : - 62.00
+"""
+
+
+@pytest.fixture
 def result_order():
     """return standard expected results"""
     return {
@@ -217,3 +239,12 @@ async def test_mapping_order(fmo, crypto_short_order, result_crypto_order):
     assert settings.instrument_mapping is True
     assert result["instrument"] == result_crypto_order["instrument"]
     assert type(result["timestamp"] is datetime)
+
+
+@pytest.mark.asyncio
+async def test_identify_order2(fmo, order_2):
+    """Identify Testing"""
+    result = await fmo.identify_order(order_2)
+    assert result is not None
+    # result = await fmo.get_order(order_2)
+    # assert result["action"] == "LONG"
