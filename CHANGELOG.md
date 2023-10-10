@@ -2,6 +2,64 @@
 
 
 
+## v1.8.1 (2023-10-10)
+
+### Other
+
+* Merge pull request #308 from mraniki/dev
+
+♻️ pyproject update ✅ Unit Test ([`f763ebc`](https://github.com/mraniki/findmyorder/commit/f763ebc2b85ee986a48793b02ff03dd252253ec0))
+
+* Merge pull request #307 from mraniki/renovate/ruff-0.x
+
+⬆️ 🛠️(deps): update dependency ruff to ^0.0.292 ([`81745c0`](https://github.com/mraniki/findmyorder/commit/81745c0a229cc1721bdf487f381b9449a107983f))
+
+* Merge pull request #306 from mraniki/renovate/pytest-loguru-0.x
+
+⬆️ 🛠️(deps): update dependency pytest-loguru to ^0.3.0 ([`3882016`](https://github.com/mraniki/findmyorder/commit/38820163e2bb975d6b2501aae57f164866572009))
+
+### Update
+
+* Update pyproject.toml file
+
+- Remove ignore line
+- Add format line ([`2e25cec`](https://github.com/mraniki/findmyorder/commit/2e25cec092aeb66de6abcba9028b6080dbd678fe))
+
+### ♻️
+
+* ♻️ logger ([`f644595`](https://github.com/mraniki/findmyorder/commit/f644595fcbe5b452d1c27999621b12a1526ab843))
+
+* ♻️ pyproject update ([`f7d214f`](https://github.com/mraniki/findmyorder/commit/f7d214feccfafa3ccc5474c221973d441abedbbd))
+
+### ✅
+
+* ✅ Unit Test ([`d8ebbb3`](https://github.com/mraniki/findmyorder/commit/d8ebbb3b9f02240495cd9aae2d980b977c34391b))
+
+* ✅ Unit Test ([`157cd7e`](https://github.com/mraniki/findmyorder/commit/157cd7ec0e0a358b0f5cfc6d66c678e2b80f5410))
+
+* ✅ Unit Test for cornix type order to be parsed ([`05ecc22`](https://github.com/mraniki/findmyorder/commit/05ecc229c414a0e373e003ef089328a013a24b53))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.0.292 ([`76cef7a`](https://github.com/mraniki/findmyorder/commit/76cef7a80b4fafe435e706cbdf466238fc5485a4))
+
+* ⬆️ 🛠️(deps): update dependency pytest-loguru to ^0.3.0 ([`1ab6ff3`](https://github.com/mraniki/findmyorder/commit/1ab6ff32e76d366b4d35a4f82d84b0356cf1fbbe))
+
+### 👷
+
+* 👷 CI Change with precommit ([`a92e84b`](https://github.com/mraniki/findmyorder/commit/a92e84b67ce6436744734cd67a031eb97f9a2ffc))
+
+### 📝
+
+* 📝 ([`d7761b8`](https://github.com/mraniki/findmyorder/commit/d7761b8fa159c9570be8c5a69e297a40334f9729))
+
+### 🔒
+
+* 🔒 ([`7e4a893`](https://github.com/mraniki/findmyorder/commit/7e4a8932effd7a62716acf58e2c188b8c232af81))
+
+* 🔒 bandit ([`2be75dc`](https://github.com/mraniki/findmyorder/commit/2be75dc3a5c1134d5cd0a484391c4d3fef651b7b))
+
+
 ## v1.8.0 (2023-10-04)
 
 ### Other
