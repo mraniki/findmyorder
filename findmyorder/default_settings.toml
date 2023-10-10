@@ -55,7 +55,7 @@ mapping = [
 
 # Instrument to be ignored
 # when generating an order
-ignore_instrument = "US500 USTEC DOGE"
+ignore_instrument = "US500 DOGE"
 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###
