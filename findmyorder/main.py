@@ -146,12 +146,8 @@ class FindMyOrder:
 
         """
         try:
-            matched_grammar_class = identify_grammar(my_string)
-
-            if matched_grammar_class:
-                order = matched_grammar_class.define_grammar(my_string)
-                return order
-
+            if matched_grammar_class := identify_grammar(my_string):
+                return matched_grammar_class.define_grammar(my_string)
         except Exception as error:
             logger.error(error)
             return error
