@@ -81,6 +81,68 @@ class FindMyOrder:
         """
         return f"{__class__.__name__} {__version__}\n"
 
+    async def identify_order(
+        self,
+        my_string: str,
+    ) -> dict:
+        """
+        Identify an order and return a dictionary
+        with the order parameters
+
+        Args:
+            my_string (str): Message
+
+        Returns:
+            dict
+
+        """
+        try:
+            action = (
+                one_of(settings.action_identifier, caseless=True)
+                .set_results_name("action")
+                .set_parse_action(pyparsing_common.upcase_tokens)
+            )
+            instrument = Word(alphas).set_results_name("instrument")
+            stop_loss = Combine(
+                Suppress(settings.stop_loss_identifier) + Word(nums)
+            ).set_results_name("stop_loss")
+            take_profit = Combine(
+                Suppress(settings.take_profit_identifier) + Word(nums)
+            ).set_results_name("take_profit")
+            quantity = Combine(
+                Suppress(settings.quantity_identifier)
+                + Word(nums)
+                + Optional(Suppress("%"))
+            ).set_results_name("quantity")
+            order_type = one_of(
+                settings.order_type_identifier, caseless=True
+            ).set_results_name("order_type")
+            leverage_type = one_of(
+                settings.leverage_type_identifier, caseless=True
+            ).set_results_name("leverage_type")
+            comment = Combine(
+                Suppress(settings.comment_identifier) + Word(alphas)
+            ).set_results_name("comment")
+
+            order_grammar = (
+                action("action")
+                + Optional(instrument, default=None)
+                + Optional(stop_loss, default=settings.stop_loss)
+                + Optional(take_profit, default=settings.take_profit)
+                + Optional(quantity, default=settings.quantity)
+                + Optional(order_type, default=None)
+                + Optional(leverage_type, default=None)
+                + Optional(comment, default=None)
+            )
+
+            order = order_grammar.parse_string(instring=my_string, parse_all=False)
+            logger.debug("Order parsed {}", order)
+            return order.asDict()
+
+        except Exception as error:
+            logger.error(error)
+            return error
+
     async def get_order(
         self,
         msg: str,
@@ -129,102 +191,3 @@ class FindMyOrder:
                 break
         logger.debug("Instrument symbol changed", order)
         return order
-
-    async def identify_order(
-        self,
-        my_string: str,
-    ) -> dict:
-        """
-        Identify an order and return a dictionary
-        with the order parameters
-
-        Args:
-            my_string (str): Message
-
-        Returns:
-            dict
-
-        """
-        try:
-            matched_grammar_class = identify_grammar(my_string)
-
-            if matched_grammar_class:
-                order = matched_grammar_class.define_grammar(my_string)
-                return order
-
-        except Exception as error:
-            logger.error(error)
-            return error
-
-
-class Grammar1:
-    @staticmethod
-    def define_grammar(my_string: str):
-        action = (
-            one_of(settings.action_identifier, caseless=True)
-            .set_results_name("action")
-            .set_parse_action(pyparsing_common.upcase_tokens)
-        )
-        instrument = Word(alphas).set_results_name("instrument")
-        stop_loss = Combine(
-            Suppress(settings.stop_loss_identifier) + Word(nums)
-        ).set_results_name("stop_loss")
-        take_profit = Combine(
-            Suppress(settings.take_profit_identifier) + Word(nums)
-        ).set_results_name("take_profit")
-        quantity = Combine(
-            Suppress(settings.quantity_identifier)
-            + Word(nums)
-            + Optional(Suppress("%"))
-        ).set_results_name("quantity")
-        order_type = one_of(
-            settings.order_type_identifier, caseless=True
-        ).set_results_name("order_type")
-        leverage_type = one_of(
-            settings.leverage_type_identifier, caseless=True
-        ).set_results_name("leverage_type")
-        comment = Combine(
-            Suppress(settings.comment_identifier) + Word(alphas)
-        ).set_results_name("comment")
-
-        order_grammar = (
-            action("action")
-            + Optional(instrument, default=None)
-            + Optional(stop_loss, default=settings.stop_loss)
-            + Optional(take_profit, default=settings.take_profit)
-            + Optional(quantity, default=settings.quantity)
-            + Optional(order_type, default=None)
-            + Optional(leverage_type, default=None)
-            + Optional(comment, default=None)
-        )
-
-        order = order_grammar.parse_string(instring=my_string, parse_all=False)
-        logger.debug("Order parsed {}", order)
-        return order.asDict()
-
-
-class Grammar2:
-    @staticmethod
-    def define_grammar():
-        pass
-
-
-class Grammar3:
-    @staticmethod
-    def define_grammar():
-        pass
-
-
-def identify_grammar(my_string: str):
-    grammars = [Grammar1, Grammar2, Grammar3]
-
-    for grammar_class in grammars:
-        grammar = grammar_class.define_grammar()
-        try:
-            grammar.parse_string(instring=my_string, parse_all=False)
-            return grammar_class
-        except Exception:
-            logger.debug("Grammar {} not matched", grammar_class)
-            continue
-
-    return None
