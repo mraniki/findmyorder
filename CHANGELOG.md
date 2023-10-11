@@ -2,6 +2,29 @@
 
 
 
+## v1.9.0 (2023-10-11)
+
+### Feat
+
+* ✨ feature. New grammar support ([`63ebdf3`](https://github.com/mraniki/findmyorder/commit/63ebdf366f92f154d5f19f438f9afac435f942d4))
+
+### Other
+
+* Merge pull request #315 from mraniki/revert-313-dev
+
+Revert &#34;New grammar support&#34; ([`6fb90ea`](https://github.com/mraniki/findmyorder/commit/6fb90ea0cc9bab9fbbb08dd553338ee42098c596))
+
+* Revert &#34;New grammar support&#34; ([`cdc2dda`](https://github.com/mraniki/findmyorder/commit/cdc2dda585b8a4d88aa92f4f9772b1136ada26c3))
+
+* Merge pull request #313 from mraniki/dev
+
+New grammar support ([`9818573`](https://github.com/mraniki/findmyorder/commit/981857319f0736dfa10726d48314f7c472a3ab28))
+
+### ✅
+
+* ✅ Unit Test ([`276c8f4`](https://github.com/mraniki/findmyorder/commit/276c8f496903aadb3d907dedc4dd3745bf6e35ce))
+
+
 ## v1.8.4 (2023-10-11)
 
 ### Other
