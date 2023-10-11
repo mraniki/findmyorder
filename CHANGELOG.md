@@ -2,6 +2,19 @@
 
 
 
+## v1.8.4 (2023-10-11)
+
+### Other
+
+* Merge pull request #312 from mraniki/dev
+
+👷 CI Change ([`4cd3d1a`](https://github.com/mraniki/findmyorder/commit/4cd3d1ab4111901b8e3456d2e13272b994592004))
+
+### 👷
+
+* 👷 CI Change ([`62143f5`](https://github.com/mraniki/findmyorder/commit/62143f528e903f4c1a599ca75c7fbc735a6c249c))
+
+
 ## v1.8.3 (2023-10-11)
 
 ### Other
