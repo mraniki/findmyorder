@@ -2,6 +2,35 @@
 
 
 
+## v1.9.1 (2023-10-11)
+
+### Other
+
+* Merge pull request #317 from mraniki/dev
+
+⚡ new grammar ([`90cc0f6`](https://github.com/mraniki/findmyorder/commit/90cc0f605ee9db333da8acdc5ad29f7005fc62b4))
+
+* Merge pull request #316 from mraniki/mergify/mraniki/config-update
+
+ci(Mergify): configuration update ([`1e3aed6`](https://github.com/mraniki/findmyorder/commit/1e3aed6226f1721524f5a12a4ba00e0cb51ce17a))
+
+* ci(Mergify): configuration update
+
+Signed-off-by: null &lt;null&gt; ([`591bdb4`](https://github.com/mraniki/findmyorder/commit/591bdb4d492a41db86345e930ecd3f543257e931))
+
+### ♻️
+
+* ♻️ ([`db7abf4`](https://github.com/mraniki/findmyorder/commit/db7abf4eb1e915fc902e39f38bcd29924ad96098))
+
+### ⚡
+
+* ⚡ new grammar ([`2bbaedb`](https://github.com/mraniki/findmyorder/commit/2bbaedbdd96243a032a4f048e8306abeb9b2dd6f))
+
+### 👷
+
+* 👷 CI Change ([`2b3c07e`](https://github.com/mraniki/findmyorder/commit/2b3c07eb429302d193ba3c66b3e78920b94dc3fb))
+
+
 ## v1.9.0 (2023-10-11)
 
 ### Feat
