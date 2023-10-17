@@ -15,6 +15,7 @@ def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
 
 
+
 @pytest.fixture(name="fmo")
 def fmo():
     """return fmo"""
