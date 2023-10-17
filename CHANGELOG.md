@@ -2,6 +2,19 @@
 
 
 
+## v1.9.4 (2023-10-17)
+
+### :white_check_mark:
+
+* :white_check_mark: ([`b1c9979`](https://github.com/mraniki/findmyorder/commit/b1c9979f486534519324fbc4858d0579fb22def3))
+
+### Other
+
+* Merge pull request #323 from mraniki/dev
+
+:white_check_mark: ([`d79f205`](https://github.com/mraniki/findmyorder/commit/d79f20538507c06c98d3b27ce4bb998683ef452f))
+
+
 ## v1.9.3 (2023-10-17)
 
 ### Other
