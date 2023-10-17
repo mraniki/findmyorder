@@ -2,6 +2,19 @@
 
 
 
+## v1.9.3 (2023-10-17)
+
+### Other
+
+* Merge pull request #322 from mraniki/dev
+
+⬆️ dep ([`9151e7a`](https://github.com/mraniki/findmyorder/commit/9151e7abb3571fd206437d82a68935fb56969284))
+
+* Merge pull request #320 from mraniki/renovate/ruff-0.x
+
+⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 ([`23f9442`](https://github.com/mraniki/findmyorder/commit/23f944271ee4ab7a47fc1ef8f77c69c3fdaf0f31))
+
+
 ## v1.9.2 (2023-10-17)
 
 ### Other
@@ -20,6 +33,10 @@
 :construction_worker_man: CI Change ([`a74bbfd`](https://github.com/mraniki/findmyorder/commit/a74bbfd3f352abfc9e7773157f99cc2a17f36ea9))
 
 * :construction_worker_man: CI Change ([`a1d4b06`](https://github.com/mraniki/findmyorder/commit/a1d4b062179bf95bc70bd29732060f1eaa5be028))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 ([`4882ebd`](https://github.com/mraniki/findmyorder/commit/4882ebd9673af3dab1ac00e5f4ae1b6f67b06864))
 
 ### 👷
 
