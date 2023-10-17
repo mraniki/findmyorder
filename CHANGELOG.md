@@ -2,6 +2,30 @@
 
 
 
+## v1.9.2 (2023-10-17)
+
+### Other
+
+* Merge pull request #321 from mraniki/dev
+
+👷 CI Change ([`c046de8`](https://github.com/mraniki/findmyorder/commit/c046de8c9226aa265054f9e568285cb7485c7dd6))
+
+* :construction_worker_man:Remove mergify.yml and update renovate.json
+
+- Remove mergify.yml file
+- Update gitIgnoredAuthors in renovate.json file ([`6575c96`](https://github.com/mraniki/findmyorder/commit/6575c969dd4da01b250ba1365cbc0f55a1bf60b2))
+
+* Merge pull request #319 from mraniki/dev
+
+:construction_worker_man: CI Change ([`a74bbfd`](https://github.com/mraniki/findmyorder/commit/a74bbfd3f352abfc9e7773157f99cc2a17f36ea9))
+
+* :construction_worker_man: CI Change ([`a1d4b06`](https://github.com/mraniki/findmyorder/commit/a1d4b062179bf95bc70bd29732060f1eaa5be028))
+
+### 👷
+
+* 👷 CI Change ([`cae763a`](https://github.com/mraniki/findmyorder/commit/cae763a485a684c4d6ff91bb62f5988248f37caf))
+
+
 ## v1.9.1 (2023-10-11)
 
 ### Other
