@@ -2,6 +2,51 @@
 
 
 
+## v1.9.5 (2023-10-20)
+
+### Other
+
+* Merge pull request #328 from mraniki/dev
+
+Merge pull request #327 from mraniki/main ([`e126bbf`](https://github.com/mraniki/findmyorder/commit/e126bbfff76e8aa6c3fa944e409119ae4b982c83))
+
+* Merge pull request #327 from mraniki/main
+
+Merge pull request #326 from mraniki/dev ([`a50a3ad`](https://github.com/mraniki/findmyorder/commit/a50a3adefd88f947a2ebc11a02ecf8fe6ce42689))
+
+* Merge pull request #326 from mraniki/dev
+
+👷 CI Change ([`531dd17`](https://github.com/mraniki/findmyorder/commit/531dd1787459d89c3a311977eb8c1fe93275da89))
+
+* Merge branch &#39;main&#39; into dev ([`a782d40`](https://github.com/mraniki/findmyorder/commit/a782d40343862390bbc9ce0ff22db0670c009048))
+
+* Merge pull request #325 from mraniki/dev
+
+👷 CI Change ([`3af34e0`](https://github.com/mraniki/findmyorder/commit/3af34e02ca22fc5cb17a9b242d16ef00f422adff))
+
+* Merge branch &#39;main&#39; into dev ([`cbae19b`](https://github.com/mraniki/findmyorder/commit/cbae19bbf3fd6e9ca542656d4d85d515f26da6e5))
+
+* Merge pull request #324 from mraniki/dev
+
+Update README.md ([`d6b14e3`](https://github.com/mraniki/findmyorder/commit/d6b14e3b81093eed08713fa510fb2de217a9be5a))
+
+### Update
+
+* Update README.md ([`c3d2215`](https://github.com/mraniki/findmyorder/commit/c3d2215f1f6e21cfb46d13ea444b6f127ab2d1fd))
+
+* Update README.md ([`0e7c0a1`](https://github.com/mraniki/findmyorder/commit/0e7c0a1d4d9f9fb1bb097f1ddbb3f4a304c4d464))
+
+### 👷
+
+* 👷 CI Change ([`4ae3f21`](https://github.com/mraniki/findmyorder/commit/4ae3f216a44129c591356e28176de2a0ce88dc8d))
+
+* 👷 CI Change ([`4a4ef77`](https://github.com/mraniki/findmyorder/commit/4a4ef778bc344a7973056bf94cead4c14995692a))
+
+* 👷 CI Change ([`8247e91`](https://github.com/mraniki/findmyorder/commit/8247e9137ce00a1b779242e5f578488c3b325368))
+
+* 👷 CI Change ([`bf5d7a9`](https://github.com/mraniki/findmyorder/commit/bf5d7a957ffb63fba5afe1c6ccb607af59e36304))
+
+
 ## v1.9.4 (2023-10-17)
 
 ### :white_check_mark:
