@@ -2,6 +2,45 @@
 
 
 
+## v1.9.6 (2023-10-27)
+
+### Other
+
+* Merge pull request #332 from mraniki/dev
+
+⬆️ 🤖 - Auto Release ([`7e0d0fe`](https://github.com/mraniki/findmyorder/commit/7e0d0feefe167969a7baf0ef6d1abf113911dbca))
+
+* Merge branch &#39;main&#39; into dev ([`3de086d`](https://github.com/mraniki/findmyorder/commit/3de086d3f094c348ba31c95959cf3b95a9ee0830))
+
+* Merge pull request #331 from mraniki/dev
+
+⬆️ 🤖 - Auto Release ([`d9c4b77`](https://github.com/mraniki/findmyorder/commit/d9c4b772f1d60641daf0a5304e5a72e5ddd9a782))
+
+* Auto ([`00c4656`](https://github.com/mraniki/findmyorder/commit/00c465674d09652721bf8d34e67012e8e2dbff01))
+
+* Merge pull request #330 from mraniki/dev
+
+⬆️ 🤖 - Auto Release ([`4627b1d`](https://github.com/mraniki/findmyorder/commit/4627b1d143f187b4ea9634ea6486ccf5b9195491))
+
+* Merge branch &#39;main&#39; into dev ([`a873f55`](https://github.com/mraniki/findmyorder/commit/a873f555b7ee43210b4f24ef61821604cb0f1816))
+
+* Auto ([`f5fb440`](https://github.com/mraniki/findmyorder/commit/f5fb440a3b6efa57fb138d394aa7ea1f01e5bae4))
+
+* Merge pull request #329 from mraniki/dev
+
+⬆️ 🤖 - Auto Release ([`2e2da92`](https://github.com/mraniki/findmyorder/commit/2e2da924a565c5898873035b035d5b3dd7313b27))
+
+* Auto ([`b39b285`](https://github.com/mraniki/findmyorder/commit/b39b28532a72a3b00b09de92b5de1c3d4f3660d0))
+
+### Update
+
+* ⬆️ Update Requirements and Version ([`47b7ab7`](https://github.com/mraniki/findmyorder/commit/47b7ab7ddab66dd66f780646665c498b371776ab))
+
+### 🔧
+
+* 🔧 ([`f511a48`](https://github.com/mraniki/findmyorder/commit/f511a4823f4858213d8e4d08186c3ec3a90cb04a))
+
+
 ## v1.9.5 (2023-10-20)
 
 ### Other
