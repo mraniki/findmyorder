@@ -2,6 +2,19 @@
 
 
 
+## v1.9.7 (2023-10-28)
+
+### Other
+
+* Merge pull request #333 from mraniki/dev
+
+⬆️ 🤖 - Auto Release ([`cb4a00f`](https://github.com/mraniki/findmyorder/commit/cb4a00f51611ee310ebf66bc2939e7c65f2c9cc2))
+
+### Update
+
+* ⬆️ Update Requirements and Version ([`85f723b`](https://github.com/mraniki/findmyorder/commit/85f723bdbd0bc57127226fa1933652d9c831f1c0))
+
+
 ## v1.9.6 (2023-10-27)
 
 ### Other
