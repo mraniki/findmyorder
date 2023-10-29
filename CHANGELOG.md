@@ -2,6 +2,25 @@
 
 
 
+## v1.9.8 (2023-10-29)
+
+### Other
+
+* Merge pull request #335 from mraniki/dev
+
+⬆️ 🤖 - Learn to pause  or nothing worthwhile can catch up to you ([`e4c2d80`](https://github.com/mraniki/findmyorder/commit/e4c2d8068a7eea4f350587eeccdb5f69bc321974))
+
+* Merge pull request #334 from mraniki/dev
+
+⬆️ 🤖 - This life is yours  Some of it was given to you the rest you made yourself ([`0be4a64`](https://github.com/mraniki/findmyorder/commit/0be4a64bb3fbb4ec0e1532a7d536b8df4f815f5b))
+
+* Refactor GitHub workflow file ([`51caaa8`](https://github.com/mraniki/findmyorder/commit/51caaa811dbcebf3eee8b675b8dd80a9c7816741))
+
+### 👷
+
+* 👷 CI Change ([`3132d7b`](https://github.com/mraniki/findmyorder/commit/3132d7bfb8edcf8700315d0d86a786211e070327))
+
+
 ## v1.9.7 (2023-10-28)
 
 ### Other
