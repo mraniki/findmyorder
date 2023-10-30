@@ -2,6 +2,27 @@
 
 
 
+## v1.9.9 (2023-10-30)
+
+### Other
+
+* Merge pull request #337 from mraniki/dev
+
+⬆️ 🤖 - You will gain money by a fattening action ([`70ede2c`](https://github.com/mraniki/findmyorder/commit/70ede2ca6a44a484a5082f76219eb9a962c253b6))
+
+* Merge pull request #336 from mraniki/dev
+
+⬆️ 🤖 - If more of us valued food and cheer and song above hoarded gold it would ([`0b08465`](https://github.com/mraniki/findmyorder/commit/0b08465f378a7d40995e040251e31782f7141c98))
+
+### ♻️
+
+* ♻️ ([`8b671b3`](https://github.com/mraniki/findmyorder/commit/8b671b3fa4fe21ad95c7e1529033ee8fc9625e51))
+
+### 👷
+
+* 👷 CI Change ([`a23a135`](https://github.com/mraniki/findmyorder/commit/a23a135ef2ebc57fae11e0a3b007de575c0cf388))
+
+
 ## v1.9.8 (2023-10-29)
 
 ### Other
