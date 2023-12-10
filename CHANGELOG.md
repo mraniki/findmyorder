@@ -2,6 +2,37 @@
 
 
 
+## v1.9.10 (2023-12-10)
+
+### Other
+
+* Merge pull request #344 from mraniki/dev
+
+⬆️ 🤖 - You will be married within a year and divorced within two ([`2765492`](https://github.com/mraniki/findmyorder/commit/27654926222de8c1a37787c94b1056efde08c512))
+
+* Merge pull request #341 from mraniki/dev
+
+⬆️ 🤖 - You are dishonest but never to the point of hurting a friend ([`dd191ef`](https://github.com/mraniki/findmyorder/commit/dd191ef237e2f5595f93e7439d54f721b26d787c))
+
+* Merge pull request #338 from mraniki/renovate/pytest-asyncio-0.x
+
+⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.22.0 ([`9177697`](https://github.com/mraniki/findmyorder/commit/91776977e2f50d1cc7ed68d8ec693942bfa4a9d5))
+
+### Update
+
+* Update pyproject.toml ([`1bf9a3d`](https://github.com/mraniki/findmyorder/commit/1bf9a3def5cf4d3213d20a93c506eceff7777130))
+
+### ♻️
+
+* ♻️ simplify example ([`af2f616`](https://github.com/mraniki/findmyorder/commit/af2f61653355b864bc28bc2205f05bdebc890348))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.23.0 ([`c8b5746`](https://github.com/mraniki/findmyorder/commit/c8b574637ef21403ec5a9e2ea5c191591c3d5eab))
+
+* ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.22.0 ([`6907ec1`](https://github.com/mraniki/findmyorder/commit/6907ec1fc38e9fa6ccb5ba289b8f1b3133e2ba81))
+
+
 ## v1.9.9 (2023-10-30)
 
 ### Other
