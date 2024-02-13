@@ -2,6 +2,19 @@
 
 
 
+## v1.9.11 (2024-02-13)
+
+### Other
+
+* Merge pull request #351 from mraniki/dev
+
+⬆️ 🤖 - You can create your own opportunities this week  Blackmail a senior executive ([`ed41690`](https://github.com/mraniki/findmyorder/commit/ed41690625116867a90670d66f9d8bbe8ef9956f))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.2.0 ([`8bac211`](https://github.com/mraniki/findmyorder/commit/8bac21171280d0bf093c4d1139ad68768f0fffad))
+
+
 ## v1.9.10 (2023-12-10)
 
 ### Other
