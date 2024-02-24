@@ -2,6 +2,19 @@
 
 
 
+## v1.9.12 (2024-02-24)
+
+### Other
+
+* Merge pull request #352 from mraniki/dev
+
+⬆️ 🤖 - Live in a world of your own but always welcome visitors ([`ccec625`](https://github.com/mraniki/findmyorder/commit/ccec625b5e416a44597dbc1303aa7c3908e92eea))
+
+### 🙈
+
+* 🙈 ([`fb5134a`](https://github.com/mraniki/findmyorder/commit/fb5134a889297b21fa6fca494b538e70bec1d1d8))
+
+
 ## v1.9.11 (2024-02-13)
 
 ### Other
