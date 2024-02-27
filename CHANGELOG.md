@@ -2,6 +2,19 @@
 
 
 
+## v1.9.13 (2024-02-27)
+
+### Other
+
+* Merge pull request #355 from mraniki/dev
+
+⬆️ ([`f536ffc`](https://github.com/mraniki/findmyorder/commit/f536ffc9faffcf13b69475e5d8b4c544adbc708b))
+
+### ⬆️
+
+* ⬆️ ([`0f230b9`](https://github.com/mraniki/findmyorder/commit/0f230b942318881702ff6dc498c0344375727ed8))
+
+
 ## v1.9.12 (2024-02-24)
 
 ### Other
