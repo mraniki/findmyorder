@@ -2,6 +2,19 @@
 
 
 
+## v1.9.14 (2024-02-28)
+
+### Other
+
+* Merge pull request #356 from mraniki/dev
+
+⬆️ 🤖 - You are farsighted a good planner an ardent lover and a faithful friend ([`f77370a`](https://github.com/mraniki/findmyorder/commit/f77370a146407191dd6ad601fd0783cdb0a259c0))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency black to v24 ([`6a6c0a9`](https://github.com/mraniki/findmyorder/commit/6a6c0a93431b2d55c79469dfb67bc0e886394d0a))
+
+
 ## v1.9.13 (2024-02-27)
 
 ### Other
