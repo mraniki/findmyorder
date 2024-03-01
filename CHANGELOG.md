@@ -2,6 +2,19 @@
 
 
 
+## v1.9.15 (2024-03-01)
+
+### Other
+
+* Merge pull request #358 from mraniki/dev
+
+⬆️ 🤖 - Are you sure the back door is locked ([`3793e08`](https://github.com/mraniki/findmyorder/commit/3793e080ca518461feed1b8e9e01a55378f209aa))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.3.0 ([`36d51db`](https://github.com/mraniki/findmyorder/commit/36d51dbad1a5430582da6f55f2b8cc29b7f6802a))
+
+
 ## v1.9.14 (2024-02-28)
 
 ### Other
