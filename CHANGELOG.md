@@ -2,6 +2,19 @@
 
 
 
+## v1.9.16 (2024-03-25)
+
+### Other
+
+* Merge pull request #360 from mraniki/dev
+
+⬆️ 🤖 - You should emulate your heros but dont carry it too far  Especially ([`418de53`](https://github.com/mraniki/findmyorder/commit/418de53dcbb3be87d88b76b51b1fa3bdf8b966f8))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency pytest-loguru to ^0.4.0 ([`9b49ae6`](https://github.com/mraniki/findmyorder/commit/9b49ae61b444beb3fc8bf75c308c1dc7022325eb))
+
+
 ## v1.9.15 (2024-03-01)
 
 ### Other
