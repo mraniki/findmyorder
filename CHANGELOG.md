@@ -2,6 +2,19 @@
 
 
 
+## v1.9.17 (2024-03-26)
+
+### Other
+
+* Merge pull request #362 from mraniki/dev
+
+⬆️ 🤖 - The human race is a race of cowards and I am not only marching in that ([`9dc3f4b`](https://github.com/mraniki/findmyorder/commit/9dc3f4b483f592b39601a352963288430d774803))
+
+### 🚨
+
+* 🚨 Linter setup update ([`952349f`](https://github.com/mraniki/findmyorder/commit/952349fe16f32d19c04e7f8410b12e153335f6fc))
+
+
 ## v1.9.16 (2024-03-25)
 
 ### Other
