@@ -2,6 +2,13 @@
 
 
 
+## v1.9.18 (2024-03-28)
+
+### Update
+
+* Update readthedocs.yaml with new poetry installation method ([`6610909`](https://github.com/mraniki/findmyorder/commit/66109091f147430199bb4f8f8a20bbf4e79df814))
+
+
 ## v1.9.17 (2024-03-26)
 
 ### Other
