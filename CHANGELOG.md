@@ -2,6 +2,19 @@
 
 
 
+## v1.10.0 (2024-04-16)
+
+### Other
+
+* Merge pull request #364 from mraniki/dev
+
+✨ update main.py to support instrument with number like US500 ([`8f2e822`](https://github.com/mraniki/findmyorder/commit/8f2e8229022a32d25757c354c591bb78c5f8987c))
+
+### ✨
+
+* ✨ update main.py to support instrument with number like US500 ([`6a71565`](https://github.com/mraniki/findmyorder/commit/6a71565d51e6c2f71952754762c47a9b36b97ce8))
+
+
 ## v1.9.19 (2024-03-29)
 
 ### Other
