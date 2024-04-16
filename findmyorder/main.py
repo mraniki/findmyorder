@@ -103,7 +103,7 @@ class FindMyOrder:
                 .set_results_name("action")
                 .set_parse_action(pyparsing_common.upcase_tokens)
             )
-            instrument = Word(alphas).set_results_name("instrument")
+            instrument = Word(alphas + nums).set_results_name("instrument")
             stop_loss = Combine(
                 Suppress(settings.stop_loss_identifier) + Word(nums)
             ).set_results_name("stop_loss")
