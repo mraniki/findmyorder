@@ -2,6 +2,19 @@
 
 
 
+## v1.10.1 (2024-05-14)
+
+### Other
+
+* Merge pull request #371 from mraniki/dev
+
+⬆️ 🤖 - Small things make base men proud ([`4c1b154`](https://github.com/mraniki/findmyorder/commit/4c1b154e1d4ccf2b306ffef0efec30e996b6cd34))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.4.0 ([`ef08cdc`](https://github.com/mraniki/findmyorder/commit/ef08cdccc6b956a46ea8b2b3b135a19ca04ebf5c))
+
+
 ## v1.10.0 (2024-04-16)
 
 ### Other
