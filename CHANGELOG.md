@@ -2,6 +2,31 @@
 
 
 
+## v1.10.2 (2024-05-19)
+
+### Other
+
+* Merge pull request #372 from mraniki/dev
+
+⬆️ 🛠️ ([`6287c9e`](https://github.com/mraniki/findmyorder/commit/6287c9e144e2a6a7c3fcc91b7f82ee256b48b057))
+
+* Merge pull request #369 from mraniki/renovate/pytest-cov-5.x
+
+⬆️ 🛠️(deps): update dependency pytest-cov to v5 ([`9bede2b`](https://github.com/mraniki/findmyorder/commit/9bede2b7d24455a6b8f714e8e83c440e9e0255df))
+
+* Merge branch &#39;dev&#39; into renovate/pytest-cov-5.x ([`dacede1`](https://github.com/mraniki/findmyorder/commit/dacede14bd41abc7da9b53336cc779178124e58b))
+
+* Merge pull request #365 from mraniki/renovate/sphinx-7.x
+
+⬆️ 🛠️(deps): update dependency sphinx to v7.3.7 ([`2faf633`](https://github.com/mraniki/findmyorder/commit/2faf633844b64aa9b71edc37a69b85bef566de47))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency pytest-cov to v5 ([`9a3ffd0`](https://github.com/mraniki/findmyorder/commit/9a3ffd067242832c53b5b4ceb2562bb0f903fea0))
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.3.7 ([`57efd44`](https://github.com/mraniki/findmyorder/commit/57efd445b2abcb8a134a06311be4a79f1d2ef920))
+
+
 ## v1.10.1 (2024-05-14)
 
 ### Other
