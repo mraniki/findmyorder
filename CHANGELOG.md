@@ -2,6 +2,21 @@
 
 
 
+## v1.10.3 (2024-06-15)
+
+### Other
+
+* Merge pull request #376 from mraniki/dev
+
+⬆️ 🤖 - You will be singled out for promotion in your work ([`a4c9a94`](https://github.com/mraniki/findmyorder/commit/a4c9a945629f2477af1cf7fa2b7d8b462ba48dc9))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency sphinx_design to ^0.6.0 ([`76aba04`](https://github.com/mraniki/findmyorder/commit/76aba04e54c5ad43707df9e44a329f67dc53396c))
+
+* ⬆️ 🛠️(deps): update dependency myst_parser to v3 ([`88092ae`](https://github.com/mraniki/findmyorder/commit/88092ae07489efc1d4702377ef14e843ac1e4281))
+
+
 ## v1.10.2 (2024-05-19)
 
 ### Other
