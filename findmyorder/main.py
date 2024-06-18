@@ -67,8 +67,9 @@ class FindMyOrder:
         """
         if my_string:
             string_check = my_string.split()[0].lower()
-            logger.debug("Searching order identifier in {}", string_check)
+            # logger.debug("Searching order identifier in {}", string_check)
             if string_check in settings.action_identifier.lower():
+                logger.debug("Order identifier found in {}", string_check)
                 return True
         return False
 
