@@ -1,7 +1,7 @@
 """
 FindMyOrder Versioning
 """
-__version__ = "1.10.3"
+__version__ = "1.10.4"
 
 from .main import FindMyOrder
 

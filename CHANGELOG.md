@@ -2,6 +2,19 @@
 
 
 
+## v1.10.4 (2024-06-18)
+
+### Other
+
+* Merge pull request #377 from mraniki/dev
+
+🎨 ([`20f2721`](https://github.com/mraniki/findmyorder/commit/20f2721c41e223673a1b8ba81d7a102cc1a3c77d))
+
+### 🎨
+
+* 🎨 ([`40c8a6a`](https://github.com/mraniki/findmyorder/commit/40c8a6a45689e4061082f2c294ed17eddd4975d3))
+
+
 ## v1.10.3 (2024-06-15)
 
 ### Other
