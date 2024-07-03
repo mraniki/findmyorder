@@ -3,19 +3,9 @@
 
 """
 
-from datetime import datetime, timezone
+import importlib
 
 from loguru import logger
-from pyparsing import (
-    Combine,
-    Optional,
-    Suppress,
-    Word,
-    alphas,
-    nums,
-    one_of,
-    pyparsing_common,
-)
 
 from findmyorder import __version__
 
@@ -56,21 +46,106 @@ class FindMyOrder:
 
         self.enabled = settings.findmyorder_enabled
         if not self.enabled:
-            return
-        self.handler = settings.handler or None
-        self.action_identifier = settings.action_identifier
-        self.stop_loss_identifier = settings.stop_loss_identifier
-        self.take_profit_identifier = settings.take_profit_identifier
-        self.quantity_identifier = settings.quantity_identifier
-        self.order_type_identifier = settings.order_type_identifier
-        self.leverage_type_identifier = settings.leverage_type_identifier
-        self.comment_identifier = settings.comment_identifier
-        self.stop_loss = settings.stop_loss
-        self.take_profit = settings.take_profit
-        self.quantity = settings.quantity
-        self.instrument_mapping = settings.instrument_mapping
-        self.mapping = settings.mapping
-        self.ignore_instrument = settings.ignore_instrument
+            logger.info("FindMyOrder is disabled. No Parser will be created.")
+        self.clients = []
+        # Create a client for each client in settings.myllm
+        for name, client_config in settings.findmyorder.items():
+            # Skip template and empty string client names
+            if name in ["", "template"] or not client_config.get("enabled"):
+                continue
+            try:
+                # Create the client
+                logger.debug("Creating client {}", name)
+                client = self._create_client(**client_config, name=name)
+                # If the client has a valid client attribute, append it to the list
+                if client and getattr(client, "client", None):
+                    self.clients.append(client)
+            except Exception as e:
+                # Log the error if the client fails to be created
+                logger.error(f"Failed to create client {name}: {e}")
+
+        # Log the number of clients that were created
+        logger.info(f"Loaded {len(self.clients)} clients")
+        if not self.clients:
+            logger.warning(
+                "No clients were created. Check your settings or disable the module."
+            )
+
+    def _create_client(self, **kwargs):
+        """
+        Create a client based on the given protocol.
+
+        This function takes in a dictionary of keyword arguments, `kwargs`,
+        containing the necessary information to create a client. The required
+        key in `kwargs` is "parser_library", which specifies the parser to use
+        to identify the order. The value of "parser_library" must match one of the
+        libraries supported by findmyorder.
+
+        This function retrieves the class used to create the client based on the
+        value of "parser_library" from the mapping of parser names to client classes
+        stored in `self.client_classes`. If the value of "parser_library" does not
+        match any of the libraries supported, the function logs an error message
+        and returns None.
+
+        If the class used to create the client is found, the function creates a
+        new instance of the class using the keyword arguments in `kwargs` and
+        returns it.
+
+        The function returns a client object based on the specified protocol
+        or None if the library is not supported.
+
+        Parameters:
+            **kwargs (dict): A dictionary of keyword arguments containing the
+            necessary information for creating the client. The required key is
+            "parser_library".
+
+        Returns:
+            A client object based on the specified protocol or None if the
+            library is not supported.
+
+        """
+        library = kwargs.get("parser_library", "standard")
+        client_class = self.client_classes.get(f"{library.capitalize()}Handler")
+
+        if client_class is None:
+            logger.error(f"library {library} not supported")
+            return None
+
+        return client_class(**kwargs)
+
+    def get_all_client_classes(self):
+        """
+        Retrieves all client classes from the `findmyorder.handler` module.
+
+        This function imports the `findmyorder.handler` module and retrieves
+        all the classes defined in it.
+
+        The function returns a dictionary where the keys are the
+        names of the classes and the values are the corresponding
+        class objects.
+
+        Returns:
+            dict: A dictionary containing all the client classes
+            from the `findmyorder.handler` module.
+        """
+        provider_module = importlib.import_module("findmyorder.handler")
+        return {
+            name: cls
+            for name, cls in provider_module.__dict__.items()
+            if isinstance(cls, type)
+        }
+
+    async def get_info(self):
+        """
+        get info about the class
+
+        Returns:
+            str
+
+        """
+        version_info = f"ℹ️ {type(self).__name__} {__version__}\n"
+        client_info = "".join(f"🔎 {client.name}\n" for client in self.clients)
+        return version_info + client_info.strip()
 
     async def search(self, message: str) -> bool:
         """
@@ -83,25 +158,8 @@ class FindMyOrder:
             bool
 
         """
-        if message:
-            order_identifier = message.split()[0].lower()
-            if order_identifier in (
-                action.lower() for action in self.action_identifiers
-            ):
-                logger.debug("Order identifier found in {}", order_identifier)
-                return True
-
-        return False
-
-    async def get_info(self):
-        """
-        get info about the class
-
-        Returns:
-            str
-
-        """
-        return f"{__class__.__name__} {__version__}\n"
+        for client in self.clients:
+            await client.search()
 
     async def identify_order(
         self,
@@ -118,52 +176,22 @@ class FindMyOrder:
             dict
 
         """
-        try:
-            action = (
-                one_of(self.action_identifier, caseless=True)
-                .set_results_name("action")
-                .set_parse_action(pyparsing_common.upcase_tokens)
-            )
-            instrument = Word(alphas + nums).set_results_name("instrument")
-            stop_loss = Combine(
-                Suppress(self.stop_loss_identifier) + Word(nums)
-            ).set_results_name("stop_loss")
-            take_profit = Combine(
-                Suppress(self.take_profit_identifier) + Word(nums)
-            ).set_results_name("take_profit")
-            quantity = Combine(
-                Suppress(self.quantity_identifier)
-                + Word(nums)
-                + Optional(Suppress("%"))
-            ).set_results_name("quantity")
-            order_type = one_of(
-                self.order_type_identifier, caseless=True
-            ).set_results_name("order_type")
-            leverage_type = one_of(
-                self.leverage_type_identifier, caseless=True
-            ).set_results_name("leverage_type")
-            comment = Combine(
-                Suppress(self.comment_identifier) + Word(alphas)
-            ).set_results_name("comment")
+        for client in self.clients:
+            await client.identify_order()
 
-            order_grammar = (
-                action("action")
-                + Optional(instrument, default=None)
-                + Optional(stop_loss, default=self.stop_loss)
-                + Optional(take_profit, default=self.take_profit)
-                + Optional(quantity, default=self.quantity)
-                + Optional(order_type, default=None)
-                + Optional(leverage_type, default=None)
-                + Optional(comment, default=None)
-            )
+    async def replace_instrument(self, order):
+        """
+        Replace instrument by an alternative instrument, if the
+        instrument is not in the mapping, it will be ignored.
 
-            order = order_grammar.parse_string(instring=my_string, parse_all=False)
-            logger.debug("Order parsed {}", order)
-            return order.asDict()
+        Args:
+            order (dict):
 
-        except Exception as error:
-            logger.error(error)
-            return error
+        Returns:
+            dict
+        """
+        for client in self.clients:
+            await client.replace_instrument()
 
     async def get_order(
         self,
@@ -180,38 +208,5 @@ class FindMyOrder:
             dict
 
         """
-        if not await self.search(msg):
-            logger.debug("No order identified")
-            return None
-        order = await self.identify_order(msg)
-        if isinstance(order, dict):
-            order["timestamp"] = datetime.now(timezone.utc).strftime(
-                "%Y-%m-%dT%H:%M:%SZ"
-            )
-        if self.instrument_mapping:
-            logger.debug("mapping")
-            await self.replace_instrument(order)
-        if order["instrument"] in self.ignore_instrument:
-            logger.debug("Ignoring instrument {}", order["instrument"])
-            return
-        logger.debug("Order identified {}", order)
-        return order
-
-    async def replace_instrument(self, order):
-        """
-        Replace instrument by an alternative instrument, if the
-        instrument is not in the mapping, it will be ignored.
-
-        Args:
-            order (dict):
-
-        Returns:
-            dict
-        """
-        instrument = order["instrument"]
-        for item in self.mapping:
-            if item["id"] == instrument:
-                order["instrument"] = item["alt"]
-                break
-        logger.debug("Instrument symbol changed", order)
-        return order
+        for client in self.clients:
+            await client.get_order()
