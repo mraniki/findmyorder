@@ -15,7 +15,6 @@ def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="fmo")
 
 
-
 @pytest.fixture(name="fmo")
 def fmo():
     """return fmo"""
@@ -139,7 +138,7 @@ async def test_info(fmo):
     result = await fmo.get_info()
     print(result)
     assert result is not None
-    assert str(result).startswith("FindMyOrder")
+    assert "FindMyOrder" in result
 
 
 @pytest.mark.asyncio

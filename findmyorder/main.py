@@ -159,39 +159,9 @@ class FindMyOrder:
 
         """
         for client in self.clients:
-            yield await client.search()
-
-    async def identify_order(
-        self,
-        my_string: str,
-    ) -> dict:
-        """
-        Identify an order and return a dictionary
-        with the order parameters
-
-        Args:
-            my_string (str): Message
-
-        Returns:
-            dict
-
-        """
-        for client in self.clients:
-            yield client.identify_order()
-
-    async def replace_instrument(self, order):
-        """
-        Replace instrument by an alternative instrument, if the
-        instrument is not in the mapping, it will be ignored.
-
-        Args:
-            order (dict):
-
-        Returns:
-            dict
-        """
-        for client in self.clients:
-            yield client.replace_instrument()
+            if await client.search(message):
+                return True
+        return False
 
     async def get_order(
         self,
@@ -208,5 +178,8 @@ class FindMyOrder:
             dict
 
         """
+        results = []
         for client in self.clients:
-            yield await client.get_order()
+            result = await client.get_order(msg)
+            results.append(result)
+        return results
