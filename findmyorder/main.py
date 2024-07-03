@@ -159,7 +159,7 @@ class FindMyOrder:
 
         """
         for client in self.clients:
-            await client.search()
+            yield await client.search()
 
     async def identify_order(
         self,
@@ -177,7 +177,7 @@ class FindMyOrder:
 
         """
         for client in self.clients:
-            await client.identify_order()
+            yield client.identify_order()
 
     async def replace_instrument(self, order):
         """
@@ -191,7 +191,7 @@ class FindMyOrder:
             dict
         """
         for client in self.clients:
-            await client.replace_instrument()
+            yield client.replace_instrument()
 
     async def get_order(
         self,
@@ -209,4 +209,4 @@ class FindMyOrder:
 
         """
         for client in self.clients:
-            await client.get_order()
+            yield await client.get_order()
