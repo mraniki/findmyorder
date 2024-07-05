@@ -22,19 +22,37 @@ def fmo():
 
 
 @pytest.fixture
-def order():
-    """return valid order"""
-    return "buy EURUSD sl=200 tp=400 q=2%"
-
-
-@pytest.fixture
-def short_order():
+def order_basic():
     """return valid order"""
     return "Buy EURUSD"
 
 
 @pytest.fixture
-def order_2():
+def order_basic_crypto():
+    """return valid order"""
+    return "Sell ETH"
+
+
+@pytest.fixture
+def ignore_order():
+    """return order to ignore"""
+    return "buy DOGE"
+
+
+@pytest.fixture
+def order_standard():
+    """return valid order"""
+    return "buy EURUSD sl=200 tp=400 q=2%"
+
+
+@pytest.fixture
+def order_standard_crypto():
+    """return valid order"""
+    return "SHORT ETH sl=200 tp=400 q=2%"
+
+
+@pytest.fixture
+def order_format_2():
     """return order 2"""
     return """
     📊 FUTURES Exchanges: Binance, ByBit USDT
@@ -56,6 +74,15 @@ def order_2():
 
 
 @pytest.fixture
+def order_format_3():
+    """return emoji type order"""
+    return """⚡️⚡️ #BNB/USDT ⚡️⚡️
+    Exchanges: ByBit USDT, Binance Futures
+    Signal Type: Regular (Long)
+    Leverage: Cross (20.0X)"""
+
+
+@pytest.fixture
 def result_order():
     """return standard expected results"""
     return {
@@ -72,24 +99,6 @@ def result_order():
 
 
 @pytest.fixture
-def ignore_order():
-    """return order to ignore"""
-    return "buy DOGE"
-
-
-@pytest.fixture
-def crypto_order():
-    """return valid order"""
-    return "SHORT ETH sl=200 tp=400 q=2%"
-
-
-@pytest.fixture
-def crypto_short_order():
-    """return valid order"""
-    return "Sell ETH"
-
-
-@pytest.fixture
 def result_crypto_order():
     """return standard expected results"""
     return {
@@ -103,15 +112,6 @@ def result_crypto_order():
         "comment": None,
         "timestamp": datetime.now(),
     }
-
-
-@pytest.fixture
-def order_with_emoji():
-    """return emoji type order"""
-    return """⚡️⚡️ #BNB/USDT ⚡️⚡️
-    Exchanges: ByBit USDT, Binance Futures
-    Signal Type: Regular (Long)
-    Leverage: Cross (20.0X)"""
 
 
 @pytest.fixture
@@ -143,10 +143,16 @@ async def test_info(fmo):
 
 
 @pytest.mark.asyncio
-async def test_search_valid_order(fmo, crypto_order):
+async def test_search_valid_order(fmo, order_standard_crypto):
     """Search Testing"""
     print(settings)
-    assert await fmo.search(crypto_order) is True
+    assert await fmo.search(order_standard_crypto) is True
+
+
+@pytest.mark.asyncio
+async def test_search_normal_order_variation(fmo, order_standard_crypto):
+    """Search Testing"""
+    assert await fmo.search(order_standard_crypto) is True
 
 
 @pytest.mark.asyncio
@@ -169,21 +175,15 @@ async def test_search_exception(fmo):
 
 
 @pytest.mark.asyncio
-async def test_search_normal_order(fmo, order):
+async def test_search_standard_order(fmo, order_standard):
     """Search Testing"""
-    assert await fmo.search(order) is True
+    assert await fmo.search(order_standard) is True
 
 
 @pytest.mark.asyncio
-async def test_search_normal_order_variation(fmo, crypto_order):
-    """Search Testing"""
-    assert await fmo.search(crypto_order) is True
-
-
-@pytest.mark.asyncio
-async def test_identify_order(fmo, short_order):
+async def test_identify_order(fmo, order_basic):
     """Identify Testing"""
-    result = await fmo.identify_order(short_order)
+    result = await fmo.identify_order(order_basic)
     assert result is not None
 
 
@@ -192,31 +192,29 @@ async def test_identify_order_invalid_input(fmo, invalid_order):
     """Identify Testing"""
     result = await fmo.identify_order(invalid_order)
     print(result)
-    assert result == [None]
-
-
-async def test_valid_get_order(fmo, order, result_order):
-    """get order Testing"""
-    result = await fmo.get_order(order)
-    print(result)
-    assert result["action"] == result_order["action"]
-    assert result["instrument"] == result_order["instrument"]
-    assert int(result["stop_loss"]) == result_order["stop_loss"]
-    assert int(result["take_profit"]) == result_order["take_profit"]
-    assert int(result["quantity"]) == result_order["quantity"]
-    assert result["order_type"] == result_order["order_type"]
-    assert result["leverage_type"] == result_order["leverage_type"]
-    assert result["comment"] == result_order["comment"]
-    assert type(result["timestamp"] is datetime)
+    assert result is None
 
 
 @pytest.mark.asyncio
-async def test_short_valid_get_order(fmo, short_order, result_order):
-    """get order Testing"""
-    result = await fmo.get_order(short_order)
-    assert result["action"] == result_order["action"]
-    assert result["instrument"] == result_order["instrument"]
-    assert int(result["quantity"]) == 1
+async def test_identify_order_2(fmo, order_format_2):
+    """Identify Testing"""
+    result = await fmo.identify_order(order_format_2)
+    assert result is None
+
+
+@pytest.mark.asyncio
+async def test_identify_order_3(fmo, order_format_3):
+    """Identify Testing"""
+    result = await fmo.identify_order(order_format_3)
+    assert result is None
+
+
+@pytest.mark.asyncio
+async def test_replace_instrument(fmo, order_basic_crypto, result_crypto_order):
+    """replace instrument Testing"""
+    result = await fmo.get_order(order_basic_crypto)
+    print(result)
+    assert result["instrument"] == result_crypto_order["instrument"]
     assert type(result["timestamp"] is datetime)
 
 
@@ -235,19 +233,25 @@ async def test_invalid_get_order(fmo, invalid_order):
 
 
 @pytest.mark.asyncio
-async def test_mapping_order(fmo, crypto_short_order, result_crypto_order):
-    """replace instrument Testing"""
-    result = await fmo.get_order(crypto_short_order)
-    print(result)
-    assert settings.instrument_mapping is True
-    assert result["instrument"] == result_crypto_order["instrument"]
+async def test_basic_valid_get_order(fmo, order_basic, result_order):
+    """get order Testing"""
+    result = await fmo.get_order(order_basic)
+    assert result["action"] == result_order["action"]
+    assert result["instrument"] == result_order["instrument"]
+    assert int(result["quantity"]) == 1
     assert type(result["timestamp"] is datetime)
 
 
-@pytest.mark.asyncio
-async def test_identify_order2(fmo, order_2):
-    """Identify Testing"""
-    result = await fmo.identify_order(order_2)
-    assert result is not None
-    # result = await fmo.get_order(order_2)
-    # assert result["action"] == "LONG"
+async def test_standard_get_order(fmo, order_standard, result_order):
+    """get order Testing"""
+    result = await fmo.get_order(order_standard)
+    print(result)
+    assert result["action"] == result_order["action"]
+    assert result["instrument"] == result_order["instrument"]
+    assert int(result["stop_loss"]) == result_order["stop_loss"]
+    assert int(result["take_profit"]) == result_order["take_profit"]
+    assert int(result["quantity"]) == result_order["quantity"]
+    assert result["order_type"] == result_order["order_type"]
+    assert result["leverage_type"] == result_order["leverage_type"]
+    assert result["comment"] == result_order["comment"]
+    assert type(result["timestamp"] is datetime)

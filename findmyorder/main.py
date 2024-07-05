@@ -177,11 +177,8 @@ class FindMyOrder:
             bool
 
         """
-        results = []
         for client in self.clients:
-            result = await client.identify_order(message)
-            results.append(result)
-        return results
+            return await client.identify_order(message)
 
     async def get_order(
         self,
@@ -198,8 +195,5 @@ class FindMyOrder:
             dict
 
         """
-        results = []
         for client in self.clients:
-            result = await client.get_order(message)
-            results.append(result)
-        return results
+            return await client.get_order(message)
