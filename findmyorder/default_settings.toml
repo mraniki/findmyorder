@@ -20,8 +20,8 @@
 findmyorder_enabled = true
 
 [default.findmyorder.template]
+parser_library = "standard"
 enabled = true
-parser = "standard"
 # Keyword to be use to identify an order
 action_identifier = "BUY SELL LONG SHORT"
 # Keyword identifier for stoploss
