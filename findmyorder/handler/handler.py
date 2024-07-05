@@ -25,7 +25,8 @@ class ParserClient:
         self.name = kwargs.get("name", None)
         self.client = None
         self.enabled = kwargs.get("enabled", None)
-        self.action_identifier = kwargs.get("action_identifier", None)
+        self.action_identifiers = kwargs.get("action_identifier", None)
+        self.action_identifiers = self.action_identifiers.lower()
         self.stop_loss_identifier = kwargs.get("stop_loss_identifier", None)
         self.take_profit_identifier = kwargs.get("take_profit_identifier", None)
         self.quantity_identifier = kwargs.get("quantity_identifier", None)
@@ -63,9 +64,10 @@ class ParserClient:
         """
         if message:
             order_identifier = message.split()[0].lower()
-            if order_identifier in (
-                action.lower() for action in self.action_identifiers
-            ):
+            # logger.debug("Order identifier: {}", order_identifier)
+            # logger.debug("Action identifiers: {}", self.action_identifiers)
+            if order_identifier in self.action_identifiers:
+
                 logger.debug("Order identifier found in {}", order_identifier)
                 return True
 

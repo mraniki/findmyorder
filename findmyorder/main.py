@@ -51,7 +51,7 @@ class FindMyOrder:
         self.clients = []
         # Create a client for each client in settings.myllm
         for name, client_config in settings.findmyorder.items():
-            logger.debug("client_config: {}", client_config)
+            # logger.debug("client_config: {}", client_config)
             # Skip template and empty string client names
             if name in ["", "template"] or not client_config.get("enabled"):
                 continue
@@ -60,7 +60,7 @@ class FindMyOrder:
                 logger.debug("Creating FMO parser {}", name)
                 client = self._create_client(**client_config, name=name)
                 # If the client has a valid client attribute, append it to the list
-                if client and getattr(client, "parser", None):
+                if client and getattr(client, "client", None):
                     self.clients.append(client)
             except Exception as e:
                 # Log the error if the client fails to be created
@@ -108,7 +108,7 @@ class FindMyOrder:
         """
         library = kwargs.get("parser_library", "standard")
         client_class = self.client_classes.get(f"{library.capitalize()}Handler")
-        logger.debug(f"Creating {library} client with {kwargs} and {client_class}")
+        # logger.debug(f"Creating {library} client with {kwargs} and {client_class}")
         if client_class is None:
             logger.error(f"library {library} not supported")
             return None
@@ -161,20 +161,38 @@ class FindMyOrder:
 
         """
         for client in self.clients:
+            logger.debug("Searching with client: {}", client)
             if await client.search(message):
                 return True
         return False
 
+    async def identify_order(self, message: str) -> bool:
+        """
+        Search an order.
+
+        Args:
+            message (str): Message
+
+        Returns:
+            bool
+
+        """
+        results = []
+        for client in self.clients:
+            result = await client.identify_order(message)
+            results.append(result)
+        return results
+
     async def get_order(
         self,
-        msg: str,
+        message: str,
     ):
         """
         Get an order from a message. The message can be
         an order or an order identifier
 
         Args:
-            msg (str): Message
+            message (str): Message
 
         Returns:
             dict
@@ -182,6 +200,6 @@ class FindMyOrder:
         """
         results = []
         for client in self.clients:
-            result = await client.get_order(msg)
+            result = await client.get_order(message)
             results.append(result)
         return results
