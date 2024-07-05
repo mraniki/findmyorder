@@ -27,6 +27,7 @@ class StandardHandler(ParserClient):
         """
 
         super().__init__(**kwargs)
+        self.client = "standard"
 
     async def identify_order(
         self,

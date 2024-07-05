@@ -47,28 +47,30 @@ class FindMyOrder:
         self.enabled = settings.findmyorder_enabled
         if not self.enabled:
             logger.info("FindMyOrder is disabled. No Parser will be created.")
+        self.client_classes = self.get_all_client_classes()
         self.clients = []
         # Create a client for each client in settings.myllm
         for name, client_config in settings.findmyorder.items():
+            logger.debug("client_config: {}", client_config)
             # Skip template and empty string client names
             if name in ["", "template"] or not client_config.get("enabled"):
                 continue
             try:
                 # Create the client
-                logger.debug("Creating client {}", name)
+                logger.debug("Creating FMO parser {}", name)
                 client = self._create_client(**client_config, name=name)
                 # If the client has a valid client attribute, append it to the list
-                if client and getattr(client, "client", None):
+                if client and getattr(client, "parser", None):
                     self.clients.append(client)
             except Exception as e:
                 # Log the error if the client fails to be created
-                logger.error(f"Failed to create client {name}: {e}")
+                logger.error(f"Failed to create parser {name}: {e}")
 
         # Log the number of clients that were created
-        logger.info(f"Loaded {len(self.clients)} clients")
+        logger.info(f"Loaded {len(self.clients)} parsers")
         if not self.clients:
             logger.warning(
-                "No clients were created. Check your settings or disable the module."
+                "No Parsers were created. Check your settings or disable the module."
             )
 
     def _create_client(self, **kwargs):
@@ -106,7 +108,7 @@ class FindMyOrder:
         """
         library = kwargs.get("parser_library", "standard")
         client_class = self.client_classes.get(f"{library.capitalize()}Handler")
-
+        logger.debug(f"Creating {library} client with {kwargs} and {client_class}")
         if client_class is None:
             logger.error(f"library {library} not supported")
             return None

@@ -139,11 +139,13 @@ async def test_info(fmo):
     print(result)
     assert result is not None
     assert "FindMyOrder" in result
+    assert "ℹ️" in result
 
 
 @pytest.mark.asyncio
 async def test_search_valid_order(fmo, crypto_order):
     """Search Testing"""
+    print(settings)
     assert await fmo.search(crypto_order) is True
 
 

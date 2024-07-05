@@ -14,7 +14,7 @@
 
 [default]
 # Dynaconf settings verification
-VALUE = "Production - Default"
+# VALUE = "Production - Default"
 
 # Module Enable/Disable
 findmyorder_enabled = true

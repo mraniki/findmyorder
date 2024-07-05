@@ -22,10 +22,9 @@ class ParserClient:
         """
         Initialize the chat client.
         """
-
         self.name = kwargs.get("name", None)
+        self.client = None
         self.enabled = kwargs.get("enabled", None)
-
         self.action_identifier = kwargs.get("action_identifier", None)
         self.stop_loss_identifier = kwargs.get("stop_loss_identifier", None)
         self.take_profit_identifier = kwargs.get("take_profit_identifier", None)
