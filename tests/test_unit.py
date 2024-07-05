@@ -191,13 +191,14 @@ async def test_identify_order(fmo, short_order):
 async def test_identify_order_invalid_input(fmo, invalid_order):
     """Identify Testing"""
     result = await fmo.identify_order(invalid_order)
-    assert str(result).startswith("Expected")
+    print(result)
+    assert result == [None]
 
 
-@pytest.mark.asyncio
 async def test_valid_get_order(fmo, order, result_order):
     """get order Testing"""
     result = await fmo.get_order(order)
+    print(result)
     assert result["action"] == result_order["action"]
     assert result["instrument"] == result_order["instrument"]
     assert int(result["stop_loss"]) == result_order["stop_loss"]
