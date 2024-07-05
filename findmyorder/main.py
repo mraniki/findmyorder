@@ -49,11 +49,15 @@ class FindMyOrder:
             logger.info("FindMyOrder is disabled. No Parser will be created.")
         self.client_classes = self.get_all_client_classes()
         self.clients = []
-        # Create a client for each client in settings.myllm
+        # Create a client for each client in settings
         for name, client_config in settings.findmyorder.items():
             # logger.debug("client_config: {}", client_config)
             # Skip template and empty string client names
-            if name in ["", "template"] or not client_config.get("enabled"):
+            if (
+                client_config is None
+                or name in ["", "template"]
+                or not client_config.get("enabled")
+            ):
                 continue
             try:
                 # Create the client

@@ -68,7 +68,7 @@ class ParserClient:
             # logger.debug("Action identifiers: {}", self.action_identifiers)
             if order_identifier in self.action_identifier:
 
-                logger.debug("Order identifier found in {}", order_identifier)
+                # logger.debug("Order identifier found in {}", order_identifier)
                 return True
 
         return False

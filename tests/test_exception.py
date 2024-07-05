@@ -20,7 +20,7 @@ def fmo():
 
 
 @pytest.mark.asyncio
-async def test_info(fmo):
+async def test_exception(fmo):
     """Search Testing"""
     for client in fmo.clients:
         assert client is None
