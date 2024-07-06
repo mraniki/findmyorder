@@ -111,7 +111,7 @@ class FindMyOrder:
 
         """
         library = kwargs.get("parser_library", "standard")
-        cls = self.client_classes.get(library.capitalize())
+        cls = self.client_classes.get((f"{library.capitalize()}Handler"))
         return None if cls is None else cls(**kwargs)
 
     def get_all_client_classes(self):
