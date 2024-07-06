@@ -51,7 +51,7 @@ async def test_settings():
 
 
 @pytest.mark.asyncio
-async def test_identify_order(fmo, order_basic):
+async def test_identify_order(fmo, order_basic, result_order):
     """Identify Testing"""
     result = await fmo.identify_order(order_basic)
     assert result is not None
