@@ -51,11 +51,14 @@ class FindMyOrder:
         self.clients = []
         # Create a client for each client in settings
         for name, client_config in settings.findmyorder.items():
-            # logger.debug("client_config: {}", client_config)
-            # Skip template and empty string client names
             if (
+                # Skip empty client configs
                 client_config is None
+                # Skip non-dict client configs
+                or not isinstance(client_config, dict)
+                # Skip template and empty string client names
                 or name in ["", "template"]
+                # Skip disabled clients
                 or not client_config.get("enabled")
             ):
                 continue
@@ -71,10 +74,10 @@ class FindMyOrder:
                 logger.error(f"Failed to create parser {name}: {e}")
 
         # Log the number of clients that were created
-        logger.info(f"Loaded {len(self.clients)} parsers")
+        logger.info(f"Loaded {len(self.clients)} clients")
         if not self.clients:
             logger.warning(
-                "No Parsers were created. Check your settings or disable the module."
+                "No Client were created. Check your settings or disable the module."
             )
 
     def _create_client(self, **kwargs):
