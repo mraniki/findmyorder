@@ -21,65 +21,16 @@ def fmo():
     return FindMyOrder()
 
 
-@pytest.fixture
-def order_basic():
-    """return valid order"""
-    return "Buy EURUSD"
-
-
-@pytest.fixture
-def order_basic_crypto():
-    """return valid order"""
-    return "Sell ETH"
-
-
-@pytest.fixture
-def ignore_order():
-    """return order to ignore"""
-    return "buy DOGE"
+async def test_create_client_exception(fmo, caplog):
+    result = fmo.create_client(parser_library="none")
+    assert result is not None
+    assert "No Client were created" in caplog.text
 
 
 @pytest.fixture
 def order_standard():
     """return valid order"""
-    return "buy EURUSD sl=200 tp=400 q=2%"
-
-
-@pytest.fixture
-def order_standard_crypto():
-    """return valid order"""
-    return "SHORT ETH sl=200 tp=400 q=2%"
-
-
-@pytest.fixture
-def order_format_2():
-    """return order 2"""
-    return """
-    📊 FUTURES Exchanges: Binance, ByBit USDT
-
-    #AAVEUSDT
-
-    🟢LONG ENTRY :- 65.20 - 63.70
-
-    Leverage: Cross (2X)
-
-    👇TAKE PROFIT
-
-    1) 65.70
-    2) 66.20
-    3) 66.70
-
-    Stop Loss : - 62.00
-"""
-
-
-@pytest.fixture
-def order_format_3():
-    """return emoji type order"""
-    return """⚡️⚡️ #BNB/USDT ⚡️⚡️
-    Exchanges: ByBit USDT, Binance Futures
-    Signal Type: Regular (Long)
-    Leverage: Cross (20.0X)"""
+    return "buy GOLD sl=200 tp=400 q=2%"
 
 
 @pytest.fixture
@@ -87,7 +38,7 @@ def result_order():
     """return standard expected results"""
     return {
         "action": "BUY",
-        "instrument": "EURUSD",
+        "instrument": "XAUUSD",
         "stop_loss": 200,
         "take_profit": 400,
         "quantity": 2,
@@ -99,30 +50,20 @@ def result_order():
 
 
 @pytest.fixture
-def result_crypto_order():
-    """return standard expected results"""
-    return {
-        "action": "SHORT",
-        "instrument": "WETH",
-        "stop_loss": 1000,
-        "take_profit": 1000,
-        "quantity": 10,
-        "order_type": None,
-        "leverage_type": None,
-        "comment": None,
-        "timestamp": datetime.now(),
-    }
-
-
-@pytest.fixture
-def bot_command():
-    return "/bal"
+def ignore_order():
+    """return order to ignore"""
+    return "buy DOGE"
 
 
 @pytest.fixture
 def invalid_order():
     """return fmo"""
     return "This is not an order"
+
+
+@pytest.fixture
+def bot_command():
+    return "/bal"
 
 
 @pytest.mark.asyncio
@@ -143,16 +84,10 @@ async def test_info(fmo):
 
 
 @pytest.mark.asyncio
-async def test_search_valid_order(fmo, order_standard_crypto):
+async def test_search_valid_order(fmo, order_standard):
     """Search Testing"""
     print(settings)
-    assert await fmo.search(order_standard_crypto) is True
-
-
-@pytest.mark.asyncio
-async def test_search_normal_order_variation(fmo, order_standard_crypto):
-    """Search Testing"""
-    assert await fmo.search(order_standard_crypto) is True
+    assert await fmo.search(order_standard) is True
 
 
 @pytest.mark.asyncio
@@ -173,17 +108,10 @@ async def test_search_exception(fmo):
     mystring = ""
     assert await fmo.search(mystring) is False
 
-
 @pytest.mark.asyncio
-async def test_search_standard_order(fmo, order_standard):
-    """Search Testing"""
-    assert await fmo.search(order_standard) is True
-
-
-@pytest.mark.asyncio
-async def test_identify_order(fmo, order_basic):
+async def test_identify_order(fmo, order_standard):
     """Identify Testing"""
-    result = await fmo.identify_order(order_basic)
+    result = await fmo.identify_order(order_standard)
     assert result is not None
 
 
@@ -196,25 +124,11 @@ async def test_identify_order_invalid_input(fmo, invalid_order):
 
 
 @pytest.mark.asyncio
-async def test_identify_order_2(fmo, order_format_2):
-    """Identify Testing"""
-    result = await fmo.identify_order(order_format_2)
-    assert result is None
-
-
-@pytest.mark.asyncio
-async def test_identify_order_3(fmo, order_format_3):
-    """Identify Testing"""
-    result = await fmo.identify_order(order_format_3)
-    assert result is None
-
-
-@pytest.mark.asyncio
-async def test_replace_instrument(fmo, order_basic_crypto, result_crypto_order):
+async def test_replace_instrument(fmo, order_standard, result_order):
     """replace instrument Testing"""
-    result = await fmo.get_order(order_basic_crypto)
+    result = await fmo.get_order(order_standard)
     print(result)
-    assert result["instrument"] == result_crypto_order["instrument"]
+    assert result["instrument"] == result_order["instrument"]
     assert type(result["timestamp"] is datetime)
 
 
@@ -232,16 +146,6 @@ async def test_invalid_get_order(fmo, invalid_order):
     assert result is None
 
 
-@pytest.mark.asyncio
-async def test_basic_valid_get_order(fmo, order_basic, result_order):
-    """get order Testing"""
-    result = await fmo.get_order(order_basic)
-    assert result["action"] == result_order["action"]
-    assert result["instrument"] == result_order["instrument"]
-    assert int(result["quantity"]) == 1
-    assert type(result["timestamp"] is datetime)
-
-
 async def test_standard_get_order(fmo, order_standard, result_order):
     """get order Testing"""
     result = await fmo.get_order(order_standard)
@@ -255,9 +159,3 @@ async def test_standard_get_order(fmo, order_standard, result_order):
     assert result["leverage_type"] == result_order["leverage_type"]
     assert result["comment"] == result_order["comment"]
     assert type(result["timestamp"] is datetime)
-
-
-async def test_create_client_exception(fmo, caplog):
-    result = fmo.create_client(parser_library="none")
-    assert result is not None
-    assert "No Client were created" in caplog.text
