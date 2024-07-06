@@ -255,3 +255,9 @@ async def test_standard_get_order(fmo, order_standard, result_order):
     assert result["leverage_type"] == result_order["leverage_type"]
     assert result["comment"] == result_order["comment"]
     assert type(result["timestamp"] is datetime)
+
+
+async def test_create_client_exception(fmo, caplog):
+    result = fmo.create_client(parser_library="none")
+    assert result is not None
+    assert "No Client were created" in caplog.text

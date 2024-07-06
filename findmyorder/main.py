@@ -62,16 +62,13 @@ class FindMyOrder:
                 or not client_config.get("enabled")
             ):
                 continue
-            try:
-                # Create the client
-                logger.debug("Creating FMO parser {}", name)
-                client = self._create_client(**client_config, name=name)
-                # If the client has a valid client attribute, append it to the list
-                if client and getattr(client, "client", None):
-                    self.clients.append(client)
-            except Exception as e:
-                # Log the error if the client fails to be created
-                logger.error(f"Failed to create parser {name}: {e}")
+
+            # Create the client
+            logger.debug("Creating FMO parser {}", name)
+            client = self._create_client(**client_config, name=name)
+            # If the client has a valid client attribute, append it to the list
+            if client and getattr(client, "client", None):
+                self.clients.append(client)
 
         # Log the number of clients that were created
         logger.info(f"Loaded {len(self.clients)} clients")
@@ -114,13 +111,8 @@ class FindMyOrder:
 
         """
         library = kwargs.get("parser_library", "standard")
-        client_class = self.client_classes.get(f"{library.capitalize()}Handler")
-        # logger.debug(f"Creating {library} client with {kwargs} and {client_class}")
-        if client_class is None:
-            logger.error(f"library {library} not supported")
-            return None
-
-        return client_class(**kwargs)
+        cls = self.client_classes.get(library.capitalize())
+        return None if cls is None else cls(**kwargs)
 
     def get_all_client_classes(self):
         """
