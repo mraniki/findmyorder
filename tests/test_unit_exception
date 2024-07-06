@@ -22,4 +22,9 @@ def fmo():
 async def test_create_client_exception(fmo, caplog):
     result = fmo.create_client(parser_library="none")
     assert result is not None
-    assert "No Client were created" in caplog.text
+    assert any(
+        record.message
+        == "No Client were created. Check your settings or disable the module."
+        for record in caplog.records
+        if record.levelname == "WARNING"
+    )
