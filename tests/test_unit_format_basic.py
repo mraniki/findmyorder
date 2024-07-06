@@ -24,7 +24,7 @@ def fmo():
 @pytest.fixture
 def order_basic():
     """return valid order"""
-    return "Sell ETH"
+    return "Short ETH"
 
 
 @pytest.fixture
