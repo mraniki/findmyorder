@@ -32,6 +32,7 @@ async def test_module_exception(fmo, caplog):
 async def test_create_client_exception(fmo, caplog):
     fmo.enabled = True
     result = fmo.create_client()
+    print(result)
     assert result is not None
     assert any(
         record.message
