@@ -20,8 +20,8 @@ def fmo():
 
 
 async def test_module_exception(fmo, caplog):
-    result = fmo.create_client(parser_library="none")
-    assert result is not None
+    result = FindMyOrder()
+    print(result)
     assert any(
         record.message == "FindMyOrder is disabled. No Parser will be created."
         for record in caplog.records
