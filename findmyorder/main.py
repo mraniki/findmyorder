@@ -111,7 +111,8 @@ class FindMyOrder:
             library is not supported.
 
         """
-        library = kwargs.get("parser_library", "standard")
+        # library = kwargs.get("parser_library", "standard")
+        library = kwargs.get("parser_library") or kwargs.get("library") or "standard"
         cls = self.client_classes.get((f"{library.capitalize()}Handler"))
         return None if cls is None else cls(**kwargs)
 
