@@ -22,7 +22,7 @@ def fmo():
 
 
 @pytest.fixture
-def order_standard():
+def order():
     """return valid order"""
     return "buy GOLD sl=200 tp=400 q=2%"
 
@@ -78,10 +78,10 @@ async def test_info(fmo):
 
 
 @pytest.mark.asyncio
-async def test_search_valid_order(fmo, order_standard):
+async def test_search_valid_order(fmo, order):
     """Search Testing"""
     print(settings)
-    assert await fmo.search(order_standard) is True
+    assert await fmo.search(order) is True
 
 
 @pytest.mark.asyncio
@@ -104,9 +104,9 @@ async def test_search_exception(fmo):
 
 
 @pytest.mark.asyncio
-async def test_identify_order(fmo, order_standard):
+async def test_identify_order(fmo, order):
     """Identify Testing"""
-    result = await fmo.identify_order(order_standard)
+    result = await fmo.identify_order(order)
     assert result is not None
 
 
@@ -119,9 +119,9 @@ async def test_identify_order_invalid_input(fmo, invalid_order):
 
 
 @pytest.mark.asyncio
-async def test_replace_instrument(fmo, order_standard, result_order):
+async def test_replace_instrument(fmo, order, result_order):
     """replace instrument Testing"""
-    result = await fmo.get_order(order_standard)
+    result = await fmo.get_order(order)
     print(result)
     assert result["instrument"] == result_order["instrument"]
     assert type(result["timestamp"] is datetime)
@@ -141,12 +141,12 @@ async def test_invalid_get_order(fmo, invalid_order):
     assert result is None
 
 
-async def test_standard_get_order(fmo, order_standard, result_order):
+async def test_standard_get_order(fmo, order, result_order):
     """get order Testing"""
-    result = await fmo.get_order(order_standard)
+    result = await fmo.get_order(order)
     print(result)
     assert result["action"] == result_order["action"]
-    # assert result["instrument"] == result_order["instrument"]
+    assert result["instrument"] == result_order["instrument"]
     assert int(result["stop_loss"]) == result_order["stop_loss"]
     assert int(result["take_profit"]) == result_order["take_profit"]
     assert int(result["quantity"]) == result_order["quantity"]
@@ -154,3 +154,14 @@ async def test_standard_get_order(fmo, order_standard, result_order):
     assert result["leverage_type"] == result_order["leverage_type"]
     assert result["comment"] == result_order["comment"]
     assert type(result["timestamp"] is datetime)
+
+
+async def test_create_client_exception(fmo, caplog):
+    result = fmo.create_client(parser_library="none")
+    assert result is not None
+    assert any(
+        record.message
+        == "No Client were created. Check your settings or disable the module."
+        for record in caplog.records
+        if record.levelname == "WARNING"
+    )

@@ -22,7 +22,7 @@ def fmo():
 
 
 @pytest.fixture
-def order_basic():
+def order():
     """return valid order"""
     return "Short ETH"
 
@@ -51,11 +51,17 @@ async def test_settings():
 
 
 @pytest.mark.asyncio
-async def test_identify_order(fmo, order_basic, result_order):
+async def test_identify_order(fmo, order, result_order):
     """Identify Testing"""
-    result = await fmo.identify_order(order_basic)
+    result = await fmo.identify_order(order)
     assert result is not None
-    # assert result["action"] == result_order["action"]
-    # assert result["instrument"] == result_order["instrument"]
-    # assert int(result["quantity"]) == 10
-    #assert type(result["timestamp"] is datetime)
+
+
+async def test_standard_get_order(fmo, order, result_order):
+    """get order Testing"""
+    result = await fmo.get_order(order)
+    print(result)
+    assert result["action"] == result_order["action"]
+    assert result["instrument"] == result_order["instrument"]
+    assert int(result["quantity"]) == result_order["quantity"]
+    assert type(result["timestamp"] is datetime)

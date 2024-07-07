@@ -10,7 +10,7 @@ from findmyorder.config import settings
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="fmo")
+    settings.configure(FORCE_ENV_FOR_DYNACONF="exception")
 
 
 @pytest.fixture(name="fmo")
@@ -23,8 +23,9 @@ async def test_create_client_exception(fmo, caplog):
     result = fmo.create_client(parser_library="none")
     assert result is not None
     assert any(
-        record.message
-        == "No Client were created. Check your settings or disable the module."
+        record.message == "FindMyOrder is disabled. No Parser will be created."
         for record in caplog.records
-        if record.levelname == "WARNING"
+        if record.levelname == "INFO"
     )
+
+
