@@ -29,8 +29,9 @@ async def test_module_exception(fmo, caplog):
     )
 
 
-async def test_create_client_exception(fmo, caplog):
-    fmo.enabled = True
+async def test_create_client_exception(caplog):
+    settings.findmyorder_enabled = True
+    fmo = FindMyOrder()
     result = fmo.create_client()
     print(result)
     assert result is not None
