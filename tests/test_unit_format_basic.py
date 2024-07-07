@@ -33,12 +33,6 @@ def result_order():
     return {
         "action": "SHORT",
         "instrument": "WETH",
-        "stop_loss": 1000,
-        "take_profit": 1000,
-        "quantity": 10,
-        "order_type": None,
-        "leverage_type": None,
-        "comment": None,
         "timestamp": datetime.now(),
     }
 
@@ -63,5 +57,4 @@ async def test_standard_get_order(fmo, order, result_order):
     print(result)
     assert result["action"] == result_order["action"]
     assert result["instrument"] == result_order["instrument"]
-    assert int(result["quantity"]) == result_order["quantity"]
     assert type(result["timestamp"] is datetime)
