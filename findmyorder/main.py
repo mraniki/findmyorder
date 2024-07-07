@@ -46,7 +46,7 @@ class FindMyOrder:
 
         self.enabled = settings.findmyorder_enabled
         if not self.enabled:
-            logger.info("FindMyOrder is disabled. No Parser will be created.")
+            logger.info("Module is disabled. No Client will be created.")
             return
         self.client_classes = self.get_all_client_classes()
         self.clients = []

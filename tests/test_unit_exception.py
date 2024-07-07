@@ -13,18 +13,12 @@ def set_test_settings():
     settings.configure(FORCE_ENV_FOR_DYNACONF="exception")
 
 
-@pytest.fixture(name="fmo")
-def fmo():
-    """return fmo"""
-    return FindMyOrder()
-
-
 @pytest.mark.asyncio
-async def test_module_exception(fmo, caplog):
+async def test_module_exception(caplog):
     result = FindMyOrder()
     print(result)
     assert any(
-        record.message == "FindMyOrder is disabled. No Parser will be created."
+        record.message == "Module is disabled. No Client will be created."
         for record in caplog.records
         if record.levelname == "INFO"
     )
@@ -33,8 +27,8 @@ async def test_module_exception(fmo, caplog):
 # @pytest.mark.asyncio
 async def test_create_client_exception(caplog):
     settings.findmyorder_enabled = True
-    fmo = FindMyOrder()
-    result = fmo._create_client()
+    test_class = FindMyOrder()
+    result = test_class._create_client()
     print(result)
     assert result is not None
     assert any(
