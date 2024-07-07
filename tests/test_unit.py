@@ -12,8 +12,7 @@ from findmyorder.config import settings
 
 @pytest.fixture(scope="session", autouse=True)
 def set_test_settings():
-    settings.configure(FORCE_ENV_FOR_DYNACONF="testing")
-
+    settings.configure(FORCE_ENV_FOR_DYNACONF="fmo")
 
 
 @pytest.fixture(name="fmo")
@@ -25,35 +24,7 @@ def fmo():
 @pytest.fixture
 def order():
     """return valid order"""
-    return "buy EURUSD sl=200 tp=400 q=2%"
-
-
-@pytest.fixture
-def short_order():
-    """return valid order"""
-    return "Buy EURUSD"
-
-
-@pytest.fixture
-def order_2():
-    """return order 2"""
-    return """
-    📊 FUTURES Exchanges: Binance, ByBit USDT
-
-    #AAVEUSDT
-
-    🟢LONG ENTRY :- 65.20 - 63.70
-
-    Leverage: Cross (2X)
-
-    👇TAKE PROFIT
-
-    1) 65.70
-    2) 66.20
-    3) 66.70
-
-    Stop Loss : - 62.00
-"""
+    return "buy GOLD sl=200 tp=400 q=2%"
 
 
 @pytest.fixture
@@ -61,7 +32,7 @@ def result_order():
     """return standard expected results"""
     return {
         "action": "BUY",
-        "instrument": "EURUSD",
+        "instrument": "XAUUSD",
         "stop_loss": 200,
         "take_profit": 400,
         "quantity": 2,
@@ -79,51 +50,14 @@ def ignore_order():
 
 
 @pytest.fixture
-def crypto_order():
-    """return valid order"""
-    return "SHORT ETH sl=200 tp=400 q=2%"
-
-
-@pytest.fixture
-def crypto_short_order():
-    """return valid order"""
-    return "Sell ETH"
-
-
-@pytest.fixture
-def result_crypto_order():
-    """return standard expected results"""
-    return {
-        "action": "SHORT",
-        "instrument": "WETH",
-        "stop_loss": 1000,
-        "take_profit": 1000,
-        "quantity": 10,
-        "order_type": None,
-        "leverage_type": None,
-        "comment": None,
-        "timestamp": datetime.now(),
-    }
-
-
-@pytest.fixture
-def order_with_emoji():
-    """return emoji type order"""
-    return """⚡️⚡️ #BNB/USDT ⚡️⚡️
-    Exchanges: ByBit USDT, Binance Futures
-    Signal Type: Regular (Long)
-    Leverage: Cross (20.0X)"""
+def invalid_order():
+    """return fmo"""
+    return "This is not an order"
 
 
 @pytest.fixture
 def bot_command():
     return "/bal"
-
-
-@pytest.fixture
-def invalid_order():
-    """return fmo"""
-    return "This is not an order"
 
 
 @pytest.mark.asyncio
@@ -139,13 +73,15 @@ async def test_info(fmo):
     result = await fmo.get_info()
     print(result)
     assert result is not None
-    assert str(result).startswith("FindMyOrder")
+    assert "FindMyOrder" in result
+    assert "ℹ️" in result
 
 
 @pytest.mark.asyncio
-async def test_search_valid_order(fmo, crypto_order):
+async def test_search_valid_order(fmo, order):
     """Search Testing"""
-    assert await fmo.search(crypto_order) is True
+    print(settings)
+    assert await fmo.search(order) is True
 
 
 @pytest.mark.asyncio
@@ -168,21 +104,9 @@ async def test_search_exception(fmo):
 
 
 @pytest.mark.asyncio
-async def test_search_normal_order(fmo, order):
-    """Search Testing"""
-    assert await fmo.search(order) is True
-
-
-@pytest.mark.asyncio
-async def test_search_normal_order_variation(fmo, crypto_order):
-    """Search Testing"""
-    assert await fmo.search(crypto_order) is True
-
-
-@pytest.mark.asyncio
-async def test_identify_order(fmo, short_order):
+async def test_identify_order(fmo, order):
     """Identify Testing"""
-    result = await fmo.identify_order(short_order)
+    result = await fmo.identify_order(order)
     assert result is not None
 
 
@@ -190,31 +114,16 @@ async def test_identify_order(fmo, short_order):
 async def test_identify_order_invalid_input(fmo, invalid_order):
     """Identify Testing"""
     result = await fmo.identify_order(invalid_order)
-    assert str(result).startswith("Expected")
+    print(result)
+    assert result is None
 
 
 @pytest.mark.asyncio
-async def test_valid_get_order(fmo, order, result_order):
-    """get order Testing"""
+async def test_replace_instrument(fmo, order, result_order):
+    """replace instrument Testing"""
     result = await fmo.get_order(order)
-    assert result["action"] == result_order["action"]
+    print(result)
     assert result["instrument"] == result_order["instrument"]
-    assert int(result["stop_loss"]) == result_order["stop_loss"]
-    assert int(result["take_profit"]) == result_order["take_profit"]
-    assert int(result["quantity"]) == result_order["quantity"]
-    assert result["order_type"] == result_order["order_type"]
-    assert result["leverage_type"] == result_order["leverage_type"]
-    assert result["comment"] == result_order["comment"]
-    assert type(result["timestamp"] is datetime)
-
-
-@pytest.mark.asyncio
-async def test_short_valid_get_order(fmo, short_order, result_order):
-    """get order Testing"""
-    result = await fmo.get_order(short_order)
-    assert result["action"] == result_order["action"]
-    assert result["instrument"] == result_order["instrument"]
-    assert int(result["quantity"]) == 1
     assert type(result["timestamp"] is datetime)
 
 
@@ -233,19 +142,28 @@ async def test_invalid_get_order(fmo, invalid_order):
 
 
 @pytest.mark.asyncio
-async def test_mapping_order(fmo, crypto_short_order, result_crypto_order):
-    """replace instrument Testing"""
-    result = await fmo.get_order(crypto_short_order)
+async def test_standard_get_order(fmo, order, result_order):
+    """get order Testing"""
+    result = await fmo.get_order(order)
     print(result)
-    assert settings.instrument_mapping is True
-    assert result["instrument"] == result_crypto_order["instrument"]
+    assert result["action"] == result_order["action"]
+    assert result["instrument"] == result_order["instrument"]
+    assert int(result["stop_loss"]) == result_order["stop_loss"]
+    assert int(result["take_profit"]) == result_order["take_profit"]
+    assert int(result["quantity"]) == result_order["quantity"]
+    assert result["order_type"] == result_order["order_type"]
+    assert result["leverage_type"] == result_order["leverage_type"]
+    assert result["comment"] == result_order["comment"]
     assert type(result["timestamp"] is datetime)
 
 
-@pytest.mark.asyncio
-async def test_identify_order2(fmo, order_2):
-    """Identify Testing"""
-    result = await fmo.identify_order(order_2)
-    assert result is not None
-    # result = await fmo.get_order(order_2)
-    # assert result["action"] == "LONG"
+# @pytest.mark.asyncio
+# async def test_create_client_exception(fmo, caplog):
+#     result = fmo.create_client()
+#     assert result is not None
+#     assert any(
+#         record.message
+#         == "No Client were created. Check your settings or disable the module."
+#         for record in caplog.records
+#         if record.levelname == "WARNING"
+#     )

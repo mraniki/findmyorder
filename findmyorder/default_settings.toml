@@ -14,11 +14,14 @@
 
 [default]
 # Dynaconf settings verification
-VALUE = "Production - Default"
+# VALUE = "Production - Default"
 
 # Module Enable/Disable
 findmyorder_enabled = true
 
+[default.findmyorder.template]
+parser_library = "standard"
+enabled = true
 # Keyword to be use to identify an order
 action_identifier = "BUY SELL LONG SHORT"
 # Keyword identifier for stoploss
@@ -33,14 +36,12 @@ order_type_identifier = "spot future margin"
 leverage_type_identifier = "cross isolated"
 # Keyword identifier for comments
 comment_identifier = "comment="
-
 # Stoploss default value is none is provided
 stop_loss = 1000
 # Take-Profit default value is none is provided
 take_profit = 1000
 # Quantity default value is none is provided
 quantity = 1
-
 # Settings to enable or disable
 # instrument mapping
 instrument_mapping = true
