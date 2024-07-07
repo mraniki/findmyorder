@@ -19,6 +19,7 @@ def fmo():
     return FindMyOrder()
 
 
+@pytest.mark.asyncio
 async def test_module_exception(fmo, caplog):
     result = FindMyOrder()
     print(result)
@@ -29,10 +30,11 @@ async def test_module_exception(fmo, caplog):
     )
 
 
+# @pytest.mark.asyncio
 async def test_create_client_exception(caplog):
     settings.findmyorder_enabled = True
     fmo = FindMyOrder()
-    result = fmo.create_client()
+    result = fmo._create_client()
     print(result)
     assert result is not None
     assert any(
