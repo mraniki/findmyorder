@@ -1,5 +1,27 @@
 # CHANGELOG
 
+## v2.1.0 (2024-07-08)
+
+### Other
+
+* Merge pull request #381 from mraniki/dev
+
+⬆️ 🤖 - Repartee is something we think of twentyfour hours too late ([`62bf556`](https://github.com/mraniki/findmyorder/commit/62bf556887bcc56fbbbe6ab8803a562f1fab5018))
+
+### ♻️
+
+* ♻️ ([`02b716f`](https://github.com/mraniki/findmyorder/commit/02b716f804d7b08f03d45f8962ba7882c9b9398d))
+
+* ♻️ ([`c883341`](https://github.com/mraniki/findmyorder/commit/c883341f09d01a3b95d4c65ac4f8f5dfbb642b89))
+
+### ✅
+
+* ✅ Unit Test ([`e07f71d`](https://github.com/mraniki/findmyorder/commit/e07f71d51fef26571a50385eb4eaf69675302fa6))
+
+### 💄
+
+* 💄 _create_client update ([`6dddf04`](https://github.com/mraniki/findmyorder/commit/6dddf044b9f22d126df284adae2227103d436a18))
+
 ## v2.0.0 (2024-07-07)
 
 ### :white_check_mark:
