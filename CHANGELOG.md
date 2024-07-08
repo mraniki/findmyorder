@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v2.2.0 (2024-07-08)
+
+### Feat
+
+* ✨ feature: adding action_identifier for each client in get_info ([`29a5f1b`](https://github.com/mraniki/findmyorder/commit/29a5f1bc726da4045887bc58de3678948d724ed9))
+
+### Other
+
+* Merge pull request #382 from mraniki/dev
+
+✨ feature: adding action_identifier for each client in get_info ([`9738ded`](https://github.com/mraniki/findmyorder/commit/9738ded9dbc2ba2becb863038c8744c23185c275))
+
 ## v2.1.0 (2024-07-08)
 
 ### Other
