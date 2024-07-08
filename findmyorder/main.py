@@ -153,7 +153,10 @@ class FindMyOrder:
 
         """
         version_info = f"ℹ️ {type(self).__name__} {__version__}\n"
-        client_info = "".join(f"🔎 {client.name}\n" for client in self.clients)
+        client_info = "".join(
+            f"🔎 {client.name}\n🔠 {client.action_identifier}"
+            for client in self.clients
+        )
         return version_info + client_info.strip()
 
     async def search(self, message: str) -> bool:
