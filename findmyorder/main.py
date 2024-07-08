@@ -50,7 +50,7 @@ class FindMyOrder:
             return
         self.client_classes = self.get_all_client_classes()
         self.clients = []
-        # Create a client for each client in settings
+        # Create a client for each client in settings.findmyorder
         for name, client_config in settings.findmyorder.items():
             if (
                 # Skip empty client configs
@@ -65,7 +65,7 @@ class FindMyOrder:
                 continue
 
             # Create the client
-            logger.debug("Creating FMO parser {}", name)
+            logger.debug("Creating client {}", name)
             client = self._create_client(**client_config, name=name)
             # If the client has a valid client attribute, append it to the list
             if client and getattr(client, "client", None):
@@ -111,7 +111,14 @@ class FindMyOrder:
             library is not supported.
 
         """
-        library = kwargs.get("parser_library", "standard")
+        # library = kwargs.get("parser_library", "standard")
+        library = (
+            kwargs.get("library")
+            or kwargs.get("platform")
+            or kwargs.get("protocol")
+            or kwargs.get("parser_library")
+            or "standard"
+        )
         cls = self.client_classes.get((f"{library.capitalize()}Handler"))
         return None if cls is None else cls(**kwargs)
 

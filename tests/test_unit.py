@@ -156,14 +156,3 @@ async def test_standard_get_order(fmo, order, result_order):
     assert result["comment"] == result_order["comment"]
     assert type(result["timestamp"] is datetime)
 
-
-# @pytest.mark.asyncio
-# async def test_create_client_exception(fmo, caplog):
-#     result = fmo.create_client()
-#     assert result is not None
-#     assert any(
-#         record.message
-#         == "No Client were created. Check your settings or disable the module."
-#         for record in caplog.records
-#         if record.levelname == "WARNING"
-#     )
