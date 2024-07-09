@@ -25,6 +25,9 @@ class ParserClient:
         self.name = kwargs.get("name", None)
         self.client = None
         self.enabled = kwargs.get("enabled", None)
+        self.library = kwargs.get("library", None) or kwargs.get(
+            "parser_library", "standard"
+        )
         self.action_identifier = kwargs.get("action_identifier", "BUY SELL")
         self.action_identifier = self.action_identifier.lower()
         self.stop_loss_identifier = kwargs.get("stop_loss_identifier", None)
