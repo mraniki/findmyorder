@@ -42,7 +42,7 @@ class FindMyOrder:
 
         Returns:
             None
-        """
+        """ 
 
         self.enabled = settings.findmyorder_enabled
         if not self.enabled:
