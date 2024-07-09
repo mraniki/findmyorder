@@ -23,7 +23,7 @@ findmyorder_enabled = true
 parser_library = "standard"
 enabled = true
 # Keyword to be use to identify an order
-action_identifier = "BUY SELL LONG SHORT"
+action_identifier = "BUY SELL LONG SHORT DEFAULT"
 # Keyword identifier for stoploss
 stop_loss_identifier = "sl="
 # Keyword identifier for take-profit

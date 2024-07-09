@@ -45,13 +45,15 @@ class FindMyOrder:
         """
 
         self.enabled = settings.findmyorder_enabled
+        self.settings = settings.findmyorder
+        logger.debug("Settings: {}", self.settings)
         if not self.enabled:
             logger.info("Module is disabled. No Client will be created.")
             return
         self.client_classes = self.get_all_client_classes()
         self.clients = []
         # Create a client for each client in settings.findmyorder
-        for name, client_config in settings.findmyorder.items():
+        for name, client_config in self.settings.items():
             if (
                 # Skip empty client configs
                 client_config is None
