@@ -19,44 +19,44 @@
 # Module Enable/Disable
 findmyorder_enabled = true
 
-# [default.findmyorder.template]
-# parser_library = "standard"
-# enabled = true
-# # Keyword to be use to identify an order
-# action_identifier = "BUY SELL LONG SHORT"
-# # Keyword identifier for stoploss
-# stop_loss_identifier = "sl="
-# # Keyword identifier for take-profit
-# take_profit_identifier = 'tp='
-# # Keyword identifier for quantity
-# quantity_identifier = 'q='
-# # Keyword identifier for order type
-# order_type_identifier = "spot future margin"
-# # Keyword identifier for leverage
-# leverage_type_identifier = "cross isolated"
-# # Keyword identifier for comments
-# comment_identifier = "comment="
-# # Stoploss default value is none is provided
-# stop_loss = 1000
-# # Take-Profit default value is none is provided
-# take_profit = 1000
-# # Quantity default value is none is provided
-# quantity = 1
-# # Settings to enable or disable
-# # instrument mapping
-# instrument_mapping = true
-# # instrument mapping to use and alternative 
-# #  symbol when generating the order
-# mapping = [
-#     { id = "GOLD", alt = "XAUUSD" },
-#     { id = "SILVER", alt = "XAGUSD" },
-#     { id = "BTC", alt = "WBTC" },
-#     { id = "ETH", alt = "WETH" },
-# ]
+[default.findmyorder.template]
+parser_library = "standard"
+enabled = true
+# Keyword to be use to identify an order
+action_identifier = "BUY SELL LONG SHORT DEFAULT"
+# Keyword identifier for stoploss
+stop_loss_identifier = "sl="
+# Keyword identifier for take-profit
+take_profit_identifier = 'tp='
+# Keyword identifier for quantity
+quantity_identifier = 'q='
+# Keyword identifier for order type
+order_type_identifier = "spot future margin"
+# Keyword identifier for leverage
+leverage_type_identifier = "cross isolated"
+# Keyword identifier for comments
+comment_identifier = "comment="
+# Stoploss default value is none is provided
+stop_loss = 1000
+# Take-Profit default value is none is provided
+take_profit = 1000
+# Quantity default value is none is provided
+quantity = 1
+# Settings to enable or disable
+# instrument mapping
+instrument_mapping = true
+# instrument mapping to use and alternative 
+#  symbol when generating the order
+mapping = [
+    { id = "GOLD", alt = "XAUUSD" },
+    { id = "SILVER", alt = "XAGUSD" },
+    { id = "BTC", alt = "WBTC" },
+    { id = "ETH", alt = "WETH" },
+]
 
-# # Instrument to be ignored
-# # when generating an order
-# ignore_instrument = "US500 DOGE"
+# Instrument to be ignored
+# when generating an order
+ignore_instrument = "US500 DOGE"
 
 ########################################
 ###     END OF DEFAULT SETTINGS      ###
