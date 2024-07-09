@@ -208,4 +208,6 @@ class FindMyOrder:
 
         """
         for client in self.clients:
-            return await client.get_order(message)
+            order = await client.get_order(message)
+            if order:
+                return order
