@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v2.2.4 (2024-07-09)
+
+### Other
+
+* Merge pull request #387 from mraniki/dev
+
+♻️ ([`7639f53`](https://github.com/mraniki/findmyorder/commit/7639f536226f3d7ebb4e80f3b858596b9ffead57))
+
+* Merge pull request #386 from mraniki/dev
+
+update config.py and main.py ([`e6b933d`](https://github.com/mraniki/findmyorder/commit/e6b933de55b3cb5bc2ce5d69a8147d25bd80b417))
+
+* update config.py and main.py ([`ff06f75`](https://github.com/mraniki/findmyorder/commit/ff06f75658d8ca9fb7ca46e0036e61a1b7f70578))
+
+### ♻️
+
+* ♻️ ([`2684a93`](https://github.com/mraniki/findmyorder/commit/2684a936b5b5bc862247adbadb1527c6c107b704))
+
 ## v2.2.3 (2024-07-09)
 
 ### Other
