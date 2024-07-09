@@ -173,7 +173,7 @@ class FindMyOrder:
 
         """
         for client in self.clients:
-            logger.debug("Searching with client: {}", client)
+            logger.debug("Searching with client: {} {}", client, message)
             if await client.search(message):
                 return True
         return False
