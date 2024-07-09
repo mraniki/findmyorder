@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v2.2.1 (2024-07-09)
+
+### Other
+
+* Merge pull request #383 from mraniki/dev
+
+🔊 ([`a0f83f8`](https://github.com/mraniki/findmyorder/commit/a0f83f87820f0e248371dd3a2527bd0d6ddd1ed0))
+
+### 🔊
+
+* 🔊 ([`b763294`](https://github.com/mraniki/findmyorder/commit/b76329432bdaf2a810706e9705b74c0de3c0947a))
+
 ## v2.2.0 (2024-07-08)
 
 ### Feat
