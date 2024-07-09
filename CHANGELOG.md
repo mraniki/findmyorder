@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## v2.2.6 (2024-07-09)
+
+### :fire:
+
+* :fire: ([`f26fbda`](https://github.com/mraniki/findmyorder/commit/f26fbdaa27eb762872ae5134e3dcc0031315a61d))
+
+### Other
+
+* Merge pull request #389 from mraniki/dev
+
+Update minor changes ([`926960d`](https://github.com/mraniki/findmyorder/commit/926960d7da2e3ced609e204b9980cd73f5b42ea7))
+
+* Refactor ParserClient method for better readability. ([`ce43db9`](https://github.com/mraniki/findmyorder/commit/ce43db92bf3b22c799e66603245fa506e46f8592))
+
 ## v2.2.5 (2024-07-09)
 
 ### Other
@@ -248,9 +262,9 @@ update config.py and main.py ([`e6b933d`](https://github.com/mraniki/findmyorder
 
 ### ⬆️
 
-* ⬆️ 🛠️(deps): update dependency pytest-cov to v5 ([`9a3ffd0`](https://github.com/mraniki/findmyorder/commit/9a3ffd067242832c53b5b4ceb2562bb0f903fea0))
-
 * ⬆️ 🛠️(deps): update dependency sphinx to v7.3.7 ([`57efd44`](https://github.com/mraniki/findmyorder/commit/57efd445b2abcb8a134a06311be4a79f1d2ef920))
+
+* ⬆️ 🛠️(deps): update dependency pytest-cov to v5 ([`9a3ffd0`](https://github.com/mraniki/findmyorder/commit/9a3ffd067242832c53b5b4ceb2562bb0f903fea0))
 
 ## v1.10.1 (2024-05-14)
 
@@ -480,11 +494,11 @@ update config.py and main.py ([`e6b933d`](https://github.com/mraniki/findmyorder
 
 * Merge branch &#39;main&#39; into dev ([`a873f55`](https://github.com/mraniki/findmyorder/commit/a873f555b7ee43210b4f24ef61821604cb0f1816))
 
-* Auto ([`f5fb440`](https://github.com/mraniki/findmyorder/commit/f5fb440a3b6efa57fb138d394aa7ea1f01e5bae4))
-
 * Merge pull request #329 from mraniki/dev
 
 ⬆️ 🤖 - Auto Release ([`2e2da92`](https://github.com/mraniki/findmyorder/commit/2e2da924a565c5898873035b035d5b3dd7313b27))
+
+* Auto ([`f5fb440`](https://github.com/mraniki/findmyorder/commit/f5fb440a3b6efa57fb138d394aa7ea1f01e5bae4))
 
 * Auto ([`b39b285`](https://github.com/mraniki/findmyorder/commit/b39b28532a72a3b00b09de92b5de1c3d4f3660d0))
 
@@ -564,6 +578,10 @@ Update README.md ([`d6b14e3`](https://github.com/mraniki/findmyorder/commit/d6b1
 
 ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 ([`23f9442`](https://github.com/mraniki/findmyorder/commit/23f944271ee4ab7a47fc1ef8f77c69c3fdaf0f31))
 
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 ([`4882ebd`](https://github.com/mraniki/findmyorder/commit/4882ebd9673af3dab1ac00e5f4ae1b6f67b06864))
+
 ## v1.9.2 (2023-10-17)
 
 ### Other
@@ -582,10 +600,6 @@ Update README.md ([`d6b14e3`](https://github.com/mraniki/findmyorder/commit/d6b1
 :construction_worker_man: CI Change ([`a74bbfd`](https://github.com/mraniki/findmyorder/commit/a74bbfd3f352abfc9e7773157f99cc2a17f36ea9))
 
 * :construction_worker_man: CI Change ([`a1d4b06`](https://github.com/mraniki/findmyorder/commit/a1d4b062179bf95bc70bd29732060f1eaa5be028))
-
-### ⬆️
-
-* ⬆️ 🛠️(deps): update dependency ruff to ^0.1.0 ([`4882ebd`](https://github.com/mraniki/findmyorder/commit/4882ebd9673af3dab1ac00e5f4ae1b6f67b06864))
 
 ### 👷
 
@@ -951,7 +965,11 @@ Update Requirements ([`5257193`](https://github.com/mraniki/findmyorder/commit/5
 
 🐛 📝 extension error ([`b65c247`](https://github.com/mraniki/findmyorder/commit/b65c247eb2463657b4474a32e9a087fb0c47f787))
 
+## v1.7.24 (2023-08-28)
+
 ### Update
+
+* Update pyproject.toml ([`fc3c2bc`](https://github.com/mraniki/findmyorder/commit/fc3c2bc2893e672a97d834e40a06cbd920f7bd96))
 
 * Update Requirements ([`893c9c2`](https://github.com/mraniki/findmyorder/commit/893c9c286590b85d37711ee1ba4dc7417e70c45d))
 
@@ -962,14 +980,6 @@ Update Requirements ([`5257193`](https://github.com/mraniki/findmyorder/commit/5
 ### 📝
 
 * 📝 ([`492ace6`](https://github.com/mraniki/findmyorder/commit/492ace69f6b6f5f1d864844761f46cde4340d998))
-
-## v1.7.24 (2023-08-28)
-
-### Update
-
-* Update pyproject.toml ([`fc3c2bc`](https://github.com/mraniki/findmyorder/commit/fc3c2bc2893e672a97d834e40a06cbd920f7bd96))
-
-### 📝
 
 * 📝 ([`10db91c`](https://github.com/mraniki/findmyorder/commit/10db91c83e321079fc533732470fae1212d2ef04))
 
@@ -1095,6 +1105,10 @@ Update Requirements ([`5257193`](https://github.com/mraniki/findmyorder/commit/5
 
 ⬆️(deps): update dependency ruff to &gt;=0.0.284,&lt;0.0.285 ([`f78834f`](https://github.com/mraniki/findmyorder/commit/f78834fcb03c499ba341f9c63cb20a3e0611e2c5))
 
+### ⬆️
+
+* ⬆️(deps): update dependency ruff to &gt;=0.0.284,&lt;0.0.285 ([`9b3b2c4`](https://github.com/mraniki/findmyorder/commit/9b3b2c4f3b678396bd942b079d0799d449bbc5b5))
+
 ## v1.7.14 (2023-08-10)
 
 ### Other
@@ -1102,10 +1116,6 @@ Update Requirements ([`5257193`](https://github.com/mraniki/findmyorder/commit/5
 * Merge pull request #271 from mraniki/dev
 
 👷 CI Change ([`5d6d9ac`](https://github.com/mraniki/findmyorder/commit/5d6d9ac5a1bc98702d528b9583f824a6866cab9b))
-
-### ⬆️
-
-* ⬆️(deps): update dependency ruff to &gt;=0.0.284,&lt;0.0.285 ([`9b3b2c4`](https://github.com/mraniki/findmyorder/commit/9b3b2c4f3b678396bd942b079d0799d449bbc5b5))
 
 ### 🐛
 
@@ -1273,17 +1283,7 @@ Update Requirements ([`5257193`](https://github.com/mraniki/findmyorder/commit/5
 
 ⬆️ Dep: Update ruff requirement from ^0.0.280 to &gt;=0.0.280,&lt;0.0.282 ([`516aa58`](https://github.com/mraniki/findmyorder/commit/516aa585ed46d5a303fdff31fdfd4b1f4271dcfa))
 
-## v1.7.2 (2023-08-03)
-
-### Other
-
-* Merge pull request #255 from mraniki/dev
-
-📝 RTD initial release ([`9c8178e`](https://github.com/mraniki/findmyorder/commit/9c8178e1c2874699d1e7fb7e5d0c4f3913232680))
-
 ### Update
-
-* Update Requirements ([`98ed507`](https://github.com/mraniki/findmyorder/commit/98ed50784476d60b19d8e5e86fc35e9bec93f145))
 
 * Update Requirements ([`e434bd9`](https://github.com/mraniki/findmyorder/commit/e434bd9600db59e9b06005c0a9366afe02d5cbcf))
 
@@ -1301,6 +1301,18 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0ae9f6c`](https://github.com/mraniki/findmyorder/commit/0ae9f6c075dfae290d8577b3905ef791ab14f531))
+
+## v1.7.2 (2023-08-03)
+
+### Other
+
+* Merge pull request #255 from mraniki/dev
+
+📝 RTD initial release ([`9c8178e`](https://github.com/mraniki/findmyorder/commit/9c8178e1c2874699d1e7fb7e5d0c4f3913232680))
+
+### Update
+
+* Update Requirements ([`98ed507`](https://github.com/mraniki/findmyorder/commit/98ed50784476d60b19d8e5e86fc35e9bec93f145))
 
 ### 📝
 
@@ -1390,8 +1402,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`0ae9f6c`](https://g
 
 ### Update
 
-* Update Requirements ([`f5d33f4`](https://github.com/mraniki/findmyorder/commit/f5d33f4273b42330c4060477e01905136cdb0ae9))
-
 * :arrow_up: Dep: Update python-semantic-release requirement
 
 Updates the requirements on [python-semantic-release](https://github.com/python-semantic-release/python-semantic-release) to permit the latest version.
@@ -1406,6 +1416,8 @@ updated-dependencies:
 ...
 
 Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://github.com/mraniki/findmyorder/commit/b1c96cb53e3f4486beb4b0450f16a7e8224af17e))
+
+* Update Requirements ([`f5d33f4`](https://github.com/mraniki/findmyorder/commit/f5d33f4273b42330c4060477e01905136cdb0ae9))
 
 ### ✅
 
@@ -1469,10 +1481,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://g
 
 * Merge branch &#39;main&#39; of git@github.com:mraniki/findmyorder.git ([`2ea2ff7`](https://github.com/mraniki/findmyorder/commit/2ea2ff7aeb61eb8d9f099542bcd6d345f2703deb))
 
-### Update
-
-* Update index.rst file ([`b88b458`](https://github.com/mraniki/findmyorder/commit/b88b4580af55b414018697e4a20a770d3f79836d))
-
 ## v1.5.30 (2023-07-08)
 
 ### Other
@@ -1481,9 +1489,19 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://g
 
 ### Update
 
-* Update index.rst file ([`0032e1d`](https://github.com/mraniki/findmyorder/commit/0032e1d9b87b10f2203f0ede20395f8a01c7586f))
+* Update index.rst file ([`b88b458`](https://github.com/mraniki/findmyorder/commit/b88b4580af55b414018697e4a20a770d3f79836d))
 
 ## v1.5.29 (2023-07-08)
+
+### Other
+
+* Merge branch &#39;main&#39; of git@github.com:mraniki/findmyorder.git ([`cb53132`](https://github.com/mraniki/findmyorder/commit/cb531320b53bd48c64cba99441b277c622c966d0))
+
+### Update
+
+* Update index.rst file ([`0032e1d`](https://github.com/mraniki/findmyorder/commit/0032e1d9b87b10f2203f0ede20395f8a01c7586f))
+
+## v1.5.28 (2023-07-08)
 
 ### :recycle:
 
@@ -1491,17 +1509,7 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://g
 
 ### Other
 
-* Merge branch &#39;main&#39; of git@github.com:mraniki/findmyorder.git ([`cb53132`](https://github.com/mraniki/findmyorder/commit/cb531320b53bd48c64cba99441b277c622c966d0))
-
-## v1.5.28 (2023-07-08)
-
-### Other
-
 * Merge branch &#39;main&#39; of git@github.com:mraniki/findmyorder.git ([`062ab4e`](https://github.com/mraniki/findmyorder/commit/062ab4e8de1ab6365002b5e429f45dc1329eb5e1))
-
-### Update
-
-* :memo: Update index.rst file with new links and language settings ([`3b43272`](https://github.com/mraniki/findmyorder/commit/3b43272fc3d9d6bf8e9a8d4c64c05cd64b1a158f))
 
 ## v1.5.27 (2023-07-08)
 
@@ -1511,7 +1519,7 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://g
 
 ### Update
 
-* :memo: Update index.rst file with new links and language settings ([`481f36b`](https://github.com/mraniki/findmyorder/commit/481f36bf352886b1c22981d2a506eaab81ce35bd))
+* :memo: Update index.rst file with new links and language settings ([`3b43272`](https://github.com/mraniki/findmyorder/commit/3b43272fc3d9d6bf8e9a8d4c64c05cd64b1a158f))
 
 ## v1.5.26 (2023-07-08)
 
@@ -1521,7 +1529,7 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://g
 
 ### Update
 
-* :memo: Update index.rst file with new links and language settings ([`d7df273`](https://github.com/mraniki/findmyorder/commit/d7df273aa90b3734dc26a2d956d4e1518a2cc150))
+* :memo: Update index.rst file with new links and language settings ([`481f36b`](https://github.com/mraniki/findmyorder/commit/481f36bf352886b1c22981d2a506eaab81ce35bd))
 
 ## v1.5.25 (2023-07-08)
 
@@ -1531,11 +1539,13 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://g
 
 ### Update
 
-* :zap: Update Sphinx extensions and add toggle button ([`8b795a7`](https://github.com/mraniki/findmyorder/commit/8b795a75c462cc090b3cc5565716cc5e5d7d848f))
+* :memo: Update index.rst file with new links and language settings ([`d7df273`](https://github.com/mraniki/findmyorder/commit/d7df273aa90b3734dc26a2d956d4e1518a2cc150))
 
 ## v1.5.24 (2023-07-08)
 
 ### Update
+
+* :zap: Update Sphinx extensions and add toggle button ([`8b795a7`](https://github.com/mraniki/findmyorder/commit/8b795a75c462cc090b3cc5565716cc5e5d7d848f))
 
 * Update index.rst ([`4628913`](https://github.com/mraniki/findmyorder/commit/46289131f1636c432e35c049bdf0396f315d0a93))
 
@@ -1797,8 +1807,6 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://g
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/findmyorder.git ([`4308a46`](https://github.com/mraniki/findmyorder/commit/4308a4637d2f12cba9f4cfe8d5cea5587a06a0f0))
 
-* :construction_worker_man:‍♂️Flow.yml ([`e25ed60`](https://github.com/mraniki/findmyorder/commit/e25ed605176dd20def1f4b18a83f69eaa260bb2a))
-
 ### Update
 
 * Update README.md ([`bf5c589`](https://github.com/mraniki/findmyorder/commit/bf5c5892f5ad3628ac76594ae286df17b131f60f))
@@ -1814,6 +1822,8 @@ Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`b1c96cb`](https://g
 * Merge pull request #228 from mraniki/dev
 
 Update dependabot.yml ([`e802689`](https://github.com/mraniki/findmyorder/commit/e80268946a31c8c9ac2bd757df6519ca1e1eff2a))
+
+* :construction_worker_man:‍♂️Flow.yml ([`e25ed60`](https://github.com/mraniki/findmyorder/commit/e25ed605176dd20def1f4b18a83f69eaa260bb2a))
 
 * Merge branch &#39;main&#39; into dev ([`99a2f2c`](https://github.com/mraniki/findmyorder/commit/99a2f2c74c256fe89b560c8fa79a842cb37f0a4c))
 
@@ -1899,10 +1909,6 @@ Merge pull request #226 from mraniki/dev ([`cc30dfd`](https://github.com/mraniki
 
 ## v1.4.1 (2023-06-10)
 
-### :white_check_mark:
-
-* :white_check_mark: unit test ([`0b8c13d`](https://github.com/mraniki/findmyorder/commit/0b8c13d820b9f6671a1094880289d89e5728b41c))
-
 ### Fix
 
 * 🎨 added symbol replacement capability and fixed the emoji func ([`d22a60f`](https://github.com/mraniki/findmyorder/commit/d22a60fcf3fc1a2f3894b37f5b6a90f836f2fa6c))
@@ -1932,6 +1938,10 @@ Merge pull request #226 from mraniki/dev ([`cc30dfd`](https://github.com/mraniki
 * 🔇 remove logs ([`618a52f`](https://github.com/mraniki/findmyorder/commit/618a52fefc7980e1850eeae27e60e292eefbc716))
 
 ## v1.4.0 (2023-06-10)
+
+### :white_check_mark:
+
+* :white_check_mark: unit test ([`0b8c13d`](https://github.com/mraniki/findmyorder/commit/0b8c13d820b9f6671a1094880289d89e5728b41c))
 
 ### Feat
 
@@ -1979,9 +1989,9 @@ Configure Renovate ([`467a897`](https://github.com/mraniki/findmyorder/commit/46
 
 * Update Dockerfile ([`2624bf0`](https://github.com/mraniki/findmyorder/commit/2624bf01527d1be0dc6108c16fd6a8a4a8285251))
 
-* Update renovate.json ([`598c3f4`](https://github.com/mraniki/findmyorder/commit/598c3f4aa6ffbd3a1894e1d9986a1fad618245c8))
-
 * Update python Docker tag to v3.11 ([`45d7aaa`](https://github.com/mraniki/findmyorder/commit/45d7aaaab2812986efdd4c6ac3915fde188a146c))
+
+* Update renovate.json ([`598c3f4`](https://github.com/mraniki/findmyorder/commit/598c3f4aa6ffbd3a1894e1d9986a1fad618245c8))
 
 * Update renovate.json ([`e2e15f1`](https://github.com/mraniki/findmyorder/commit/e2e15f1b3c6ef301d9bae953aff6c1b3ac220ed4))
 
@@ -2185,17 +2195,17 @@ Update dependency sphinx to v7 ([`6f15829`](https://github.com/mraniki/findmyord
 
 * Update requirements.txt ([`92b60b9`](https://github.com/mraniki/findmyorder/commit/92b60b94c0972725f9737d44fa635548503fa1d3))
 
-* Update renovate.json ([`466975a`](https://github.com/mraniki/findmyorder/commit/466975aa9179832d83a5d135fb0f17bd6b1d21f4))
-
 * Update dependency nbsphinx to v0.9.2 ([`84f81e3`](https://github.com/mraniki/findmyorder/commit/84f81e3f982a345eb53ab2f6ec104b1355252f15))
 
+* Update renovate.json ([`466975a`](https://github.com/mraniki/findmyorder/commit/466975aa9179832d83a5d135fb0f17bd6b1d21f4))
+
 * Update .readthedocs.yaml ([`b3fd2b5`](https://github.com/mraniki/findmyorder/commit/b3fd2b53e2899cb32f7b643fdf266c21ba23b721))
+
+* Update dependency myst_parser to v1 ([`f3d5fc4`](https://github.com/mraniki/findmyorder/commit/f3d5fc43a64f6984ac357e361264518d32594945))
 
 * Update dependency nbsphinx to ^0.9.0 ([`7936029`](https://github.com/mraniki/findmyorder/commit/79360291253f140846dba490201fc6e7e781eedd))
 
 * Update dependency sphinx to v7 ([`97aede1`](https://github.com/mraniki/findmyorder/commit/97aede11bcf3401b9aab0188ae858a77a524719d))
-
-* Update dependency myst_parser to v1 ([`f3d5fc4`](https://github.com/mraniki/findmyorder/commit/f3d5fc43a64f6984ac357e361264518d32594945))
 
 ### 📝
 
@@ -2331,10 +2341,6 @@ ok ([`8ea7f42`](https://github.com/mraniki/findmyorder/commit/8ea7f4297c53c1be17
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/findmyorder.git ([`a092fd4`](https://github.com/mraniki/findmyorder/commit/a092fd47bd841c54b0f292b5703b9c8721c09cd9))
 
-### ⚡
-
-* ⚡ improve code cov ([`d78fcfb`](https://github.com/mraniki/findmyorder/commit/d78fcfbf6f674bb1321b374f5c6cb8153ade97c8))
-
 ## v1.3.17 (2023-05-27)
 
 ### Other
@@ -2347,11 +2353,11 @@ ok ([`8ea7f42`](https://github.com/mraniki/findmyorder/commit/8ea7f4297c53c1be17
 
 ### ⚡
 
+* ⚡ improve code cov ([`d78fcfb`](https://github.com/mraniki/findmyorder/commit/d78fcfbf6f674bb1321b374f5c6cb8153ade97c8))
+
 * ⚡ improve code cov ([`a66a968`](https://github.com/mraniki/findmyorder/commit/a66a9684d4b375b3f1853076ba049f3e31695c5d))
 
 * ⚡ improve code coverage ([`f2f9fbf`](https://github.com/mraniki/findmyorder/commit/f2f9fbf807c95293c96a4bab5c787ee9a2330c0b))
-
-* ⚡ improve code coverage ([`293164f`](https://github.com/mraniki/findmyorder/commit/293164f8303d5cc6b7b0f1c95913f789ce130a63))
 
 ## v1.3.16 (2023-05-27)
 
@@ -2365,9 +2371,9 @@ ok ([`8ea7f42`](https://github.com/mraniki/findmyorder/commit/8ea7f4297c53c1be17
 
 ### ⚡
 
-* ⚡ improve code coverage ([`1fa0cc6`](https://github.com/mraniki/findmyorder/commit/1fa0cc6dca68fa308635c378267308f7d3c0ec16))
+* ⚡ improve code coverage ([`293164f`](https://github.com/mraniki/findmyorder/commit/293164f8303d5cc6b7b0f1c95913f789ce130a63))
 
-* ⚡ improve code coverage ([`edd0db7`](https://github.com/mraniki/findmyorder/commit/edd0db789714456f7100c36b8b66b6355befabf7))
+* ⚡ improve code coverage ([`1fa0cc6`](https://github.com/mraniki/findmyorder/commit/1fa0cc6dca68fa308635c378267308f7d3c0ec16))
 
 ## v1.3.15 (2023-05-27)
 
@@ -2389,6 +2395,8 @@ ok ([`8ea7f42`](https://github.com/mraniki/findmyorder/commit/8ea7f4297c53c1be17
 
 ### ⚡
 
+* ⚡ improve code coverage ([`edd0db7`](https://github.com/mraniki/findmyorder/commit/edd0db789714456f7100c36b8b66b6355befabf7))
+
 * ⚡ improve code coverage ([`239c92c`](https://github.com/mraniki/findmyorder/commit/239c92c3f992cf73d7ea5a6654e13549f52ac2fe))
 
 * ⚡ improve code coverage ([`cf09cc7`](https://github.com/mraniki/findmyorder/commit/cf09cc7ddb10c77a05257b18b39583570d7665d6))
@@ -2406,10 +2414,6 @@ ok ([`8ea7f42`](https://github.com/mraniki/findmyorder/commit/8ea7f4297c53c1be17
 :wrench: Change envvar_prefix to &#34;TT&#34; in config.py. ([`c47a840`](https://github.com/mraniki/findmyorder/commit/c47a840d3e819bea3b95d21030ddd99ee3a141aa))
 
 ## v1.3.12 (2023-05-27)
-
-### :fire:
-
-* :fire: remove code ([`a9340c5`](https://github.com/mraniki/findmyorder/commit/a9340c542007cc22ee3b529d163a347f9254cf99))
 
 ### Fix
 
@@ -2430,6 +2434,10 @@ ok ([`8ea7f42`](https://github.com/mraniki/findmyorder/commit/8ea7f4297c53c1be17
 * ✅ unit test update ([`33773aa`](https://github.com/mraniki/findmyorder/commit/33773aaaa1b240a61b3ce91aa76d24e6973f958d))
 
 ## v1.3.11 (2023-05-25)
+
+### :fire:
+
+* :fire: remove code ([`a9340c5`](https://github.com/mraniki/findmyorder/commit/a9340c542007cc22ee3b529d163a347f9254cf99))
 
 ### Other
 
@@ -2601,10 +2609,6 @@ Dev ([`2072f39`](https://github.com/mraniki/findmyorder/commit/2072f3936625944a0
 
 * Merge branch &#39;main&#39; into dev ([`a886c99`](https://github.com/mraniki/findmyorder/commit/a886c9984439b0720fab019522e50a46c2f98a00))
 
-### ⚡
-
-* ⚡️ lint ([`0fc4f72`](https://github.com/mraniki/findmyorder/commit/0fc4f72d128cc2594a72f39e91318e26d268be6e))
-
 ## v1.3.1 (2023-05-06)
 
 ### Fix
@@ -2618,6 +2622,8 @@ Dev ([`2072f39`](https://github.com/mraniki/findmyorder/commit/2072f3936625944a0
 🥅 test for exception ([`00eb101`](https://github.com/mraniki/findmyorder/commit/00eb101f873fae72306e6b7751623b67b82476c1))
 
 ### ⚡
+
+* ⚡️ lint ([`0fc4f72`](https://github.com/mraniki/findmyorder/commit/0fc4f72d128cc2594a72f39e91318e26d268be6e))
 
 * ⚡️lint ([`986e4a1`](https://github.com/mraniki/findmyorder/commit/986e4a1c91ecc74922a812cc865629af869032dc))
 
@@ -2755,10 +2761,6 @@ Align ([`1138021`](https://github.com/mraniki/findmyorder/commit/1138021b993dfab
 
 ## v1.2.4 (2023-05-04)
 
-### :bug:
-
-* :bug: inherit secrets in action for pypi ([`800bca9`](https://github.com/mraniki/findmyorder/commit/800bca98fa5e2f63a436d734817de27d2caa36c9))
-
 ### Other
 
 * Merge pull request #146 from mraniki/dev
@@ -2770,6 +2772,10 @@ Align ([`1138021`](https://github.com/mraniki/findmyorder/commit/1138021b993dfab
 Align ([`9587628`](https://github.com/mraniki/findmyorder/commit/95876281d4bf57fd37829c9b3eaaf8afe6bd95c6))
 
 ## v1.2.3 (2023-05-04)
+
+### :bug:
+
+* :bug: inherit secrets in action for pypi ([`800bca9`](https://github.com/mraniki/findmyorder/commit/800bca98fa5e2f63a436d734817de27d2caa36c9))
 
 ### Fix
 
@@ -2807,15 +2813,7 @@ Merge ([`1a131bd`](https://github.com/mraniki/findmyorder/commit/1a131bdf1a34235
 
 Align ([`65f9841`](https://github.com/mraniki/findmyorder/commit/65f98415dcd58f4d3027ca83219534e13431c8f3))
 
-### ⚡
-
-* ⚡️ update readme badge ([`5978bfb`](https://github.com/mraniki/findmyorder/commit/5978bfbf4b8e7fd9bf0e32de742ae9f6283de515))
-
 ## v1.2.1 (2023-05-04)
-
-### Fix
-
-* ⚡️fix semantic ([`4bd8bce`](https://github.com/mraniki/findmyorder/commit/4bd8bce9c0c7fe6084ec20839543438394fb6a7f))
 
 ### Other
 
@@ -2824,6 +2822,10 @@ Align ([`65f9841`](https://github.com/mraniki/findmyorder/commit/65f98415dcd58f4
 ⚡️fix semantic ([`32c4452`](https://github.com/mraniki/findmyorder/commit/32c4452c7c2cc7ccf71a457cedc1f2f0351f17e0))
 
 ## v1.2.0 (2023-05-04)
+
+### Fix
+
+* ⚡️fix semantic ([`4bd8bce`](https://github.com/mraniki/findmyorder/commit/4bd8bce9c0c7fe6084ec20839543438394fb6a7f))
 
 ### Other
 
@@ -2835,11 +2837,11 @@ Align ([`65f9841`](https://github.com/mraniki/findmyorder/commit/65f98415dcd58f4
 
 Merge pull request #135 from mraniki/dev ([`23fc128`](https://github.com/mraniki/findmyorder/commit/23fc1283d5a079e66e25edbc3c699e07ba51e8a8))
 
-* semantic.yml update ([`1f62372`](https://github.com/mraniki/findmyorder/commit/1f62372e63ef7892cec915343ca82a928d137098))
-
 * Merge pull request #135 from mraniki/dev
 
 ⚡️Documentation ([`455ddbc`](https://github.com/mraniki/findmyorder/commit/455ddbc5c8261835f407bcb0f2fc5279f57ee4ae))
+
+* semantic.yml update ([`1f62372`](https://github.com/mraniki/findmyorder/commit/1f62372e63ef7892cec915343ca82a928d137098))
 
 * Merge pull request #134 from mraniki/main
 
@@ -2849,13 +2851,15 @@ Add renovate.json ([`92f3903`](https://github.com/mraniki/findmyorder/commit/92f
 
 Configure Renovate ([`aa263f5`](https://github.com/mraniki/findmyorder/commit/aa263f5634a0ebc254f9c6d2688e1398b02f78eb))
 
+* Add renovate.json ([`1c88c08`](https://github.com/mraniki/findmyorder/commit/1c88c082a6a96288217702a09792e4b94caa8359))
+
 * Merge pull request #131 from mraniki/dev
 
 ✨ resusable flow and use of emoji for release ([`72eb8a7`](https://github.com/mraniki/findmyorder/commit/72eb8a78b21ae705d6db7ab97f9822d7b8c1e11f))
 
-* Add renovate.json ([`1c88c08`](https://github.com/mraniki/findmyorder/commit/1c88c082a6a96288217702a09792e4b94caa8359))
-
 ### ⚡
+
+* ⚡️ update readme badge ([`5978bfb`](https://github.com/mraniki/findmyorder/commit/5978bfbf4b8e7fd9bf0e32de742ae9f6283de515))
 
 * ⚡️ 📝 added documentation ([`ab46cf3`](https://github.com/mraniki/findmyorder/commit/ab46cf3569d2b101ffea78b37c90c37c3669dc12))
 
@@ -2957,10 +2961,6 @@ fix ([`e60c08b`](https://github.com/mraniki/findmyorder/commit/e60c08ba874b69c50
 
 ## v1.1.1 (2023-05-02)
 
-### Fix
-
-* fix: Refactor quantity and comment parsing in FindMyOrder class. ([`0f3ac82`](https://github.com/mraniki/findmyorder/commit/0f3ac82a09d27719cbd26f9ee74ded634b6fe30d))
-
 ### Other
 
 * Merge pull request #122 from mraniki/dev
@@ -2977,7 +2977,7 @@ fix ([`9d05370`](https://github.com/mraniki/findmyorder/commit/9d053704a50061a41
 
 ### Fix
 
-* fix: Update default values for stop loss, take profit, and quantity in FindMyOrder class. ([`94baa6c`](https://github.com/mraniki/findmyorder/commit/94baa6cff7018cff855e420187abcd8c39907d5f))
+* fix: Refactor quantity and comment parsing in FindMyOrder class. ([`0f3ac82`](https://github.com/mraniki/findmyorder/commit/0f3ac82a09d27719cbd26f9ee74ded634b6fe30d))
 
 ### Other
 
@@ -2999,9 +2999,9 @@ Fix: uppercase action ([`a7d9bfe`](https://github.com/mraniki/findmyorder/commit
 
 ### Fix
 
-* fix: unit test ([`0d0b908`](https://github.com/mraniki/findmyorder/commit/0d0b9085f2d258c3130705a949423db8055690d9))
+* fix: Update default values for stop loss, take profit, and quantity in FindMyOrder class. ([`94baa6c`](https://github.com/mraniki/findmyorder/commit/94baa6cff7018cff855e420187abcd8c39907d5f))
 
-* fix: unit test ([`e7423b5`](https://github.com/mraniki/findmyorder/commit/e7423b579902484d48c5a50f2b5e945c3ed5b083))
+* fix: unit test ([`0d0b908`](https://github.com/mraniki/findmyorder/commit/0d0b9085f2d258c3130705a949423db8055690d9))
 
 ### Other
 
@@ -3014,6 +3014,8 @@ Dev ([`da2204a`](https://github.com/mraniki/findmyorder/commit/da2204ac1d0b5ea83
 ## v1.0.52 (2023-05-01)
 
 ### Fix
+
+* fix: unit test ([`e7423b5`](https://github.com/mraniki/findmyorder/commit/e7423b579902484d48c5a50f2b5e945c3ed5b083))
 
 * fix: Refactor tests to use async/await ([`a51ff0f`](https://github.com/mraniki/findmyorder/commit/a51ff0fc0c450f53e9fb594a77ee451dffea3909))
 
@@ -3037,8 +3039,6 @@ fix: Refactor test_unit.py to include missing commas and remove unnec… ([`b035
 
 * fix: improve unit tests ([`266dfee`](https://github.com/mraniki/findmyorder/commit/266dfeede974fd75b3a80b9683c9e8c4a5376678))
 
-* fix: Add async/await to search tests ([`cda776e`](https://github.com/mraniki/findmyorder/commit/cda776e4b04def59b792aa77a8d9fa68e4c72246))
-
 ### Other
 
 * Merge pull request #118 from mraniki/dev
@@ -3051,9 +3051,9 @@ Fix: unit test ([`9e63fb4`](https://github.com/mraniki/findmyorder/commit/9e63fb
 
 ### Fix
 
-* fix: removing non number for sl tp and q ([`d711eaf`](https://github.com/mraniki/findmyorder/commit/d711eafb9a92140d84e903ed2e3abf7366be32ad))
+* fix: Add async/await to search tests ([`cda776e`](https://github.com/mraniki/findmyorder/commit/cda776e4b04def59b792aa77a8d9fa68e4c72246))
 
-* fix: Refactor find_my_order function to use fmo() instead of FindMyOrder() class. ([`aa244d0`](https://github.com/mraniki/findmyorder/commit/aa244d0c1d29a12bb5ea4c61d5a229f6a433a75c))
+* fix: removing non number for sl tp and q ([`d711eaf`](https://github.com/mraniki/findmyorder/commit/d711eafb9a92140d84e903ed2e3abf7366be32ad))
 
 ### Other
 
@@ -3066,6 +3066,8 @@ Fix: string filtered for tp and sl ([`a7a81d1`](https://github.com/mraniki/findm
 ## v1.0.49 (2023-05-01)
 
 ### Fix
+
+* fix: Refactor find_my_order function to use fmo() instead of FindMyOrder() class. ([`aa244d0`](https://github.com/mraniki/findmyorder/commit/aa244d0c1d29a12bb5ea4c61d5a229f6a433a75c))
 
 * fix: unit test ([`5b9e59f`](https://github.com/mraniki/findmyorder/commit/5b9e59f5e7485c0fd49fde8b1795976822870a6b))
 
@@ -3088,6 +3090,39 @@ Co-authored-by: code-review-doctor[bot] &lt;72320148+code-review-doctor[bot]@use
 Co-authored-by: code-review-doctor[bot] &lt;72320148+code-review-doctor[bot]@users.noreply.github.com&gt; ([`3c18c7b`](https://github.com/mraniki/findmyorder/commit/3c18c7b67d294d4dcb11ebf72e7497ae4bb97227))
 
 ## v1.0.48 (2023-05-01)
+
+### Bump
+
+* build(deps): bump GitGuardian/ggshield-action from 1.14.4 to 1.15.0
+
+Bumps [GitGuardian/ggshield-action](https://github.com/GitGuardian/ggshield-action) from 1.14.4 to 1.15.0.
+- [Release notes](https://github.com/GitGuardian/ggshield-action/releases)
+- [Commits](https://github.com/GitGuardian/ggshield-action/compare/v1.14.4...v1.15.0)
+
+---
+updated-dependencies:
+- dependency-name: GitGuardian/ggshield-action
+  dependency-type: direct:production
+  update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`581f022`](https://github.com/mraniki/findmyorder/commit/581f022efa03fceb3b0f62cb0bb21809832e701d))
+
+* build(deps): bump actions/checkout from 2 to 3
+
+Bumps [actions/checkout](https://github.com/actions/checkout) from 2 to 3.
+- [Release notes](https://github.com/actions/checkout/releases)
+- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
+- [Commits](https://github.com/actions/checkout/compare/v2...v3.5.2)
+
+---
+updated-dependencies:
+- dependency-name: actions/checkout
+  dependency-type: direct:production
+  update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`394ed93`](https://github.com/mraniki/findmyorder/commit/394ed93cc7d0a34dc8f9b598fd9373af523e0fcf))
 
 ### Fix
 
@@ -3117,39 +3152,6 @@ build(deps): bump actions/checkout from 2 to 3 ([`ccc7533`](https://github.com/m
 
 ## v1.0.47 (2023-05-01)
 
-### Bump
-
-* build(deps): bump actions/checkout from 2 to 3
-
-Bumps [actions/checkout](https://github.com/actions/checkout) from 2 to 3.
-- [Release notes](https://github.com/actions/checkout/releases)
-- [Changelog](https://github.com/actions/checkout/blob/main/CHANGELOG.md)
-- [Commits](https://github.com/actions/checkout/compare/v2...v3.5.2)
-
----
-updated-dependencies:
-- dependency-name: actions/checkout
-  dependency-type: direct:production
-  update-type: version-update:semver-major
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`394ed93`](https://github.com/mraniki/findmyorder/commit/394ed93cc7d0a34dc8f9b598fd9373af523e0fcf))
-
-* build(deps): bump GitGuardian/ggshield-action from 1.14.4 to 1.15.0
-
-Bumps [GitGuardian/ggshield-action](https://github.com/GitGuardian/ggshield-action) from 1.14.4 to 1.15.0.
-- [Release notes](https://github.com/GitGuardian/ggshield-action/releases)
-- [Commits](https://github.com/GitGuardian/ggshield-action/compare/v1.14.4...v1.15.0)
-
----
-updated-dependencies:
-- dependency-name: GitGuardian/ggshield-action
-  dependency-type: direct:production
-  update-type: version-update:semver-minor
-...
-
-Signed-off-by: dependabot[bot] &lt;support@github.com&gt; ([`581f022`](https://github.com/mraniki/findmyorder/commit/581f022efa03fceb3b0f62cb0bb21809832e701d))
-
 ### Fix
 
 * fix: Refactor logging in FindMyOrder class ([`17188f5`](https://github.com/mraniki/findmyorder/commit/17188f5356804890576eaeeb8eb076a5d7030919))
@@ -3164,10 +3166,6 @@ Dev ([`d262f51`](https://github.com/mraniki/findmyorder/commit/d262f51fc9a26b5ff
 
 ## v1.0.46 (2023-04-30)
 
-### Fix
-
-* fix: Remove unnecessary self argument in FindMyOrder class constructor. ([`0ec79a9`](https://github.com/mraniki/findmyorder/commit/0ec79a98d8fc926c33e34a8d7705a927068c4a58))
-
 ### Other
 
 * Merge pull request #109 from mraniki/dev
@@ -3179,6 +3177,8 @@ Dev ([`254e6a3`](https://github.com/mraniki/findmyorder/commit/254e6a3abe35e0886
 ## v1.0.45 (2023-04-30)
 
 ### Fix
+
+* fix: Remove unnecessary self argument in FindMyOrder class constructor. ([`0ec79a9`](https://github.com/mraniki/findmyorder/commit/0ec79a98d8fc926c33e34a8d7705a927068c4a58))
 
 * fix: unit test ([`f909808`](https://github.com/mraniki/findmyorder/commit/f909808804ffa8d0ea17498e52c28abbdfb09ca2))
 
@@ -3212,11 +3212,11 @@ Dev ([`cb2496e`](https://github.com/mraniki/findmyorder/commit/cb2496eb4afff8948
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`8f2cc82`](https://github.com/mraniki/findmyorder/commit/8f2cc82b95b36c47bc84d2d46e694a15b711a555))
 
-* minor: search error ([`bb638d6`](https://github.com/mraniki/findmyorder/commit/bb638d6fc80fac6dcadc680b9ea9acedc1fa8835))
-
 * Merge pull request #105 from mraniki/dev
 
 Update main.py ([`182aac2`](https://github.com/mraniki/findmyorder/commit/182aac2aad2bd018e3ec8d333bca4c6b196768c7))
+
+* minor: search error ([`bb638d6`](https://github.com/mraniki/findmyorder/commit/bb638d6fc80fac6dcadc680b9ea9acedc1fa8835))
 
 ### Update
 
@@ -3296,10 +3296,6 @@ Dev ([`40cfb1c`](https://github.com/mraniki/findmyorder/commit/40cfb1c2fcf640749
 
 ## v1.0.38 (2023-04-29)
 
-### Fix
-
-* fix: dep ([`f426555`](https://github.com/mraniki/findmyorder/commit/f426555a114b6f67a6a70acfb8e1959b292383bc))
-
 ### Other
 
 * Merge pull request #99 from mraniki/dev
@@ -3311,6 +3307,8 @@ Dev ([`b15d2a6`](https://github.com/mraniki/findmyorder/commit/b15d2a67f1bcc6c03
 ## v1.0.37 (2023-04-29)
 
 ### Fix
+
+* fix: dep ([`f426555`](https://github.com/mraniki/findmyorder/commit/f426555a114b6f67a6a70acfb8e1959b292383bc))
 
 * fix: logger setup ([`a18934c`](https://github.com/mraniki/findmyorder/commit/a18934cccc5d7976bed20ccbdc78ffcd1fd87665))
 
@@ -3328,9 +3326,9 @@ Dev ([`b15d2a6`](https://github.com/mraniki/findmyorder/commit/b15d2a67f1bcc6c03
 
 * fix: lint ([`a9cc3d0`](https://github.com/mraniki/findmyorder/commit/a9cc3d0ddf0ff9207895ef86b1765eaabab5969c))
 
-* fix: import order ([`4c225d4`](https://github.com/mraniki/findmyorder/commit/4c225d4ee8a819a377a91e9dbdee4d82d13108bd))
-
 * fix: multiline ([`12b2ef2`](https://github.com/mraniki/findmyorder/commit/12b2ef2158f8974e67525c2622c24a3bad816ee9))
+
+* fix: import order ([`4c225d4`](https://github.com/mraniki/findmyorder/commit/4c225d4ee8a819a377a91e9dbdee4d82d13108bd))
 
 ### Other
 
@@ -3342,21 +3340,21 @@ Dev ([`aa7bd2b`](https://github.com/mraniki/findmyorder/commit/aa7bd2b13b4585d3f
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/findmyorder.git ([`dae4fbd`](https://github.com/mraniki/findmyorder/commit/dae4fbd454247883f3d1a7d98d7e9448ab19471b))
 
-* Refactor findmyorder class init and methods to use PEP8 style guidelines. ([`8850878`](https://github.com/mraniki/findmyorder/commit/8850878ee57703b60e841726de122c8f966aeab4))
-
 * Merge pull request #97 from mraniki/main
 
 Merge pull request #96 from mraniki/dev ([`1ac4a54`](https://github.com/mraniki/findmyorder/commit/1ac4a54600c6497e45820057afe20f88f868c02d))
+
+* Merge pull request #96 from mraniki/dev
+
+Fix: multiple code linting ([`3ac9bd3`](https://github.com/mraniki/findmyorder/commit/3ac9bd3880aefc4d4fe9d289a0ebbbf307e41cf4))
+
+* Refactor findmyorder class init and methods to use PEP8 style guidelines. ([`8850878`](https://github.com/mraniki/findmyorder/commit/8850878ee57703b60e841726de122c8f966aeab4))
 
 * Change logging level for identify_order method in main.py. ([`8362085`](https://github.com/mraniki/findmyorder/commit/83620859ab0a100de0808923b65314ac57b9c5ce))
 
 * Refactor identify_order method in findmyorder class ([`3960e01`](https://github.com/mraniki/findmyorder/commit/3960e0138de11f3d7ae50c1410f9324466b3d73a))
 
 * Add Automerge workflow to GitHub actions. ([`d328f4c`](https://github.com/mraniki/findmyorder/commit/d328f4cdecdd64648ebf5afa986e784075b1fd85))
-
-* Merge pull request #96 from mraniki/dev
-
-Fix: multiple code linting ([`3ac9bd3`](https://github.com/mraniki/findmyorder/commit/3ac9bd3880aefc4d4fe9d289a0ebbbf307e41cf4))
 
 * Fix: added automerge, branch rules ([`290c772`](https://github.com/mraniki/findmyorder/commit/290c772ca52cf6dfc01aecf7421e7838b625010b))
 
@@ -3370,15 +3368,13 @@ Fix: multiple code linting ([`3ac9bd3`](https://github.com/mraniki/findmyorder/c
 
 * Merge branch &#39;main&#39; into dev ([`9118ee3`](https://github.com/mraniki/findmyorder/commit/9118ee35bc34b6a8a27aebc9fb3b2c6834a6a796))
 
-* Remove .DS_Store from .github directory. ([`6f07a54`](https://github.com/mraniki/findmyorder/commit/6f07a54fcd3978114a0c21fe4371b8c827c3e6a1))
-
 * Merge pull request #95 from mraniki/dev
 
 Fix: SL/TP typo breaking ([`397173b`](https://github.com/mraniki/findmyorder/commit/397173bf0a34a75b2f2e908af799e5d7fb1aa813))
 
-* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`be67372`](https://github.com/mraniki/findmyorder/commit/be673728a1525dad7512f97a1a62574a3d4310f6))
+* Remove .DS_Store from .github directory. ([`6f07a54`](https://github.com/mraniki/findmyorder/commit/6f07a54fcd3978114a0c21fe4371b8c827c3e6a1))
 
-* Fix: sl/tp typo ([`261b56f`](https://github.com/mraniki/findmyorder/commit/261b56fedde4f13b4950d5b8393909881a552c1d))
+* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`be67372`](https://github.com/mraniki/findmyorder/commit/be673728a1525dad7512f97a1a62574a3d4310f6))
 
 * Merge branch &#39;main&#39; into dev ([`a2436b0`](https://github.com/mraniki/findmyorder/commit/a2436b007367b74285277c1323efaa13493d3af0))
 
@@ -3386,11 +3382,11 @@ Fix: SL/TP typo breaking ([`397173b`](https://github.com/mraniki/findmyorder/com
 
 Dev ([`4fda792`](https://github.com/mraniki/findmyorder/commit/4fda7927ed1d5070316ee5f37671d19f35e4c9ab))
 
+* Fix: sl/tp typo ([`261b56f`](https://github.com/mraniki/findmyorder/commit/261b56fedde4f13b4950d5b8393909881a552c1d))
+
 * Create Makefile ([`9c5af01`](https://github.com/mraniki/findmyorder/commit/9c5af01329d2844c6b1a7ff35a4a79d3029d0bb5))
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`d03457f`](https://github.com/mraniki/findmyorder/commit/d03457f00d6d10b973bd716a27ad7d14d457436d))
-
-* updated example ([`5a57116`](https://github.com/mraniki/findmyorder/commit/5a5711693f816841b7fcf4236aaa914273df7ed6))
 
 ### Update
 
@@ -3422,13 +3418,15 @@ Fix: action test ([`39a3093`](https://github.com/mraniki/findmyorder/commit/39a3
 
 Fix: GitHub Actions ([`ffe44f2`](https://github.com/mraniki/findmyorder/commit/ffe44f22ff13038f880b591d93d269e226d638b0))
 
-* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`63ec49a`](https://github.com/mraniki/findmyorder/commit/63ec49a83a234e0b758046cb8be31ec4944ef393))
+* updated example ([`5a57116`](https://github.com/mraniki/findmyorder/commit/5a5711693f816841b7fcf4236aaa914273df7ed6))
 
-* Fix: refactor github actions ([`d93685c`](https://github.com/mraniki/findmyorder/commit/d93685cbc9b79213677b5c6d2dd24d038417eaee))
+* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`63ec49a`](https://github.com/mraniki/findmyorder/commit/63ec49a83a234e0b758046cb8be31ec4944ef393))
 
 * Merge pull request #91 from mraniki/dev
 
 Dev ([`4a5b2d3`](https://github.com/mraniki/findmyorder/commit/4a5b2d31c5a302d668334907904ead42d9c22b1a))
+
+* Fix: refactor github actions ([`d93685c`](https://github.com/mraniki/findmyorder/commit/d93685cbc9b79213677b5c6d2dd24d038417eaee))
 
 * Add new deploy workflow and remove lint PR workflow
 
@@ -3436,8 +3434,6 @@ Dev ([`4a5b2d3`](https://github.com/mraniki/findmyorder/commit/4a5b2d31c5a302d66
 - Commit message: &#34;Remove lint PR workflow and add new deploy workflow ([`17b647e`](https://github.com/mraniki/findmyorder/commit/17b647e579c54e624de935765a85ef26ef5606fb))
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/findmyorder.git ([`9ec3305`](https://github.com/mraniki/findmyorder/commit/9ec3305ea914db4ad959294477e6413c7bd61844))
-
-* Remove unused workflows from deploy.yml file. ([`63da53f`](https://github.com/mraniki/findmyorder/commit/63da53fdd612d670815fae703903799f8d67a191))
 
 ### Update
 
@@ -3456,6 +3452,8 @@ Dev ([`4a5b2d3`](https://github.com/mraniki/findmyorder/commit/4a5b2d31c5a302d66
 * Merge pull request #90 from mraniki/dev
 
 Dev ([`30fb855`](https://github.com/mraniki/findmyorder/commit/30fb8551ed5285f5422099ff2f27926fd19ebd1d))
+
+* Remove unused workflows from deploy.yml file. ([`63da53f`](https://github.com/mraniki/findmyorder/commit/63da53fdd612d670815fae703903799f8d67a191))
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/findmyorder.git ([`f7dfef0`](https://github.com/mraniki/findmyorder/commit/f7dfef0bb07dc59b2619c382a8710f0afc53d157))
 
@@ -3509,9 +3507,9 @@ Dev ([`7e180d5`](https://github.com/mraniki/findmyorder/commit/7e180d511cea3d1ac
 
 Dev ([`0120fc6`](https://github.com/mraniki/findmyorder/commit/0120fc6415fa9471a84a9c1929f6ab43dc563c2d))
 
-* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`119a9da`](https://github.com/mraniki/findmyorder/commit/119a9da7314f9f6f913c0de426ba9a188fbdd936))
-
 * Fix: Dockerfile ([`3785d81`](https://github.com/mraniki/findmyorder/commit/3785d81de896ba530ff8b6612211a283ebe23a16))
+
+* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`119a9da`](https://github.com/mraniki/findmyorder/commit/119a9da7314f9f6f913c0de426ba9a188fbdd936))
 
 ## v1.0.32 (2023-04-28)
 
@@ -3534,10 +3532,6 @@ The following vulnerabilities are fixed with an upgrade:
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`5822255`](https://github.com/mraniki/findmyorder/commit/582225552646560d15f22f22bcd4cf883b01eae7))
 
-### Update
-
-* Update 🔏Security.yml ([`c37050d`](https://github.com/mraniki/findmyorder/commit/c37050d6812d80778f4358848611f2c64b431685))
-
 ## v1.0.31 (2023-04-28)
 
 ### Fix
@@ -3556,15 +3550,9 @@ Dev ([`2b61e8c`](https://github.com/mraniki/findmyorder/commit/2b61e8c5825505909
 
 ### Update
 
-* Update 🧪test.yml ([`2b25de8`](https://github.com/mraniki/findmyorder/commit/2b25de869278234484d4d8f802d7abc59909d036))
-
-* Update 🧪test.yml ([`ae9eba3`](https://github.com/mraniki/findmyorder/commit/ae9eba3bec4efeb2d8f98135ae9be7b78d9e80cd))
+* Update 🔏Security.yml ([`c37050d`](https://github.com/mraniki/findmyorder/commit/c37050d6812d80778f4358848611f2c64b431685))
 
 ## v1.0.30 (2023-04-28)
-
-### Fix
-
-* fix: parsing logic with settings support ([`2b3b625`](https://github.com/mraniki/findmyorder/commit/2b3b6258ad2782b11e55546ac514cfc25408da1f))
 
 ### Other
 
@@ -3576,11 +3564,15 @@ Dev ([`0c484b8`](https://github.com/mraniki/findmyorder/commit/0c484b8ba864b42c2
 
 ### Update
 
-* Update default_settings.toml ([`f15e13d`](https://github.com/mraniki/findmyorder/commit/f15e13dbe7474ca1bec05d19aeffbc496861f8b3))
+* Update 🧪test.yml ([`2b25de8`](https://github.com/mraniki/findmyorder/commit/2b25de869278234484d4d8f802d7abc59909d036))
+
+* Update 🧪test.yml ([`ae9eba3`](https://github.com/mraniki/findmyorder/commit/ae9eba3bec4efeb2d8f98135ae9be7b78d9e80cd))
 
 ## v1.0.29 (2023-04-28)
 
 ### Fix
+
+* fix: parsing logic with settings support ([`2b3b625`](https://github.com/mraniki/findmyorder/commit/2b3b6258ad2782b11e55546ac514cfc25408da1f))
 
 * fix: updated example get_order and remove regex logic ([`05a7f99`](https://github.com/mraniki/findmyorder/commit/05a7f9939b63bdcdc4fe102e7f7fa29162832754))
 
@@ -3591,6 +3583,10 @@ Dev ([`0c484b8`](https://github.com/mraniki/findmyorder/commit/0c484b8ba864b42c2
 * Merge pull request #81 from mraniki/dev
 
 Dev ([`a6b2bf9`](https://github.com/mraniki/findmyorder/commit/a6b2bf9d8dd48e94efc67608fb173d48b9557dc8))
+
+### Update
+
+* Update default_settings.toml ([`f15e13d`](https://github.com/mraniki/findmyorder/commit/f15e13dbe7474ca1bec05d19aeffbc496861f8b3))
 
 ## v1.0.28 (2023-04-28)
 
@@ -3608,17 +3604,7 @@ Dev ([`f35680a`](https://github.com/mraniki/findmyorder/commit/f35680a2ae55874d6
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`931cc5c`](https://github.com/mraniki/findmyorder/commit/931cc5cb92fd2f7e0a37214312d0f5f63bf732d4))
 
-### Update
-
-* Update 🧪test.yml ([`4accc96`](https://github.com/mraniki/findmyorder/commit/4accc9699cca0765f28331bb459cd8e0471ae58b))
-
 ## v1.0.27 (2023-04-28)
-
-### Fix
-
-* fix: return a dictionary ([`39d4ae5`](https://github.com/mraniki/findmyorder/commit/39d4ae5fcda7c4470f583c0bc9922f64618f8ca9))
-
-* fix: test for codecov ([`b56cf6e`](https://github.com/mraniki/findmyorder/commit/b56cf6e6f5e96acc85f5d257288254b007a30074))
 
 ### Other
 
@@ -3630,9 +3616,17 @@ Dev ([`623dbc2`](https://github.com/mraniki/findmyorder/commit/623dbc2d8782c51d4
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/findmyorder.git ([`e2df591`](https://github.com/mraniki/findmyorder/commit/e2df591991b0fe738f5ff081b342ffd761896dd2))
 
+### Update
+
+* Update 🧪test.yml ([`4accc96`](https://github.com/mraniki/findmyorder/commit/4accc9699cca0765f28331bb459cd8e0471ae58b))
+
 ## v1.0.26 (2023-04-28)
 
 ### Fix
+
+* fix: test for codecov ([`b56cf6e`](https://github.com/mraniki/findmyorder/commit/b56cf6e6f5e96acc85f5d257288254b007a30074))
+
+* fix: return a dictionary ([`39d4ae5`](https://github.com/mraniki/findmyorder/commit/39d4ae5fcda7c4470f583c0bc9922f64618f8ca9))
 
 * fix: instrument parsing ([`e8b6f00`](https://github.com/mraniki/findmyorder/commit/e8b6f00a9d7421ba1c7c6b6035c8683872fae35a))
 
@@ -3643,12 +3637,6 @@ Dev ([`623dbc2`](https://github.com/mraniki/findmyorder/commit/623dbc2d8782c51d4
 fix: instrument parsing ([`f6ae363`](https://github.com/mraniki/findmyorder/commit/f6ae363a40e12da802dabe6c9e0100fc8fa5f2a5))
 
 ## v1.0.25 (2023-04-28)
-
-### Fix
-
-* fix: instrumenst and lev type grammar ([`609c670`](https://github.com/mraniki/findmyorder/commit/609c67025e4e1cbd72867104922a4530be66155a))
-
-* fix: default settings ([`de5faaf`](https://github.com/mraniki/findmyorder/commit/de5faaf1aff4283fe6806ea432a78fbeccf0e6c8))
 
 ### Other
 
@@ -3664,6 +3652,10 @@ Dev ([`f3032b7`](https://github.com/mraniki/findmyorder/commit/f3032b7f421d1a7cb
 
 ### Fix
 
+* fix: instrumenst and lev type grammar ([`609c670`](https://github.com/mraniki/findmyorder/commit/609c67025e4e1cbd72867104922a4530be66155a))
+
+* fix: default settings ([`de5faaf`](https://github.com/mraniki/findmyorder/commit/de5faaf1aff4283fe6806ea432a78fbeccf0e6c8))
+
 * fix: added timezone and proper timezone and added one_of ([`7e1a3d8`](https://github.com/mraniki/findmyorder/commit/7e1a3d877ca523b9c6a93c0948e0dccaf10e6edc))
 
 ### Other
@@ -3678,15 +3670,11 @@ Dev ([`f8777a6`](https://github.com/mraniki/findmyorder/commit/f8777a689bbac269b
 
 * Update 🧪test.yml ([`aa1096a`](https://github.com/mraniki/findmyorder/commit/aa1096a0285f1919f5eb366fe1c4a3fcc8397dbb))
 
-* Update main.py ([`1844acb`](https://github.com/mraniki/findmyorder/commit/1844acb8bc79adf836c8d821c6a4f4aedb20b81a))
-
 ## v1.0.23 (2023-04-28)
 
 ### Fix
 
 * fix: improving identify_order ([`fced933`](https://github.com/mraniki/findmyorder/commit/fced933b9aca185c220db0d27684b2310714fb32))
-
-* fix: readme ([`c9aec1d`](https://github.com/mraniki/findmyorder/commit/c9aec1d9e48940816626394139cbef34d88d4102))
 
 ### Other
 
@@ -3698,9 +3686,15 @@ Dev ([`a4f481f`](https://github.com/mraniki/findmyorder/commit/a4f481f5cfbebbdb3
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`c245c84`](https://github.com/mraniki/findmyorder/commit/c245c84173f25100ccf244ecdda97190108d7602))
 
+### Update
+
+* Update main.py ([`1844acb`](https://github.com/mraniki/findmyorder/commit/1844acb8bc79adf836c8d821c6a4f4aedb20b81a))
+
 ## v1.0.22 (2023-04-28)
 
 ### Fix
+
+* fix: readme ([`c9aec1d`](https://github.com/mraniki/findmyorder/commit/c9aec1d9e48940816626394139cbef34d88d4102))
 
 * fix: change ccy_pair to instrument ([`346e148`](https://github.com/mraniki/findmyorder/commit/346e14875fca85c70b000759b8ca96c4fe018c8e))
 
@@ -3778,8 +3772,6 @@ Dev ([`e42d437`](https://github.com/mraniki/findmyorder/commit/e42d43767d19e4d14
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/findmyorder.git ([`0a38ee5`](https://github.com/mraniki/findmyorder/commit/0a38ee57a424a8919999e89e801571479ee15502))
 
-* Refactor test command in GitHub workflow file. ([`1160b3b`](https://github.com/mraniki/findmyorder/commit/1160b3b35f6957e3a590098807ebe4f309cd9f4d))
-
 * Merge pull request #66 from mraniki/main
 
 Align ([`a514b68`](https://github.com/mraniki/findmyorder/commit/a514b683acf3874012cc7540c6ba6a08920eca4c))
@@ -3788,11 +3780,13 @@ Align ([`a514b68`](https://github.com/mraniki/findmyorder/commit/a514b683acf3874
 
 Update test_unit.py ([`4a268bd`](https://github.com/mraniki/findmyorder/commit/4a268bd87d6649ac0dc60692dbf3f501d7f18b18))
 
-* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`0062df4`](https://github.com/mraniki/findmyorder/commit/0062df4ea3008446ab24372ab8c2d493e76bb0e9))
-
 * Merge pull request #64 from mraniki/dev
 
 Dev ([`e64dd3b`](https://github.com/mraniki/findmyorder/commit/e64dd3b2c445f91c626ae6259a5142623460ed16))
+
+* Refactor test command in GitHub workflow file. ([`1160b3b`](https://github.com/mraniki/findmyorder/commit/1160b3b35f6957e3a590098807ebe4f309cd9f4d))
+
+* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`0062df4`](https://github.com/mraniki/findmyorder/commit/0062df4ea3008446ab24372ab8c2d493e76bb0e9))
 
 ### Update
 
@@ -3836,11 +3830,11 @@ Dev ([`92f30a4`](https://github.com/mraniki/findmyorder/commit/92f30a4e76a87d8d3
 
 * Merge branch &#39;dev&#39; of git@github.com:mraniki/findmyorder.git ([`28cf55a`](https://github.com/mraniki/findmyorder/commit/28cf55aa24ec4e129f56c3f76fcdc480fb78c1d1))
 
-* Refactor pytest version and add filterwarnings to pytest.ini ([`c888483`](https://github.com/mraniki/findmyorder/commit/c8884839b72840f65d94efc4471cddad02d81e68))
-
 * Merge pull request #62 from mraniki/dev
 
 Dev ([`0ebfa10`](https://github.com/mraniki/findmyorder/commit/0ebfa101246be3f51bcf381d6bb1fd9997b7a345))
+
+* Refactor pytest version and add filterwarnings to pytest.ini ([`c888483`](https://github.com/mraniki/findmyorder/commit/c8884839b72840f65d94efc4471cddad02d81e68))
 
 * Refactor findmyorder instantiation in test_unit.py ([`f0c6591`](https://github.com/mraniki/findmyorder/commit/f0c65913f142df57ff4cc75f34cda1948c5c2b93))
 
@@ -3866,9 +3860,9 @@ Dev ([`0ebfa10`](https://github.com/mraniki/findmyorder/commit/0ebfa101246be3f51
 
 * fix test action ([`abb2bcd`](https://github.com/mraniki/findmyorder/commit/abb2bcd6d5fc39efc477ff3eee2ecd10f37436c8))
 
-* fix test action ([`a657cc9`](https://github.com/mraniki/findmyorder/commit/a657cc98fc9849441bb6e79325e4a312efbb2ff5))
-
 * fix: test action ([`c9dc3f3`](https://github.com/mraniki/findmyorder/commit/c9dc3f3eb589310259631efcef97d677fa2fced1))
+
+* fix test action ([`a657cc9`](https://github.com/mraniki/findmyorder/commit/a657cc98fc9849441bb6e79325e4a312efbb2ff5))
 
 * fix test action ([`6bef3ae`](https://github.com/mraniki/findmyorder/commit/6bef3ae31b691942eda7ce831df61d5b7c72c27e))
 
@@ -3912,8 +3906,6 @@ Dev ([`95e7a5b`](https://github.com/mraniki/findmyorder/commit/95e7a5b569f14ed9f
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`c6cee83`](https://github.com/mraniki/findmyorder/commit/c6cee83db1493c62b809153eb9d61f0a3d587eb6))
 
-* minor: testing structure ([`f67d4a7`](https://github.com/mraniki/findmyorder/commit/f67d4a727117fd8c28ae88393ace39828f2ebab6))
-
 ### Update
 
 * Update README.md ([`b4d41ab`](https://github.com/mraniki/findmyorder/commit/b4d41abb7e81a90b8b5a8fac6794047c9cdbc73e))
@@ -3926,9 +3918,9 @@ Dev ([`95e7a5b`](https://github.com/mraniki/findmyorder/commit/95e7a5b569f14ed9f
 
 Dev ([`f181272`](https://github.com/mraniki/findmyorder/commit/f1812722f17476fa0f951c730390ce85287e1846))
 
-* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`4dfeada`](https://github.com/mraniki/findmyorder/commit/4dfeadabf12a1eeef15018268e0ad12538fdeead))
+* minor: testing structure ([`f67d4a7`](https://github.com/mraniki/findmyorder/commit/f67d4a727117fd8c28ae88393ace39828f2ebab6))
 
-* Fix: test workflow ([`385271d`](https://github.com/mraniki/findmyorder/commit/385271d283b9f7653fd127ec80dbf9c12cbfe683))
+* Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`4dfeada`](https://github.com/mraniki/findmyorder/commit/4dfeadabf12a1eeef15018268e0ad12538fdeead))
 
 * Merge branch &#39;main&#39; into dev ([`3bca555`](https://github.com/mraniki/findmyorder/commit/3bca5553464b8c50da2d7962ef311ddf84dd901b))
 
@@ -3940,19 +3932,21 @@ Dev ([`f181272`](https://github.com/mraniki/findmyorder/commit/f1812722f17476fa0
 
 * fix: test yml ([`88ae2fc`](https://github.com/mraniki/findmyorder/commit/88ae2fcd66fa57a6b853eb98a6ed10d950c9a6c6))
 
-* fix: new test ([`a05f3c4`](https://github.com/mraniki/findmyorder/commit/a05f3c450023a8b988a0df7c3acf3c4301153f56))
-
 ### Other
 
 * Merge pull request #58 from mraniki/dev
 
 Dev ([`71457ca`](https://github.com/mraniki/findmyorder/commit/71457ca25e8e4319bdd730c573515d42a14dd683))
 
+* Fix: test workflow ([`385271d`](https://github.com/mraniki/findmyorder/commit/385271d283b9f7653fd127ec80dbf9c12cbfe683))
+
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`dc0ea91`](https://github.com/mraniki/findmyorder/commit/dc0ea9139ffcfebe3cae2c2a2b936eabc6b8ef01))
 
 ## v1.0.15 (2023-04-27)
 
 ### Fix
+
+* fix: new test ([`a05f3c4`](https://github.com/mraniki/findmyorder/commit/a05f3c450023a8b988a0df7c3acf3c4301153f56))
 
 * fix: grammar order ([`b6e7222`](https://github.com/mraniki/findmyorder/commit/b6e722266033ed02ed9d0b14b1994bd980e52dc3))
 
@@ -3968,10 +3962,6 @@ Dev ([`72a6755`](https://github.com/mraniki/findmyorder/commit/72a6755f322e2d574
 
 ## v1.0.14 (2023-04-27)
 
-### Fix
-
-* fix: typo parse_all and parse_string ([`0dee008`](https://github.com/mraniki/findmyorder/commit/0dee0089c4ef90013068191987b104c83a35f588))
-
 ### Other
 
 * Merge pull request #56 from mraniki/dev
@@ -3984,9 +3974,7 @@ Dev ([`1a437cb`](https://github.com/mraniki/findmyorder/commit/1a437cb7978f892f0
 
 ### Fix
 
-* fix: typo ([`e1ffb9c`](https://github.com/mraniki/findmyorder/commit/e1ffb9c6bae17698a1eaa9a2398ad035c93f70dd))
-
-* fix: get order ([`6f18820`](https://github.com/mraniki/findmyorder/commit/6f1882021f461a492f32ebb6da9076a3127a771b))
+* fix: typo parse_all and parse_string ([`0dee008`](https://github.com/mraniki/findmyorder/commit/0dee0089c4ef90013068191987b104c83a35f588))
 
 ### Other
 
@@ -3999,6 +3987,10 @@ Dev ([`2104be9`](https://github.com/mraniki/findmyorder/commit/2104be925c20a1c09
 ## v1.0.12 (2023-04-27)
 
 ### Fix
+
+* fix: typo ([`e1ffb9c`](https://github.com/mraniki/findmyorder/commit/e1ffb9c6bae17698a1eaa9a2398ad035c93f70dd))
+
+* fix: get order ([`6f18820`](https://github.com/mraniki/findmyorder/commit/6f1882021f461a492f32ebb6da9076a3127a771b))
 
 * fix: regex in identify order function ([`ac59f15`](https://github.com/mraniki/findmyorder/commit/ac59f15d562ca5c58c4221068736e9bafc44a4da))
 
@@ -4020,8 +4012,6 @@ Dev ([`6aa4b55`](https://github.com/mraniki/findmyorder/commit/6aa4b55abc5a38677
 
 * fix: settings structure ([`4cc4509`](https://github.com/mraniki/findmyorder/commit/4cc450953f3d43ad3d3c1bd716ecae4cb37cb22c))
 
-* fix: cleanup ([`cfd7809`](https://github.com/mraniki/findmyorder/commit/cfd78098ef48acdf4516938009f85ae7467d7709))
-
 ### Other
 
 * Merge pull request #53 from mraniki/dev
@@ -4033,6 +4023,8 @@ Dev ([`a03d7f9`](https://github.com/mraniki/findmyorder/commit/a03d7f96400f6e4ed
 ## v1.0.10 (2023-04-27)
 
 ### Fix
+
+* fix: cleanup ([`cfd7809`](https://github.com/mraniki/findmyorder/commit/cfd78098ef48acdf4516938009f85ae7467d7709))
 
 * fix: typo one_of ([`04d3f96`](https://github.com/mraniki/findmyorder/commit/04d3f961227f3c7d347a90974d3903257f0f7c62))
 
@@ -4056,17 +4048,11 @@ Dev ([`c1b6179`](https://github.com/mraniki/findmyorder/commit/c1b61795a8766c580
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`d62bc88`](https://github.com/mraniki/findmyorder/commit/d62bc88ee52482af093f4c3f8a3ae2901156dabd))
 
-* Fix: identify order parsing ([`db29ef5`](https://github.com/mraniki/findmyorder/commit/db29ef50d746e5f8cfaa91d71cd39011bc9fc265))
-
 ### Update
 
 * Update requirements.txt ([`b73f817`](https://github.com/mraniki/findmyorder/commit/b73f8172b81978ddb3151fdd696388e65cf253dd))
 
 ## v1.0.8 (2023-04-27)
-
-### Fix
-
-* fix: regex ([`8a2bbcd`](https://github.com/mraniki/findmyorder/commit/8a2bbcdc1d9775acb0f6441b1b0327e6db0bd0cb))
 
 ### Other
 
@@ -4074,11 +4060,15 @@ Dev ([`c1b6179`](https://github.com/mraniki/findmyorder/commit/c1b61795a8766c580
 
 Dev ([`9a0ae01`](https://github.com/mraniki/findmyorder/commit/9a0ae0141b41116af3a2fde72a2ec1223df6de91))
 
+* Fix: identify order parsing ([`db29ef5`](https://github.com/mraniki/findmyorder/commit/db29ef50d746e5f8cfaa91d71cd39011bc9fc265))
+
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`7ab573e`](https://github.com/mraniki/findmyorder/commit/7ab573e6fc7ab4f38212c777d9a2e3d0c665a31a))
 
 ## v1.0.7 (2023-04-27)
 
 ### Fix
+
+* fix: regex ([`8a2bbcd`](https://github.com/mraniki/findmyorder/commit/8a2bbcdc1d9775acb0f6441b1b0327e6db0bd0cb))
 
 * fix: troubleshoot regex error ([`0730cff`](https://github.com/mraniki/findmyorder/commit/0730cff4a2dd6932fdcf3c68fe0e27844ede1581))
 
@@ -4126,10 +4116,6 @@ fix: identify order function ([`402feeb`](https://github.com/mraniki/findmyorder
 
 ## v1.0.3 (2023-04-26)
 
-### Fix
-
-* fix: identify order function ([`49281fe`](https://github.com/mraniki/findmyorder/commit/49281fe890e8b1a888fd5a87fc6b44796f4f9751))
-
 ### Other
 
 * Merge pull request #45 from mraniki/dev
@@ -4142,13 +4128,13 @@ Dev ([`30c4ffe`](https://github.com/mraniki/findmyorder/commit/30c4ffe395ac2ebeb
 
 ### Fix
 
+* fix: identify order function ([`49281fe`](https://github.com/mraniki/findmyorder/commit/49281fe890e8b1a888fd5a87fc6b44796f4f9751))
+
 * fix: semantic check ([`6d6a65b`](https://github.com/mraniki/findmyorder/commit/6d6a65baafbea49f1e60944e196b1f24313c93c8))
 
 * fix: more test cases in example file ([`b76bf6f`](https://github.com/mraniki/findmyorder/commit/b76bf6fa437e54085530b157573dc2ad130b1fb8))
 
 * fix: example file ([`1416baf`](https://github.com/mraniki/findmyorder/commit/1416baf1c6ef1ba3e76939aadf6ddee151ed2820))
-
-* fix: typo and example version ([`63944ab`](https://github.com/mraniki/findmyorder/commit/63944abc95db0d4dd6327ecce0e0c17076677331))
 
 ### Other
 
@@ -4158,13 +4144,11 @@ Dev ([`c21a22b`](https://github.com/mraniki/findmyorder/commit/c21a22be8a5c39c35
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`09457a6`](https://github.com/mraniki/findmyorder/commit/09457a6c70f468576f2703cf21641bc465682d80))
 
-### Update
-
-* Update main.py ([`5271dd0`](https://github.com/mraniki/findmyorder/commit/5271dd0300c66843310ef5de94be12f9fb3d15f0))
-
 ## v1.0.1 (2023-04-26)
 
 ### Fix
+
+* fix: typo and example version ([`63944ab`](https://github.com/mraniki/findmyorder/commit/63944abc95db0d4dd6327ecce0e0c17076677331))
 
 * fix: typo ([`cf07934`](https://github.com/mraniki/findmyorder/commit/cf0793405058368e32ab480927a01de29ffa7c93))
 
@@ -4175,6 +4159,8 @@ Dev ([`c21a22b`](https://github.com/mraniki/findmyorder/commit/c21a22be8a5c39c35
 fix: typo ([`bf749f9`](https://github.com/mraniki/findmyorder/commit/bf749f996fda50b320675ab4dbd53365625c7edd))
 
 ### Update
+
+* Update main.py ([`5271dd0`](https://github.com/mraniki/findmyorder/commit/5271dd0300c66843310ef5de94be12f9fb3d15f0))
 
 * Update ☁️deploy.yml ([`fd29478`](https://github.com/mraniki/findmyorder/commit/fd29478adae3eab2c40a4deb9c531a0e3905ae13))
 
@@ -4200,10 +4186,6 @@ major: initial parsing function ([`dff1fbe`](https://github.com/mraniki/findmyor
 
 ## v0.0.33 (2023-04-26)
 
-### Fix
-
-* fix: pr check action ([`b570b49`](https://github.com/mraniki/findmyorder/commit/b570b4939c64f994e04fc7ec26ab9b525b0f2983))
-
 ### Other
 
 * Merge pull request #40 from mraniki/dev
@@ -4215,6 +4197,8 @@ Dev ([`fb1af8e`](https://github.com/mraniki/findmyorder/commit/fb1af8ebc1f87e8d0
 ## v0.0.32 (2023-04-26)
 
 ### Fix
+
+* fix: pr check action ([`b570b49`](https://github.com/mraniki/findmyorder/commit/b570b4939c64f994e04fc7ec26ab9b525b0f2983))
 
 * fix: structure ([`77b9435`](https://github.com/mraniki/findmyorder/commit/77b9435ab156bd973c128ee4ae11d24776f5ca1c))
 
@@ -4256,8 +4240,6 @@ minor: structure overhall and added tests ([`3e48a42`](https://github.com/mranik
 
 * fix: added version in example ([`fc7659f`](https://github.com/mraniki/findmyorder/commit/fc7659f5119a3b3f2e8d7a0eacb815789d2fde57))
 
-* fix: init ([`34d5c08`](https://github.com/mraniki/findmyorder/commit/34d5c083dbf15a71f57d008ae311e7dffa525196))
-
 ### Other
 
 * Merge pull request #37 from mraniki/dev
@@ -4269,6 +4251,8 @@ Dev ([`089195f`](https://github.com/mraniki/findmyorder/commit/089195f0dd9eea985
 ## v0.0.30 (2023-04-26)
 
 ### Fix
+
+* fix: init ([`34d5c08`](https://github.com/mraniki/findmyorder/commit/34d5c083dbf15a71f57d008ae311e7dffa525196))
 
 * fix: config ([`b596e6b`](https://github.com/mraniki/findmyorder/commit/b596e6b31f75e70e8f0f2f9f20047798dfa4e0b7))
 
@@ -4388,8 +4372,6 @@ Dev ([`990c70c`](https://github.com/mraniki/findmyorder/commit/990c70c5a8fa9d364
 
 * fix: Refactor imports for findmyorder and fmosettings modules ([`7f83b01`](https://github.com/mraniki/findmyorder/commit/7f83b015b47fa68c9a0386e9d67ed935d26993e9))
 
-* fix Update findmyorder config settings ([`d9d23cc`](https://github.com/mraniki/findmyorder/commit/d9d23cc9b36c755fcc77eaabe46df6a13f4b434a))
-
 ### Other
 
 * Merge pull request #27 from mraniki/dev
@@ -4405,6 +4387,8 @@ Dev ([`011ea0f`](https://github.com/mraniki/findmyorder/commit/011ea0fedad44ffa9
 ## v0.0.21 (2023-04-24)
 
 ### Fix
+
+* fix Update findmyorder config settings ([`d9d23cc`](https://github.com/mraniki/findmyorder/commit/d9d23cc9b36c755fcc77eaabe46df6a13f4b434a))
 
 * fix: Update example.py and settings.toml files ([`e9fdd7a`](https://github.com/mraniki/findmyorder/commit/e9fdd7a757929bb19029af87426b813dd737f761))
 
@@ -4430,10 +4414,6 @@ Dev ([`ee0cf84`](https://github.com/mraniki/findmyorder/commit/ee0cf8485ea852a9d
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`1779d52`](https://github.com/mraniki/findmyorder/commit/1779d52403e37bd243dd309c43f67e8d782a6bcd))
 
-### Update
-
-* Update main.py ([`8b6fd06`](https://github.com/mraniki/findmyorder/commit/8b6fd068eed5f9118ec06be22805b1b91ff45a2d))
-
 ## v0.0.19 (2023-04-24)
 
 ### Fix
@@ -4454,11 +4434,11 @@ Dev ([`576e159`](https://github.com/mraniki/findmyorder/commit/576e15994180a9a19
 
 ### Update
 
+* Update main.py ([`8b6fd06`](https://github.com/mraniki/findmyorder/commit/8b6fd068eed5f9118ec06be22805b1b91ff45a2d))
+
 * Update example.py ([`da907a5`](https://github.com/mraniki/findmyorder/commit/da907a57c3dc8fb8a7948ec6222aea054102c9ba))
 
 * Update example.py ([`f51983a`](https://github.com/mraniki/findmyorder/commit/f51983a3bb515f12e2c800a3949724d229598d04))
-
-* Update Dockerfile ([`c4587e7`](https://github.com/mraniki/findmyorder/commit/c4587e73720a0ae99a2ce1a75f97a04f42c421d5))
 
 ## v0.0.18 (2023-04-24)
 
@@ -4476,8 +4456,6 @@ fix: fmo ([`b2f6da3`](https://github.com/mraniki/findmyorder/commit/b2f6da337b77
 
 * fix: fmo ([`97d4b61`](https://github.com/mraniki/findmyorder/commit/97d4b6121f710a6ae106cfb8bd2765b718153a84))
 
-* fix: example import ([`f210c48`](https://github.com/mraniki/findmyorder/commit/f210c48e91a5a739c755d14572b8f9841c0f49f1))
-
 ### Other
 
 * Merge pull request #20 from mraniki/dev
@@ -4486,11 +4464,15 @@ Dev ([`c1082fc`](https://github.com/mraniki/findmyorder/commit/c1082fcdd8208f6f4
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`3ae523e`](https://github.com/mraniki/findmyorder/commit/3ae523e3aea124e716dd4ecba5812388809a89a6))
 
+### Update
+
+* Update Dockerfile ([`c4587e7`](https://github.com/mraniki/findmyorder/commit/c4587e73720a0ae99a2ce1a75f97a04f42c421d5))
+
 ## v0.0.16 (2023-04-24)
 
 ### Fix
 
-* fix: example plus ([`bc45b27`](https://github.com/mraniki/findmyorder/commit/bc45b27398e6252e438250c7564b90aa11e8b463))
+* fix: example import ([`f210c48`](https://github.com/mraniki/findmyorder/commit/f210c48e91a5a739c755d14572b8f9841c0f49f1))
 
 ### Other
 
@@ -4503,6 +4485,8 @@ Dev ([`bf11d59`](https://github.com/mraniki/findmyorder/commit/bf11d590d6af538be
 ## v0.0.15 (2023-04-24)
 
 ### Fix
+
+* fix: example plus ([`bc45b27`](https://github.com/mraniki/findmyorder/commit/bc45b27398e6252e438250c7564b90aa11e8b463))
 
 * fix: example ([`6b699ed`](https://github.com/mraniki/findmyorder/commit/6b699edec7dba745b4bef11472770c52af489a6b))
 
@@ -4518,10 +4502,6 @@ Dev ([`438e950`](https://github.com/mraniki/findmyorder/commit/438e95031b7ccc5a9
 
 ## v0.0.14 (2023-04-24)
 
-### Fix
-
-* fix: dynaconf typo ([`693c59f`](https://github.com/mraniki/findmyorder/commit/693c59f878437bbf643fd6241be5f708c249824f))
-
 ### Other
 
 * Merge pull request #17 from mraniki/dev
@@ -4534,7 +4514,7 @@ Dev ([`1878d91`](https://github.com/mraniki/findmyorder/commit/1878d91cfc4c3f4bd
 
 ### Fix
 
-* fix: dockerfile and example req ([`d3be0e4`](https://github.com/mraniki/findmyorder/commit/d3be0e49170e64fae228e388409adb7d3dd076ba))
+* fix: dynaconf typo ([`693c59f`](https://github.com/mraniki/findmyorder/commit/693c59f878437bbf643fd6241be5f708c249824f))
 
 ### Other
 
@@ -4548,6 +4528,8 @@ Dev ([`58af62c`](https://github.com/mraniki/findmyorder/commit/58af62c2510fdf26e
 
 ### Fix
 
+* fix: dockerfile and example req ([`d3be0e4`](https://github.com/mraniki/findmyorder/commit/d3be0e49170e64fae228e388409adb7d3dd076ba))
+
 * fix: missing dependency ([`de71c18`](https://github.com/mraniki/findmyorder/commit/de71c1850423e4ceb300f36f87490f1ec069cfae))
 
 ### Other
@@ -4557,10 +4539,6 @@ Dev ([`58af62c`](https://github.com/mraniki/findmyorder/commit/58af62c2510fdf26e
 Dev ([`89543d0`](https://github.com/mraniki/findmyorder/commit/89543d09c4af5850fdb3fdbf9df522e740be3ebc))
 
 * Merge branch &#39;dev&#39; of https://github.com/mraniki/findmyorder into dev ([`de68863`](https://github.com/mraniki/findmyorder/commit/de68863d8091e83af1e8375fd5ac2b35c0f4e2df))
-
-### Update
-
-* Update Dockerfile ([`a80e200`](https://github.com/mraniki/findmyorder/commit/a80e2004d1fa91719385444ef44cbe130f3bf348))
 
 ## v0.0.11 (2023-04-24)
 
@@ -4575,6 +4553,8 @@ Dev ([`89543d0`](https://github.com/mraniki/findmyorder/commit/89543d09c4af5850f
 fix: Refactor import statement in main.py file. ([`d98ee4d`](https://github.com/mraniki/findmyorder/commit/d98ee4df3b2214166935565003fab8532e9a787e))
 
 ### Update
+
+* Update Dockerfile ([`a80e200`](https://github.com/mraniki/findmyorder/commit/a80e2004d1fa91719385444ef44cbe130f3bf348))
 
 * Update ☁️deploy.yml ([`de82fbf`](https://github.com/mraniki/findmyorder/commit/de82fbfb718b15442c21a7d254485cac4575ca56))
 
@@ -4600,10 +4580,6 @@ minor: add dockerfile for example ([`343dbff`](https://github.com/mraniki/findmy
 
 ## v0.0.9 (2023-04-23)
 
-### Fix
-
-* fix: settings adjustment ([`cc97857`](https://github.com/mraniki/findmyorder/commit/cc978575322395ecdd57fe8ee6be3906ac24071f))
-
 ### Other
 
 * Merge pull request #11 from mraniki/dev
@@ -4616,7 +4592,7 @@ Dev ([`eda4d96`](https://github.com/mraniki/findmyorder/commit/eda4d96ec77a3620b
 
 ### Fix
 
-* fix: settings typo ([`c907539`](https://github.com/mraniki/findmyorder/commit/c907539a32ad31af8a0a3252b69361b18eb56475))
+* fix: settings adjustment ([`cc97857`](https://github.com/mraniki/findmyorder/commit/cc978575322395ecdd57fe8ee6be3906ac24071f))
 
 ### Other
 
@@ -4630,7 +4606,7 @@ Dev ([`f643fbf`](https://github.com/mraniki/findmyorder/commit/f643fbfae939b843a
 
 ### Fix
 
-* fix: import ([`3e4643c`](https://github.com/mraniki/findmyorder/commit/3e4643cc204224e60aab46e6a290e9cccad34408))
+* fix: settings typo ([`c907539`](https://github.com/mraniki/findmyorder/commit/c907539a32ad31af8a0a3252b69361b18eb56475))
 
 ### Other
 
@@ -4643,6 +4619,8 @@ Dev ([`51b619f`](https://github.com/mraniki/findmyorder/commit/51b619f00bbfe7bdd
 ## v0.0.6 (2023-04-23)
 
 ### Fix
+
+* fix: import ([`3e4643c`](https://github.com/mraniki/findmyorder/commit/3e4643cc204224e60aab46e6a290e9cccad34408))
 
 * fix: settings ([`909dbf7`](https://github.com/mraniki/findmyorder/commit/909dbf7d2d1ab81cfb73ceb0df6960cdfd995eb1))
 
@@ -4732,11 +4710,11 @@ Dev ([`64f2fa1`](https://github.com/mraniki/findmyorder/commit/64f2fa1791c240fbb
 
 ### Other
 
-* Added linting job to build workflow. ([`600f7ba`](https://github.com/mraniki/findmyorder/commit/600f7ba949bb784f926492f82d8d0952981376fb))
-
 * Merge pull request #2 from mraniki/dev
 
 Dev ([`ebc6952`](https://github.com/mraniki/findmyorder/commit/ebc6952f7ee0e45ac07ae7f693044e125597d62d))
+
+* Added linting job to build workflow. ([`600f7ba`](https://github.com/mraniki/findmyorder/commit/600f7ba949bb784f926492f82d8d0952981376fb))
 
 * minor: simple parsing direction ([`00b417b`](https://github.com/mraniki/findmyorder/commit/00b417b62fa5b4cc2e1ee9c31e6e8797312d1804))
 
