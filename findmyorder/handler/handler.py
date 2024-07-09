@@ -70,7 +70,7 @@ class ParserClient:
             if order_identifier in self.action_identifier:
                 return True
 
-        return False
+        #return False
 
     async def replace_instrument(self, order):
         """
