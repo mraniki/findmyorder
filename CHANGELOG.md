@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v2.2.2 (2024-07-09)
+
+### Other
+
+* Merge pull request #384 from mraniki/dev
+
+🔧 update default_settings.toml and main.py ([`83d88a6`](https://github.com/mraniki/findmyorder/commit/83d88a65b6989ab13012486c0723f1ce9a72bcff))
+
+* update handler.py ([`036a2c8`](https://github.com/mraniki/findmyorder/commit/036a2c82ea5c3c42199f555c0433b97b4a00d895))
+
+### 🔧
+
+* 🔧 update default_settings.toml and main.py ([`69b4d94`](https://github.com/mraniki/findmyorder/commit/69b4d94c1e70ff5bbfb832b59cea39b97fe22c5b))
+
+* 🔧 ([`f8a4f4a`](https://github.com/mraniki/findmyorder/commit/f8a4f4a0faf10bc323b5b9d706b5c5a4863fc949))
+
 ## v2.2.1 (2024-07-09)
 
 ### Other
