@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v2.2.7 (2024-08-30)
+
+### Other
+
+* Merge pull request #399 from mraniki/dev
+
+Dev ([`e9760d5`](https://github.com/mraniki/findmyorder/commit/e9760d5aef103e48ea680afeb593f44e7bd0b669))
+
+* Merge pull request #396 from mraniki/renovate/pytest-asyncio-0.x
+
+⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.24.0 ([`d6f6faa`](https://github.com/mraniki/findmyorder/commit/d6f6faa070d918f7d1cd17408eed9227b55c4565))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency pytest-asyncio to ^0.24.0 ([`cd8732a`](https://github.com/mraniki/findmyorder/commit/cd8732a3f5685d86c1122b1ce7f1e918546ffcba))
+
 ## v2.2.6 (2024-07-09)
 
 ### :fire:
