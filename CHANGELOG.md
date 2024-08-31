@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## v2.2.8 (2024-08-31)
+
+### Other
+
+* Merge pull request #400 from mraniki/dev
+
+⬆️ 🤖 - Try to relax and enjoy the crisis ([`61bc3f4`](https://github.com/mraniki/findmyorder/commit/61bc3f415764168502895339ac4ecfc55f6cbbd8))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency sphinx to v7.4.7 ([`4df7973`](https://github.com/mraniki/findmyorder/commit/4df79735628134c7318d22a7e4316a6e9a00ca4a))
+
+* ⬆️ 🛠️(deps): update dependency ruff to ^0.6.0 ([`dbd66d6`](https://github.com/mraniki/findmyorder/commit/dbd66d6f9911fea68edd6e91cc40510e1aafe6dc))
+
 ## v2.2.7 (2024-08-30)
 
 ### Other
