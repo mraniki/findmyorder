@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v2.2.9 (2024-10-01)
+
+### Other
+
+* Merge pull request #402 from mraniki/dev
+
+⬆️ 🤖 - Your temporary financial embarrassment will be relieved in a surprising manner ([`a14eac1`](https://github.com/mraniki/findmyorder/commit/a14eac1b1c2592b8169dc07ce57556beb669881a))
+
+### ⬆️
+
+* ⬆️ 🛠️(deps): update dependency myst_parser to v4 ([`0f65087`](https://github.com/mraniki/findmyorder/commit/0f65087516655b70b25c6d883bdf00f0422961a0))
+
 ## v2.2.8 (2024-08-31)
 
 ### Other
