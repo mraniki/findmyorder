@@ -12,7 +12,7 @@ from pyparsing import (
     pyparsing_common,
 )
 
-from .handler import ParserClient
+from ._client import ParserClient
 
 
 class BasicHandler(ParserClient):
