@@ -1,6 +1,23 @@
 # CHANGELOG
 
 
+## v2.2.11 (2024-11-01)
+
+### Other
+
+* Merge pull request #413 from mraniki/dev
+
+♻️ refactor client structure ([`24240d4`](https://github.com/mraniki/findmyorder/commit/24240d454bb74732a142f9cce33f0eb36db97b88))
+
+### ♻️
+
+* ♻️ refactor client structure ([`7c3a701`](https://github.com/mraniki/findmyorder/commit/7c3a7013498153cebed02a969ecf2cdb876af1f3))
+
+### 🔥
+
+* 🔥 black ([`9b11a41`](https://github.com/mraniki/findmyorder/commit/9b11a417203841bc7a046bff0f980d4b71341eb7))
+
+
 ## v2.2.10 (2024-10-27)
 
 ### Other
