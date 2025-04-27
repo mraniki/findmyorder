@@ -38,7 +38,7 @@ dependencies = [
 dev = [
   "python-semantic-release>=8.0.8",
   "ruff~=0.7",
-  "pre-commit~=3.3",
+  "pre-commit~=4.2",
 ]
 test = [
   "pytest~=8.0",
