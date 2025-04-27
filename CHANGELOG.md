@@ -1,6 +1,35 @@
 # CHANGELOG
 
 
+## v4.0.0 (2025-04-27)
+
+### Other
+
+- Chore: update .pre-commit-config.yaml
+  ([`c2bba51`](https://github.com/mraniki/findmyorder/commit/c2bba5174998d241b7d934448e6c63a3634034ce))
+
+- Merge pull request #426 from mraniki/dev
+  ([`d0376a9`](https://github.com/mraniki/findmyorder/commit/d0376a932794835ad1135e0268959c012d264ea7))
+
+chore: update .pre-commit-config.yaml
+
+- Merge pull request #427 from mraniki/dev
+  ([`3e06a15`](https://github.com/mraniki/findmyorder/commit/3e06a15fc282c093a677b4bc757a1ca087156ab8))
+
+💥 breaking update config.py
+
+- Update config.py
+  ([`189f37a`](https://github.com/mraniki/findmyorder/commit/189f37af0de2def06238fa9069c9d6f66de4549e))
+
+- Update config.py
+  ([`5a054ba`](https://github.com/mraniki/findmyorder/commit/5a054ba3848fd3ebbcf9257b67e75481f68a2b8b))
+
+### 💥
+
+- 💥 breaking update config.py
+  ([`b1c7ddf`](https://github.com/mraniki/findmyorder/commit/b1c7ddf006fdcd2e62fb29e8a8446bd180432764))
+
+
 ## v3.0.0 (2025-04-27)
 
 ### Other
