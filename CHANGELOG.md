@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## v4.0.1 (2025-04-29)
+
+### Other
+
+- Merge pull request #430 from mraniki/dev
+  ([`ebd91e1`](https://github.com/mraniki/findmyorder/commit/ebd91e14bc2c22262653bc89efc0c12fd932c9e7))
+
+🚑 build(deps): update pyproject.toml
+
+### 🚑
+
+- 🚑 build(deps): update pyproject.toml
+  ([`f9b5c45`](https://github.com/mraniki/findmyorder/commit/f9b5c45a69c4da54241c8cc20c47b1a957e9ba7b))
+
+
 ## v4.0.0 (2025-04-27)
 
 ### Other
