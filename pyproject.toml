@@ -56,8 +56,10 @@ docs = [
   "sphinx_design~=0.6",
 ]
 
-[tool.setuptools]
-packages = ["findmyorder"]
+[tool.setuptools.packages.find]
+where = ["."] 
+include = ["findmyorder*"] 
+exclude = ["tests*", "docs*", "examples*"]
 
 
 [tool.ruff]
